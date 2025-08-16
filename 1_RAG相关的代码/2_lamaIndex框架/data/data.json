@@ -1,0 +1,1479 @@
+{
+    "Status": "Success",
+    "RequestId": "01657E13-4235-5226-90BB-881CFA6F63F9",
+    "CreateTime": "2025-08-05 18:32:53",
+    "Completed": true,
+    "Data": {
+        "numberOfSuccessfulParsing": 35,
+        "layouts": [
+            {
+                "firstLinesChars": 0,
+                "level": 0,
+                "blocks": [
+                    {
+                        "text": "DeepSeek-V3 Technical Report"
+                    }
+                ],
+                "markdownContent": "# DeepSeek-V3 Technical Report  \n\n",
+                "index": 3,
+                "subType": "doc_title",
+                "lineHeight": 0,
+                "text": "DeepSeek-V3 Technical Report\n",
+                "alignment": "center",
+                "type": "title",
+                "pageNum": 0,
+                "uniqueId": "985d3f476303cf0a019ab4f9f866a280"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "DeepSeek-AI"
+                    }
+                ],
+                "markdownContent": "DeepSeek-AI  \n\n",
+                "index": 4,
+                "subType": "none",
+                "lineHeight": 0,
+                "text": "DeepSeek-AI\n",
+                "alignment": "center",
+                "type": "text",
+                "pageNum": 0,
+                "uniqueId": "9f44ba08b41e258684d1be2f3ef9e4ed"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "research@deepseek.com"
+                    }
+                ],
+                "markdownContent": "research@deepseek.com  \n\n",
+                "index": 5,
+                "subType": "para",
+                "lineHeight": 0,
+                "text": "research@deepseek.com\n",
+                "alignment": "center",
+                "type": "text",
+                "pageNum": 0,
+                "uniqueId": "1eb9229ba62e3ec3efcf22e1e274fded"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "Abstract"
+                    }
+                ],
+                "markdownContent": "## Abstract  \n\n",
+                "index": 6,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "Abstract\n",
+                "alignment": "center",
+                "type": "title",
+                "pageNum": 0,
+                "uniqueId": "684e350e61ab3fda90a9856240661b6e"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total"
+                    },
+                    {
+                        "text": " parameters with 37B activated for each token. To achieve efficient inference and cost-effective"
+                    },
+                    {
+                        "text": " training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architec-"
+                    },
+                    {
+                        "text": "tures, which were thoroughly validated in DeepSeek-V2. Furthermore, DeepSeek-V3 pioneers"
+                    },
+                    {
+                        "text": " an auxiliary-loss-free strategy for load balancing and sets a multi-token prediction training"
+                    },
+                    {
+                        "text": " objective for stronger performance. We pre-train DeepSeek-V3 on 14.8 trillion diverse and"
+                    },
+                    {
+                        "text": " high-quality tokens, followed by Supervised Fine-Tuning and Reinforcement Learning stages to"
+                    },
+                    {
+                        "text": " fully harness its capabilities. Comprehensive evaluations reveal that DeepSeek-V3 outperforms"
+                    },
+                    {
+                        "text": " other open-source models and achieves performance comparable to leading closed-source"
+                    },
+                    {
+                        "text": " models. Despite its excellent performance, DeepSeek-V3 requires only 2.788M H800 GPU hours"
+                    },
+                    {
+                        "text": " for its full training. In addition, its training process is remarkably stable. Throughout the entire"
+                    },
+                    {
+                        "text": " training process, we did not experience any irrecoverable loss spikes or perform any rollbacks."
+                    },
+                    {
+                        "text": " The model checkpoints are available at https://github.com/deepseek-ai/DeepSeek-V3."
+                    }
+                ],
+                "markdownContent": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architec-tures, which were thoroughly validated in DeepSeek-V2. Furthermore, DeepSeek-V3 pioneers an auxiliary-loss-free strategy for load balancing and sets a multi-token prediction training objective for stronger performance. We pre-train DeepSeek-V3 on 14.8 trillion diverse and high-quality tokens, followed by Supervised Fine-Tuning and Reinforcement Learning stages to fully harness its capabilities. Comprehensive evaluations reveal that DeepSeek-V3 outperforms other open-source models and achieves performance comparable to leading closed-source models. Despite its excellent performance, DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training. In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks. The model checkpoints are available at https://github.com/deepseek-ai/DeepSeek-V3.  \n\n",
+                "index": 7,
+                "subType": "para",
+                "lineHeight": 5,
+                "text": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architec-tures, which were thoroughly validated in DeepSeek-V2. Furthermore, DeepSeek-V3 pioneers an auxiliary-loss-free strategy for load balancing and sets a multi-token prediction training objective for stronger performance. We pre-train DeepSeek-V3 on 14.8 trillion diverse and high-quality tokens, followed by Supervised Fine-Tuning and Reinforcement Learning stages to fully harness its capabilities. Comprehensive evaluations reveal that DeepSeek-V3 outperforms other open-source models and achieves performance comparable to leading closed-source models. Despite its excellent performance, DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training. In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks. The model checkpoints are available at https://github.com/deepseek-ai/DeepSeek-V3.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 0,
+                "uniqueId": "cb080d367bdbeefdff9a70a76aede78f"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "Llama-3.1-405B-Inst"
+                    },
+                    {
+                        "text": "GPT-4o-0513"
+                    }
+                ],
+                "markdownContent": "Llama-3.1-405B-Inst        GPT-4o-0513  \n\n",
+                "index": 8,
+                "subType": "para",
+                "lineHeight": 0,
+                "text": "Llama-3.1-405B-Inst        GPT-4o-0513\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 0,
+                "uniqueId": "9af16f57c02b3e4e63cb581c9f13a08e"
+            },
+            {
+                "level": 2,
+                "markdownContent": "![734f8e241e6c9284df7596a75c4913ce.jpeg](http://docmind-api-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/1823444816762839/publicDocStreamStructure/docmind-20250805-edf1fa8b09f444b886088f67a7e6ea20/0.png?Expires=1754433175&OSSAccessKeyId=LTAI5tQL9bqLHC5HYKV68DA9&Signature=Sk%2BK7Pkw3J%2Fpqs2nd71TLqlRCpM%3D&x-oss-process=image%2Fcrop%2Cx_159%2Cy_1075%2Cw_1036%2Ch_583)  \n\n",
+                "index": 9,
+                "subType": "picture",
+                "text": "DeepSeek-V3DeepSeek-V2.5Qwen2.5-72B-Inst                                                 Claude-3.5-Sonnet-102210090.28080.078.078.375.974.773.372.673.874.671.6>66.265.06059.151.651.149.950.849.042.041.34039.238.835.624.825.323.323.323.622.2.623.824.520.32016.716.09.30MMLU-Pro        GPQA-Diamond MATH 500AIME 2024Codeforces SWE-bench Verified(EM)                    (Pass@1)(EM)(Pass@1)(Percentile)(Resolved)",
+                "alignment": "center",
+                "type": "figure",
+                "pageNum": 0,
+                "uniqueId": "734f8e241e6c9284df7596a75c4913ce"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 3,
+                "blocks": [
+                    {
+                        "text": "Figure 1 |Benchmark performance of DeepSeek-V3 and its counterparts."
+                    }
+                ],
+                "markdownContent": ">Figure 1 |Benchmark performance of DeepSeek-V3 and its counterparts.  \n\n",
+                "index": 10,
+                "subType": "pic_title",
+                "lineHeight": 0,
+                "text": "Figure 1 |Benchmark performance of DeepSeek-V3 and its counterparts.\n",
+                "alignment": "center",
+                "type": "figure_name",
+                "pageNum": 0,
+                "uniqueId": "2d701ca4fdc42e86092d222893b9967f"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "1. Introduction"
+                    }
+                ],
+                "markdownContent": "## 1. Introduction  \n\n",
+                "index": 1,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "1. Introduction\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 1,
+                "uniqueId": "ade9a5be66abdf6f1c7cac40bbc765a4"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "In recent years, Large Language Models(LLMs) have been undergoing rapid iteration and"
+                    },
+                    {
+                        "text": " evolution (Anthropic, 2024; Google, 2024; OpenAI, 2024a), progressively diminishing the gap to-"
+                    },
+                    {
+                        "text": "wards Artificial General Intelligence (AGI). Beyond closed-source models, open-source models,"
+                    },
+                    {
+                        "text": " including DeepSeek series (DeepSeek-AI, 2024a,b,c; Guo et al., 2024), LLaMA series (AI@Meta,"
+                    },
+                    {
+                        "text": "2024a,b; Touvron et al., 2023a,b), Qwen series (Qwen, 2023,2024a,b), and Mistral series (Jiang"
+                    },
+                    {
+                        "text": " et al.,2023; Mistral, 2024), are also making significant strides, endeavoring to close the gap with"
+                    },
+                    {
+                        "text": " their closed-source counterparts. To further push the boundaries of open-source model capa-"
+                    },
+                    {
+                        "text": "bilities, we scale up our models and introduce DeepSeek-V3, a large Mixture-of-Experts (MoE)"
+                    },
+                    {
+                        "text": " model with 671B parameters, of which 37B are activated for each token."
+                    }
+                ],
+                "markdownContent": "In recent years, Large Language Models(LLMs) have been undergoing rapid iteration and evolution (Anthropic, 2024; Google, 2024; OpenAI, 2024a), progressively diminishing the gap to-wards Artificial General Intelligence (AGI). Beyond closed-source models, open-source models, including DeepSeek series (DeepSeek-AI, 2024a,b,c; Guo et al., 2024), LLaMA series (AI@Meta,2024a,b; Touvron et al., 2023a,b), Qwen series (Qwen, 2023,2024a,b), and Mistral series (Jiang et al.,2023; Mistral, 2024), are also making significant strides, endeavoring to close the gap with their closed-source counterparts. To further push the boundaries of open-source model capa-bilities, we scale up our models and introduce DeepSeek-V3, a large Mixture-of-Experts (MoE) model with 671B parameters, of which 37B are activated for each token.  \n\n",
+                "index": 2,
+                "subType": "para",
+                "lineHeight": 4,
+                "text": "In recent years, Large Language Models(LLMs) have been undergoing rapid iteration and evolution (Anthropic, 2024; Google, 2024; OpenAI, 2024a), progressively diminishing the gap to-wards Artificial General Intelligence (AGI). Beyond closed-source models, open-source models, including DeepSeek series (DeepSeek-AI, 2024a,b,c; Guo et al., 2024), LLaMA series (AI@Meta,2024a,b; Touvron et al., 2023a,b), Qwen series (Qwen, 2023,2024a,b), and Mistral series (Jiang et al.,2023; Mistral, 2024), are also making significant strides, endeavoring to close the gap with their closed-source counterparts. To further push the boundaries of open-source model capa-bilities, we scale up our models and introduce DeepSeek-V3, a large Mixture-of-Experts (MoE) model with 671B parameters, of which 37B are activated for each token.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 1,
+                "uniqueId": "1d73eb9803298dc6570cac56941dd3fc"
+            },
+            {
+                "firstLinesChars": 37,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "With a forward-looking perspective, we consistently strive for strong model performance"
+                    },
+                    {
+                        "text": " and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head"
+                    },
+                    {
+                        "text": " Latent Attention (MLA)(DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai"
+                    },
+                    {
+                        "text": " et al., 2024) for cost-effective training. These two architectures have been validated in DeepSeek-"
+                    },
+                    {
+                        "text": "V2 (DeepSeek-AI, 2024c), demonstrating their capability to maintain robust model performance"
+                    },
+                    {
+                        "text": " while achieving efficient training and inference. Beyond the basic architecture, we implement"
+                    },
+                    {
+                        "text": " two additional strategies to further enhance the model capabilities. Firstly, DeepSeek-V3 pi-"
+                    },
+                    {
+                        "text": "oneers an auxiliary-loss-free strategy (Wang et al., 2024a) for load balancing, with the aim of"
+                    },
+                    {
+                        "text": " minimizing the adverse impact on model performance that arises from the effort to encourage"
+                    },
+                    {
+                        "text": " load balancing. Secondly, DeepSeek-V3 employs a multi-token prediction training objective,"
+                    },
+                    {
+                        "text": " which we have observed to enhance the overall performance on evaluation benchmarks."
+                    }
+                ],
+                "markdownContent": "With a forward-looking perspective, we consistently strive for strong model performance and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head Latent Attention (MLA)(DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024) for cost-effective training. These two architectures have been validated in DeepSeek-V2 (DeepSeek-AI, 2024c), demonstrating their capability to maintain robust model performance while achieving efficient training and inference. Beyond the basic architecture, we implement two additional strategies to further enhance the model capabilities. Firstly, DeepSeek-V3 pi-oneers an auxiliary-loss-free strategy (Wang et al., 2024a) for load balancing, with the aim of minimizing the adverse impact on model performance that arises from the effort to encourage load balancing. Secondly, DeepSeek-V3 employs a multi-token prediction training objective, which we have observed to enhance the overall performance on evaluation benchmarks.  \n\n",
+                "index": 3,
+                "subType": "para",
+                "lineHeight": 3,
+                "text": "With a forward-looking perspective, we consistently strive for strong model performance and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head Latent Attention (MLA)(DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024) for cost-effective training. These two architectures have been validated in DeepSeek-V2 (DeepSeek-AI, 2024c), demonstrating their capability to maintain robust model performance while achieving efficient training and inference. Beyond the basic architecture, we implement two additional strategies to further enhance the model capabilities. Firstly, DeepSeek-V3 pi-oneers an auxiliary-loss-free strategy (Wang et al., 2024a) for load balancing, with the aim of minimizing the adverse impact on model performance that arises from the effort to encourage load balancing. Secondly, DeepSeek-V3 employs a multi-token prediction training objective, which we have observed to enhance the overall performance on evaluation benchmarks.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 1,
+                "uniqueId": "8fba2efcdf18f17578a8497550073218"
+            },
+            {
+                "firstLinesChars": 35,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "In order to achieve efficient training, we support the FP8 mixed precision training and"
+                    },
+                    {
+                        "text": " implement comprehensive optimizations for the training framework. Low-precision training"
+                    },
+                    {
+                        "text": " has emerged as a promising solution for efficient training (Dettmers et al., 2022; Kalamkar et al.,"
+                    },
+                    {
+                        "text": "2019; Narang et al., 2017; Peng et al., 2023b), its evolution being closely tied to advancements in"
+                    },
+                    {
+                        "text": " hardware capabilities (Luo et al., 2024; Micikevicius et al., 2022; Rouhani et al., 2023a). In this"
+                    },
+                    {
+                        "text": " work, we introduce an FP8 mixed precision training framework and, for the first time, validate"
+                    },
+                    {
+                        "text": " its effectiveness on an extremely large-scale model. Through the support for FP8 computation"
+                    },
+                    {
+                        "text": " and storage, we achieve both accelerated training and reduced GPU memory usage. As for"
+                    },
+                    {
+                        "text": " the training framework, we design the DualPipe algorithm for efficient pipeline parallelism,"
+                    },
+                    {
+                        "text": " which has fewer pipeline bubbles and hides most of the communication during training through"
+                    },
+                    {
+                        "text": " computation-communication overlap. This overlap ensures that, as the model further scales up,"
+                    },
+                    {
+                        "text": " as long as we maintain a constant computation-to-communication ratio, we can still employ"
+                    },
+                    {
+                        "text": " fine-grained experts across nodes while achieving a near-zero all-to-all communication overhead."
+                    },
+                    {
+                        "text": " In addition, we also develop efficient cross-node all-to-all communication kernels to fully utilize"
+                    },
+                    {
+                        "text": "1"
+                    },
+                    {
+                        "text": "InfiniBand (IB) and NVLink bandwidths. Furthermore, we meticulously optimize the memory"
+                    },
+                    {
+                        "text": " footprint, making it possible to train DeepSeek-V3 without using costly tensor parallelism."
+                    },
+                    {
+                        "text": " Combining these efforts, we achieve high training efficiency."
+                    }
+                ],
+                "markdownContent": "In order to achieve efficient training, we support the FP8 mixed precision training and implement comprehensive optimizations for the training framework. Low-precision training has emerged as a promising solution for efficient training (Dettmers et al., 2022; Kalamkar et al.,2019; Narang et al., 2017; Peng et al., 2023b), its evolution being closely tied to advancements in hardware capabilities (Luo et al., 2024; Micikevicius et al., 2022; Rouhani et al., 2023a). In this work, we introduce an FP8 mixed precision training framework and, for the first time, validate its effectiveness on an extremely large-scale model. Through the support for FP8 computation and storage, we achieve both accelerated training and reduced GPU memory usage. As for the training framework, we design the DualPipe algorithm for efficient pipeline parallelism, which has fewer pipeline bubbles and hides most of the communication during training through computation-communication overlap. This overlap ensures that, as the model further scales up, as long as we maintain a constant computation-to-communication ratio, we can still employ fine-grained experts across nodes while achieving a near-zero all-to-all communication overhead. In addition, we also develop efficient cross-node all-to-all communication kernels to fully utilize1InfiniBand (IB) and NVLink bandwidths. Furthermore, we meticulously optimize the memory footprint, making it possible to train DeepSeek-V3 without using costly tensor parallelism. Combining these efforts, we achieve high training efficiency.  \n\n",
+                "index": 4,
+                "subType": "para",
+                "lineHeight": 2,
+                "text": "In order to achieve efficient training, we support the FP8 mixed precision training and implement comprehensive optimizations for the training framework. Low-precision training has emerged as a promising solution for efficient training (Dettmers et al., 2022; Kalamkar et al.,2019; Narang et al., 2017; Peng et al., 2023b), its evolution being closely tied to advancements in hardware capabilities (Luo et al., 2024; Micikevicius et al., 2022; Rouhani et al., 2023a). In this work, we introduce an FP8 mixed precision training framework and, for the first time, validate its effectiveness on an extremely large-scale model. Through the support for FP8 computation and storage, we achieve both accelerated training and reduced GPU memory usage. As for the training framework, we design the DualPipe algorithm for efficient pipeline parallelism, which has fewer pipeline bubbles and hides most of the communication during training through computation-communication overlap. This overlap ensures that, as the model further scales up, as long as we maintain a constant computation-to-communication ratio, we can still employ fine-grained experts across nodes while achieving a near-zero all-to-all communication overhead. In addition, we also develop efficient cross-node all-to-all communication kernels to fully utilize1InfiniBand (IB) and NVLink bandwidths. Furthermore, we meticulously optimize the memory footprint, making it possible to train DeepSeek-V3 without using costly tensor parallelism. Combining these efforts, we achieve high training efficiency.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 1,
+                "uniqueId": "49ba9ea5cf9c4bf3733023454dd69391"
+            },
+            {
+                "firstLinesChars": 38,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "During pre-training, we train DeepSeek-V3 on 14.8T high-quality and diverse tokens. The"
+                    },
+                    {
+                        "text": " pre-training process is remarkably stable. Throughout the entire training process, we did not"
+                    },
+                    {
+                        "text": " encounter any irrecoverable loss spikes or have to roll back. Next, we conduct a two-stage"
+                    },
+                    {
+                        "text": " context length extension for DeepSeek-V3. In the first stage, the maximum context length is"
+                    },
+                    {
+                        "text": " extended to 32K, and in the second stage, it is further extended to 128K. Following this, we"
+                    },
+                    {
+                        "text": " conduct post-training, including Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL)"
+                    },
+                    {
+                        "text": " on the base model of DeepSeek-V3, to align it with human preferences and further unlock its"
+                    },
+                    {
+                        "text": " potential. During the post-training stage, we distill the reasoning capability from the DeepSeek-"
+                    },
+                    {
+                        "text": "R1 series of models, and meanwhile carefully maintain the balance between model accuracy"
+                    },
+                    {
+                        "text": "and generation length."
+                    }
+                ],
+                "markdownContent": "During pre-training, we train DeepSeek-V3 on 14.8T high-quality and diverse tokens. The pre-training process is remarkably stable. Throughout the entire training process, we did not encounter any irrecoverable loss spikes or have to roll back. Next, we conduct a two-stage context length extension for DeepSeek-V3. In the first stage, the maximum context length is extended to 32K, and in the second stage, it is further extended to 128K. Following this, we conduct post-training, including Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) on the base model of DeepSeek-V3, to align it with human preferences and further unlock its potential. During the post-training stage, we distill the reasoning capability from the DeepSeek-R1 series of models, and meanwhile carefully maintain the balance between model accuracy and generation length.  \n\n",
+                "index": 5,
+                "subType": "none",
+                "lineHeight": 5,
+                "text": "During pre-training, we train DeepSeek-V3 on 14.8T high-quality and diverse tokens. The pre-training process is remarkably stable. Throughout the entire training process, we did not encounter any irrecoverable loss spikes or have to roll back. Next, we conduct a two-stage context length extension for DeepSeek-V3. In the first stage, the maximum context length is extended to 32K, and in the second stage, it is further extended to 128K. Following this, we conduct post-training, including Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) on the base model of DeepSeek-V3, to align it with human preferences and further unlock its potential. During the post-training stage, we distill the reasoning capability from the DeepSeek-R1 series of models, and meanwhile carefully maintain the balance between model accuracy and generation length.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 1,
+                "uniqueId": "87d12c66d3299310f923596db85d4dae"
+            },
+            {
+                "numCol": 5,
+                "cells": [
+                    {
+                        "yec": 0,
+                        "xec": 0,
+                        "ysc": 0,
+                        "xsc": 0,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 0,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "Training Costs"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "Training Costs\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "9778a270e5deb0f0a9a9ae493820f6ba"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 0,
+                        "xec": 1,
+                        "ysc": 0,
+                        "xsc": 1,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 1,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "Pre-Training"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "Pre-Training\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "d10054ff1206770b4b2aa80e9358bc07"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 0,
+                        "xec": 2,
+                        "ysc": 0,
+                        "xsc": 2,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 2,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "Context Extension"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "Context Extension\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "398bc7fcf0197f21db9d99bfd98e01bd"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 0,
+                        "xec": 3,
+                        "ysc": 0,
+                        "xsc": 3,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 3,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "I"
+                                    },
+                                    {
+                                        "text": "Post-Training"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": -26,
+                                "text": "IPost-Training\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "809410b53ffcf86ce523c4ef9e1c8b03"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 0,
+                        "xec": 4,
+                        "ysc": 0,
+                        "xsc": 4,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 4,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "Total"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "Total\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "a6a9404777cc6a47b65e137805f5f32e"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 1,
+                        "xec": 0,
+                        "ysc": 1,
+                        "xsc": 0,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 5,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "in H800 GPU Hours"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "in H800 GPU Hours\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "be0ff7ca8eb7185a29c14a2da686571e"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 1,
+                        "xec": 1,
+                        "ysc": 1,
+                        "xsc": 1,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 6,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "2664K"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "2664K\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "6d80d3eb659bd1ba5bbc17f6823c87b2"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 1,
+                        "xec": 2,
+                        "ysc": 1,
+                        "xsc": 2,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 7,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "119K"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "119K\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "0bc27bc162e0fe0097331e433eb0793d"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 1,
+                        "xec": 3,
+                        "ysc": 1,
+                        "xsc": 3,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 8,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "5K"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "5K\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "aa9d779d566eed782614ae59687c2067"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 1,
+                        "xec": 4,
+                        "ysc": 1,
+                        "xsc": 4,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 9,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "2788K"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "2788K\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "878990bd7e3e76505d9376947066b8c7"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 2,
+                        "xec": 0,
+                        "ysc": 2,
+                        "xsc": 0,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 10,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "in USD"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "in USD\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "3e0a1eaf38ffad975bba90c2cd079350"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 2,
+                        "xec": 1,
+                        "ysc": 2,
+                        "xsc": 1,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 11,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "$5.328M"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "$5.328M\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "b45436c865da08e7e563d8320b5c2eae"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 2,
+                        "xec": 2,
+                        "ysc": 2,
+                        "xsc": 2,
+                        "type": "text",
+                        "alignment": "center",
+                        "cellId": 12,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "$0.238M"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "$0.238M\n",
+                                "alignment": "center",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "d59df5981a48a095e5c6c062b8a5162e"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 2,
+                        "xec": 3,
+                        "ysc": 2,
+                        "xsc": 3,
+                        "type": "text",
+                        "alignment": "right",
+                        "cellId": 13,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "$0.01M"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "$0.01M\n",
+                                "alignment": "right",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "2a24cb63fcaf63c0fa3913b1a5103c38"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    },
+                    {
+                        "yec": 2,
+                        "xec": 4,
+                        "ysc": 2,
+                        "xsc": 4,
+                        "type": "text",
+                        "alignment": "left",
+                        "cellId": 14,
+                        "layouts": [
+                            {
+                                "firstLinesChars": 0,
+                                "blocks": [
+                                    {
+                                        "text": "$5.576M"
+                                    }
+                                ],
+                                "index": 0,
+                                "subType": "none",
+                                "lineHeight": 0,
+                                "text": "$5.576M\n",
+                                "alignment": "left",
+                                "type": "text",
+                                "pageNum": [
+                                    2
+                                ],
+                                "uniqueId": "4cdcab14db1782c6bcfada0f722a10ac"
+                            }
+                        ],
+                        "pageNum": [
+                            2
+                        ]
+                    }
+                ],
+                "level": 2,
+                "markdownContent": "| Training Costs|Pre-Training|Context Extension|IPost-Training|Total|\n| ---|---|---|---|---|\n| in H800 GPU Hours|2664K|119K|5K|2788K|\n| in USD|$5.328M|$0.238M|$0.01M|$5.576M|  \n\n",
+                "index": 2,
+                "subType": "none",
+                "text": "| Training Costs|Pre-Training|Context Extension|IPost-Training|Total|\n| ---|---|---|---|---|\n| in H800 GPU Hours|2664K|119K|5K|2788K|\n| in USD|$5.328M|$0.238M|$0.01M|$5.576M|\n",
+                "alignment": "center",
+                "type": "table",
+                "numRow": 3,
+                "pageNum": 2,
+                "uniqueId": "54346592b25b5ed8968f3919914d8ad7"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "Table 1 |Training costs of DeepSeek-V3, assuming the rental price of H800 is $2 per GPU hour."
+                    }
+                ],
+                "markdownContent": ">Table 1 |Training costs of DeepSeek-V3, assuming the rental price of H800 is $2 per GPU hour.  \n\n",
+                "index": 4,
+                "subType": "none",
+                "lineHeight": 0,
+                "text": "Table 1 |Training costs of DeepSeek-V3, assuming the rental price of H800 is $2 per GPU hour.\n",
+                "alignment": "left",
+                "type": "table_name",
+                "pageNum": 2,
+                "uniqueId": "492811604d7a394710f1b217b7a4327a"
+            },
+            {
+                "firstLinesChars": 38,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "We evaluate DeepSeek-V3 on a comprehensive array of benchmarks. Despite its economical"
+                    },
+                    {
+                        "text": " training costs, comprehensive evaluations reveal that DeepSeek-V3-Base has emerged as the"
+                    },
+                    {
+                        "text": " strongest open-source base model currently available, especially in code and math. Its chat"
+                    },
+                    {
+                        "text": " version also outperforms other open-source models and achieves performance comparable to"
+                    },
+                    {
+                        "text": "11dp35-S"
+                    },
+                    {
+                        "text": " leading closed-source models, including GPT-4o and Claude-3.5-Sonnet, on a series of standard"
+                    },
+                    {
+                        "text": " and open-ended benchmarks."
+                    }
+                ],
+                "markdownContent": "We evaluate DeepSeek-V3 on a comprehensive array of benchmarks. Despite its economical training costs, comprehensive evaluations reveal that DeepSeek-V3-Base has emerged as the strongest open-source base model currently available, especially in code and math. Its chat version also outperforms other open-source models and achieves performance comparable to11dp35-S leading closed-source models, including GPT-4o and Claude-3.5-Sonnet, on a series of standard and open-ended benchmarks.  \n\n",
+                "index": 6,
+                "subType": "para",
+                "lineHeight": -1,
+                "text": "We evaluate DeepSeek-V3 on a comprehensive array of benchmarks. Despite its economical training costs, comprehensive evaluations reveal that DeepSeek-V3-Base has emerged as the strongest open-source base model currently available, especially in code and math. Its chat version also outperforms other open-source models and achieves performance comparable to11dp35-S leading closed-source models, including GPT-4o and Claude-3.5-Sonnet, on a series of standard and open-ended benchmarks.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "aaeed94890ac59cadf42acfe83477fe3"
+            },
+            {
+                "firstLinesChars": 36,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "Lastly, we emphasize again the economical training costs of DeepSeek-V3, summarized in"
+                    },
+                    {
+                        "text": " Table 1, achieved through our optimized co-design of algorithms, frameworks, and hardware."
+                    },
+                    {
+                        "text": " During the pre-training stage, training DeepSeek-V3 on each trillion tokens requires only 180K"
+                    },
+                    {
+                        "text": " H800 GPU hours, i.e., 3.7 days on our cluster with 2048 H800 GPUs. Consequently, our pre-"
+                    },
+                    {
+                        "text": "training stage is completed in less than two months and costs 2664K GPU hours. Combined"
+                    },
+                    {
+                        "text": " with 119K GPU hours for the context length extension and 5K GPU hours for post-training,"
+                    },
+                    {
+                        "text": " DeepSeek-V3 costs only 2.788M GPU hours for its full training. Assuming the rental price of"
+                    },
+                    {
+                        "text": " the H800 GPU is $2 per GPU hour, our total training costs amount to only $5.576M. Note that"
+                    },
+                    {
+                        "text": " the aforementioned costs include only the official training of DeepSeek-V3, excluding the costs"
+                    },
+                    {
+                        "text": " associated with prior research and ablation experiments on architectures, algorithms, or data."
+                    }
+                ],
+                "markdownContent": "Lastly, we emphasize again the economical training costs of DeepSeek-V3, summarized in Table 1, achieved through our optimized co-design of algorithms, frameworks, and hardware. During the pre-training stage, training DeepSeek-V3 on each trillion tokens requires only 180K H800 GPU hours, i.e., 3.7 days on our cluster with 2048 H800 GPUs. Consequently, our pre-training stage is completed in less than two months and costs 2664K GPU hours. Combined with 119K GPU hours for the context length extension and 5K GPU hours for post-training, DeepSeek-V3 costs only 2.788M GPU hours for its full training. Assuming the rental price of the H800 GPU is $2 per GPU hour, our total training costs amount to only $5.576M. Note that the aforementioned costs include only the official training of DeepSeek-V3, excluding the costs associated with prior research and ablation experiments on architectures, algorithms, or data.  \n\n",
+                "index": 7,
+                "subType": "para",
+                "lineHeight": 5,
+                "text": "Lastly, we emphasize again the economical training costs of DeepSeek-V3, summarized in Table 1, achieved through our optimized co-design of algorithms, frameworks, and hardware. During the pre-training stage, training DeepSeek-V3 on each trillion tokens requires only 180K H800 GPU hours, i.e., 3.7 days on our cluster with 2048 H800 GPUs. Consequently, our pre-training stage is completed in less than two months and costs 2664K GPU hours. Combined with 119K GPU hours for the context length extension and 5K GPU hours for post-training, DeepSeek-V3 costs only 2.788M GPU hours for its full training. Assuming the rental price of the H800 GPU is $2 per GPU hour, our total training costs amount to only $5.576M. Note that the aforementioned costs include only the official training of DeepSeek-V3, excluding the costs associated with prior research and ablation experiments on architectures, algorithms, or data.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "2f928d175fcaff98e6fde83a5e271cd8"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "Our main contribution includes:"
+                    }
+                ],
+                "markdownContent": "Our main contribution includes:  \n\n",
+                "index": 8,
+                "subType": "para",
+                "lineHeight": 0,
+                "text": "Our main contribution includes:\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "171696a7e2f3e125790b3884d471abf1"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 3,
+                "blocks": [
+                    {
+                        "text": "Architecture: Innovative Load Balancing Strategy and Training Objective"
+                    }
+                ],
+                "markdownContent": "#### Architecture: Innovative Load Balancing Strategy and Training Objective  \n\n",
+                "index": 9,
+                "subType": "none",
+                "lineHeight": 0,
+                "text": "Architecture: Innovative Load Balancing Strategy and Training Objective\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 2,
+                "uniqueId": "f1c4994fd025e7b99070bccb98216aa4"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·On top of the efficient architecture of DeepSeek-V2, we pioneer an auxiliary-loss-free"
+                    },
+                    {
+                        "text": " strategy for load balancing, which minimizes the performance degradation that arises"
+                    },
+                    {
+                        "text": " from encouraging load balancing."
+                    }
+                ],
+                "markdownContent": "·On top of the efficient architecture of DeepSeek-V2, we pioneer an auxiliary-loss-free strategy for load balancing, which minimizes the performance degradation that arises from encouraging load balancing.  \n\n",
+                "index": 10,
+                "subType": "para",
+                "lineHeight": 6,
+                "text": "·On top of the efficient architecture of DeepSeek-V2, we pioneer an auxiliary-loss-free strategy for load balancing, which minimizes the performance degradation that arises from encouraging load balancing.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "b5cf29b0c6b5fe7284cb6c1aa425c35a"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "· We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model"
+                    },
+                    {
+                        "text": " performance. It can also be used for speculative decoding for inference acceleration."
+                    }
+                ],
+                "markdownContent": "· We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model performance. It can also be used for speculative decoding for inference acceleration.  \n\n",
+                "index": 11,
+                "subType": "para",
+                "lineHeight": 5,
+                "text": "· We investigate a Multi-Token Prediction (MTP) objective and prove it beneficial to model performance. It can also be used for speculative decoding for inference acceleration.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "195179626cf7b6f5dbdcaa5885bbacc3"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "Pre-Training: Towards Ultimate Training Efficiency"
+                    }
+                ],
+                "markdownContent": "## Pre-Training: Towards Ultimate Training Efficiency  \n\n",
+                "index": 12,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "Pre-Training: Towards Ultimate Training Efficiency\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 2,
+                "uniqueId": "7f984e28a2b1482b851b3d6ea374d9fa"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "· We design an FP8 mixed precision training framework and, for the first time, validate the"
+                    },
+                    {
+                        "text": " feasibility and effectiveness of FP8 training on an extremely large-scale model."
+                    }
+                ],
+                "markdownContent": "· We design an FP8 mixed precision training framework and, for the first time, validate the feasibility and effectiveness of FP8 training on an extremely large-scale model.  \n\n",
+                "index": 13,
+                "subType": "para",
+                "lineHeight": 6,
+                "text": "· We design an FP8 mixed precision training framework and, for the first time, validate the feasibility and effectiveness of FP8 training on an extremely large-scale model.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "7b17978b0c45ba4e81ba60abb1317c9f"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·7"
+                    },
+                    {
+                        "text": "Through the co-design of algorithms, frameworks, and hardware, we overcome the"
+                    },
+                    {
+                        "text": " communication bottleneck in cross-node MoE training, achieving near-full computation-"
+                    },
+                    {
+                        "text": "communication overlap. This significantly enhances our training efficiency and reduces the"
+                    },
+                    {
+                        "text": " training costs, enabling us to further scale up the model size without additional overhead."
+                    }
+                ],
+                "markdownContent": "·7Through the co-design of algorithms, frameworks, and hardware, we overcome the communication bottleneck in cross-node MoE training, achieving near-full computation-communication overlap. This significantly enhances our training efficiency and reduces the training costs, enabling us to further scale up the model size without additional overhead.  \n\n",
+                "index": 14,
+                "subType": "para",
+                "lineHeight": 0,
+                "text": "·7Through the co-design of algorithms, frameworks, and hardware, we overcome the communication bottleneck in cross-node MoE training, achieving near-full computation-communication overlap. This significantly enhances our training efficiency and reduces the training costs, enabling us to further scale up the model size without additional overhead.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "28e9fa0f16bfcc11a0bcfc6a24e59b20"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·"
+                    },
+                    {
+                        "text": "At an economical cost of only 2.664M H800GPU hours, we complete the pre-training of"
+                    },
+                    {
+                        "text": " DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model."
+                    },
+                    {
+                        "text": " The subsequent training stages after pre-training require only 0.1M GPU hours."
+                    }
+                ],
+                "markdownContent": "·At an economical cost of only 2.664M H800GPU hours, we complete the pre-training of DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model. The subsequent training stages after pre-training require only 0.1M GPU hours.  \n\n",
+                "index": 15,
+                "subType": "para",
+                "lineHeight": -5,
+                "text": "·At an economical cost of only 2.664M H800GPU hours, we complete the pre-training of DeepSeek-V3 on 14.8T tokens, producing the currently strongest open-source base model. The subsequent training stages after pre-training require only 0.1M GPU hours.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "85313f68fa3c8954c69e990e2006c467"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "Post-Training: Knowledge Distillation from DeepSeek-R1"
+                    }
+                ],
+                "markdownContent": "## Post-Training: Knowledge Distillation from DeepSeek-R1  \n\n",
+                "index": 16,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "Post-Training: Knowledge Distillation from DeepSeek-R1\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 2,
+                "uniqueId": "17a51cc3b2bc4e0ce52149395e8b71ed"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·We introduce an innovative methodology to distill reasoning capabilities from the long-"
+                    },
+                    {
+                        "text": "Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models,"
+                    },
+                    {
+                        "text": " into standard LLMs, particularly DeepSeek-V3. Our pipeline elegantly incorporates the"
+                    },
+                    {
+                        "text": "verification and reflection patterns of R1 into DeepSeek-V3 and notably improves its"
+                    },
+                    {
+                        "text": " reasoning performance. Meanwhile, we also maintain control over the output style and"
+                    },
+                    {
+                        "text": " length of DeepSeek-V3."
+                    }
+                ],
+                "markdownContent": "·We introduce an innovative methodology to distill reasoning capabilities from the long-Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models, into standard LLMs, particularly DeepSeek-V3. Our pipeline elegantly incorporates the verification and reflection patterns of R1 into DeepSeek-V3 and notably improves its reasoning performance. Meanwhile, we also maintain control over the output style and length of DeepSeek-V3.  \n\n",
+                "index": 17,
+                "subType": "none",
+                "lineHeight": 6,
+                "text": "·We introduce an innovative methodology to distill reasoning capabilities from the long-Chain-of-Thought (CoT) model, specifically from one of the DeepSeek R1 series models, into standard LLMs, particularly DeepSeek-V3. Our pipeline elegantly incorporates the verification and reflection patterns of R1 into DeepSeek-V3 and notably improves its reasoning performance. Meanwhile, we also maintain control over the output style and length of DeepSeek-V3.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 2,
+                "uniqueId": "2d1fa1c6a6d3bc06c52958c1f4fef200"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "Summary of Core Evaluation Results"
+                    }
+                ],
+                "markdownContent": "## Summary of Core Evaluation Results  \n\n",
+                "index": 2,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "Summary of Core Evaluation Results\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 3,
+                "uniqueId": "427f45b071cfb63e737bef86db4f8b8a"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·Knowledge: (1) On educational benchmarks such as MMLU, MMLU-Pro, and GPQA,"
+                    },
+                    {
+                        "text": " DeepSeek-V3 outperforms all other open-source models, achieving 88.5 on MMLU,75.9"
+                    },
+                    {
+                        "text": "on MMLU-Pro, and 59.1 on GPQA. Its performance is comparable to leading closed-source"
+                    },
+                    {
+                        "text": " models like GPT-4o and Claude-Sonnet-3.5, narrowing the gap between open-source"
+                    },
+                    {
+                        "text": " and closed-source models in this domain. (2) For factuality benchmarks, DeepSeek-V3"
+                    },
+                    {
+                        "text": "demonstrates superior performance among open-source models on both SimpleQA and"
+                    },
+                    {
+                        "text": " Chinese SimpleQA. While it trails behind GPT-4o and Claude-Sonnet-3.5 in English factual"
+                    },
+                    {
+                        "text": " knowledge (SimpleQA), it surpasses these models in Chinese factual knowledge (Chinese"
+                    },
+                    {
+                        "text": " SimpleQA), highlighting its strength in Chinese factual knowledge."
+                    }
+                ],
+                "markdownContent": "·Knowledge: (1) On educational benchmarks such as MMLU, MMLU-Pro, and GPQA, DeepSeek-V3 outperforms all other open-source models, achieving 88.5 on MMLU,75.9on MMLU-Pro, and 59.1 on GPQA. Its performance is comparable to leading closed-source models like GPT-4o and Claude-Sonnet-3.5, narrowing the gap between open-source and closed-source models in this domain. (2) For factuality benchmarks, DeepSeek-V3demonstrates superior performance among open-source models on both SimpleQA and Chinese SimpleQA. While it trails behind GPT-4o and Claude-Sonnet-3.5 in English factual knowledge (SimpleQA), it surpasses these models in Chinese factual knowledge (Chinese SimpleQA), highlighting its strength in Chinese factual knowledge.  \n\n",
+                "index": 3,
+                "subType": "para",
+                "lineHeight": 5,
+                "text": "·Knowledge: (1) On educational benchmarks such as MMLU, MMLU-Pro, and GPQA, DeepSeek-V3 outperforms all other open-source models, achieving 88.5 on MMLU,75.9on MMLU-Pro, and 59.1 on GPQA. Its performance is comparable to leading closed-source models like GPT-4o and Claude-Sonnet-3.5, narrowing the gap between open-source and closed-source models in this domain. (2) For factuality benchmarks, DeepSeek-V3demonstrates superior performance among open-source models on both SimpleQA and Chinese SimpleQA. While it trails behind GPT-4o and Claude-Sonnet-3.5 in English factual knowledge (SimpleQA), it surpasses these models in Chinese factual knowledge (Chinese SimpleQA), highlighting its strength in Chinese factual knowledge.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 3,
+                "uniqueId": "9c5cabc38c2abd0ed31d4c6f24ab2095"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "·Code, Math, and Reasoning: (1) DeepSeek-V3 achieves state-of-the-art performance on"
+                    },
+                    {
+                        "text": " math-related benchmarks among all non-long-CoT open-source and closed-source models."
+                    },
+                    {
+                        "text": " Notably, it even outperforms o1-preview on specific benchmarks, such as MATH-500,"
+                    },
+                    {
+                        "text": " demonstrating its robust mathematical reasoning capabilities. (2) On coding-related tasks,"
+                    },
+                    {
+                        "text": " DeepSeek-V3 emerges as the top-performing model for coding competition benchmarks,"
+                    },
+                    {
+                        "text": " such as LiveCodeBench, solidifying its position as the leading model in this domain. For"
+                    },
+                    {
+                        "text": " engineering-related tasks, while DeepSeek-V3 performs slightly below Claude-Sonnet-3.5,"
+                    },
+                    {
+                        "text": " it still outpaces all other models by a significant margin, demonstrating its competitiveness"
+                    },
+                    {
+                        "text": " across diverse technical benchmarks."
+                    }
+                ],
+                "markdownContent": "·Code, Math, and Reasoning: (1) DeepSeek-V3 achieves state-of-the-art performance on math-related benchmarks among all non-long-CoT open-source and closed-source models. Notably, it even outperforms o1-preview on specific benchmarks, such as MATH-500, demonstrating its robust mathematical reasoning capabilities. (2) On coding-related tasks, DeepSeek-V3 emerges as the top-performing model for coding competition benchmarks, such as LiveCodeBench, solidifying its position as the leading model in this domain. For engineering-related tasks, while DeepSeek-V3 performs slightly below Claude-Sonnet-3.5, it still outpaces all other models by a significant margin, demonstrating its competitiveness across diverse technical benchmarks.  \n\n",
+                "index": 4,
+                "subType": "para",
+                "lineHeight": 4,
+                "text": "·Code, Math, and Reasoning: (1) DeepSeek-V3 achieves state-of-the-art performance on math-related benchmarks among all non-long-CoT open-source and closed-source models. Notably, it even outperforms o1-preview on specific benchmarks, such as MATH-500, demonstrating its robust mathematical reasoning capabilities. (2) On coding-related tasks, DeepSeek-V3 emerges as the top-performing model for coding competition benchmarks, such as LiveCodeBench, solidifying its position as the leading model in this domain. For engineering-related tasks, while DeepSeek-V3 performs slightly below Claude-Sonnet-3.5, it still outpaces all other models by a significant margin, demonstrating its competitiveness across diverse technical benchmarks.\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 3,
+                "uniqueId": "ab1e2c3add97d85544667ac0700bd2da"
+            },
+            {
+                "firstLinesChars": 37,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "In the remainder of this paper, we first present a detailed exposition of our DeepSeek-V3"
+                    },
+                    {
+                        "text": "model architecture (Section 2). Subsequently, we introduce our infrastructures, encompassing"
+                    },
+                    {
+                        "text": " our compute clusters, the training framework, the support for FP8 training, the inference"
+                    },
+                    {
+                        "text": " deployment strategy, and our suggestions on future hardware design. Next, we describe our"
+                    },
+                    {
+                        "text": " pre-training process, including the construction of training data, hyper-parameter settings, long-"
+                    },
+                    {
+                        "text": "context extension techniques, the associated evaluations, as well as some discussions (Section 4)."
+                    },
+                    {
+                        "text": " Thereafter, we discuss our efforts on post-training, which include Supervised Fine-Tuning (SFT),"
+                    },
+                    {
+                        "text": " Reinforcement Learning (RL), the corresponding evaluations, and discussions (Section 5). Lastly,"
+                    },
+                    {
+                        "text": " we conclude this work, discuss existing limitations of DeepSeek-V3, and propose potential"
+                    },
+                    {
+                        "text": " directions for future research (Section 6)."
+                    }
+                ],
+                "markdownContent": "In the remainder of this paper, we first present a detailed exposition of our DeepSeek-V3model architecture (Section 2). Subsequently, we introduce our infrastructures, encompassing our compute clusters, the training framework, the support for FP8 training, the inference deployment strategy, and our suggestions on future hardware design. Next, we describe our pre-training process, including the construction of training data, hyper-parameter settings, long-context extension techniques, the associated evaluations, as well as some discussions (Section 4). Thereafter, we discuss our efforts on post-training, which include Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), the corresponding evaluations, and discussions (Section 5). Lastly, we conclude this work, discuss existing limitations of DeepSeek-V3, and propose potential directions for future research (Section 6).  \n\n",
+                "index": 5,
+                "subType": "para",
+                "lineHeight": 4,
+                "text": "In the remainder of this paper, we first present a detailed exposition of our DeepSeek-V3model architecture (Section 2). Subsequently, we introduce our infrastructures, encompassing our compute clusters, the training framework, the support for FP8 training, the inference deployment strategy, and our suggestions on future hardware design. Next, we describe our pre-training process, including the construction of training data, hyper-parameter settings, long-context extension techniques, the associated evaluations, as well as some discussions (Section 4). Thereafter, we discuss our efforts on post-training, which include Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), the corresponding evaluations, and discussions (Section 5). Lastly, we conclude this work, discuss existing limitations of DeepSeek-V3, and propose potential directions for future research (Section 6).\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 3,
+                "uniqueId": "30e135cd97a3eb61e419b8bc6ff73f0c"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 1,
+                "blocks": [
+                    {
+                        "text": "2. Architecture"
+                    }
+                ],
+                "markdownContent": "## 2. Architecture  \n\n",
+                "index": 6,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "2. Architecture\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 3,
+                "uniqueId": "4e53b9f2073f7f1d475321c06eac7b66"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Atten-"
+                    },
+                    {
+                        "text": "tion (MLA) (DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024)"
+                    },
+                    {
+                        "text": " for economical training. Then, we present a Multi-Token Prediction (MTP) training objective,"
+                    },
+                    {
+                        "text": " which we have observed to enhance the overall performance on evaluation benchmarks. For"
+                    },
+                    {
+                        "text": " other minor details not explicitly mentioned, DeepSeek-V3 adheres to the settings of DeepSeek-"
+                    },
+                    {
+                        "text": "V2 (DeepSeek-AI,2024c)."
+                    }
+                ],
+                "markdownContent": "We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Atten-tion (MLA) (DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024) for economical training. Then, we present a Multi-Token Prediction (MTP) training objective, which we have observed to enhance the overall performance on evaluation benchmarks. For other minor details not explicitly mentioned, DeepSeek-V3 adheres to the settings of DeepSeek-V2 (DeepSeek-AI,2024c).  \n\n",
+                "index": 7,
+                "subType": "para",
+                "lineHeight": 4,
+                "text": "We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Atten-tion (MLA) (DeepSeek-AI, 2024c) for efficient inference and DeepSeekMoE (Dai et al., 2024) for economical training. Then, we present a Multi-Token Prediction (MTP) training objective, which we have observed to enhance the overall performance on evaluation benchmarks. For other minor details not explicitly mentioned, DeepSeek-V3 adheres to the settings of DeepSeek-V2 (DeepSeek-AI,2024c).\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 3,
+                "uniqueId": "5458e8078c613a652750ae903918ed17"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 2,
+                "blocks": [
+                    {
+                        "text": "2.1. Basic Architecture"
+                    }
+                ],
+                "markdownContent": "### 2.1. Basic Architecture  \n\n",
+                "index": 8,
+                "subType": "para_title",
+                "lineHeight": 0,
+                "text": "2.1. Basic Architecture\n",
+                "alignment": "left",
+                "type": "title",
+                "pageNum": 3,
+                "uniqueId": "f7ecfaac5fe5e5fd344075c4271bc42f"
+            },
+            {
+                "firstLinesChars": 0,
+                "level": 3,
+                "blocks": [
+                    {
+                        "text": "The basic architecture of DeepSeek-V3 is still within the Transformer (Vaswani et al., 2017)"
+                    },
+                    {
+                        "text": " framework. For efficient inference and economical training, DeepSeek-V3 also adopts MLA"
+                    },
+                    {
+                        "text": " and DeepSeekMoE, which have been thoroughly validated by DeepSeek-V2. Compared with"
+                    },
+                    {
+                        "text": " DeepSeek-V2, an exception is that we additionally introduce an auxiliary-loss-free load balancing"
+                    }
+                ],
+                "markdownContent": "The basic architecture of DeepSeek-V3 is still within the Transformer (Vaswani et al., 2017) framework. For efficient inference and economical training, DeepSeek-V3 also adopts MLA and DeepSeekMoE, which have been thoroughly validated by DeepSeek-V2. Compared with DeepSeek-V2, an exception is that we additionally introduce an auxiliary-loss-free load balancing  \n\n",
+                "index": 9,
+                "subType": "para",
+                "lineHeight": 5,
+                "text": "The basic architecture of DeepSeek-V3 is still within the Transformer (Vaswani et al., 2017) framework. For efficient inference and economical training, DeepSeek-V3 also adopts MLA and DeepSeekMoE, which have been thoroughly validated by DeepSeek-V2. Compared with DeepSeek-V2, an exception is that we additionally introduce an auxiliary-loss-free load balancing\n",
+                "alignment": "left",
+                "type": "text",
+                "pageNum": 3,
+                "uniqueId": "6fcbc3b8e2dd9e79676468edaac33942"
+            }
+        ],
+        "status": "success"
+    },
+    "Id": "docmind-20250805-edf1fa8b09f444b886088f67a7e6ea20"
+}

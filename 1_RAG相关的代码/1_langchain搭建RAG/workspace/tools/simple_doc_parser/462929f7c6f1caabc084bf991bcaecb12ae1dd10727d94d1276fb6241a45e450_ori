@@ -1,0 +1,406 @@
+[
+  {
+    "page_num": 1,
+    "content": [
+      {
+        "text": "AI 及 LLM 基础\n",
+        "font-size": 14,
+        "token": 10
+      },
+      {
+        "text": "1. AI 领域基础概念\n 2. OpenAI 开发\n",
+        "font-size": 11,
+        "token": 18
+      },
+      {
+        "text": "学习目标：建立对AI和LLM的基础理解，了解主要\n的机器学习和神经网络模型，掌握API调用方法。\n",
+        "font-size": 11,
+        "token": 29
+      },
+      {
+        "text": "AI, NL/NLU/NLG\n机器学习: 学习方法, 拟合评估\n神经网络: CNN, RNN, Transformer\nTransformer, BERT 架构简介\nLLM, Generative AI\nOpenAI 及其他常用大模型介绍演示\n参数详解：max_tokens, temperature, n, top_p, \npresence_penalty, frequency_penalty\n",
+        "font-size": 11,
+        "token": 79
+      },
+      {
+        "text": "API Key OpenAI API 调用\n",
+        "font-size": 10,
+        "token": 10
+      },
+      {
+        "text": "学习目标：学会使用OpenAI API开发聊天机器人，\n理解API的参数和计费，掌握不同API调用方法。\n",
+        "font-size": 11,
+        "token": 27
+      },
+      {
+        "text": "OpenAI API 参数, Token, 计费\nRest API 调用(Postman): Model, Chat, Audio, \nImages, Embedding\nPython API 调用\nTool calls\n调用具有视觉的 GPT-4o\n使用本地图片\nJSON 模式\nseed 可重现输出\n使用代码统计token 数量\n开发控制台循环聊天\n管理对话 token：实现基于最大 token 数量的消\n息列表限制\n带会话长度管理的控制台循环聊天\n 带会话长度管理的控制台 Chatbot 示例\n 3. 支持多模态输入的 AI Chatbot App\n 4. Prompt Engineering  提示词工程\n",
+        "font-size": 11,
+        "token": 150
+      },
+      {
+        "text": "学习目标：开发支持图片等多模态输入的Chatbot应\n用，优化代码结构以提高开发效率。\n",
+        "font-size": 11,
+        "token": 26
+      },
+      {
+        "text": "开发基于 Streamlit 和 OpenAI 大模型的 Chatbot App\n支持图片的多模态输入\nPython 项目代码结构优化\n 基于 Streamlit 的 Web UI 多模态 Chatbot\n",
+        "font-size": 10,
+        "token": 46
+      },
+      {
+        "text": "学习目标：学习如何设计高效的Prompt以获得最佳\n模型输出结果，深入掌握Prompt Engineering技\n巧，提升与大模型的交互质量。\n 从事岗位：提示词工程师（15K-30K）\n",
+        "font-size": 11,
+        "token": 48
+      },
+      {
+        "text": "Prompt engineering 介绍\n最佳实践\nZero-shot, Few-shot\nCoT, ReAct, Reflexion\nPrompt Chaining\n结构化输出\nPrompt 应用: 数据, 代码, 函数, 分类, 创意, 生成, 汇总\n风险与安全\ngpt-4-version 图像提示工程技术\n",
+        "font-size": 11,
+        "token": 73
+      },
+      {
+        "text": "LangChain 开发\n",
+        "font-size": 14,
+        "token": 5
+      },
+      {
+        "text": "学习目标：掌握LangChain的高级工具与RAG\n和Agent技术，能够构建复杂的AI应用。\n 从事岗位：AI大模型应用开发工程师（30K+）\n 1. LangChain 基础\n",
+        "font-size": 11,
+        "token": 49
+      },
+      {
+        "text": "学习目标：掌握LangChain的基本用法，理解\n如何在复杂任务中使用该框架。\n",
+        "font-size": 11,
+        "token": 21
+      },
+      {
+        "text": "LangChain 模块和体系\nLLM & Chat models\nPromptTemplates, OutputParses\nChains\nLCEL & Runable interface \nLLM apps debug: Verbose, Debug Mode & \nLangSmith Tracing\n 2. LangChain Chat Model\n 3. LangChain Tools  & Agent\n 4. Embedding & Vector Store\n",
+        "font-size": 11,
+        "token": 76
+      },
+      {
+        "text": "学习目标：能够使用LangChain开发具有记\n忆功能的Chatbot。\n",
+        "font-size": 11,
+        "token": 17
+      },
+      {
+        "text": "Prompt templates: Few shot\nLangServe\n为 Chain 添加 Message history (Memory)\n单行初始化 chat model\n基于 LangChain 的 Chatbot: Chat History\nTrack token usage\nCache model responses\n",
+        "font-size": 11,
+        "token": 41
+      },
+      {
+        "text": "学习目标：深入学习LangChain的工具和\nAgent，包括数据处理、任务管理、插件\n使用等。\n",
+        "font-size": 11,
+        "token": 26
+      },
+      {
+        "text": "Multimode 集成\nOuput parsers: JSON, XML, YAML\n自定义 Tools, 调用 Tools\n集成内建 Tools\n创建和运行 Agent \n",
+        "font-size": 11,
+        "token": 39
+      },
+      {
+        "text": "学习目标：掌握如何使用Embedding模型和向\n量数据库进行高效的信息检索\n",
+        "font-size": 11,
+        "token": 19
+      },
+      {
+        "text": "Embedding models\nVector stores 向量数据库: Chroma, Weaviate, \nQdrant,  Milvus, Pinecone, FAISS, Lance\nSimilarity search\n向量检索: Docuemnts, Retrievers \n基于 LangChain 构建向量存储和查询:\n开发基于 Embedding 的意图匹配和问答实例\n 5. RAG 专题\n 6. 自定义组件专题\n",
+        "font-size": 11,
+        "token": 90
+      },
+      {
+        "text": "学习目标：理解RAG工作机制，学会使用文档加\n载器和文本分割器处理数据，学习如何结合检索\n和生成模型来处理复杂的任务。\n",
+        "font-size": 11,
+        "token": 35
+      },
+      {
+        "text": "RAG 简介 \nDocument loaders: CSV, HTML, JSON, \nMarkdown, PDF\nText splitters: recursively, HTML, code, \nMarkdown, JSON, semantic chunks, tokens\nLoader, Splitter, Embedding, Vector Store, \nRetrievers 的综合应用\n",
+        "font-size": 11,
+        "token": 60
+      },
+      {
+        "text": "学习目标：掌握回调处理和自定义模型的开\n发。学会自定义组件以满足特定需求，增强\n模型的灵活性和功能性。\n",
+        "font-size": 11,
+        "token": 32
+      },
+      {
+        "text": "Callback 处理\n自定义 callback handlers\n自定义 Chat model\n自定义 RAG: Retriever, document loader\n 7. 基于 LangChain 的常用案例实战\n",
+        "font-size": 11,
+        "token": 41
+      },
+      {
+        "text": "学习目标：掌握使用LangChain\n处理实际问题的方法，包括文档\n问答、数据查询和集成网络搜索\n功能。\n",
+        "font-size": 11,
+        "token": 27
+      },
+      {
+        "text": "PDF 文档问答\n基于 Web URL 的问答\n基于 SQL 的 CSV 数据分析问答\nWeb Search 集成\n 8. 带 RAG 的 Chatbot 实战\n 9. LangGraph 开发实战\n",
+        "font-size": 11,
+        "token": 49
+      },
+      {
+        "text": "学习目标：构建一个具有复杂对话\n记录处理能力的Chatbot。\n",
+        "font-size": 11,
+        "token": 16
+      },
+      {
+        "text": "Chatbot Memory\nRAG\nTools\n大对话记录处理\n 带 RAG 的 Chatbot\n",
+        "font-size": 10,
+        "token": 23
+      },
+      {
+        "text": "学习目标：掌握LangGraph的应用，理解如何\n通过图结构来增强模型的推理能力，学会构建复\n杂的多智能体系统。\n",
+        "font-size": 11,
+        "token": 32
+      },
+      {
+        "text": "LangGraph 核心组件: Graphs, State, Nodes, \nEdges, Send...\nLangGraph 实现：可控性 Agent 框架, 持久化, \nHuman-in-the-loop, streaming, React agent\nAgent 使用案例: Chatbots, Multi-Agent \nSystems, RAG, Planning Agent...\n 1. LlamIndex 框架\n",
+        "font-size": 11,
+        "token": 78
+      },
+      {
+        "text": "学习目标：掌握LlamaIndex的核心模块和\n应用构建。\n",
+        "font-size": 11,
+        "token": 14
+      },
+      {
+        "text": "与 LangChain 框架对比\n核心模块介绍: Models, Prompts, Loading, \nIndexing, Storing, Quering, Agent, \nEvaluation\nRAG pipeline 构建: Loading, Indexing, \nQuerying, Evaluating\nAgent 构建\n",
+        "font-size": 11,
+        "token": 59
+      },
+      {
+        "text": "LlamaIndex 开发\n",
+        "font-size": 14,
+        "token": 6
+      },
+      {
+        "text": "2. 基于 LlamIndex 框架的应用\n",
+        "font-size": 11,
+        "token": 15
+      },
+      {
+        "text": "学习目标：基于LlamaIndex框架\n开发大规模文本搜索和内容推荐系\n统。\n",
+        "font-size": 11,
+        "token": 20
+      },
+      {
+        "text": "大规模文本数据搜索\n内容推荐\nAI 问答\nLlamaIndex 与 LangChain 集成\nLlamaIndex RAG CLI 工具\n 1. AutoGen Studio\n",
+        "font-size": 11,
+        "token": 41
+      },
+      {
+        "text": "学习目标：学习使用AutoGen \nstudio进行工作流设计与管\n理，理解其核心组件及功能。\n",
+        "font-size": 11,
+        "token": 25
+      },
+      {
+        "text": "AutoGen Studio UI\nAutoGetn Studio workflow\nPython 集成 workflow\n",
+        "font-size": 11,
+        "token": 18
+      },
+      {
+        "text": "AI大模型\n学习路径\nV2024.3.2\n",
+        "font-size": 23,
+        "token": 17
+      },
+      {
+        "text": "AutoGen 开发\n",
+        "font-size": 14,
+        "token": 5
+      },
+      {
+        "text": "2. AutoGen Framework\n",
+        "font-size": 11,
+        "token": 6
+      },
+      {
+        "text": "学习目标：掌握AI代理的开发与集成，如何通过代理来增\n强模型的应用场景。使用AutoGen进行自动化代码生成和\n多智能体对话。\n",
+        "font-size": 11,
+        "token": 36
+      },
+      {
+        "text": "快速入门\nLLM 配置\nAgent 类型：UserProxy, Assistant, Conversable Agent\nCode Executors 自动化代码\nTool Use\nGroupChat 多 Agent 对话\n",
+        "font-size": 11,
+        "token": 40
+      },
+      {
+        "text": "学习目标：具备大模型的训练与调优能力，能够\n开发和优化适用于特定领域的AI模型\n 从事岗位：AI大模型工程师（40K+）\n 1. 模型即服务共享平台\n 2. 私有部署本地大模型\n 3. 训练自己的大模型\n",
+        "font-size": 11,
+        "token": 70
+      },
+      {
+        "text": "LLM 大模型训练与微调\n",
+        "font-size": 14,
+        "token": 10
+      },
+      {
+        "text": "学习目标：学会使用共享平台和本地环境开发和部署大\n型语言模型。\n",
+        "font-size": 11,
+        "token": 19
+      },
+      {
+        "text": "Hugging Face, ModelScope 平台功能\n加载在线模型, 离线模型\n模型推理调用\nTransformers 使用\n利用模型完成任务：文本，语音，Embedding Models\n 学习目标：掌握本地大模型的安装部署和调用\n",
+        "font-size": 11,
+        "token": 59
+      },
+      {
+        "text": "硬件配置分析（推理和微调）\n常用大模型选型: LlaMA 3, Gemma, Mistral...\n本地大模型安装部署\n本地大模型调用\n本地大模型与对话 APP 应用集成\n",
+        "font-size": 11,
+        "token": 50
+      },
+      {
+        "text": "学习目标：深入理解Transformer模型的工作原\n理，掌握大模型的训练流程和评估，量化技术。\n",
+        "font-size": 11,
+        "token": 24
+      },
+      {
+        "text": "Transformer 模型详解, Encoder, Decoder\n制作和加载数据集（训练、验证、测试）\n模型训练Train (单卡, 多卡)，分布式训练\n模型评估：方法论、评估指标\n模型量化: AWQ, GPTQ, GGUF\n模型部署\nAPI 调用\n 4. 大模型微调\n",
+        "font-size": 11,
+        "token": 76
+      },
+      {
+        "text": "学习目标：掌握基于预训练模型的微调技术，针对特\n定领域进行模型的训练与优化，构建专属行业模型。\n",
+        "font-size": 11,
+        "token": 30
+      },
+      {
+        "text": "构建专属行业模型: 基于预训练大模型 Fine-tune\n微调对比: 提示工程, RAG, Fine-tuning 对比\nPrompt Tuning, Prefix-Tuning, LoRA, QLoRA\n基于 OpenAI Fine-tuning\n本地大模型的 Fine-tuning\n特定任务的大模型推理和训练实践: 文本分类, 序\n列标注, 文本生成, 图像分割\n 5. 特定任务的模型微调训练\n",
+        "font-size": 11,
+        "token": 104
+      },
+      {
+        "text": "基于BERT的中文评价情感分析\n如何处理超长文本训练问题\nGPT2-中文生成模型定制化微调训练\nGPT2-中文生成模型定制化内容输出\nLlaMA3大模型本地部署与调用\n使用自定义数据集和LlaMA-Factory完成LlaMA3微调训练\nLlaMA3 LoRA微调测试评估、模型合并、量化\nLoRA微调后的模型部署\n 6. 多模态大模型使用\n",
+        "font-size": 11,
+        "token": 108
+      },
+      {
+        "text": "多模态大模型基本概念\n本地部署CogVideoX-5B文生视频模型\nLlama 3.2-Vision模型架构剖析\nLlama 3.2-Vision模型预期用途\n使用ollama部署Llama-3.2-11B-Vision-InstructGGUF实现视觉问答\n",
+        "font-size": 11,
+        "token": 69
+      },
+      {
+        "text": "学习目标：通过企业级真实项目场景落地，锤炼大模型全栈\n技术应用能力。完成AI应用从策划到开发到落地的全过程。\n RAG项目实战（基于 LlamaIndex 构建企业私有知识库）\n",
+        "font-size": 11,
+        "token": 52
+      },
+      {
+        "text": "RAG项目背景介绍\n大模型企业级业务场景落地方案实践\n使用Conda配置项目环境\nSentence Transformer 模型详解\nEmbedding 文本向量化处理\nInternLM2 1.8B / Qwen2.5_0.5B模型实战\n使用HuggingFace调用本地模型\n知识库模型问答测试与实际效果评估\n创建Web应用\n自定义知识库设置\n 基于本地大模型的在线心里问诊系统（微调项目）\n",
+        "font-size": 11,
+        "token": 108
+      },
+      {
+        "text": "AI大模型项目开发流程\n基座模型选择\n训练数据集制作\nXtuner微调大模型\n模型评估\n模型量化 Weight Only\n模型部署，LMDeploy\n静态和动态推理性能\n推理服务 API Server\n服务部署\n模型转换与合并\n模型打包、部署\n",
+        "font-size": 11,
+        "token": 65
+      },
+      {
+        "text": "目标侦测与图像识别概念\nYOLO目标侦测架构分析\nYOLO模型的基本使用\n目标侦测模型数据标注与模型训练\n使用自定义数据集完成YOLO的多目标侦测\n骨龄检测项目流程分析\nvoc数据集转为yolo数据集\n手骨关节检测模型\n骨龄分类模型\n整合目标检测与图像识别模型实现骨龄识别\n",
+        "font-size": 11,
+        "token": 87
+      },
+      {
+        "text": "企业基础数据采集\n配置 Qwen2.5 3B模型\n数据集转换\n使用 Llama Factory 进行模型微调\nopen compass模型评估\n测试 Qwen2.5 3B 模型微调效果\n基于 LlamaIndex 实现 RAG\n模型训练获取标的物\n构建知识图谱“标的物”\n应用场景1：采购企业，热门采购物资市场查询\n应用场景2：供应商，查找采购企业\n应用场景3：技术研发、技术方向、设计材料\n",
+        "font-size": 11,
+        "token": 107
+      },
+      {
+        "text": "语音应用场景\nPyTorch语音模块介绍\nPyTorch解析音频数据\n使用 Wav2Vec2 实现语音识别\n",
+        "font-size": 11,
+        "token": 28
+      },
+      {
+        "text": "企业级项目实战\n",
+        "font-size": 14,
+        "token": 5
+      },
+      {
+        "text": "基于YOLO的骨龄识别项目（视觉项目）\n 企业业务需求-政府招标采购项目（新）\n 基于大模型的语音唤醒项目实战（新）\n AI虚拟数字人项目正在测试阶段...\n 更多AI大模型项目每期持续增加中...\n",
+        "font-size": 11,
+        "token": 59
+      },
+      {
+        "text": "学习目标：了解并掌握AI领域的前沿技\n术，包括语音识别、图像处理、目标检测\n和多模态学习。\n 1. OpenAI Assistants 开发\n",
+        "font-size": 11,
+        "token": 39
+      },
+      {
+        "text": "Assistant 关键组件\n创建 Assistant, Thread, 消息处理\n工具集成: Code interpreter, Function calling, \nFile search\nVector store\n Preview\n 2.\n",
+        "font-size": 11,
+        "token": 36
+      },
+      {
+        "text": "音频模型专题\nLarge Audio Language Model \n",
+        "font-size": 11,
+        "token": 9
+      },
+      {
+        "text": "中英文语音识别\n语音翻译\n语音标题生成\n带词级时间戳的语音识别\n音频场景分类\n语音情绪识别\n问答\n 3.\n",
+        "font-size": 11,
+        "token": 34
+      },
+      {
+        "text": "人脸模型专题\nFace detection Model\n",
+        "font-size": 11,
+        "token": 8
+      },
+      {
+        "text": "人脸检测\n人脸活体\n人脸关键点\n人脸属性&表情，表情识别\n人脸识别，人脸认证、通行等\n",
+        "font-size": 11,
+        "token": 27
+      },
+      {
+        "text": "前沿技术扩展\n",
+        "font-size": 14,
+        "token": 4
+      },
+      {
+        "text": "4.\n",
+        "font-size": 11,
+        "token": 2
+      },
+      {
+        "text": "图片处理模型专题\nText to Image/Stable Diffusion Model\n",
+        "font-size": 11,
+        "token": 14
+      },
+      {
+        "text": "Text-to-Image Diffusion Models 扩散模型\n文生图模型的应用场景: 中英文图像生成, 卡通系列, \n漫画风, 水彩风, 剪切画生成\n抠图\nstable video diffusion 视频生成模型\n图片生成视频\n画质增强, 人像修复, 图像去模糊, 去噪\n 5.\n",
+        "font-size": 11,
+        "token": 84
+      },
+      {
+        "text": "检测模型应用专题\nObject Detection Model\n",
+        "font-size": 11,
+        "token": 9
+      },
+      {
+        "text": "垂直类检测: 安全帽,香烟, 口罩, 人体, 人头\n视频目标检测跟踪: 自动驾驶,交通标志, 行人\n行为检测\n关键点检测: 人脸, 人手, 人体\n 6.\n",
+        "font-size": 11,
+        "token": 59
+      },
+      {
+        "text": "行业信息处理专题\nStructbert Model\n",
+        "font-size": 11,
+        "token": 9
+      },
+      {
+        "text": "零样本学习: 抽取式, 生成式\n信息抽取: 分词, 词性标注, 命名实体识别, 关系抽\n取, 事件抽取, 关键词抽取, 匹配, 分类, 指代消解, \n阅读理解\n 7.\n",
+        "font-size": 11,
+        "token": 67
+      },
+      {
+        "text": "多模态应用专题\nMultiModal\n",
+        "font-size": 11,
+        "token": 9
+      },
+      {
+        "text": "图像描述\n视频描述\n视觉定位\n文本生成图片\n文本生成视频\n多模态表征\n 更多AI前沿技术持续更新中...\n",
+        "font-size": 11,
+        "token": 32
+      },
+      {
+        "table": "|学习目标：建立对AI和LLM的基础理解，了解主要 的机器学习和神经网络模型，掌握API调用方法。 1. AI 领域基础概念 AI, NL/NLU/NLG 机器学习: 学习方法, 拟合评估 神经网络: CNN, RNN, Transformer Transformer, BERT 架构简介 LLM, Generative AI OpenAI 及其他常用大模型介绍演示 参数详解：max_tokens, temperature, n, top_p, presence_penalty, frequency_penalty API Key OpenAI API 调用 学习目标：学会使用OpenAI API开发聊天机器人， 理解API的参数和计费，掌握不同API调用方法。 OpenAI API 参数, Token, 计费 Rest API 调用(Postman): Model, Chat, Audio, 2. OpenAI 开发 Images, Embedding Python API 调用 Tool calls 调用具有视觉的 GPT-4o 使用本地图片 JSON 模式 seed 可重现输出 AI 及 LLM 基础 使用代码统计token 数量 开发控制台循环聊天 管理对话 token：实现基于最大 token 数量的消 息列表限制 带会话长度管理的控制台循环聊天 带会话长度管理的控制台 Chatbot 示例 学习目标：开发支持图片等多模态输入的Chatbot应 用，优化代码结构以提高开发效率。 3. 支持多模态输入的 AI Chatbot App 开发基于 Streamlit 和 OpenAI 大模型的 Chatbot App 支持图片的多模态输入 Python 项目代码结构优化 基于 Streamlit 的 Web UI 多模态 Chatbot 学习目标：学习如何设计高效的Prompt以获得最佳 模型输出结果，深入掌握Prompt Engineering技 巧，提升与大模型的交互质量。 从事岗位：提示词工程师（15K-30K） 4. Prompt Engineering 提示词工程 Prompt engineering 介绍 最佳实践 Zero-shot, Few-shot CoT, ReAct, Reflexion Prompt Chaining 结构化输出 Prompt 应用: 数据, 代码, 函数, 分类, 创意, 生成, 汇总 风险与安全 gpt-4-version 图像提示工程技术 学习目标：掌握LangChain的高级工具与RAG 和Agent技术，能够构建复杂的AI应用。 从事岗位：AI大模型应用开发工程师（30K+） 学习目标：掌握LangChain的基本用法，理解 如何在复杂任务中使用该框架。 1. LangChain 基础 LangChain 模块和体系 LLM & Chat models PromptTemplates, OutputParses Chains LCEL & Runable interface LLM apps debug: Verbose, Debug Mode & LangSmith Tracing 学习目标：能够使用LangChain开发具有记 忆功能的Chatbot。 2. LangChain Chat Model Prompt templates: Few shot LangServe 为 Chain 添加 Message history (Memory) 单行初始化 chat model 基于 LangChain 的 Chatbot: Chat History Track token usage Cache model responses 学习目标：深入学习LangChain的工具和 Agent，包括数据处理、任务管理、插件 使用等。 3. LangChain Tools & Agent Multimode 集成 Ouput parsers: JSON, XML, YAML 自定义 Tools, 调用 Tools 集成内建 Tools 创建和运行 Agent 学习目标：掌握如何使用Embedding模型和向 量数据库进行高效的信息检索 4. Embedding & Vector Store Embedding models Vector stores 向量数据库: Chroma, Weaviate, Qdrant, Milvus, Pinecone, FAISS, Lance Similarity search 向量检索: Docuemnts, Retrievers 基于 LangChain 构建向量存储和查询: 开发基于 Embedding 的意图匹配和问答实例 LangChain 开发 学习目标：理解RAG工作机制，学会使用文档加 载器和文本分割器处理数据，学习如何结合检索 和生成模型来处理复杂的任务。 5. RAG 专题 RAG 简介 Document loaders: CSV, HTML, JSON, Markdown, PDF Text splitters: recursively, HTML, code, Markdown, JSON, semantic chunks, tokens Loader, Splitter, Embedding, Vector Store, Retrievers 的综合应用 学习目标：掌握回调处理和自定义模型的开 发。学会自定义组件以满足特定需求，增强 模型的灵活性和功能性。 6. 自定义组件专题 Callback 处理 自定义 callback handlers 自定义 Chat model 自定义 RAG: Retriever, document loader 学习目标：掌握使用LangChain 处理实际问题的方法，包括文档 问答、数据查询和集成网络搜索 功能。 7. 基于 LangChain 的常用案例实战 PDF 文档问答 基于 Web URL 的问答 基于 SQL 的 CSV 数据分析问答 Web Search 集成 学习目标：构建一个具有复杂对话 记录处理能力的Chatbot。 8. 带 RAG 的 Chatbot 实战 Chatbot Memory RAG Tools 大对话记录处理 带 RAG 的 Chatbot 学习目标：掌握LangGraph的应用，理解如何 通过图结构来增强模型的推理能力，学会构建复 杂的多智能体系统。 9. LangGraph 开发实战 LangGraph 核心组件: Graphs, State, Nodes, Edges, Send... LangGraph 实现：可控性 Agent 框架, 持久化, Human-in-the-loop, streaming, React agent Agent 使用案例: Chatbots, Multi-Agent Systems, RAG, Planning Agent... 学习目标：掌握LlamaIndex的核心模块和 应用构建。 1. LlamIndex 框架 与 LangChain 框架对比 核心模块介绍: Models, Prompts, Loading, Indexing, Storing, Quering, Agent, Evaluation RAG pipeline 构建: Loading, Indexing, Querying, Evaluating LlamaIndex 开发 Agent 构建 学习目标：基于LlamaIndex框架 开发大规模文本搜索和内容推荐系 统。 2. 基于 LlamIndex 框架的应用 大规模文本数据搜索 内容推荐 AI 问答 LlamaIndex 与 LangChain 集成 LlamaIndex RAG CLI 工具 学习目标：学习使用AutoGen studio进行工作流设计与管 理，理解其核心组件及功能。 1. AutoGen Studio AutoGen Studio UI AutoGetn Studio workflow Python 集成 workflow AI大模型 AutoGen 开发 学习路径 学习目标：掌握AI代理的开发与集成，如何通过代理来增 强模型的应用场景。使用AutoGen进行自动化代码生成和 V2024.3.2 多智能体对话。 2. AutoGen Framework 快速入门 LLM 配置 Agent 类型：UserProxy, Assistant, Conversable Agent Code Executors 自动化代码 Tool Use GroupChat 多 Agent 对话 学习目标：具备大模型的训练与调优能力，能够 开发和优化适用于特定领域的AI模型 从事岗位：AI大模型工程师（40K+） 学习目标：学会使用共享平台和本地环境开发和部署大 型语言模型。 1. 模型即服务共享平台 Hugging Face, ModelScope 平台功能 加载在线模型, 离线模型 模型推理调用 Transformers 使用 利用模型完成任务：文本，语音，Embedding Models 学习目标：掌握本地大模型的安装部署和调用 2. 私有部署本地大模型 硬件配置分析（推理和微调） 常用大模型选型: LlaMA 3, Gemma, Mistral... 本地大模型安装部署 本地大模型调用 本地大模型与对话 APP 应用集成 学习目标：深入理解Transformer模型的工作原 理，掌握大模型的训练流程和评估，量化技术。 3. 训练自己的大模型 Transformer 模型详解, Encoder, Decoder 制作和加载数据集（训练、验证、测试） 模型训练Train (单卡, 多卡)，分布式训练 LLM 大模型训练与微调 模型评估：方法论、评估指标 模型量化: AWQ, GPTQ, GGUF 模型部署 API 调用 学习目标：掌握基于预训练模型的微调技术，针对特 定领域进行模型的训练与优化，构建专属行业模型。 4. 大模型微调 构建专属行业模型: 基于预训练大模型 Fine-tune 微调对比: 提示工程, RAG, Fine-tuning 对比 Prompt Tuning, Prefix-Tuning, LoRA, QLoRA 基于 OpenAI Fine-tuning 本地大模型的 Fine-tuning 特定任务的大模型推理和训练实践: 文本分类, 序 列标注, 文本生成, 图像分割 基于BERT的中文评价情感分析 如何处理超长文本训练问题 GPT2-中文生成模型定制化微调训练 GPT2-中文生成模型定制化内容输出 5. 特定任务的模型微调训练 LlaMA3大模型本地部署与调用 使用自定义数据集和LlaMA-Factory完成LlaMA3微调训练 LlaMA3 LoRA微调测试评估、模型合并、量化 LoRA微调后的模型部署 多模态大模型基本概念 本地部署CogVideoX-5B文生视频模型 6. 多模态大模型使用 Llama 3.2-Vision模型架构剖析 Llama 3.2-Vision模型预期用途 使用ollama部署Llama-3.2-11B-Vision-InstructGGUF实现视觉问答 学习目标：通过企业级真实项目场景落地，锤炼大模型全栈 技术应用能力。完成AI应用从策划到开发到落地的全过程。 RAG项目背景介绍 大模型企业级业务场景落地方案实践 使用Conda配置项目环境 Sentence Transformer 模型详解 Embedding 文本向量化处理 RAG项目实战（基于 LlamaIndex 构建企业私有知识库） InternLM2 1.8B / Qwen2.5_0.5B模型实战 使用HuggingFace调用本地模型 知识库模型问答测试与实际效果评估 创建Web应用 自定义知识库设置 AI大模型项目开发流程 基座模型选择 训练数据集制作 Xtuner微调大模型 模型评估 模型量化 Weight Only 基于本地大模型的在线心里问诊系统（微调项目） 模型部署，LMDeploy 静态和动态推理性能 推理服务 API Server 服务部署 模型转换与合并 模型打包、部署 目标侦测与图像识别概念 YOLO目标侦测架构分析 企业级项目实战 YOLO模型的基本使用 目标侦测模型数据标注与模型训练 使用自定义数据集完成YOLO的多目标侦测 基于YOLO的骨龄识别项目（视觉项目） 骨龄检测项目流程分析 voc数据集转为yolo数据集 手骨关节检测模型 骨龄分类模型 整合目标检测与图像识别模型实现骨龄识别 企业基础数据采集 配置 Qwen2.5 3B模型 数据集转换 使用 Llama Factory 进行模型微调 open compass模型评估 测试 Qwen2.5 3B 模型微调效果 企业业务需求-政府招标采购项目（新） 基于 LlamaIndex 实现 RAG 模型训练获取标的物 构建知识图谱“标的物” 应用场景1：采购企业，热门采购物资市场查询 应用场景2：供应商，查找采购企业 应用场景3：技术研发、技术方向、设计材料 语音应用场景 PyTorch语音模块介绍 基于大模型的语音唤醒项目实战（新） PyTorch解析音频数据 使用 Wav2Vec2 实现语音识别 AI虚拟数字人项目正在测试阶段... 更多AI大模型项目每期持续增加中... 学习目标：了解并掌握AI领域的前沿技 术，包括语音识别、图像处理、目标检测 和多模态学习。 Assistant 关键组件 创建 Assistant, Thread, 消息处理 1. OpenAI Assistants 开发 工具集成: Code interpreter, Function calling, Preview File search Vector store 中英文语音识别 语音翻译 语音标题生成 音频模型专题 2. 带词级时间戳的语音识别 Large Audio Language Model 音频场景分类 语音情绪识别 问答 人脸检测 人脸活体 人脸模型专题 3. 人脸关键点 Face detection Model 人脸属性&表情，表情识别 人脸识别，人脸认证、通行等 Text-to-Image Diffusion Models 扩散模型 前沿技术扩展 文生图模型的应用场景: 中英文图像生成, 卡通系列, 漫画风, 水彩风, 剪切画生成 图片处理模型专题 4. 抠图 Text to Image/Stable Diffusion Model stable video diffusion 视频生成模型 图片生成视频 画质增强, 人像修复, 图像去模糊, 去噪 垂直类检测: 安全帽,香烟, 口罩, 人体, 人头 检测模型应用专题 视频目标检测跟踪: 自动驾驶,交通标志, 行人 5. Object Detection Model 行为检测 关键点检测: 人脸, 人手, 人体 零样本学习: 抽取式, 生成式 行业信息处理专题 信息抽取: 分词, 词性标注, 命名实体识别, 关系抽 6. Structbert Model 取, 事件抽取, 关键词抽取, 匹配, 分类, 指代消解, 阅读理解 图像描述 视频描述 多模态应用专题 视觉定位 7. MultiModal 文本生成图片 文本生成视频 多模态表征 更多AI前沿技术持续更新中...|\n||",
+        "token": 3152
+      }
+    ]
+  }
+]
