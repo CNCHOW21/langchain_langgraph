@@ -131,7 +131,7 @@ class ToolConfig:
         # 调用内部方法 _build_routing_config，动态生成工具路由配置并存储到 self.tool_routing_config
         self.tool_routing_config = self._build_routing_config(tools)
         # 记录日志，输出初始化完成的工具名称集合和路由配置，便于调试和验证
-        logger.info(f"Initialized ToolConfig with tools: {self.tool_names}, routing: {self.tool_routing_config}")
+        logger.info(f"ToolConfig初始化完成: {self.tool_names}, routing: {self.tool_routing_config}")
 
     # 内部方法，用于根据工具定义动态构建路由配置
     def _build_routing_config(self, tools):
@@ -146,17 +146,17 @@ class ToolConfig:
                 # 如果是检索类工具，将其路由目标设置为 "grade_documents"（需要评分）
                 routing_config[tool_name] = "grade_documents"
                 # 记录调试日志，说明该工具被路由到 "grade_documents"，并标注为检索工具
-                logger.debug(f"Tool '{tool_name}' routed to 'grade_documents' (retrieval tool)")
+                logger.debug(f"Tool '{tool_name}' 路由到 'grade_documents' (retrieval tool)")
             # 如果工具名称不包含 "retrieve"
             else:
-                # 将其路由目标设置为 "generate"（直接生成结果）
+                # 其他的工具则直接将其路由目标设置为 "generate"（直接生成结果）
                 routing_config[tool_name] = "generate"
                 # 记录调试日志，说明该工具被路由到 "generate"，并标注为非检索工具
-                logger.debug(f"Tool '{tool_name}' routed to 'generate' (non-retrieval tool)")
+                logger.debug(f"Tool '{tool_name}' 路由到 'generate' (non-retrieval tool)节点")
         # 检查路由配置字典是否为空（即没有工具被处理）
         if not routing_config:
             # 如果为空，记录警告日志，提示工具列表可能为空或未正确处理
-            logger.warning("No tools provided or routing config is empty")
+            logger.warning("没有工具提供或者路由配置为空")
         # 返回生成的路由配置字典
         return routing_config
 
@@ -363,6 +363,7 @@ def create_chain(llm_chat, template_file: str, structured_output=None):
     Raises:
         FileNotFoundError: 如果模板文件不存在。
     """
+    logger.info("=====开始执行agent链")
     # 定义静态缓存和锁（仅在函数第一次调用时初始化）
     if not hasattr(create_chain, "prompt_cache"):
         # 缓存字典
@@ -380,7 +381,7 @@ def create_chain(llm_chat, template_file: str, structured_output=None):
             with create_chain.lock:
                 # 检查缓存中是否已有该模板
                 if template_file not in create_chain.prompt_cache:
-                    logger.info(f"Loading and caching prompt template from {template_file}")
+                    logger.info(f"=====加载并缓存模板内容 {template_file}")
                     # 从文件加载提示模板并存入缓存
                     create_chain.prompt_cache[template_file] = PromptTemplate.from_file(template_file, encoding="utf-8")
                 # 从缓存中获取提示模板
@@ -444,14 +445,14 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         dict: 更新后的对话状态。
     """
     # 记录代理开始处理查询
-    logger.info("===1.调用agent识别用户意图")
+    logger.info("==========1.调用agent识别用户意图")
     # 定义存储命名空间，使用用户ID
     namespace = ("memories", config["configurable"]["user_id"])
     # 尝试执行以下代码块
     try:
         # 获取最后一条消息即用户问题
         question = state["messages"][-1]
-        logger.info(f"agent接收到用户的消息:{question}")
+        logger.info(f"=====agent接收到用户的消息:{question}")
 
         # 自定义跨线程持久化存储记忆并获取相关信息
         user_info = store_memory(question, config, store)
@@ -465,7 +466,7 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
         # 调用代理链处理消息
         response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
-        logger.info(f"agent回复: {response}")
+        logger.info(f"=====agent回复: {response}")
         # 返回更新后的对话状态
         # ai_message = response.model_dump()
         # ai_message["message_type_define"] = "ai"
@@ -473,7 +474,7 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
     # 捕获异常
     except Exception as e:
         # 记录错误日志
-        logger.error(f"Error in agent processing: {e}")
+        logger.error(f"调用agent过程中发生异常: {e}")
         # 返回错误消息
         return {"messages": [{"role": "system", "content": "处理请求时出错"}]}
 
@@ -578,7 +579,7 @@ def generate(state: MessagesState, llm_chat) -> dict:
         dict: 更新后的消息状态。
     """
     # 记录开始生成回复
-    logger.info("===调用生成模型生成回复")
+    logger.info(f"==========3.调用生成模型{llm_chat.model_name}生成回复")
     # 尝试执行以下代码块
     try:
         # 获取用户的最新问题
@@ -614,7 +615,7 @@ def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal[
     Returns:
         Literal["generate", "grade_documents"]: 下一步的目标节点。
     """
-    print("================route_after_tools=============")
+    logger.info("=====路由配置route_after_tools判断下一个节点是generate还是grade_documents")
     # 检查状态是否包含消息列表，若为空则记录错误并默认路由到 generate
     if not state.get("messages") or not isinstance(state["messages"], list):
         logger.error("Messages state is empty or invalid, defaulting to generate")
@@ -637,7 +638,7 @@ def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal[
 
         # 根据配置字典决定路由，若无配置则默认路由到 generate
         target = tool_config.get_tool_routing_config().get(tool_name, "generate")
-        logger.info(f"=============工具Tool {tool_name} 路由到 {target} 节点")
+        logger.info(f"=====调用工具 {tool_name} 后路由到 {target} 节点")
         return target
 
     except IndexError:
@@ -838,6 +839,28 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
 #         }
 #     raise TypeError(f"Type {type(obj)} not serializable")
 
+def truncate_content(content, max_length=100):
+    """
+    截断内容，确保其长度不超过指定的最大长度。
+    Args:
+        content (str): 要截断的内容。
+        max_length (int): 最大长度，默认为100。
+    Returns:
+        str: 截断后的内容。
+    """
+    if len(content) > max_length:
+        return content[:max_length] + "..."
+    return content
+
+def log_tool_output(tool_name, content):
+    """
+    记录工具输出的内容，并确保内容长度不超过100个字符。
+    Args:
+        tool_name (str): 工具名称。
+        content (str): 工具输出的内容。
+    """
+    truncated_content = truncate_content(content)
+    logger.info(f"调用工具 [{tool_name}]返回结果: {truncated_content}")
 
 # 定义响应函数
 def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, tool_config: ToolConfig) -> None:
@@ -876,17 +899,18 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
                         # 检查工具调用是否为字典且包含名称
                         if isinstance(tool_call, dict) and "name" in tool_call:
                             # 记录工具调用日志
-                            logger.info(f"=========2.AIMessage有tool_calls需要调用工具: {tool_call['name']}")
+                            logger.info(f"==========2.AIMessage有tool_calls参数，需要调用工具: {tool_call['name']}")
                     # 跳过本次循环
                     continue
 
+                logger.info(f"=====没有tool_calls参数，不需要调用工具直接回复")
                 # 检查消息是否有内容
                 if hasattr(last_message, "content"):
                     content = last_message.content
                     # 情况1：工具输出（动态检查工具名称）
                     if hasattr(last_message, "name") and last_message.name in tool_config.get_tool_names():
                         tool_name = last_message.name
-                        print(f"Tool Output [{tool_name}]: {content}")
+                        log_tool_output(tool_name, content)
                     # 情况2：大模型输出（非工具消息）
                     else:
                         print(f"Assistant: {content}")
