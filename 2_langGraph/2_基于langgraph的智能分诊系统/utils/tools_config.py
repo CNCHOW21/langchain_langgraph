@@ -1,7 +1,7 @@
 from langchain_chroma import Chroma
 from langchain.tools.retriever import create_retriever_tool
 from langchain_core.tools import tool
-from utils.config import Config
+from .config import Config
 
 
 def get_tools(llm_embedding):
@@ -34,7 +34,7 @@ def get_tools(llm_embedding):
     # 自定义 multiply 工具
     @tool
     def multiply(a: float, b: float) -> float:
-        """这是计算两个数的乘积的工具，返回最终的计算结果"""
+        """这是计算两个数的乘积的工具，返回最终计算结果"""
         return a * b
 
 

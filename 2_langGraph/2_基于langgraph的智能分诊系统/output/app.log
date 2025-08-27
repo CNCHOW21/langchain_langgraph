@@ -541,3 +541,1400 @@
 [2025-08-16 15:54:24,671] [Thread-1 (_monitor)] [INFO] [ragAgent.py:419] : Connection db_connection_pool status: 0/20 connections in use
 [2025-08-16 15:55:24,673] [Thread-1 (_monitor)] [INFO] [ragAgent.py:419] : Connection db_connection_pool status: 0/20 connections in use
 [2025-08-16 15:55:54,117] [MainThread] [INFO] [ragAgent.py:982] : Database connection pool closed
+[2025-08-21 18:27:15,172] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-21 18:27:15,254] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-21 18:27:15,257] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'multiply', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-21 18:27:15,273] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-21 18:27:15,290] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-21 18:27:15,317] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:27:15,482] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-21 18:27:16,127] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-21 18:27:26,779] [MainThread] [INFO] [ragAgent.py:447] : ===调用agent
+[2025-08-21 18:27:26,790] [MainThread] [INFO] [ragAgent.py:454] : agent question:content='你好啊' additional_kwargs={} response_metadata={} id='9b394301-5204-44e7-b73b-cfda0aeecfb1'
+[2025-08-21 18:27:28,586] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-21 18:28:15,319] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:29:15,324] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:29:39,199] [MainThread] [INFO] [ragAgent.py:447] : ===调用agent
+[2025-08-21 18:29:39,200] [MainThread] [INFO] [ragAgent.py:454] : agent question:content='请问如何学习项目?' additional_kwargs={} response_metadata={} id='340ac28f-0427-4674-a7f0-a500d701174b'
+[2025-08-21 18:29:41,608] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-21 18:30:15,327] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:31:15,329] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:32:15,331] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:33:15,333] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:34:15,335] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:35:15,337] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:36:15,340] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:37:15,343] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:38:01,832] [MainThread] [INFO] [ragAgent.py:447] : ===调用agent
+[2025-08-21 18:38:01,834] [MainThread] [INFO] [ragAgent.py:454] : agent question:content='张三的健康状况？' additional_kwargs={} response_metadata={} id='c39e485a-175a-4d4d-9866-c3fe3f93f064'
+[2025-08-21 18:38:03,177] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-21 18:38:11,304] [MainThread] [INFO] [ragAgent.py:872] : Calling tool: retrieve
+[2025-08-21 18:38:15,345] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:38:15,965] [MainThread] [INFO] [ragAgent.py:640] : Tool retrieve routed to grade_documents based on config
+[2025-08-21 18:38:15,969] [MainThread] [INFO] [ragAgent.py:491] : Grading documents for relevance
+[2025-08-21 18:38:15,971] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_grade.txt
+[2025-08-21 18:38:20,538] [MainThread] [INFO] [ragAgent.py:513] : Document relevance score: yes
+[2025-08-21 18:38:20,542] [MainThread] [INFO] [ragAgent.py:687] : Routing based on relevance_score: yes, rewrite_count: 0
+[2025-08-21 18:38:20,543] [MainThread] [INFO] [ragAgent.py:702] : Documents are relevant, proceeding to generate
+[2025-08-21 18:38:20,552] [MainThread] [INFO] [ragAgent.py:581] : ===调用生成模型生成回复
+[2025-08-21 18:38:20,577] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_generate.txt
+[2025-08-21 18:39:15,347] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:40:15,355] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:41:15,357] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:42:16,449] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:43:16,535] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:44:16,537] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:45:16,695] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:46:16,701] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:47:16,703] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:48:16,705] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:49:16,708] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:50:16,710] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:51:16,713] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:51:21,802] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-21 18:51:45,583] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-21 18:51:45,604] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-21 18:51:45,605] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'multiply', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-21 18:51:45,613] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-21 18:51:45,619] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-21 18:51:45,621] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:51:45,667] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-21 18:51:46,013] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-21 18:51:52,753] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-21 18:51:52,756] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='4771f939-f650-4db9-89bf-8041ce7b5904'
+[2025-08-21 18:52:45,626] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:53:09,297] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-21 18:53:45,628] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:53:57,612] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-21 18:53:57,616] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='我叫琪奥公主，身高178，穿40码鞋，喜欢和刘舟做爱' additional_kwargs={} response_metadata={} id='4846cdf3-720f-47ab-ab4c-055f6d5edafe'
+[2025-08-21 18:54:25,133] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-21 18:54:45,634] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:55:45,640] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:56:45,642] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:57:45,647] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:58:45,650] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 18:59:45,653] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:00:45,657] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:01:45,660] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:02:45,662] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:03:45,665] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:04:45,668] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:05:45,671] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:06:45,674] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:07:39,850] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-21 19:07:39,939] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好，你叫什么名字？' additional_kwargs={} response_metadata={} id='6eed52c0-850f-4888-920c-e7567737712a'
+[2025-08-21 19:07:41,389] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-21 19:07:45,677] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:08:45,680] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:09:45,684] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:10:45,687] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:11:45,965] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:12:19,717] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-21 19:12:41,502] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-21 19:12:41,599] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-21 19:12:41,601] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-21 19:12:41,613] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-21 19:12:41,618] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-21 19:12:41,639] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:12:41,669] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-21 19:12:42,303] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-21 19:12:52,915] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-21 19:12:52,917] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='46c51f5f-efb7-4dea-9a67-c4eb7d4658f4'
+[2025-08-21 19:12:54,470] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-21 19:13:00,110] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 9, 'prompt_tokens': 1119, 'total_tokens': 1128, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--e14dca8f-7949-4ddc-9a73-2f0a018b843d-0' usage_metadata={'input_tokens': 1119, 'output_tokens': 9, 'total_tokens': 1128, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-21 19:13:19,014] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-21 19:13:19,014] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='张三九的健康状况' additional_kwargs={} response_metadata={} id='d5f5a94b-6886-4b87-a85f-5184be17c679'
+[2025-08-21 19:13:20,610] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-21 19:13:23,803] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_18d8ccbc25e647d9ac2db8', 'function': {'arguments': '{"query": "张三九的健康状况"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1081, 'total_tokens': 1105, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--13398377-5aa8-4934-9482-827d47c16a9f-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '张三九的健康状况'}, 'id': 'call_18d8ccbc25e647d9ac2db8', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1081, 'output_tokens': 24, 'total_tokens': 1105, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-21 19:13:23,819] [MainThread] [INFO] [ragAgent.py:872] : Calling tool: retrieve
+[2025-08-21 19:13:24,660] [MainThread] [INFO] [ragAgent.py:640] : Tool retrieve routed to grade_documents based on config
+[2025-08-21 19:13:24,671] [MainThread] [INFO] [ragAgent.py:491] : Grading documents for relevance
+[2025-08-21 19:13:24,674] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_grade.txt
+[2025-08-21 19:13:26,599] [MainThread] [INFO] [ragAgent.py:513] : Document relevance score: yes
+[2025-08-21 19:13:26,613] [MainThread] [INFO] [ragAgent.py:687] : Routing based on relevance_score: yes, rewrite_count: 0
+[2025-08-21 19:13:26,615] [MainThread] [INFO] [ragAgent.py:702] : Documents are relevant, proceeding to generate
+[2025-08-21 19:13:26,639] [MainThread] [INFO] [ragAgent.py:581] : ===调用生成模型生成回复
+[2025-08-21 19:13:26,646] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_generate.txt
+[2025-08-21 19:13:41,645] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:14:41,669] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:15:41,672] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:16:41,679] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:17:41,682] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:18:41,685] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:19:41,690] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:20:41,692] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:21:41,696] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:22:41,699] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:23:41,708] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:24:41,711] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:25:41,714] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:26:41,717] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:27:41,720] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:28:41,723] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:29:41,726] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:30:41,729] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:31:41,733] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:32:41,756] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:33:41,759] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:34:41,764] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:35:41,768] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:36:41,814] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:37:41,848] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:38:41,854] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:39:41,859] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:40:41,863] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:41:41,868] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:42:41,872] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:43:41,875] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:44:41,878] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:45:41,881] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:46:41,885] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:47:41,888] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:48:41,894] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:49:41,898] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:50:41,901] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:51:41,906] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:52:41,910] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:53:41,916] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:54:41,920] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:55:41,925] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:56:41,927] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:57:41,932] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:58:41,940] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 19:59:41,942] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:00:41,946] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:01:41,952] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:02:41,954] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:03:41,960] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:04:41,965] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:05:41,976] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:06:41,979] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:07:41,982] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:08:41,989] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:09:41,992] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:10:41,994] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:11:41,998] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:12:42,001] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:13:42,003] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:14:42,007] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:15:42,011] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:16:42,015] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:17:42,018] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:18:42,020] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:19:42,025] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:20:42,029] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:21:42,031] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:22:42,035] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:23:42,039] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:24:42,042] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:25:42,044] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:26:42,047] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:27:42,052] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:28:42,055] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:29:42,058] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:30:42,063] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:31:42,066] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:32:42,069] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:33:42,072] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:34:42,075] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:35:42,078] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:36:42,082] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:37:42,086] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:38:42,090] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:39:42,093] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:40:42,097] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:41:42,099] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:42:42,103] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:43:42,106] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:44:42,110] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:45:42,114] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:46:42,118] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:47:42,121] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:48:42,126] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:49:42,149] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:50:42,153] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:51:42,157] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:52:42,161] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:53:42,164] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:54:42,168] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:55:42,172] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:56:42,179] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:57:42,181] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:58:42,186] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 20:59:42,189] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:00:42,196] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:01:42,200] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:02:42,203] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:03:42,205] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:04:42,213] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:05:42,220] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:06:42,228] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:07:42,234] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:08:42,241] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:09:42,245] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:10:42,250] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:11:42,253] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:12:42,256] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:13:42,258] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:14:42,265] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:15:42,268] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:16:42,273] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:17:42,276] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:18:42,281] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:19:42,284] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:20:42,286] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:21:42,290] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:22:42,293] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:23:42,298] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:24:42,304] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:25:42,309] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:26:42,312] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:27:42,317] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:28:42,322] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:29:42,376] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:30:42,379] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:31:42,384] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:32:42,387] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:33:42,392] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:34:42,398] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:35:42,401] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:36:42,406] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:37:42,411] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:38:42,414] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:39:42,422] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:40:42,425] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:41:42,428] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:42:42,430] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:43:42,433] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:44:42,438] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:45:42,442] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:46:42,449] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:47:42,452] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:48:42,459] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:49:42,461] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:50:42,464] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:51:42,466] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:52:42,469] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:53:42,475] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:54:42,479] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:55:42,481] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:56:42,487] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:57:42,490] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:58:42,496] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 21:59:42,519] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:00:42,522] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:01:42,525] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:02:42,527] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:03:42,534] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:04:42,537] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:05:42,539] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:06:42,546] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:07:42,550] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:08:42,552] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:09:42,563] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:10:42,567] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:11:42,569] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:12:42,574] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:13:42,578] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:14:42,585] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:15:42,589] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:16:42,593] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:17:42,596] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:18:42,598] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:19:42,603] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:20:42,618] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:21:42,624] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:22:42,626] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:23:42,632] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:24:42,637] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:25:42,642] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:26:42,644] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:27:42,646] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:28:42,649] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:29:42,652] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:30:42,657] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:31:42,659] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:32:42,666] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:33:42,668] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:34:42,672] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:35:42,677] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:36:42,679] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:37:42,683] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:38:42,686] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:39:42,718] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:40:42,721] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:41:42,724] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:42:42,727] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:43:42,729] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:44:42,732] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:45:42,735] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:46:42,738] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:47:42,738] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:48:42,738] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:49:42,740] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:50:42,776] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:51:42,779] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:52:42,782] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:53:42,785] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:54:42,787] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:55:42,789] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:56:42,789] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:57:42,792] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:58:42,795] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 22:59:42,801] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:00:42,809] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:01:42,816] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:02:42,818] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:03:42,824] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:04:42,826] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:05:42,827] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:06:42,830] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:07:42,831] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:08:42,832] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:09:42,838] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:10:42,838] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:11:42,840] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:12:42,843] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:13:42,846] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:14:42,847] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:15:42,850] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:16:42,851] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:17:42,853] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:18:42,857] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:19:42,860] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:20:42,865] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:21:42,868] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:22:42,872] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:23:42,874] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:24:42,878] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:25:42,882] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:26:42,883] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:27:42,885] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:28:42,888] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:29:42,889] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:30:42,891] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:31:43,206] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:32:43,207] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:33:43,209] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:34:43,214] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:35:43,249] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:36:43,257] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:37:43,258] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:38:43,264] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:39:43,268] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:40:43,272] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:41:43,274] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:42:43,278] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:43:43,280] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:44:43,282] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:45:43,283] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:46:43,285] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:47:43,317] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:48:43,321] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:49:43,324] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:50:43,330] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:51:43,331] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:52:43,332] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:53:43,336] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:54:43,338] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:55:43,341] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:56:43,343] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:57:43,346] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:58:43,360] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-21 23:59:43,363] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:00:43,369] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:01:43,374] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:02:43,377] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:03:43,382] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:04:43,385] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:05:43,388] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:06:43,394] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:07:43,400] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:08:43,402] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:09:43,405] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:10:43,410] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:11:43,412] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:12:43,414] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:13:43,420] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:14:43,426] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:15:43,430] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:16:43,432] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:17:43,436] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:18:43,440] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:19:43,446] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:20:43,450] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:21:43,455] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:22:43,458] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:23:43,464] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:24:43,469] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:25:43,471] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:26:43,530] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:27:43,534] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:28:43,539] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:29:43,541] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:30:43,547] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:31:43,553] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:32:43,559] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:33:43,565] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:34:43,567] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:35:43,570] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:36:43,572] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:37:43,574] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:38:43,577] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:39:43,583] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:40:43,589] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:41:43,595] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:42:43,597] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:43:43,600] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:44:43,604] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:45:43,642] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:46:43,649] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:47:43,652] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:48:43,656] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:49:43,692] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:50:43,714] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:51:43,725] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:52:43,741] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:53:43,746] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:54:43,749] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:55:43,752] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:56:43,755] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:57:43,757] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:58:43,761] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 00:59:43,766] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 01:00:43,773] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-22 01:01:36,262] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-24 17:58:17,869] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 17:58:17,950] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 17:58:17,952] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'multiply', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 17:58:17,960] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-24 17:58:17,973] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-24 17:58:17,992] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 17:58:18,151] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 17:58:19,316] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 17:59:18,023] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:00:18,027] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:00:32,235] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-24 18:00:59,618] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 18:00:59,636] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 18:00:59,638] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'multiply', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 18:00:59,642] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-24 18:00:59,644] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-24 18:00:59,648] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:00:59,682] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 18:01:00,283] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 18:01:20,683] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 18:01:20,693] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊，我叫琪奥公主' additional_kwargs={} response_metadata={} id='68277135-d67a-49a4-80d0-638d14c952c9'
+[2025-08-24 18:01:26,069] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-24 18:01:59,650] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:01:59,879] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好，琪奥公主！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 2179, 'total_tokens': 2192, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--ad6e7551-7408-40ea-ae60-5c202ce5806b-0' usage_metadata={'input_tokens': 2179, 'output_tokens': 13, 'total_tokens': 2192, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 18:02:21,887] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 18:02:21,889] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='我叫什么名字？' additional_kwargs={} response_metadata={} id='b93ca1c7-9e97-4ff7-9a34-9a144f95ef23'
+[2025-08-24 18:02:24,504] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-24 18:02:27,387] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你的名字是琪奥公主。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 2176, 'total_tokens': 2183, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--e6f6be7e-c300-4f05-9497-ada993b31af3-0' usage_metadata={'input_tokens': 2176, 'output_tokens': 7, 'total_tokens': 2183, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 18:02:59,653] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:03:59,655] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:04:59,658] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:05:59,660] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:06:59,662] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:07:59,668] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:08:59,670] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:09:59,672] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:10:59,675] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:11:59,677] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:12:59,679] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:13:59,691] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:14:59,693] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:15:59,695] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:16:59,698] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:17:59,700] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:18:59,702] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:19:59,706] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:20:59,708] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:21:59,711] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:22:59,712] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:23:59,715] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:24:59,717] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:25:59,720] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:26:59,723] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:27:59,725] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:28:59,726] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:29:59,731] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:30:59,734] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:31:59,736] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:32:59,738] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:33:59,742] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:34:59,745] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:35:59,747] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:36:59,748] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:37:59,754] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:38:59,758] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:39:59,761] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:40:59,763] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:41:59,766] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:42:59,769] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:43:59,771] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:44:59,774] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:45:59,777] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:46:59,779] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:47:59,781] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:48:59,782] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:49:59,785] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:50:59,787] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:51:59,788] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:52:59,793] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:53:59,797] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:54:59,798] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:55:59,800] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:56:59,802] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:57:59,805] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:58:59,807] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 18:59:59,808] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:00:59,811] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:01:59,814] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:02:59,818] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:03:59,820] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:04:59,822] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:05:59,825] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:06:59,828] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:07:59,831] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:08:59,833] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:09:59,835] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:10:59,837] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:11:59,839] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:12:59,841] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:13:59,843] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:14:59,844] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:15:59,847] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:16:59,853] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:17:59,856] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:18:59,860] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:19:59,863] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:20:59,865] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:21:59,899] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:22:59,929] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:23:59,931] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:24:59,933] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:25:59,936] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:26:59,938] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:27:59,941] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:28:59,943] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:29:59,945] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:30:59,948] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:31:59,950] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:32:59,953] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:33:59,954] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:34:59,981] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:35:59,985] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:36:06,422] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-24 19:37:28,309] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 19:38:11,147] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 19:38:11,149] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 19:38:11,158] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-24 19:38:11,164] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-24 19:38:11,176] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:38:11,242] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 19:38:11,951] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 19:39:11,181] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:40:11,188] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:41:11,191] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:42:11,194] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:43:11,197] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:44:11,199] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:45:11,204] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:46:11,207] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:47:11,211] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:48:11,214] [Thread-37 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:48:28,783] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-24 19:48:51,942] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 19:48:51,961] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 19:49:32,839] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 19:49:32,855] [MainThread] [INFO] [ragAgent.py:922] : Database connection pool initialized
+[2025-08-24 19:49:32,860] [MainThread] [DEBUG] [ragAgent.py:923] : Database connection pool initialized
+[2025-08-24 19:49:32,893] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:49:32,920] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 19:49:35,045] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 19:50:32,907] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:51:32,911] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:52:32,917] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:53:32,920] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:54:32,923] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:55:32,926] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:56:32,928] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:57:32,931] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:58:32,935] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 19:59:32,938] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:00:32,943] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:01:32,945] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:02:32,948] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:03:32,952] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:04:32,955] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:05:32,958] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:06:32,964] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:07:32,967] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:08:32,971] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:09:32,974] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:10:32,978] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:11:33,013] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:12:33,061] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:13:33,064] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:14:33,066] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:15:33,070] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:16:33,073] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:17:33,076] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:18:33,079] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:19:33,082] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:20:33,088] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:21:33,112] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:22:33,134] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:23:33,137] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:24:33,141] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:25:33,145] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:26:33,148] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:27:33,152] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:28:33,154] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:29:33,157] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:30:33,161] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:31:33,164] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:32:33,167] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:33:33,171] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:34:33,174] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:35:33,178] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:36:33,258] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:37:33,267] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:38:33,272] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:39:33,274] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:40:33,278] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:41:33,282] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:42:33,286] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:43:33,291] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:44:33,293] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:45:33,297] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:46:33,301] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:47:33,304] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:48:33,307] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:49:33,310] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:50:33,313] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:51:33,317] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:52:33,320] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:53:33,324] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:54:33,328] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:55:33,331] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:56:33,336] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:57:33,342] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:58:33,345] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 20:59:33,349] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:00:33,352] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:01:33,354] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:02:33,358] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:03:33,361] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:04:33,364] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:05:33,367] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:06:33,370] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:07:33,373] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:08:33,376] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:09:33,379] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:10:33,384] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:11:33,387] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:12:33,391] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:13:33,394] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:14:33,396] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:15:33,399] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:16:33,401] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:17:33,404] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:18:33,407] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:19:33,410] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:20:33,415] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:21:33,418] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:22:33,422] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:23:33,427] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:24:33,430] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:25:33,434] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:26:33,437] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:27:33,440] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:28:33,443] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:29:33,446] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:30:33,449] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:31:33,451] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:32:33,454] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:33:33,456] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:34:33,459] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:35:33,462] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:36:33,466] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:37:33,471] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:38:33,475] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:39:33,477] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:40:33,479] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:41:33,483] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:42:33,485] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:43:33,488] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:44:33,491] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:45:33,494] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:46:33,502] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:47:33,505] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:48:33,507] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:49:33,510] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:50:33,514] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:51:33,516] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:52:33,519] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:53:33,522] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:54:33,525] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:55:33,529] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:56:33,532] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:57:33,535] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:58:33,538] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 21:59:33,541] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:00:33,544] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:01:33,547] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:02:33,549] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:03:33,552] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:04:33,555] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:05:33,557] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:06:33,560] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:07:33,564] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:08:33,568] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:09:33,571] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:10:33,574] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:11:33,576] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:12:33,579] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:13:33,581] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:14:33,587] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:15:33,589] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:16:33,592] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:17:33,595] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:18:33,598] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:19:33,601] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:20:33,604] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:21:33,607] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:22:33,611] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:23:33,614] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:24:33,617] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:25:33,620] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:26:33,623] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:27:33,626] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:28:33,629] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:29:33,632] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:30:33,635] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:31:33,637] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:32:33,641] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:33:33,643] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:34:33,646] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:35:33,649] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:36:33,652] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:37:33,654] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:38:33,666] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:39:33,671] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:40:33,673] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:41:33,677] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:42:33,680] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:43:33,683] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:44:33,686] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:45:33,688] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:46:33,691] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:47:33,695] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:48:33,698] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:49:33,700] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:50:33,703] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:51:33,706] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:52:33,709] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:53:33,711] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:54:33,714] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:55:33,717] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:56:33,720] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:57:33,724] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:58:33,726] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 22:59:33,729] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:00:33,732] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:01:33,735] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:02:33,738] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:03:33,767] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:04:33,771] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:05:33,774] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:06:33,776] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:07:33,779] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:08:33,781] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:09:33,784] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:10:33,787] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:11:33,790] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:12:33,793] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:13:33,796] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:14:33,799] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:15:33,802] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:16:33,805] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:17:33,807] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:18:33,810] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:19:33,814] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:20:33,817] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:21:33,820] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:22:33,823] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:23:33,825] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:24:33,828] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:25:33,830] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:26:33,832] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:27:33,836] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:28:33,840] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:29:33,845] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:30:33,849] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:31:33,852] [Thread-7 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:32:06,677] [MainThread] [INFO] [ragAgent.py:983] : Database connection pool closed
+[2025-08-24 23:34:44,580] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 23:34:44,616] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 23:34:44,618] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 23:34:44,624] [MainThread] [INFO] [ragAgent.py:924] : Database connection pool initialized
+[2025-08-24 23:34:44,629] [MainThread] [DEBUG] [ragAgent.py:925] : Database connection pool initialized
+[2025-08-24 23:34:44,635] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:34:44,739] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 23:34:45,776] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 23:34:53,099] [MainThread] [ERROR] [ragAgent.py:897] : Error processing response: 'generator' object is not subscriptable
+[2025-08-24 23:35:44,639] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:36:44,642] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:37:32,808] [MainThread] [INFO] [ragAgent.py:985] : Database connection pool closed
+[2025-08-24 23:37:54,993] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 23:37:55,014] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 23:37:55,016] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 23:37:55,023] [MainThread] [INFO] [ragAgent.py:927] : Database connection pool initialized
+[2025-08-24 23:37:55,029] [MainThread] [DEBUG] [ragAgent.py:928] : Database connection pool initialized
+[2025-08-24 23:37:55,041] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:37:55,083] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 23:37:55,947] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 23:38:17,207] [MainThread] [ERROR] [ragAgent.py:900] : Error processing response: 'generator' object is not subscriptable
+[2025-08-24 23:38:55,049] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:39:08,905] [MainThread] [INFO] [ragAgent.py:988] : Database connection pool closed
+[2025-08-24 23:39:28,039] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 23:39:28,058] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 23:39:28,059] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 23:39:28,066] [MainThread] [INFO] [ragAgent.py:926] : Database connection pool initialized
+[2025-08-24 23:39:28,071] [MainThread] [DEBUG] [ragAgent.py:927] : Database connection pool initialized
+[2025-08-24 23:39:28,075] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:39:28,117] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 23:39:31,496] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 23:40:06,503] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:40:06,516] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='9eb4c4ff-1a67-40e3-b3a5-8a35b63cfc6a'
+[2025-08-24 23:40:09,876] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-24 23:40:13,135] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好，琪奥公主！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 1064, 'total_tokens': 1077, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--3e95b66e-84ed-47fd-b7bc-597e1673c305-0' usage_metadata={'input_tokens': 1064, 'output_tokens': 13, 'total_tokens': 1077, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:40:28,078] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:40:46,205] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:40:46,208] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='7521f04d-a7a6-4286-b8ba-f57f68caaaab'
+[2025-08-24 23:40:48,020] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-24 23:40:53,159] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好，琪奥公主！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 1049, 'total_tokens': 1062, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--8aa2a53f-a351-4b1e-a959-0fa0010ee600-0' usage_metadata={'input_tokens': 1049, 'output_tokens': 13, 'total_tokens': 1062, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:41:16,699] [MainThread] [INFO] [ragAgent.py:987] : Database connection pool closed
+[2025-08-24 23:41:37,928] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 23:41:37,949] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 23:41:37,952] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 23:41:37,958] [MainThread] [INFO] [ragAgent.py:926] : Database connection pool initialized
+[2025-08-24 23:41:37,962] [MainThread] [DEBUG] [ragAgent.py:927] : Database connection pool initialized
+[2025-08-24 23:41:37,965] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:41:38,012] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 23:41:45,346] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 23:41:50,910] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:41:50,914] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='47d2b602-7fdb-490b-99bf-32badc8f3365'
+[2025-08-24 23:41:57,209] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-24 23:42:00,489] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好，琪奥公主！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 1054, 'total_tokens': 1067, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--d59c33fd-8454-4bcf-9c14-c233b8f28e63-0' usage_metadata={'input_tokens': 1054, 'output_tokens': 13, 'total_tokens': 1067, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:42:37,970] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:43:37,973] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:44:37,977] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:45:37,982] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:46:38,099] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:47:38,275] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:47:58,652] [MainThread] [INFO] [ragAgent.py:987] : Database connection pool closed
+[2025-08-24 23:48:21,222] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-24 23:48:21,241] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-24 23:48:21,243] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'multiply', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-24 23:48:21,249] [MainThread] [INFO] [ragAgent.py:929] : Database connection pool initialized
+[2025-08-24 23:48:21,254] [MainThread] [DEBUG] [ragAgent.py:930] : Database connection pool initialized
+[2025-08-24 23:48:21,257] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:48:21,304] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-24 23:48:25,895] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-24 23:49:21,261] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:50:21,264] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:51:21,267] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:52:21,270] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:52:37,586] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:52:37,588] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='1bec3e1e-b418-450e-86a5-9e29b62937c4'
+[2025-08-24 23:52:40,251] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_agent.txt
+[2025-08-24 23:52:57,572] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='你好，琪奥公主！有什么我可以帮到你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 13, 'prompt_tokens': 1058, 'total_tokens': 1071, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--ab473855-a73e-4e3c-aa08-b36c0b4185b3-0' usage_metadata={'input_tokens': 1058, 'output_tokens': 13, 'total_tokens': 1071, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:53:21,273] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:53:47,394] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:53:47,398] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='3*1222' additional_kwargs={} response_metadata={} id='141d5907-c1a3-471b-b241-81500622e0f3'
+[2025-08-24 23:53:49,467] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-24 23:53:52,497] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_783b7febbe2145d9abc854', 'function': {'arguments': '{"a": 3, "b": 1222}', 'name': 'multiply'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 28, 'prompt_tokens': 1073, 'total_tokens': 1101, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--b8f5c889-8e8f-4e78-95a0-a64a89a61f9a-0' tool_calls=[{'name': 'multiply', 'args': {'a': 3, 'b': 1222}, 'id': 'call_783b7febbe2145d9abc854', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1073, 'output_tokens': 28, 'total_tokens': 1101, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:53:52,515] [MainThread] [INFO] [ragAgent.py:879] : Calling tool: multiply
+[2025-08-24 23:53:52,531] [MainThread] [INFO] [ragAgent.py:640] : Tool multiply routed to generate based on config
+[2025-08-24 23:53:52,541] [MainThread] [INFO] [ragAgent.py:581] : ===调用生成模型生成回复
+[2025-08-24 23:53:52,543] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_generate.txt
+[2025-08-24 23:54:21,280] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:55:21,299] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:56:21,302] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:57:08,997] [MainThread] [INFO] [ragAgent.py:447] : ===1.调用agent识别用户意图
+[2025-08-24 23:57:09,000] [MainThread] [INFO] [ragAgent.py:454] : agent接收到用户的消息:content='张三九的健康状况' additional_kwargs={} response_metadata={} id='8da74469-a278-4a2e-acc3-320fe6a3081b'
+[2025-08-24 23:57:15,365] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-24 23:57:20,704] [MainThread] [INFO] [ragAgent.py:468] : agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_69053ff716b441e9bd47c5', 'function': {'arguments': '{"query": "张三九的健康状况"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1340, 'total_tokens': 1364, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--bc9a23ad-4d02-4d11-a047-3cfa2ccae45d-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '张三九的健康状况'}, 'id': 'call_69053ff716b441e9bd47c5', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1340, 'output_tokens': 24, 'total_tokens': 1364, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-24 23:57:20,720] [MainThread] [INFO] [ragAgent.py:879] : Calling tool: retrieve
+[2025-08-24 23:57:21,307] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:57:23,136] [MainThread] [INFO] [ragAgent.py:640] : Tool retrieve routed to grade_documents based on config
+[2025-08-24 23:57:23,156] [MainThread] [INFO] [ragAgent.py:491] : Grading documents for relevance
+[2025-08-24 23:57:23,159] [MainThread] [INFO] [ragAgent.py:383] : Loading and caching prompt template from prompts/prompt_template_grade.txt
+[2025-08-24 23:57:26,267] [MainThread] [INFO] [ragAgent.py:513] : Document relevance score: yes
+[2025-08-24 23:57:26,282] [MainThread] [INFO] [ragAgent.py:687] : Routing based on relevance_score: yes, rewrite_count: 0
+[2025-08-24 23:57:26,284] [MainThread] [INFO] [ragAgent.py:702] : Documents are relevant, proceeding to generate
+[2025-08-24 23:57:26,422] [MainThread] [INFO] [ragAgent.py:581] : ===调用生成模型生成回复
+[2025-08-24 23:57:26,425] [MainThread] [INFO] [ragAgent.py:377] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-24 23:58:21,310] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-24 23:59:21,315] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:00:21,319] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:01:21,322] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:02:21,325] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:03:21,328] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:04:21,332] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:05:21,335] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:06:21,338] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:07:21,342] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:08:21,345] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:09:21,348] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:10:21,353] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:11:21,358] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:12:21,361] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:13:21,367] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:14:21,371] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:15:21,373] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:16:21,376] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:17:21,380] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:18:21,383] [Thread-5 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 00:18:31,369] [MainThread] [INFO] [ragAgent.py:990] : Database connection pool closed
+[2025-08-25 18:01:40,047] [MainThread] [DEBUG] [ragAgent.py:149] : Tool 'retrieve' routed to 'grade_documents' (retrieval tool)
+[2025-08-25 18:01:40,165] [MainThread] [DEBUG] [ragAgent.py:155] : Tool 'multiply' routed to 'generate' (non-retrieval tool)
+[2025-08-25 18:01:40,166] [MainThread] [INFO] [ragAgent.py:134] : Initialized ToolConfig with tools: {'retrieve', 'multiply'}, routing: {'retrieve': 'grade_documents', 'multiply': 'generate'}
+[2025-08-25 18:01:40,171] [MainThread] [INFO] [ragAgent.py:929] : Database connection pool initialized
+[2025-08-25 18:01:40,174] [MainThread] [DEBUG] [ragAgent.py:930] : Database connection pool initialized
+[2025-08-25 18:01:40,177] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:01:40,354] [MainThread] [INFO] [ragAgent.py:770] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-25 18:01:41,031] [MainThread] [INFO] [ragAgent.py:734] : Graph visualization saved as graph.png
+[2025-08-25 18:02:40,182] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:03:40,184] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:04:40,187] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:05:40,190] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:06:40,194] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:07:40,199] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:08:40,203] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:09:40,207] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:10:40,210] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:11:40,216] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:12:40,219] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:13:40,224] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:14:40,230] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:15:40,233] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:16:40,238] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:17:40,242] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:18:40,245] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:19:40,247] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:20:40,250] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:21:40,254] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:22:40,256] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:23:40,258] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:24:40,260] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:25:40,262] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:26:40,264] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:27:40,266] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:28:40,268] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:29:40,271] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:30:40,273] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:31:40,276] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:32:40,278] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:33:40,281] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:34:40,283] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:35:40,285] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:36:40,286] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:37:40,289] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:38:40,291] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:39:40,295] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:40:40,297] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:41:40,309] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:42:40,312] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:43:40,315] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:44:40,322] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:45:40,325] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:46:40,327] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:47:40,329] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:48:40,331] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:49:40,333] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:50:40,335] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:51:40,336] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:52:40,339] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:53:40,343] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:54:40,346] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:55:40,349] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:56:40,351] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:57:40,353] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:58:40,355] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 18:59:40,359] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:00:40,361] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:01:40,364] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:02:40,365] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:03:40,367] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:04:40,369] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:05:40,371] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:06:40,374] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:07:40,377] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:08:40,379] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:09:40,383] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:10:40,387] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:11:40,389] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:12:40,394] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:13:40,396] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:14:40,398] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:15:40,400] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:16:40,403] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:17:40,405] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:18:40,410] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:19:40,415] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:20:40,420] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:21:40,431] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:22:40,445] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:23:40,450] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:24:40,485] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:25:40,500] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:26:40,502] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:27:40,509] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:28:40,511] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:29:40,515] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:30:40,523] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:31:40,529] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:32:40,531] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:33:40,534] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:34:40,539] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:35:40,543] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:36:40,545] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:37:40,548] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:38:40,549] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:39:40,549] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:40:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:41:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:42:40,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:43:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:44:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:45:40,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:46:40,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:47:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:48:40,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:49:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:50:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:51:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:52:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:53:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:54:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:55:40,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:56:40,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:57:40,554] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:58:40,561] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 19:59:40,561] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:00:40,561] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:01:40,574] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:02:40,581] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:03:40,582] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:04:40,582] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:05:40,582] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:06:40,588] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:07:40,589] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:08:40,594] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:09:40,599] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:10:40,599] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:11:40,602] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:12:40,603] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:13:40,603] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:14:40,604] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:15:40,604] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:16:40,606] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:17:40,607] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:18:40,607] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:19:40,608] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:20:40,612] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:21:40,612] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:22:40,614] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:23:40,615] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:24:40,616] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:25:40,616] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:26:40,617] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:27:40,685] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:28:40,686] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:29:40,687] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:30:40,688] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:31:40,688] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:32:40,690] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:33:40,691] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:34:40,693] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:35:40,694] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:36:40,699] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:37:40,700] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:38:40,702] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:39:40,703] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:40:40,704] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:41:40,705] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:42:40,705] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:43:40,706] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:44:40,706] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:45:40,708] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:46:40,708] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:47:40,710] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:48:40,711] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:49:40,712] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:50:40,714] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:51:40,715] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:52:40,718] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:53:40,720] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:54:40,721] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:55:40,723] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:56:40,726] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:57:40,727] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:58:40,754] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 20:59:40,756] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:00:40,758] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:01:40,759] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:02:40,763] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:03:40,764] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:04:40,766] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:05:40,768] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:06:40,770] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:07:40,771] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:08:40,774] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:09:40,777] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:10:40,778] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:11:40,779] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:12:40,781] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:13:40,782] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:14:40,786] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:15:40,788] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:16:40,789] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:17:40,790] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:18:40,791] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:19:40,793] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:20:40,796] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:21:40,797] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:22:40,800] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:23:40,802] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:24:40,803] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:25:40,804] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:26:40,806] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:27:40,808] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:28:40,809] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:29:40,811] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:30:40,813] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:31:40,814] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:32:40,817] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:33:40,820] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:34:40,822] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:35:40,825] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:36:40,826] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:37:40,828] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:38:40,837] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:39:40,841] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:40:40,842] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:41:40,844] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:42:40,850] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:43:40,854] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:44:40,858] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:45:40,860] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:46:40,862] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:47:40,864] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:48:40,867] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:49:40,869] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:50:40,872] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:51:40,878] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:52:40,879] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:53:40,882] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:54:40,884] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:55:40,886] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:56:40,888] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:57:40,889] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:58:40,891] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 21:59:40,925] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:00:40,944] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:01:40,945] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:02:40,947] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:03:40,949] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:04:40,960] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:05:40,961] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:06:40,963] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:07:40,967] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:08:40,969] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:09:40,971] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:10:40,974] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:11:40,978] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:12:40,980] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:13:40,982] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:14:40,984] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:15:40,989] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:16:40,991] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:17:40,994] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:18:40,996] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:19:40,999] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:20:41,001] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:21:41,003] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:22:41,005] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:23:41,006] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:24:41,009] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:25:41,011] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:26:41,013] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:27:41,015] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:28:41,017] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:29:41,019] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:30:41,021] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:31:41,022] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:32:41,025] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:33:41,027] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:34:41,033] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:35:41,036] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:36:41,038] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:37:41,042] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:38:41,047] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:39:41,049] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:40:41,058] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:41:41,059] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:42:41,061] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:43:41,063] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:44:41,065] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:45:41,069] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:46:41,071] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:47:41,073] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:48:41,075] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:49:41,077] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:50:41,079] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:51:41,084] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:52:41,089] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:53:41,095] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:54:41,099] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:55:41,101] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:56:41,102] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:57:41,104] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:58:41,105] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 22:59:41,109] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:00:41,111] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:01:41,113] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:02:41,114] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:03:41,117] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:04:41,118] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:05:41,120] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:06:41,128] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:07:41,136] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:08:41,139] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:09:41,140] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:10:41,142] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:11:41,144] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:12:41,146] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:13:41,156] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:14:41,159] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:15:41,161] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:16:41,163] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:17:41,165] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:18:41,166] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:19:41,168] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:20:41,172] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:21:41,173] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:22:41,175] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:23:41,177] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:24:41,178] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:25:41,180] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:26:41,183] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:27:41,184] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:28:41,186] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:29:41,188] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:30:41,191] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:31:41,193] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:32:41,194] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:33:41,196] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:34:41,197] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:35:41,199] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:36:41,201] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:37:41,202] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:38:41,207] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:39:41,210] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:40:41,212] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:41:41,214] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:42:41,216] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:43:41,218] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:44:41,219] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:45:41,221] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:46:41,224] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:47:41,226] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:48:41,235] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:49:41,236] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:50:41,238] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:51:41,241] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:52:41,244] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:53:41,246] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:54:41,248] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:55:41,263] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:56:41,265] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:57:41,267] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:58:41,309] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-25 23:59:41,319] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:00:41,322] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:01:41,326] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:02:41,332] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:03:41,335] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:04:41,341] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:05:41,347] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:06:41,378] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:07:41,385] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:08:41,388] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:09:41,396] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:10:41,411] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:11:41,425] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:12:41,453] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:13:41,472] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:14:41,483] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:15:41,485] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:16:41,487] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:17:41,490] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:18:41,493] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:19:41,495] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:20:41,498] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:21:41,528] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:22:41,545] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:23:41,549] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:24:41,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:25:41,568] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:26:41,575] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:27:41,586] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:28:41,590] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:29:41,603] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:30:41,617] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:31:41,620] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:32:41,625] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:33:41,628] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:34:41,646] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:35:41,652] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:36:41,655] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:37:41,661] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:38:41,676] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:39:41,682] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:40:41,686] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:41:41,690] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:42:41,821] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:43:41,830] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:44:41,833] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:45:41,840] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:46:41,843] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:47:41,847] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:48:41,853] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:49:41,857] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:50:41,861] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:51:41,864] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:52:41,872] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:53:41,889] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:54:41,898] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:55:41,904] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:56:41,912] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:57:41,918] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:58:41,929] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 00:59:41,940] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:00:41,944] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:01:41,960] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:02:41,978] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:03:41,992] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:04:41,998] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:05:42,002] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:06:42,004] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:07:42,008] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:08:42,011] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:09:42,013] [Thread-1 (_monitor)] [INFO] [ragAgent.py:420] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-26 01:10:02,952] [MainThread] [INFO] [ragAgent.py:990] : Database connection pool closed

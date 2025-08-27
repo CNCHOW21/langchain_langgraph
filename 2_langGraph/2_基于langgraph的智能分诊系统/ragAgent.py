@@ -444,14 +444,14 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         dict: 更新后的对话状态。
     """
     # 记录代理开始处理查询
-    logger.info("===调用agent")
+    logger.info("===1.调用agent识别用户意图")
     # 定义存储命名空间，使用用户ID
     namespace = ("memories", config["configurable"]["user_id"])
     # 尝试执行以下代码块
     try:
         # 获取最后一条消息即用户问题
         question = state["messages"][-1]
-        logger.info(f"agent question:{question}")
+        logger.info(f"agent接收到用户的消息:{question}")
 
         # 自定义跨线程持久化存储记忆并获取相关信息
         user_info = store_memory(question, config, store)
@@ -465,7 +465,7 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
         # 调用代理链处理消息
         response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
-        # logger.info(f"Agent response: {response}")
+        logger.info(f"agent回复: {response}")
         # 返回更新后的对话状态
         # ai_message = response.model_dump()
         # ai_message["message_type_define"] = "ai"
@@ -488,7 +488,7 @@ def grade_documents(state: MessagesState, llm_chat) -> dict:
     Returns:
         dict: 更新后的状态，包含评分结果。
     """
-    logger.info("Grading documents for relevance")
+    logger.info("==========对文档进行相关性评分")
     if not state.get("messages"):
         logger.error("Messages state is empty")
         return {
@@ -510,7 +510,7 @@ def grade_documents(state: MessagesState, llm_chat) -> dict:
         # logger.info(f"scored_result:{scored_result}")
         # 获取评分结果
         score = scored_result.binary_score
-        logger.info(f"Document relevance score: {score}")
+        logger.info(f"文档进行相关性评分结果: {score}")
 
         # 返回更新后的状态，包括评分结果
         return {
@@ -637,7 +637,7 @@ def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal[
 
         # 根据配置字典决定路由，若无配置则默认路由到 generate
         target = tool_config.get_tool_routing_config().get(tool_name, "generate")
-        logger.info(f"Tool {tool_name} routed to {target} based on config")
+        logger.info(f"=============工具Tool {tool_name} 路由到 {target} 节点")
         return target
 
     except IndexError:
@@ -667,7 +667,7 @@ def route_after_grade(state: MessagesState) -> Literal["generate", "rewrite"]:
     """
     # 检查状态是否为有效字典，若无效则记录错误并默认路由到 rewrite
     if not isinstance(state, dict):
-        logger.error("State is not a valid dictionary, defaulting to rewrite")
+        logger.error("State不是有效的字典, 默认跳到rewrite")
         return "rewrite"
 
     # 检查状态是否包含 messages 字段，若缺失则记录错误并默认路由到 rewrite
@@ -699,11 +699,11 @@ def route_after_grade(state: MessagesState) -> Literal["generate", "rewrite"]:
 
         # 如果评分结果为 "yes"，表示文档相关，路由到 generate 节点
         if relevance_score.lower() == "yes":
-            logger.info("Documents are relevant, proceeding to generate")
+            logger.info("文档相关, 跳转到generate节点")
             return "generate"
 
         # 如果评分结果为 "no" 或其他值（包括空字符串），路由到 rewrite 节点
-        logger.info("Documents are not relevant or scoring failed, proceeding to rewrite")
+        logger.info("文档不相关或者评分为no, 跳转到rewrite")
         return "rewrite"
 
     except AttributeError:
@@ -822,8 +822,8 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     # 添加从重写到代理的边
     workflow.add_edge(start_key="rewrite", end_key="agent")
 
-    graph = workflow.compile(checkpointer=checkpointer, store=store)
     # 编译状态图，绑定检查点和存储
+    graph = workflow.compile(checkpointer=checkpointer, store=store)
     return graph
 
 # import json
@@ -851,8 +851,15 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
     try:
         # 启动状态图流处理用户输入
         events = graph.stream({"messages": [{"role": "user", "content": user_input}], "rewrite_count": 0}, config)
+
+        # first_dict = next(events)
+        # # 现在你可以使用 new_it 来遍历所有除了第一个元素之外的其他项
+        # print(f"======hahhhahaha=========={first_dict.values()}")
         # 遍历事件流
+        # count=0
         for event in events:
+            # print(f"======{count+1}=========={event.values()}")
+            # count += 1
             # 遍历事件中的值
             for value in event.values():
                 # 检查是否有有效消息
@@ -860,7 +867,7 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
                     logger.warning("No valid messages in response")
                     continue
 
-                # 获取最后一条消息
+                # 获取最后一条消息为AIMessage
                 last_message = value["messages"][-1]
                 # 检查消息是否包含工具调用
                 if hasattr(last_message, "tool_calls") and last_message.tool_calls:
@@ -869,7 +876,7 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
                         # 检查工具调用是否为字典且包含名称
                         if isinstance(tool_call, dict) and "name" in tool_call:
                             # 记录工具调用日志
-                            logger.info(f"Calling tool: {tool_call['name']}")
+                            logger.info(f"=========2.AIMessage有tool_calls需要调用工具: {tool_call['name']}")
                     # 跳过本次循环
                     continue
 
