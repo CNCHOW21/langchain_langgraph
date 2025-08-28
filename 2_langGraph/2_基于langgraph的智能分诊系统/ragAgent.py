@@ -199,7 +199,7 @@ class ParallelToolNode(ToolNode):
         """执行单个工具调用"""
         # 使用try-except块捕获工具执行中的异常
         try:
-            print("========执行单个工具调用")
+            logger.info("=====执行单个工具调用")
             # 从tool_call字典中提取工具名称
             tool_name = tool_call["name"]
             # 从tool_map中获取对应的工具实例，若不存在则返回None
