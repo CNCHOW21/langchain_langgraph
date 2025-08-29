@@ -96,7 +96,7 @@ def getParagraphs(filename, page_numbers, min_line_length):
 if __name__ == "__main__":
     # 测试 PDF文档按一定条件处理成文本数据
     paragraphs = getParagraphs(
-        "../input/deepseek-v3-1-4.pdf",
+        "../input/english/deepseek-v3-1-4.pdf",
         # page_numbers=[2, 3],# 指定页面
         page_numbers=None,#加载全部页面
         min_line_length=1

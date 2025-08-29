@@ -6,10 +6,7 @@ import chromadb
 import uuid
 from utils import pdfSplitTest_Ch
 from utils import pdfSplitTest_En
-
-# 设置日志模版
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+from utils.logger import logger
 
 
 # GPT大模型 OpenAI相关配置
@@ -41,6 +38,7 @@ llmType = "qwen"
 # 设置测试文本类型 Chinese 或 English
 TEXT_LANGUAGE = 'Chinese'
 INPUT_PDF = "input/健康档案.pdf"
+FOLDER_PATH = "input"
 # TEXT_LANGUAGE = 'English'
 # INPUT_PDF = "input/deepseek-v3-1-4.pdf"
 
@@ -159,7 +157,11 @@ class MyVectorDBConnector:
 
 # 封装文本预处理及灌库方法, 提供外部调用
 def vectorStoreSave():
-    global TEXT_LANGUAGE, CHROMADB_COLLECTION_NAME, INPUT_PDF, PAGE_NUMBERS
+    global TEXT_LANGUAGE, CHROMADB_COLLECTION_NAME, INPUT_PDF, PAGE_NUMBERS, FOLDER_PATH
+
+    files = [f for f in os.listdir(FOLDER_PATH) if os.path.isfile(os.path.join(FOLDER_PATH, f))]
+    for file in files:
+        print(file)
 
     # 测试中文文本
     if TEXT_LANGUAGE == 'Chinese':
@@ -177,7 +179,7 @@ def vectorStoreSave():
         # 向向量数据库中添加文档（文本数据、文本数据对应的向量数据）
         vector_db.add_documents(paragraphs)
         # 3、封装检索接口进行检索测试
-        user_query = "张三九的基本信息是什么"
+        user_query = "张三的基本信息是什么"
         # 将检索出的5个近似的结果
         search_results = vector_db.search(user_query, 5)
         logger.info(f"检索向量数据库的结果: {search_results}")

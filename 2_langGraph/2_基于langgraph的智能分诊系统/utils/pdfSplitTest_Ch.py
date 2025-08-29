@@ -1,12 +1,8 @@
-import logging
 from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTTextContainer
+from utils.logger import logger
 import re
 
-
-# 设置日志模版
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
 
 
 # 当处理中文文本时，按照标点进行断句
@@ -89,7 +85,7 @@ def split_text(paragraphs, chunk_size=800, overlap_size=200):
 
 def getParagraphs(filename, page_numbers, min_line_length):
     paragraphs = extract_text_from_pdf(filename, page_numbers, min_line_length)
-    chunks = split_text(paragraphs, 800, 200)
+    chunks = split_text(paragraphs, 512, 128)
     return chunks
 
 
@@ -104,8 +100,8 @@ if __name__ == "__main__":
     # 测试前3条文本
     logger.info(f"只展示3段截取片段:")
     logger.info(f"截取的片段1: {paragraphs[0]}")
-    logger.info(f"截取的片段2: {paragraphs[2]}")
-    logger.info(f"截取的片段3: {paragraphs[3]}")
+    logger.info(f"截取的片段2: {paragraphs[1]}")
+    logger.info(f"截取的片段3: {paragraphs[2]}")
 
 
 

@@ -1,3 +1,4 @@
+from langchain.retrievers import MultiQueryRetriever
 from langchain_chroma import Chroma
 from langchain.tools.retriever import create_retriever_tool
 from langchain_community.tools import TavilySearchResults
@@ -5,7 +6,7 @@ from langchain_core.tools import tool
 from .config import Config
 
 
-def get_tools(llm_embedding):
+def get_tools(llm_embedding, llm_chat):
     """
     创建并返回工具列表
 
@@ -23,7 +24,12 @@ def get_tools(llm_embedding):
         embedding_function=llm_embedding,
     )
     # 将向量存储转换为检索器
-    retriever = vectorstore.as_retriever()
+    # retriever = vectorstore.as_retriever()
+    # 创建MultiQueryRetriever
+    retriever = MultiQueryRetriever.from_llm(
+        retriever=vectorstore.as_retriever(),
+        llm=llm_chat
+    )
     # 创建检索工具
     retriever_tool = create_retriever_tool(
         retriever,
@@ -43,7 +49,6 @@ def get_tools(llm_embedding):
         """这是一个用于在网络上搜索信息的工具，可以用来查找任何互联网上的内容。
         arg question: 问题描述
         """
-        print(f"=====调用web搜索工具，查询内容是：{question}")
         search_tool = TavilySearchResults()
         res = search_tool.invoke(question)
         return res[0].get("content")

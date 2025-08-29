@@ -1,12 +1,6 @@
 # 导入日志模块，用于记录程序运行时的信息
-import inspect
-import logging
 import traceback
 
-
-from concurrent_log_handler import ConcurrentRotatingFileHandler
-# 导入操作系统接口模块，用于处理文件路径和环境变量
-import os
 # 导入系统模块，用于处理系统相关的操作，如退出程序
 import sys
 import threading
@@ -56,60 +50,10 @@ from utils.tools_config import get_tools
 # 导入统一的 Config 类
 from utils.config import Config
 
+from utils.logger import logger
 
 
-# 这里的关键在于ClassNameFormatter类中重写了format方法，在该方法内，我们使用了inspect模块来跟踪当前执行上下文，
-# 并尝试找到发出日志请求的类实例。如果找到了，就将其类型名字作为classname添加到日志记录中；如果没有找到（即非类方法调用），
-# 则设置为"None"或者你想要的其他默认值。这样就可以在日志输出中看到类名信息了
-class ClassNameFormatter(logging.Formatter):
-    def format(self, record):
-        # 获取产生日志调用所在类的名称
-        frame = inspect.currentframe()
-        while frame:
-            arginfo = inspect.getargvalues(frame)
-            if 'self' in arginfo.args:
-                record.classname = type(arginfo.locals['self']).__name__
-                break
-            frame = frame.f_back
-        else:
-            # 如果不在任何类中，则设定为None或其他默认值
-            record.classname = "None"
 
-        # 使用自定义的格式化字符串
-        s = super().format(record)
-        return s
-
-# 设置日志基本配置，级别为DEBUG或INFO
-logger = logging.getLogger(__name__)
-# 设置日志器级别为DEBUG
-logger.setLevel(logging.DEBUG)
-# logger.setLevel(logging.INFO)
-logger.handlers = []  # 清空默认处理器
-# 使用ConcurrentRotatingFileHandler
-handler = ConcurrentRotatingFileHandler(
-    # 日志文件
-    Config.LOG_FILE,
-    # 日志文件最大允许大小为5MB，达到上限后触发轮转
-    maxBytes = Config.MAX_BYTES,
-    # 在轮转时，最多保留3个历史日志文件
-    backupCount = Config.BACKUP_COUNT
-)
-
-# 设置处理器级别处理器
-handler.setLevel(logging.DEBUG)
-# handler.setFormatter(logging.Formatter(
-#     "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-# ))
-formatter = ClassNameFormatter("[%(asctime)s] [%(threadName)s] [%(levelname)s] [%(filename)s:%(lineno)d] : %(message)s")
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
-# 创建并配置控制台处理器console日志
-# console_handler = logging.StreamHandler()
-# console_handler.setLevel(logging.DEBUG)
-# console_formatter = ClassNameFormatter("[%(asctime)s] [%(threadName)s] [%(levelname)s] [%(filename)s:%(lineno)d] : %(message)s")
-# console_handler.setFormatter(console_formatter)
-# logger.addHandler(console_handler)
 
 # 定义消息状态类，使用TypedDict进行类型注解
 class MessagesState(TypedDict):
@@ -827,18 +771,6 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     graph = workflow.compile(checkpointer=checkpointer, store=store)
     return graph
 
-# import json
-# def serialize_tool_message(obj):
-#     if isinstance(obj, ToolMessage):
-#         return {
-#             "type": "ToolMessage",
-#             "content": obj.content,
-#             "tool_call_id": obj.tool_call_id,
-#             "name": obj.name,
-#             # 其他需要序列化的属性
-#         }
-#     raise TypeError(f"Type {type(obj)} not serializable")
-
 def truncate_content(content, max_length=100):
     """
     截断内容，确保其长度不超过指定的最大长度。
@@ -910,6 +842,7 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
                     # 情况1：工具输出（动态检查工具名称）
                     if hasattr(last_message, "name") and last_message.name in tool_config.get_tool_names():
                         tool_name = last_message.name
+                        # 日志返回过多，限制在100字以内输出
                         log_tool_output(tool_name, content)
                     # 情况2：大模型输出（非工具消息）
                     else:
@@ -937,7 +870,7 @@ def main():
         llm_chat, llm_embedding = get_llm(Config.LLM_TYPE)
 
         # 获取工具列表
-        tools = get_tools(llm_embedding)
+        tools = get_tools(llm_embedding, llm_chat)
 
         # 创建 ToolConfig 实例
         tool_config = ToolConfig(tools)

@@ -1,14 +1,10 @@
 import os
-import logging
-
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI,OpenAIEmbeddings
+from .logger import logger
 
 load_dotenv()
 
-# 设置日志模版
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
 
 
 # 模型配置字典
