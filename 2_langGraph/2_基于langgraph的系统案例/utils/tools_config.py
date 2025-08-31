@@ -4,6 +4,7 @@ from langchain.tools.retriever import create_retriever_tool
 from langchain_community.tools import TavilySearchResults
 from langchain_core.tools import tool
 from .config import Config
+from .qwen_agent_run import run_agent
 
 
 def get_tools(llm_embedding, llm_chat):
@@ -11,8 +12,8 @@ def get_tools(llm_embedding, llm_chat):
     创建并返回工具列表
 
     Args:
-        llm_embedding: 嵌入模型实例，用于初始化向量存储
 
+        llm_embedding: 嵌入模型实例，用于初始化向量存储
     Returns:
         list: 工具列表
     """
@@ -37,22 +38,23 @@ def get_tools(llm_embedding, llm_chat):
         description="这是健康档案查询工具，搜索并返回有关用户的健康档案信息。"
     )
 
-    # 自定义 multiply 工具
-    # @tool
-    # def multiply(a: float, b: float) -> float:
-    #     """这是计算两个数的乘积的工具，返回最终计算结果"""
-    #     return a * b
-
     # 自定义 search 工具，不要使用search作为名称
     @tool
     def search_web(question: str) -> str:
         """这是一个用于在网络上搜索信息的工具，可以用来查找任何互联网上的内容。
-        arg question: 问题描述
         """
         search_tool = TavilySearchResults()
         res = search_tool.invoke(question)
         return res[0].get("content")
 
 
+    # 自定义Qwen-Agent工具，测试是否能取代langchain+RAG
+    @tool
+    def qwen_agent_query(question: str) -> str:
+        """这是一个用于查询个人信息的工具，可以用来查找个人的offer信息。
+        """
+        response = run_agent(question)
+        return response
+
     # 返回工具列表
-    return [retriever_tool, search_web]
+    return [retriever_tool, search_web, qwen_agent_query]

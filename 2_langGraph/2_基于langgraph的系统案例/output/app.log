@@ -1,0 +1,805 @@
+
+[2025-08-29 20:11:46,599] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:12:46,601] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:13:46,603] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:14:46,612] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:15:46,618] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:16:46,645] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:17:46,650] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:18:46,653] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:19:46,653] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:20:46,654] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:21:46,696] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:22:46,701] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:23:46,702] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:24:46,703] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:25:46,704] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:26:46,782] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:27:46,830] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:28:46,833] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:29:46,836] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:30:46,844] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:31:46,846] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:32:46,848] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:33:46,848] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:34:46,849] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:35:46,852] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:36:46,856] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:37:46,856] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:38:46,860] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:39:46,863] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:40:46,867] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:41:46,871] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:42:46,874] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:43:46,874] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:44:46,877] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:45:46,880] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:46:46,883] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:47:46,904] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:48:46,908] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:49:46,911] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:50:46,914] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:51:46,919] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:52:46,921] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:53:46,921] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:54:46,925] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:55:46,930] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:56:46,956] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:57:46,957] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:58:46,962] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 20:59:46,964] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:00:46,966] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:01:46,974] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:02:46,976] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:03:46,981] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:04:46,983] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:05:46,984] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:06:46,988] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:07:46,991] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:08:46,996] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:09:46,998] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:10:47,001] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:11:47,002] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:12:47,004] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:13:47,005] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:14:47,011] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:15:47,013] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:16:47,015] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:17:47,020] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:18:47,026] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:19:47,028] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:20:47,030] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:21:47,033] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:22:47,036] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:23:47,038] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:24:47,040] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:25:47,042] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:26:47,045] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:27:47,047] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:28:47,049] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:29:47,051] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:30:47,053] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:31:47,055] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:32:47,056] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:33:47,059] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:34:47,061] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:35:47,072] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:36:47,074] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:37:47,075] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:38:47,077] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:39:47,085] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:40:47,088] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:41:47,106] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:42:47,108] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:43:47,110] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:44:47,111] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:45:47,113] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:46:47,115] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:47:47,117] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:48:47,120] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:49:47,124] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-29 21:50:09,265] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 14:14:07,853] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 14:14:09,091] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 14:14:09,093] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 14:14:09,094] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate'}
+[2025-08-31 14:14:09,097] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 14:14:09,100] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 14:14:09,103] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:14:09,233] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 14:14:10,225] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 14:14:18,735] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 14:14:18,737] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好' additional_kwargs={} response_metadata={} id='9fce3f96-dbdb-45f6-b0d0-4731e97daa0f'
+[2025-08-31 14:14:19,253] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:14:19,254] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 14:14:20,491] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么我可以帮你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 8, 'prompt_tokens': 1678, 'total_tokens': 1686, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--3562751d-7ee7-486d-bfbd-e27408ce161d-0' usage_metadata={'input_tokens': 1678, 'output_tokens': 8, 'total_tokens': 1686, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 14:14:20,577] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:15:09,105] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:16:09,108] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:16:19,258] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 14:16:19,259] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='金晨身高多少？' additional_kwargs={} response_metadata={} id='01740ee5-0b16-451f-86d9-ecf588ed3518'
+[2025-08-31 14:16:19,519] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:16:19,526] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 14:16:21,558] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_4be1cacc34fd4c208850f9', 'function': {'arguments': '{"question": "金晨身高多少？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 1436, 'total_tokens': 1457, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--1b63af48-2a04-4bad-8db4-f2a807b5b861-0' tool_calls=[{'name': 'search_web', 'args': {'question': '金晨身高多少？'}, 'id': 'call_4be1cacc34fd4c208850f9', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1436, 'output_tokens': 21, 'total_tokens': 1457, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 14:16:21,563] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-08-31 14:16:23,606] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 14:16:23,608] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-08-31 14:16:23,611] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:16:23,614] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: 金晨
+
+Image 1
+
+金晨
+==
+
+Image 2
+
+金晨
+
+金晨
+
+Chen Jin
+
+关注
+
+Chen Jin
+
+演员
+
+个人作品
+
+影人相册
+
+荣誉成就
+
+基本信息
+
+国籍：中国
+
+民族：回...
+[2025-08-31 14:16:23,615] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 14:16:23,617] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:16:23,619] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 14:16:24,551] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:16:56,336] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 14:16:56,338] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='金晨脚什么码？' additional_kwargs={} response_metadata={} id='343a8474-816b-4af7-a6f9-7d0c28a79e10'
+[2025-08-31 14:16:56,603] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:16:56,604] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 14:16:57,916] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_f181404b701846ad8196bd', 'function': {'arguments': '{"question": "金晨脚什么码？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 22, 'prompt_tokens': 1369, 'total_tokens': 1391, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--4f78a830-eb5b-4c40-87d7-aa2f2fac43a8-0' tool_calls=[{'name': 'search_web', 'args': {'question': '金晨脚什么码？'}, 'id': 'call_f181404b701846ad8196bd', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1369, 'output_tokens': 22, 'total_tokens': 1391, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 14:16:57,922] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-08-31 14:17:03,066] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 14:17:03,070] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-08-31 14:17:03,076] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:17:03,078] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: 金晨今天于鞋子抗争的一天。来句河东狮吼让脚进去#精彩片段哈哈哈哈，谁难受谁知道，谁卡谁知道。右脚应该穿三八的，右脚穿三八的啊，这个气血怎么也没个拉链啥的呀。
+[2025-08-31 14:17:03,079] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 14:17:03,081] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:17:03,082] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 14:17:07,050] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:17:09,110] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:18:09,112] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:19:09,115] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:20:09,118] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:21:09,120] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:22:09,123] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:23:09,124] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:24:09,125] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:25:09,129] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:26:09,131] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:26:31,771] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 14:26:31,773] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='科目二有什么项目？' additional_kwargs={} response_metadata={} id='8bc91e85-38d5-4ad7-a175-4e58dbec146d'
+[2025-08-31 14:26:32,046] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:26:32,047] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 14:26:34,180] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_c96fd01f2e8e4ec68c102d', 'function': {'arguments': '{"question": "科目二有什么项目？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 1405, 'total_tokens': 1426, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--9bf677cd-1a73-482e-9b86-d65edfe41465-0' tool_calls=[{'name': 'search_web', 'args': {'question': '科目二有什么项目？'}, 'id': 'call_c96fd01f2e8e4ec68c102d', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1405, 'output_tokens': 21, 'total_tokens': 1426, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 14:26:34,186] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-08-31 14:26:37,953] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 14:26:37,954] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-08-31 14:26:37,959] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:26:37,962] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: 前言： 这里仅仅作为笔者记录 _科目_ _二_ 各个项目的注意要点总结，笔力有限较为粗糙（仅记录关键要点），由于操作要领随各个 _驾_ 校的教学而不同，这里仅作参 _考_ 使用，具体要求以各自具体实际...
+[2025-08-31 14:26:37,963] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 14:26:37,964] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 14:26:37,965] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 14:26:50,395] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 14:27:09,133] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:28:09,134] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:29:09,140] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:30:09,142] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 14:31:06,511] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 15:39:27,303] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 15:39:28,228] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 15:39:28,230] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 15:39:28,232] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 15:39:28,234] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'retrieve', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 15:39:28,239] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 15:39:28,240] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 15:39:28,242] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:39:28,369] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 15:39:29,159] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 15:39:48,728] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 15:39:48,735] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='d076d1f5-c5a1-4190-8573-ad7e5af72099'
+[2025-08-31 15:39:49,111] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 15:39:49,113] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 15:39:54,816] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_d3eb847fc24c47328bf52a', 'function': {'arguments': '{"question": "刘舟的工资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1677, 'total_tokens': 1701, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--f3d899de-66f1-467e-8576-a9c4d234b8f3-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的工资多少？'}, 'id': 'call_d3eb847fc24c47328bf52a', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1677, 'output_tokens': 24, 'total_tokens': 1701, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 15:39:54,823] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 15:39:54,829] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 15:39:54,830] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 15:39:54,841] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 15:39:54,843] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: Error: AttributeError("module 'qwen_agent' has no attribute 'qwen_agent_query'")
+ Please fix your mi...
+[2025-08-31 15:39:54,844] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 15:39:54,845] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 15:39:54,846] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 15:39:56,771] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 15:40:28,245] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:41:28,247] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:42:28,250] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:43:28,252] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:44:28,255] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:45:28,257] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:46:28,260] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:47:28,262] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:48:28,266] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:49:28,334] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:50:28,373] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:51:28,376] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 15:52:10,034] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:06:39,230] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:06:39,886] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:06:39,888] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:06:39,891] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:06:39,895] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:06:39,900] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:06:39,903] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:06:39,905] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:06:39,958] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:06:43,207] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:06:53,841] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:06:53,842] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='4b14bf8e-38f4-481d-b3f2-57425d33f9ef'
+[2025-08-31 16:06:54,187] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:06:54,189] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:06:56,594] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='您好，关于刘舟的工资信息，我并没有相关数据。而且，根据隐私保护原则，个人薪资信息是敏感且私密的，通常不会公开分享。如果您有其他问题需要帮助，请告诉我！' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 45, 'prompt_tokens': 1687, 'total_tokens': 1732, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--e8a090ab-4d2c-4efd-83ee-2f80cd848bd3-0' usage_metadata={'input_tokens': 1687, 'output_tokens': 45, 'total_tokens': 1732, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:06:56,735] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:07:30,984] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:07:30,986] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='d74924e5-33d5-4896-a73c-698ae608c0bd'
+[2025-08-31 16:07:31,261] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:07:31,263] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 16:07:33,131] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='您好，关于刘舟的薪资信息，我并没有相关数据。而且，根据隐私保护原则，个人薪资信息是敏感且私密的，通常不会公开分享。如果您有其他问题需要帮助，请告诉我！' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 45, 'prompt_tokens': 1508, 'total_tokens': 1553, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--e9410915-c094-4119-bfad-0e5df81a1549-0' usage_metadata={'input_tokens': 1508, 'output_tokens': 45, 'total_tokens': 1553, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:07:33,299] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:07:39,911] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:07:52,335] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:07:52,337] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟是什么职位？' additional_kwargs={} response_metadata={} id='00867a70-0a9a-4229-9fd5-8d449f7bcf55'
+[2025-08-31 16:07:52,715] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:07:52,716] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 16:07:54,827] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='您好，关于刘舟的职位信息，我并没有相关数据。如果刘舟是公开人物或您能提供更多背景信息，或许我可以尝试在线搜索相关信息。如果是公司内部人员的信息查询，可能需要通过公司内部系统来获取。如果您有其他问题需要帮助，请告诉我！' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 59, 'prompt_tokens': 1244, 'total_tokens': 1303, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--4f99ef00-2bb7-4583-8856-83a8c0436248-0' usage_metadata={'input_tokens': 1244, 'output_tokens': 59, 'total_tokens': 1303, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:07:55,009] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:08:38,177] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:08:55,068] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:08:55,395] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:08:55,396] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:08:55,398] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:08:55,399] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:08:55,403] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:08:55,406] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:08:55,408] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:08:55,453] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:08:57,127] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:09:25,321] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:09:25,323] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位多少？' additional_kwargs={} response_metadata={} id='458d95c1-6233-4f9f-96db-069e7e943796'
+[2025-08-31 16:09:25,665] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:09:25,666] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:09:27,036] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_3757a7d860384be39d636c', 'function': {'arguments': '{"question": "刘舟的职位"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 22, 'prompt_tokens': 1269, 'total_tokens': 1291, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--8c714fee-b2ac-4fe2-b35e-64dd952268f7-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的职位'}, 'id': 'call_3757a7d860384be39d636c', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1269, 'output_tokens': 22, 'total_tokens': 1291, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:09:27,043] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:09:27,052] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 16:09:27,054] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 16:09:27,061] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:09:27,063] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: Error: NameError("name 'qwen_agent_run' is not defined")
+ Please fix your mistakes.
+[2025-08-31 16:09:27,065] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 16:09:27,067] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:09:27,068] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 16:09:30,684] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:09:55,411] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:10:55,413] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:11:04,518] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:19:25,215] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:19:25,555] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:19:25,556] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:19:25,558] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:19:25,559] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:19:25,563] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:19:25,566] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:19:25,568] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:19:25,617] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:19:27,621] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:19:39,605] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:19:39,606] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位是什么？' additional_kwargs={} response_metadata={} id='84954508-898e-427a-a6d0-f9d92945d22f'
+[2025-08-31 16:19:40,069] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:19:40,070] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:19:41,750] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_91053deb91cd4c238d0cbb', 'function': {'arguments': '{"question": "刘舟的职位"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 22, 'prompt_tokens': 1548, 'total_tokens': 1570, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--b6e7bc14-2e83-43b2-9308-ca7bd6974a8e-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的职位'}, 'id': 'call_91053deb91cd4c238d0cbb', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1548, 'output_tokens': 22, 'total_tokens': 1570, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:19:41,755] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:19:44,501] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 16:19:44,502] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 16:19:44,506] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:19:44,511] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 关于刘舟的具体职位，您提供的信息不足以让我给出准确的答案。如果刘舟是您的同事或您所在行业内的知名人士，请提供更多的相关信息，比如他/她工作的公司名称、部门或者是工作内容等，这样我才能更准确地帮助到您。...
+[2025-08-31 16:19:44,512] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 16:19:44,513] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:19:44,514] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 16:19:47,096] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:20:25,595] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:21:25,598] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:21:36,129] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:21:54,384] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:21:54,743] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:21:54,745] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:21:54,746] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:21:54,747] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:21:54,752] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:21:54,755] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:21:54,757] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:21:54,810] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:21:55,859] [MainThread] [ERROR] [ragAgent.py:940] : Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+[2025-08-31 16:21:55,981] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:22:26,614] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:22:26,928] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:22:26,930] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:22:26,932] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:22:26,939] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:22:26,943] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:22:26,946] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:22:26,948] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:22:27,003] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:22:29,297] [MainThread] [ERROR] [ragAgent.py:940] : Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+[2025-08-31 16:22:29,311] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:23:23,882] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:23:24,229] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:23:24,231] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:23:24,232] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:23:24,234] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:23:24,237] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:23:24,240] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:23:24,241] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:23:24,279] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:23:50,277] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:23:50,621] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:23:50,623] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:23:50,624] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:23:50,626] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:23:50,629] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:23:50,631] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:23:50,633] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:23:50,675] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:23:52,977] [MainThread] [ERROR] [ragAgent.py:940] : Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+[2025-08-31 16:23:52,987] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:24:46,207] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:24:46,583] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:24:46,586] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:24:46,590] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:24:46,592] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:24:46,597] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:24:46,600] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:24:46,604] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:24:46,645] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:24:47,030] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:25:00,182] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:25:00,183] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好，请问刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='bb4cdc92-5930-4e03-b90e-201ba7da9f16'
+[2025-08-31 16:25:07,506] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:25:07,508] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:25:33,870] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_c4b8fd877c014f63b813dd', 'function': {'arguments': '{"question": "刘舟的薪资"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 25, 'prompt_tokens': 1528, 'total_tokens': 1553, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--a4673a77-74ae-4cb2-b312-024c01c02bca-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资'}, 'id': 'call_c4b8fd877c014f63b813dd', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1528, 'output_tokens': 25, 'total_tokens': 1553, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:25:33,876] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:25:46,606] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:26:46,608] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:27:47,194] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:27:47,522] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:27:47,525] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:27:47,527] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:27:47,528] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:27:47,532] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:27:47,535] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:27:47,537] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:27:47,580] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:27:47,956] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:28:03,955] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:28:03,957] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='9f8ad18f-8223-4d1b-be36-6f9d80ff836d'
+[2025-08-31 16:28:09,403] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:28:09,404] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:28:13,222] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 1583, 'total_tokens': 1590, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--2b4acaee-4cea-4ab5-950f-5d36039bea2f-0' usage_metadata={'input_tokens': 1583, 'output_tokens': 7, 'total_tokens': 1590, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:28:13,392] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:28:23,714] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:28:23,717] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='请问刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='33bf0d00-6ce3-4b1b-a59e-2365a4988ffe'
+[2025-08-31 16:28:26,843] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:28:26,844] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 16:28:35,372] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b798f7e9dac54db9a58c4b', 'function': {'arguments': '{"question": "刘舟的薪资多少"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 23, 'prompt_tokens': 1280, 'total_tokens': 1303, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--c295f45a-0f46-48a7-8f3a-d88e358bda46-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资多少'}, 'id': 'call_b798f7e9dac54db9a58c4b', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1280, 'output_tokens': 23, 'total_tokens': 1303, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:28:35,379] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:28:47,541] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:29:14,301] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 16:29:14,302] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 16:29:14,307] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:29:14,310] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 刘舟的职位是Java软件工程师，属于助理工程师级。根据Offer Letter中的信息，其薪资构成如下：
+
+- **岗位基本年收入**：44,400元人民币
+- **岗位基本月薪酬**：2,800元人...
+[2025-08-31 16:29:14,312] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 16:29:14,313] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:29:14,314] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 16:29:23,033] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:29:47,544] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:30:19,517] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:30:19,520] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的电话是多少？' additional_kwargs={} response_metadata={} id='550ecd39-096a-4277-a2ad-1ccfc4c4778e'
+[2025-08-31 16:30:24,268] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:30:24,270] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 16:30:29,636] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_5284dbb06db34bc4adf198', 'function': {'arguments': '{"question": "刘舟的电话是多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 27, 'prompt_tokens': 1512, 'total_tokens': 1539, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--c11926cb-28f2-440c-ad67-04d7c62da1fd-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的电话是多少？'}, 'id': 'call_5284dbb06db34bc4adf198', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1512, 'output_tokens': 27, 'total_tokens': 1539, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:30:29,641] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:30:47,551] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:31:47,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:32:47,556] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:33:47,563] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:34:41,614] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:34:41,974] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:34:41,976] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:34:41,977] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:34:41,978] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:34:41,981] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:34:41,983] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:34:41,985] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:34:42,041] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:34:43,358] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:35:21,438] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:35:21,441] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位是什么？' additional_kwargs={} response_metadata={} id='53fdffac-851a-4302-a039-e5687796c1c1'
+[2025-08-31 16:35:25,790] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:35:25,794] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:35:35,654] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_875c5d2e7e6c472fb32cfb', 'function': {'arguments': '{"question": "刘舟的职位是什么？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1634, 'total_tokens': 1658, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--3cf44157-31ee-4ae1-aede-1403312d27da-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的职位是什么？'}, 'id': 'call_875c5d2e7e6c472fb32cfb', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1634, 'output_tokens': 24, 'total_tokens': 1658, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:35:35,660] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:35:41,987] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:36:41,990] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:37:41,993] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:38:42,004] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:39:42,011] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:40:42,021] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:41:08,700] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 16:41:08,702] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 16:41:08,706] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:41:08,709] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: Error: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): R...
+[2025-08-31 16:41:08,710] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 16:41:08,713] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:41:08,715] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 16:41:16,710] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:41:42,024] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:42:42,026] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:43:42,029] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:44:42,031] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:45:42,034] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:46:42,037] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:47:42,039] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:48:42,041] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:49:42,043] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:50:42,046] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:51:42,047] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:52:15,839] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 16:55:44,360] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 16:55:44,695] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 16:55:44,696] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:55:44,697] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 16:55:44,698] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 16:55:44,702] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 16:55:44,704] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 16:55:44,706] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:55:44,746] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 16:55:45,022] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 16:56:04,698] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 16:56:04,700] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位是什么？' additional_kwargs={} response_metadata={} id='d40671e3-3201-4423-97b9-ca455ba4f683'
+[2025-08-31 16:56:23,438] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:56:23,440] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 16:56:44,710] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:57:05,640] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b1e574bb8e224414b83ded', 'function': {'arguments': '{"question": "刘舟的职位是什么？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1608, 'total_tokens': 1632, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--ab0ea6ab-0155-47ab-bb0a-2ca471762643-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的职位是什么？'}, 'id': 'call_b1e574bb8e224414b83ded', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1608, 'output_tokens': 24, 'total_tokens': 1632, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 16:57:05,646] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 16:57:31,471] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 16:57:31,473] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 16:57:31,477] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:57:31,480] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 刘舟的职位是Java软件工程师，属于助理工程师级。
+[2025-08-31 16:57:31,483] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 16:57:31,485] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 16:57:31,486] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 16:57:36,118] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 16:57:44,712] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:58:44,714] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 16:59:44,717] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:00:44,730] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:01:14,309] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:01:14,311] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='王语会的薪资多少？' additional_kwargs={} response_metadata={} id='4e947d48-999d-4648-8235-d597ac4a8deb'
+[2025-08-31 17:01:16,416] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:01:16,418] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:01:44,732] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:02:21,690] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_e6497650c580457fb0d44d', 'function': {'arguments': '{"question": "王语会的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 25, 'prompt_tokens': 1487, 'total_tokens': 1512, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--d0d3ddb0-7891-4f11-a833-4d83bebe177b-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '王语会的薪资多少？'}, 'id': 'call_e6497650c580457fb0d44d', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1487, 'output_tokens': 25, 'total_tokens': 1512, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:02:21,704] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:02:44,735] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:03:07,602] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:03:07,604] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:03:07,608] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:03:07,612] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 根据提供的Offer Letter内容，王语的薪资信息如下：
+
+- **岗位基本月薪酬**：2800元人民币
+- **基本月工资（社保基数）**：1680元人民币
+- **基本月奖金**：1120元人...
+[2025-08-31 17:03:07,614] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:03:07,616] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:03:07,617] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 17:03:39,618] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:03:44,738] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:04:44,739] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:05:44,741] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:06:44,743] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:07:44,745] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:08:44,748] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:09:44,750] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:10:44,751] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:11:44,753] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:12:02,612] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:12:02,613] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='桑桑是谁？' additional_kwargs={} response_metadata={} id='bd407451-8340-4042-a61d-ac9ccba0ff16'
+[2025-08-31 17:12:06,356] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:12:06,357] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:12:10,893] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_9043863a62d046f88836e3', 'function': {'arguments': '{"question": "桑桑是谁？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 20, 'prompt_tokens': 1522, 'total_tokens': 1542, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--e8111842-32db-4f59-8266-d0b55d0844b0-0' tool_calls=[{'name': 'search_web', 'args': {'question': '桑桑是谁？'}, 'id': 'call_9043863a62d046f88836e3', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1522, 'output_tokens': 20, 'total_tokens': 1542, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:12:10,898] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-08-31 17:12:15,336] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:12:15,337] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-08-31 17:12:15,341] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:12:15,343] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: 桑桑是2019年播出的电视剧《将夜2》中的女主角，由中国内地演员宋伊人饰演。该角色设定为男主角宁缺的侍女，因幼年阴寒侵体导致体质虚弱，后揭示其真实身份为冥王之女，拥有
+[2025-08-31 17:12:15,345] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:12:15,346] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:12:15,347] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 17:12:20,512] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:12:44,756] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:13:44,758] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:14:44,760] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:15:44,762] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:16:44,764] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:17:44,766] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:18:09,619] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 17:18:35,789] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 17:18:36,064] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 17:18:36,065] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:18:36,067] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:18:36,068] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 17:18:36,071] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 17:18:36,074] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 17:18:36,075] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:18:36,120] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 17:18:36,467] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 17:18:48,971] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:18:48,973] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='04703516-68e3-4b64-b4e9-6f7cb129e30e'
+[2025-08-31 17:18:56,936] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:18:56,937] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 17:19:02,185] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_a0b20322f96e43128ee167', 'function': {'arguments': '{"question": "刘舟的工资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1612, 'total_tokens': 1636, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--a8df5555-0866-422d-ba96-e970e44d076f-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的工资多少？'}, 'id': 'call_a0b20322f96e43128ee167', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1612, 'output_tokens': 24, 'total_tokens': 1636, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:19:02,191] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:19:28,642] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:19:28,643] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:19:28,649] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:19:28,651] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 根据Offer Letter中的信息，刘舟作为助理工程师级的Java软件工程师，其薪酬构成如下：
+
+- 岗位基本年收入：44,400元人民币
+- 岗位基本月薪酬：2,800元人民币
+  - 其中包括：...
+[2025-08-31 17:19:28,654] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:19:28,656] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:19:28,658] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 17:19:36,079] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:19:41,552] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:19:57,652] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:19:57,654] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位是什么？' additional_kwargs={} response_metadata={} id='206cdcc2-eed1-48c4-bcee-ccab82281d52'
+[2025-08-31 17:20:00,202] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:20:00,204] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:20:33,557] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_e1e2cf9dbb4340099427dd', 'function': {'arguments': '{"question": "刘舟的职位是什么？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1648, 'total_tokens': 1672, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--c5b423f8-3f26-4304-a3e9-a6469ce5ffc1-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的职位是什么？'}, 'id': 'call_e1e2cf9dbb4340099427dd', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1648, 'output_tokens': 24, 'total_tokens': 1672, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:20:33,562] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:20:36,082] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:20:45,950] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:20:45,951] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:20:45,955] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:20:45,957] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 刘舟的职位是Java软件工程师，属于助理工程师级。
+[2025-08-31 17:20:45,958] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:20:45,960] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:20:45,961] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 17:20:52,376] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:21:27,531] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 17:21:46,742] [MainThread] [INFO] [llms.py:90] : 成功初始化 qwen LLM
+[2025-08-31 17:21:47,012] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 17:21:47,014] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:21:47,015] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:21:47,016] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'search_web', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 17:21:47,020] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 17:21:47,022] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 17:21:47,024] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:21:47,065] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 17:21:58,022] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 17:22:44,479] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:22:44,481] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的职位是什么？' additional_kwargs={} response_metadata={} id='06216324-137a-4de1-8807-ed8ece808854'
+[2025-08-31 17:22:47,027] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:23:08,763] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:23:08,764] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 17:23:45,364] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='刘舟的职位是Java软件工程师，属于助理工程师级。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 14, 'prompt_tokens': 1561, 'total_tokens': 1575, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--8e05eeea-c14d-4043-81a4-06d47c483302-0' usage_metadata={'input_tokens': 1561, 'output_tokens': 14, 'total_tokens': 1575, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:23:45,529] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:23:47,029] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:24:47,031] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:25:35,360] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:25:35,362] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='aacd1f42-fd35-46b6-a245-739503afc252'
+[2025-08-31 17:25:47,034] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:25:50,411] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:25:50,413] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:25:55,080] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_30f105eb5733442482a6e8', 'function': {'arguments': '{"question": "刘舟的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 27, 'prompt_tokens': 1438, 'total_tokens': 1465, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--b0eaab22-6b71-41f4-abb7-b8c7d20a08cc-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资多少？'}, 'id': 'call_30f105eb5733442482a6e8', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1438, 'output_tokens': 27, 'total_tokens': 1465, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:25:55,087] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:26:47,037] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:27:47,040] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:28:43,368] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:28:43,369] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:28:43,375] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:28:43,377] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 刘舟的薪资构成如下：
+
+- 基本月薪酬：2800元人民币
+- 基本月工资（社保基数）：1680元人民币
+- 基本月奖金：1120元人民币
+
+此外，还有福利津贴和其他可能的补充业绩奖金。基本福利补贴全年...
+[2025-08-31 17:28:43,379] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:28:43,381] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:28:43,381] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 17:28:47,043] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:28:52,292] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:29:47,046] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:29:57,279] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:29:57,281] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='琪奥的薪资多少？' additional_kwargs={} response_metadata={} id='d8300343-2304-4f84-be7c-08ab085bddc8'
+[2025-08-31 17:29:59,413] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:29:59,414] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:30:17,826] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_ddcf6ca13e2c48fc8e6885', 'function': {'arguments': '{"question": "琪奥的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1573, 'total_tokens': 1597, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--f6117250-6702-4018-848d-bdbebdcf5d2c-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '琪奥的薪资多少？'}, 'id': 'call_ddcf6ca13e2c48fc8e6885', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1573, 'output_tokens': 24, 'total_tokens': 1597, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:30:17,831] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:30:47,048] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:31:47,051] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:32:47,053] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:33:42,269] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:33:42,271] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:33:42,275] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:33:42,278] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 提供的信息中并没有提到名为“琪奥”的员工的具体薪资。文件中提到的是一个Java软件工程师的薪资构成，包括基本月薪酬2800元人民币（社保基数1680元）和基本月奖金1120元人民币。如果琪奥是这个职位...
+[2025-08-31 17:33:42,280] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:33:42,282] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:33:42,283] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 17:33:47,056] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:33:50,727] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:34:47,058] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:35:47,061] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:36:47,063] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:37:47,066] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:38:47,069] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:39:47,072] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:40:47,075] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:41:47,077] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:42:47,081] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:43:47,083] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:44:47,087] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:45:47,089] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:46:47,105] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:47:44,145] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 17:48:37,302] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-08-31 17:48:37,630] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 17:48:37,633] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:48:37,635] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 17:48:37,637] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'search_web', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 17:48:37,640] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 17:48:37,642] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 17:48:37,644] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:48:37,686] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 17:48:38,217] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 17:49:37,647] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:50:37,650] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:50:38,981] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:50:38,983] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好' additional_kwargs={} response_metadata={} id='e5b230a8-05a3-4005-9c9a-c48ef0ea29e6'
+[2025-08-31 17:50:40,107] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:50:40,109] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 17:50:56,676] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 1667, 'total_tokens': 1674, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--d1850f2c-ddc1-48a5-9fca-22583bbe2f1b-0' usage_metadata={'input_tokens': 1667, 'output_tokens': 7, 'total_tokens': 1674, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:50:56,824] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:51:18,257] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:51:18,259] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='王欣的工资多少？' additional_kwargs={} response_metadata={} id='d130453e-7954-4f5d-a95c-9af6076e7fed'
+[2025-08-31 17:51:24,420] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:51:24,422] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:51:37,653] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:52:03,338] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_8c101417c13744b1a20451', 'function': {'arguments': '{"question": "王欣的工资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1540, 'total_tokens': 1564, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--440892e5-7599-4775-9955-abfa2bfdc38c-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '王欣的工资多少？'}, 'id': 'call_8c101417c13744b1a20451', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1540, 'output_tokens': 24, 'total_tokens': 1564, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:52:03,344] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:52:36,280] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:52:36,281] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:52:36,285] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:52:36,289] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 没有相关信息。
+[2025-08-31 17:52:36,290] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:52:36,293] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:52:36,295] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 17:52:37,655] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:53:03,194] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:53:37,656] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:53:41,615] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:53:41,617] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='王语会的信息多少？' additional_kwargs={} response_metadata={} id='95ed580c-8612-4023-864b-f0bd867e0bd4'
+[2025-08-31 17:53:44,755] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:53:44,757] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:54:20,263] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_273238f1afd14a5fafc84d', 'function': {'arguments': '{"question": "王语会的信息多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 27, 'prompt_tokens': 1447, 'total_tokens': 1474, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--ee0276ab-b239-4aed-96ea-8ef405dd679c-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '王语会的信息多少？'}, 'id': 'call_273238f1afd14a5fafc84d', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1447, 'output_tokens': 27, 'total_tokens': 1474, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:54:20,271] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:54:37,658] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:54:38,866] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 17:54:38,870] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 17:54:38,875] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:54:38,878] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 没有相关信息。
+[2025-08-31 17:54:38,880] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 17:54:38,882] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:54:38,883] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 17:54:44,010] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 17:55:23,165] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 17:55:23,166] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资所少？' additional_kwargs={} response_metadata={} id='61a8479e-94d4-4092-bf6f-72bb8694c92b'
+[2025-08-31 17:55:25,840] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 17:55:25,842] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 17:55:37,661] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:55:37,869] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b6bdab9ed32549b68d9a68', 'function': {'arguments': '{"question": "刘舟的薪资所少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 28, 'prompt_tokens': 1471, 'total_tokens': 1499, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--00c5b075-8733-48b7-9aa5-21be81b2dbb5-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资所少？'}, 'id': 'call_b6bdab9ed32549b68d9a68', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1471, 'output_tokens': 28, 'total_tokens': 1499, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 17:55:37,876] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 17:56:37,663] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:57:37,665] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:58:37,667] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 17:59:37,669] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:00:37,671] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:00:37,901] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 18:00:37,902] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 18:00:37,906] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:00:37,909] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: Error: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): R...
+[2025-08-31 18:00:37,911] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 18:00:37,912] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 18:00:37,913] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 18:00:46,082] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:01:37,679] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:02:04,119] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-08-31 18:02:28,490] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-08-31 18:02:28,752] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-08-31 18:02:28,754] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 18:02:28,755] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-08-31 18:02:28,756] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'retrieve', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-08-31 18:02:28,760] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-08-31 18:02:28,763] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-08-31 18:02:28,765] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:02:28,805] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-08-31 18:02:29,033] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-08-31 18:02:49,062] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 18:02:49,064] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='e9636048-ade8-4787-bb3e-522bc1a9bfa1'
+[2025-08-31 18:02:55,458] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 18:02:55,460] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-08-31 18:03:05,292] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b5bc801720b14d53812779', 'function': {'arguments': '{"question": "刘舟的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1527, 'total_tokens': 1551, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--caf0adf0-4b7f-48fc-810e-429471499b92-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资多少？'}, 'id': 'call_b5bc801720b14d53812779', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1527, 'output_tokens': 24, 'total_tokens': 1551, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 18:03:05,297] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 18:03:27,028] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 18:03:27,029] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 18:03:27,035] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:03:27,038] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 根据提供的信息，刘舟作为助理工程师级的Java软件工程师，其薪资构成如下：
+
+- 岗位基本年收入：44,400元人民币
+- 基本月工资（社保基数）：1,680元人民币
+- 基本月奖金：1,120元人民...
+[2025-08-31 18:03:27,040] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 18:03:27,041] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 18:03:27,042] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-08-31 18:03:28,768] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:03:31,961] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:04:08,368] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-08-31 18:04:08,369] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='木冉的薪资多少？' additional_kwargs={} response_metadata={} id='1a0df008-0eac-494c-9e15-4c60ab842683'
+[2025-08-31 18:04:11,114] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 18:04:11,116] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-08-31 18:04:17,509] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_a64b8985450b4ec7814e97', 'function': {'arguments': '{"question": "木冉的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1604, 'total_tokens': 1628, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--f59ecfe0-e350-46da-a860-a2c2d39d78fd-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '木冉的薪资多少？'}, 'id': 'call_a64b8985450b4ec7814e97', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1604, 'output_tokens': 24, 'total_tokens': 1628, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-08-31 18:04:17,514] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-08-31 18:04:28,771] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:04:52,822] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-08-31 18:04:52,824] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-08-31 18:04:52,827] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:04:52,831] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 没有相关信息。
+[2025-08-31 18:04:52,832] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-08-31 18:04:52,833] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-08-31 18:04:52,835] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-08-31 18:04:58,162] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-08-31 18:05:28,773] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:06:28,775] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:07:28,778] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:08:28,779] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use

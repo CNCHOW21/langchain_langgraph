@@ -19,7 +19,8 @@ MODEL_CONFIGS = {
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
         "api_key": os.getenv("DASHSCOPE_API_KEY"),
         "chat_model": "qwen-max",
-        "embedding_model": "text-embedding-v1"
+        "embedding_model": "text-embedding-v1",
+        "model_server": "dashscope",
     },
     "oneapi": {
         "base_url": "http://139.224.72.218:3000/v1",
