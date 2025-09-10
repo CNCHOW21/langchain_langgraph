@@ -8,16 +8,17 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 
-url = "http://localhost:8012/v1/chat/completions"
+url = "http://0.0.0.0:8012/v1/chat/completions"
 headers = {"Content-Type": "application/json"}
 
 
 # 默认非流式输出 True or False
 stream_flag = True
 
+timeout_seconds = 60
 
-input_text = "你好"
-# input_text = "3*4"
+# input_text = "你好"
+input_text = "刘舟的薪资多少？"
 # input_text = "查询张三九的健康档案信息"
 # input_text = "查询钱七的健康档案信息"
 
@@ -35,7 +36,7 @@ data = {
 if stream_flag:
     full_response = ""
     try:
-        with requests.post(url, stream=True, headers=headers, data=json.dumps(data)) as response:
+        with requests.post(url, stream=True, headers=headers, data=json.dumps(data), timeout=timeout_seconds) as response:
             for line in response.iter_lines():
                 if line:
                     json_str = line.decode('utf-8').strip("data: ")
@@ -50,7 +51,7 @@ if stream_flag:
                             if 'delta' in data['choices'][0]:
                                 delta_content = data['choices'][0]['delta'].get('content', '')
                                 full_response += delta_content
-                                logger.info(f"流式输出，响应部分是: {delta_content}")
+                                # logger.info(f"流式输出，响应部分是: {delta_content}")
                             if data['choices'][0].get('finish_reason') == "stop":
                                 logger.info(f"接收JSON数据结束")
                                 logger.info(f"完整响应是: {full_response}")

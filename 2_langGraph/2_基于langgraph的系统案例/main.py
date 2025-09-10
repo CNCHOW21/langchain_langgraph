@@ -157,7 +157,7 @@ async def lifespan(app: FastAPI):
         llm_chat, llm_embedding = get_llm(Config.LLM_TYPE)
 
         # 获取工具列表，基于嵌入模型
-        tools = get_tools(llm_embedding)
+        tools = get_tools(llm_embedding, llm_chat)
 
         # 创建工具配置实例
         tool_config = ToolConfig(tools)

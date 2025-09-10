@@ -803,3 +803,720 @@ Chen Jin
 [2025-08-31 18:06:28,775] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
 [2025-08-31 18:07:28,778] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
 [2025-08-31 18:08:28,779] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:09:29,023] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:10:29,027] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:11:29,029] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:12:29,031] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:13:29,033] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:14:29,037] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:15:29,040] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:16:29,041] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:17:29,044] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:18:29,046] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:19:29,051] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:20:29,055] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:21:29,057] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:22:29,060] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:23:29,062] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:24:29,064] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:25:29,069] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:26:29,071] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:27:29,073] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:28:29,091] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-08-31 18:29:08,829] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-09-10 16:25:08,784] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 16:25:09,873] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 16:25:09,876] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 16:25:09,878] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 16:25:09,879] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-09-10 16:25:09,893] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-09-10 16:25:09,896] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-09-10 16:25:09,898] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:25:10,164] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 16:25:13,626] [MainThread] [ERROR] [ragAgent.py:940] : Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+[2025-09-10 16:25:13,738] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+[2025-09-10 16:26:14,051] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 16:26:14,395] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 16:26:14,396] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 16:26:14,398] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 16:26:14,399] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'retrieve', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+[2025-09-10 16:26:14,402] [MainThread] [INFO] [ragAgent.py:886] : Database connection pool initialized
+[2025-09-10 16:26:14,405] [MainThread] [DEBUG] [ragAgent.py:887] : Database connection pool initialized
+[2025-09-10 16:26:14,408] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:26:14,450] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 16:26:14,925] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-09-10 16:26:32,122] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 16:26:32,124] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='f0121b9e-f24b-41c7-b0d2-1a81a3da108e'
+[2025-09-10 16:26:33,821] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:26:33,823] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-10 16:26:41,087] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='根据已知的信息，刘舟作为助理工程师级别的Java软件工程师，其基本月薪为2,800元人民币。这包括了1,680元的基本月工资（社保基数）加上1,120元的基本月奖金。除此之外，他还享有其他福利津贴以及可能依据公司年度营收状况和个人绩效考核结果而定的补充业绩奖金，但具体的补充业绩奖金数额没有明确说明。因此，除了固定的2,800元人民币月薪外，刘舟的实际总收入还会受到这些变量因素的影响。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 114, 'prompt_tokens': 1554, 'total_tokens': 1668, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run--94dbddad-07a0-4a1c-b6ce-a7e34bff5f86-0' usage_metadata={'input_tokens': 1554, 'output_tokens': 114, 'total_tokens': 1668, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-10 16:26:41,201] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:27:14,422] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:27:20,219] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 16:27:20,221] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工作把内容是什么？' additional_kwargs={} response_metadata={} id='31ef7e94-9e31-4b75-84be-810c6e1dc1d8'
+[2025-09-10 16:27:21,503] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:27:21,504] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 16:27:24,595] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_4191d8dcb66e45b2993a53', 'function': {'arguments': '{"question": "刘舟的工作内容是什么？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1558, 'total_tokens': 1582, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--10df22c6-157e-4c26-aedb-3c741025467e-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的工作内容是什么？'}, 'id': 'call_4191d8dcb66e45b2993a53', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1558, 'output_tokens': 24, 'total_tokens': 1582, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-10 16:27:24,601] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-09-10 16:27:45,838] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 16:27:45,840] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-09-10 16:27:45,844] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:27:45,847] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 根据提供的信息，刘舟的职位是Java软件工程师，其基本工作内容（但不限于）如下：
+
+- 按产品开发计划，保质、保量按时完成自己所担负的产品开发任务；
+- 按有关规定拟制技术文件，并按时提交；
+- 按时...
+[2025-09-10 16:27:45,849] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 16:27:45,850] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:27:45,851] [MainThread] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-10 16:27:57,003] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:28:14,425] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:28:36,836] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 16:28:36,838] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='维纳斯是谁？' additional_kwargs={} response_metadata={} id='79e9cac2-2dd8-4ae4-ac52-cca6d9385550'
+[2025-09-10 16:28:38,163] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:28:38,164] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 16:28:42,420] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_a2eef891ca7d4c9d9d4e1a', 'function': {'arguments': '{"question": "维纳斯是谁？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 20, 'prompt_tokens': 1716, 'total_tokens': 1736, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--aafef88e-37b3-4811-9c7e-c837329bac42-0' tool_calls=[{'name': 'search_web', 'args': {'question': '维纳斯是谁？'}, 'id': 'call_a2eef891ca7d4c9d9d4e1a', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1716, 'output_tokens': 20, 'total_tokens': 1736, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-10 16:28:42,426] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-09-10 16:28:47,631] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 16:28:47,632] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 16:28:47,636] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:28:47,639] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: | 维纳斯 | |
+ --- |
+| 爱情、美丽、情欲、生育、繁荣之女神 | |
+| 罗马十二主神成員 | |
+| 《维纳斯的诞生 "维纳斯的诞生 (波提切利)")》，波提切利作 | |
+| 代表行星...
+[2025-09-10 16:28:47,640] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 16:28:47,642] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:28:47,643] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-10 16:28:56,684] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:29:13,130] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 16:29:13,132] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟是谁？' additional_kwargs={} response_metadata={} id='8952906e-e931-438a-959c-90e1a230face'
+[2025-09-10 16:29:14,366] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:29:14,368] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 16:29:14,428] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:29:17,597] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_03b118a1bb394f3c812aac', 'function': {'arguments': '{"question": "刘舟是谁？"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 20, 'prompt_tokens': 1764, 'total_tokens': 1784, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--09b1fd2d-d19d-45cd-840e-180d6e08dd23-0' tool_calls=[{'name': 'search_web', 'args': {'question': '刘舟是谁？'}, 'id': 'call_03b118a1bb394f3c812aac', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1764, 'output_tokens': 20, 'total_tokens': 1784, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-10 16:29:17,603] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-09-10 16:29:22,591] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 16:29:22,593] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 16:29:22,596] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:29:22,599] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [search_web]返回结果: 刘舟律师，湖南天地人律师事务所合伙人，自2011年起专职执业，拥有超过12年的诉讼经验，累计办理上千件案件，专业领域涵盖民事及知识产权法律事务。他曾在2022年获评“湖南
+[2025-09-10 16:29:22,600] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 16:29:22,601] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:29:22,603] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-10 16:29:30,207] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:30:05,402] [MainThread] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 16:30:05,404] [MainThread] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='ab125cf0-6d2b-45ca-b761-ab1a04d470f2'
+[2025-09-10 16:30:06,669] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:30:06,670] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 16:30:09,770] [MainThread] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b1a1cd2104eb46cbb83a30', 'function': {'arguments': '{"question": "刘舟的工资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 1676, 'total_tokens': 1700, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--fc9391e1-f17b-4c73-9a38-93a0315838b1-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的工资多少？'}, 'id': 'call_b1a1cd2104eb46cbb83a30', 'type': 'tool_call'}] usage_metadata={'input_tokens': 1676, 'output_tokens': 24, 'total_tokens': 1700, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-10 16:30:09,780] [MainThread] [INFO] [ragAgent.py:834] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2025-09-10 16:30:14,433] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:30:25,886] [MainThread] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 16:30:25,889] [MainThread] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-09-10 16:30:25,892] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:30:25,896] [MainThread] [INFO] [ragAgent.py:795] : 调用工具 [qwen_agent_query]返回结果: 根据提供的信息，刘舟作为助理工程师级的Java软件工程师，其工资构成如下：
+
+- 岗位基本年收入：44,400元人民币
+- 基本月薪酬：2,800元人民币
+  - 其中包括：
+    - 基本月工资（...
+[2025-09-10 16:30:25,898] [MainThread] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 16:30:25,899] [MainThread] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 16:30:25,900] [MainThread] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-10 16:30:38,959] [MainThread] [INFO] [ragAgent.py:838] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-10 16:31:14,439] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 16:31:33,093] [MainThread] [INFO] [ragAgent.py:947] : Database connection pool closed
+2025-09-10 16:40:42,865 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 16:40:49,778] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+2025-09-10 16:40:49,779 - __main__ - ERROR - Unexpected error: get_tools() missing 1 required positional argument: 'llm_chat'
+2025-09-10 17:00:58,474 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 17:01:05,184] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 17:01:05,872] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 17:01:05,877] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:01:05,881] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:01:05,884] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 17:01:05,897 - __main__ - INFO - Database connection pool initialized
+2025-09-10 17:01:05,899 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 17:01:05,901] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:01:05,946] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 17:01:06,277] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-09-10 17:02:05,906] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:03:05,909] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:04:05,910] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:05:05,913] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:06:40,549 - __main__ - INFO - Database connection pool closed
+2025-09-10 17:06:40,551 - __main__ - INFO - The service has been shut down
+2025-09-10 17:06:52,188 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 17:07:00,283] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 17:07:00,862] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 17:07:00,875] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:07:00,901] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:07:00,908] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'search_web', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 17:07:00,927 - __main__ - INFO - Database connection pool initialized
+2025-09-10 17:07:00,931 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 17:07:00,961] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:07:01,028] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 17:07:01,363] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-09-10 17:08:00,964] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:09:00,967] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:10:00,971] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:11:00,973] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:12:00,975] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:13:00,977] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:14:00,981] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:14:09,532 - __main__ - INFO - The user's user_input is: 你好
+[2025-09-10 17:14:09,650] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:14:09,652] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好' additional_kwargs={} response_metadata={} id='e3df96ca-7bc0-48f6-9fc4-d2773970970c'
+[2025-09-10 17:14:11,039] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:14:11,040] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+2025-09-10 17:14:12,585 - __main__ - INFO - Streaming chunk from agent: 你好
+2025-09-10 17:14:12,625 - __main__ - INFO - Streaming chunk from agent: ！
+2025-09-10 17:14:12,697 - __main__ - INFO - Streaming chunk from agent: 有什么
+2025-09-10 17:14:13,023 - __main__ - INFO - Streaming chunk from agent: 可以帮助
+2025-09-10 17:14:13,169 - __main__ - INFO - Streaming chunk from agent: 你的吗？
+2025-09-10 17:14:13,180 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:14:13,183] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--dfc2bd50-3be6-413b-9ba4-22eb6ca9fdf6'
+[2025-09-10 17:15:00,982] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:15:31,132 - __main__ - INFO - The user's user_input is: 刘舟的薪资多少？
+[2025-09-10 17:15:31,150] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:15:31,153] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='e19cdc4d-4234-4071-a7e8-810372dce7df'
+[2025-09-10 17:15:32,466] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:15:32,468] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:15:34,334 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:15:34,473 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:15:34,646 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:15:34,648 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:15:34,647] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_3d66ff1553fd441395f88b', 'function': {'arguments': '{"question": "刘舟的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--29357881-e31f-4cad-8c5e-7f6f9c100602' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资多少？'}, 'id': 'call_3d66ff1553fd441395f88b', 'type': 'tool_call'}]
+[2025-09-10 17:15:56,805] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 17:15:56,807] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-09-10 17:15:56,814] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 17:15:56,816] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:15:56,818] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+2025-09-10 17:15:58,406 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:15:58,408 - __main__ - INFO - Streaming chunk from generate: 根据
+2025-09-10 17:15:58,504 - __main__ - INFO - Streaming chunk from generate: 已
+2025-09-10 17:15:58,622 - __main__ - INFO - Streaming chunk from generate: 知的内容
+2025-09-10 17:15:58,708 - __main__ - INFO - Streaming chunk from generate: ，刘舟
+2025-09-10 17:15:58,929 - __main__ - INFO - Streaming chunk from generate: 作为Java软件工程师
+2025-09-10 17:15:59,047 - __main__ - INFO - Streaming chunk from generate: 的薪资构成如下：
+
+-
+2025-09-10 17:15:59,261 - __main__ - INFO - Streaming chunk from generate:  岗位基本年
+2025-09-10 17:15:59,529 - __main__ - INFO - Streaming chunk from generate: 收入：44,4
+2025-09-10 17:15:59,889 - __main__ - INFO - Streaming chunk from generate: 00元人民币
+-
+2025-09-10 17:16:00,037 - __main__ - INFO - Streaming chunk from generate:  岗位基本月
+2025-09-10 17:16:00,188 - __main__ - INFO - Streaming chunk from generate: 薪酬：2,80
+2025-09-10 17:16:00,377 - __main__ - INFO - Streaming chunk from generate: 0元人民币
+  -
+2025-09-10 17:16:00,589 - __main__ - INFO - Streaming chunk from generate:  基本月工资（
+2025-09-10 17:16:00,898 - __main__ - INFO - Streaming chunk from generate: 社保基数）：1,
+[2025-09-10 17:16:00,985] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:16:01,058 - __main__ - INFO - Streaming chunk from generate: 680元人民币
+
+2025-09-10 17:16:01,243 - __main__ - INFO - Streaming chunk from generate:   - 基本月
+2025-09-10 17:16:01,411 - __main__ - INFO - Streaming chunk from generate: 奖金：1,12
+2025-09-10 17:16:01,615 - __main__ - INFO - Streaming chunk from generate: 0元人民币
+
+此外，
+2025-09-10 17:16:02,026 - __main__ - INFO - Streaming chunk from generate: 还有全年合计8,0
+2025-09-10 17:16:02,385 - __main__ - INFO - Streaming chunk from generate: 00元人民币的福利
+2025-09-10 17:16:02,974 - __main__ - INFO - Streaming chunk from generate: 津贴，包括午餐补贴、
+2025-09-10 17:16:03,215 - __main__ - INFO - Streaming chunk from generate: 通勤/租房补贴、
+2025-09-10 17:16:03,319 - __main__ - INFO - Streaming chunk from generate: 保密津贴等。补充业绩
+2025-09-10 17:16:03,753 - __main__ - INFO - Streaming chunk from generate: 奖金则依据公司年度营收
+2025-09-10 17:16:04,132 - __main__ - INFO - Streaming chunk from generate: 和个人绩效考核情况发放，
+2025-09-10 17:16:04,392 - __main__ - INFO - Streaming chunk from generate: 这部分的具体数额没有
+2025-09-10 17:16:04,627 - __main__ - INFO - Streaming chunk from generate: 给出。
+
+因此，如果不
+2025-09-10 17:16:04,829 - __main__ - INFO - Streaming chunk from generate: 考虑额外的补充
+2025-09-10 17:16:04,995 - __main__ - INFO - Streaming chunk from generate: 业绩奖金，刘
+2025-09-10 17:16:05,279 - __main__ - INFO - Streaming chunk from generate: 舟的基本年薪加上
+2025-09-10 17:16:05,367 - __main__ - INFO - Streaming chunk from generate: 福利津贴总计为
+2025-09-10 17:16:05,500 - __main__ - INFO - Streaming chunk from generate: 52,4
+2025-09-10 17:16:05,663 - __main__ - INFO - Streaming chunk from generate: 00元人民币。请注意
+2025-09-10 17:16:06,130 - __main__ - INFO - Streaming chunk from generate: ，实际总收入可能会
+2025-09-10 17:16:06,287 - __main__ - INFO - Streaming chunk from generate: 因为补充业绩奖金
+2025-09-10 17:16:06,473 - __main__ - INFO - Streaming chunk from generate: 等因素而有所不同。
+2025-09-10 17:16:06,678 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:16:15,535 - __main__ - INFO - The user's user_input is: 刘舟的薪资多少？
+[2025-09-10 17:16:15,549] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:16:15,551] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='b2422330-6673-4f57-b8fc-e6d286ff06da'
+[2025-09-10 17:16:16,879] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:16:16,881] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:16:19,086 - __main__ - INFO - Streaming chunk from agent: 根据
+2025-09-10 17:16:19,549 - __main__ - INFO - Streaming chunk from agent: 已
+2025-09-10 17:16:19,626 - __main__ - INFO - Streaming chunk from agent: 知的内容
+2025-09-10 17:16:19,698 - __main__ - INFO - Streaming chunk from agent: ，刘舟
+2025-09-10 17:16:19,861 - __main__ - INFO - Streaming chunk from agent: 作为Java软件工程师的薪资
+2025-09-10 17:16:19,973 - __main__ - INFO - Streaming chunk from agent: 构成如下：
+
+-
+2025-09-10 17:16:20,146 - __main__ - INFO - Streaming chunk from agent:  岗位基本年收入：
+2025-09-10 17:16:20,642 - __main__ - INFO - Streaming chunk from agent: 44,400
+2025-09-10 17:16:20,796 - __main__ - INFO - Streaming chunk from agent: 元人民币
+-
+2025-09-10 17:16:20,969 - __main__ - INFO - Streaming chunk from agent:  岗位基本月薪酬：
+2025-09-10 17:16:21,082 - __main__ - INFO - Streaming chunk from agent: 2,800元
+2025-09-10 17:16:21,209 - __main__ - INFO - Streaming chunk from agent: 人民币
+  -
+2025-09-10 17:16:21,375 - __main__ - INFO - Streaming chunk from agent:  基本月工资（社保基数
+2025-09-10 17:16:21,590 - __main__ - INFO - Streaming chunk from agent: ）：1,68
+2025-09-10 17:16:21,778 - __main__ - INFO - Streaming chunk from agent: 0元人民币
+  -
+2025-09-10 17:16:21,895 - __main__ - INFO - Streaming chunk from agent:  基本月奖金：
+2025-09-10 17:16:22,033 - __main__ - INFO - Streaming chunk from agent: 1,120元
+2025-09-10 17:16:22,334 - __main__ - INFO - Streaming chunk from agent: 人民币
+
+此外，还有全年
+2025-09-10 17:16:22,540 - __main__ - INFO - Streaming chunk from agent: 合计8,000
+2025-09-10 17:16:22,720 - __main__ - INFO - Streaming chunk from agent: 元人民币的福利津贴，
+2025-09-10 17:16:22,840 - __main__ - INFO - Streaming chunk from agent: 包括午餐补贴、通勤
+2025-09-10 17:16:23,027 - __main__ - INFO - Streaming chunk from agent: /租房补贴、保密津贴
+2025-09-10 17:16:23,103 - __main__ - INFO - Streaming chunk from agent: 等。补充业绩奖金
+2025-09-10 17:16:23,281 - __main__ - INFO - Streaming chunk from agent: 则依据公司年度营收和个人
+2025-09-10 17:16:23,395 - __main__ - INFO - Streaming chunk from agent: 绩效考核情况发放，这部分
+2025-09-10 17:16:23,574 - __main__ - INFO - Streaming chunk from agent: 的具体数额没有给出。
+
+因此
+2025-09-10 17:16:23,692 - __main__ - INFO - Streaming chunk from agent: ，如果不考虑额外的补充
+2025-09-10 17:16:23,869 - __main__ - INFO - Streaming chunk from agent: 业绩奖金，刘舟的基本
+2025-09-10 17:16:23,999 - __main__ - INFO - Streaming chunk from agent: 年薪加上福利津贴总计为
+2025-09-10 17:16:24,149 - __main__ - INFO - Streaming chunk from agent: 52,400
+2025-09-10 17:16:24,277 - __main__ - INFO - Streaming chunk from agent: 元人民币。请注意，实际
+2025-09-10 17:16:24,452 - __main__ - INFO - Streaming chunk from agent: 总收入可能会因为补充业绩奖金
+2025-09-10 17:16:24,572 - __main__ - INFO - Streaming chunk from agent: 等因素而有所不同。
+2025-09-10 17:16:24,592 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:16:24,593] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:413] : =====agent回复: content='根据已知的内容，刘舟作为Java软件工程师的薪资构成如下：\n\n- 岗位基本年收入：44,400元人民币\n- 岗位基本月薪酬：2,800元人民币\n  - 基本月工资（社保基数）：1,680元人民币\n  - 基本月奖金：1,120元人民币\n\n此外，还有全年合计8,000元人民币的福利津贴，包括午餐补贴、通勤/租房补贴、保密津贴等。补充业绩奖金则依据公司年度营收和个人绩效考核情况发放，这部分的具体数额没有给出。\n\n因此，如果不考虑额外的补充业绩奖金，刘舟的基本年薪加上福利津贴总计为52,400元人民币。请注意，实际总收入可能会因为补充业绩奖金等因素而有所不同。' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--01b8131f-df17-4f91-84cf-4c61bcb38d3e'
+[2025-09-10 17:17:00,988] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:18:00,990] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:18:58,082 - __main__ - INFO - The user's user_input is: 刘舟的薪资多少？
+[2025-09-10 17:18:58,095] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:18:58,096] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='ea17bdfe-ab78-4c51-8acb-4a4444b5a06e'
+[2025-09-10 17:18:59,372] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:18:59,374] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 17:19:00,994] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:19:01,054 - __main__ - INFO - Streaming chunk from agent: 根据
+2025-09-10 17:19:01,095 - __main__ - INFO - Streaming chunk from agent: 已
+2025-09-10 17:19:01,141 - __main__ - INFO - Streaming chunk from agent: 知的内容
+2025-09-10 17:19:01,184 - __main__ - INFO - Streaming chunk from agent: ，刘舟
+2025-09-10 17:19:01,303 - __main__ - INFO - Streaming chunk from agent: 作为Java软件工程师的薪资
+2025-09-10 17:19:01,354 - __main__ - INFO - Streaming chunk from agent: 构成如下：
+
+-
+2025-09-10 17:19:01,456 - __main__ - INFO - Streaming chunk from agent:  岗位基本年收入：
+2025-09-10 17:19:01,512 - __main__ - INFO - Streaming chunk from agent: 44,400
+2025-09-10 17:19:01,593 - __main__ - INFO - Streaming chunk from agent: 元人民币
+-
+2025-09-10 17:19:02,078 - __main__ - INFO - Streaming chunk from agent:  岗位基本月薪酬：
+2025-09-10 17:19:02,231 - __main__ - INFO - Streaming chunk from agent: 2,800元
+2025-09-10 17:19:02,314 - __main__ - INFO - Streaming chunk from agent: 人民币
+  -
+2025-09-10 17:19:02,421 - __main__ - INFO - Streaming chunk from agent:  基本月工资（社保基数
+2025-09-10 17:19:02,518 - __main__ - INFO - Streaming chunk from agent: ）：1,68
+2025-09-10 17:19:02,581 - __main__ - INFO - Streaming chunk from agent: 0元人民币
+  -
+2025-09-10 17:19:02,744 - __main__ - INFO - Streaming chunk from agent:  基本月奖金：
+2025-09-10 17:19:03,920 - __main__ - INFO - Streaming chunk from agent: 1,120元
+2025-09-10 17:19:04,533 - __main__ - INFO - Streaming chunk from agent: 人民币
+
+此外，还有全年
+2025-09-10 17:19:05,661 - __main__ - INFO - Streaming chunk from agent: 合计8,000
+2025-09-10 17:19:06,232 - __main__ - INFO - Streaming chunk from agent: 元人民币的福利津贴，
+2025-09-10 17:19:06,382 - __main__ - INFO - Streaming chunk from agent: 包括午餐补贴、通勤
+2025-09-10 17:19:06,566 - __main__ - INFO - Streaming chunk from agent: /租房补贴、保密津贴
+2025-09-10 17:19:06,712 - __main__ - INFO - Streaming chunk from agent: 等。补充业绩奖金则
+2025-09-10 17:19:06,957 - __main__ - INFO - Streaming chunk from agent: 依据公司年度营收和个人绩效
+2025-09-10 17:19:07,074 - __main__ - INFO - Streaming chunk from agent: 考核情况发放，这部分的具体
+2025-09-10 17:19:07,185 - __main__ - INFO - Streaming chunk from agent: 数额没有给出。
+
+因此，
+2025-09-10 17:19:07,249 - __main__ - INFO - Streaming chunk from agent: 如果不考虑额外的补充业绩
+2025-09-10 17:19:07,353 - __main__ - INFO - Streaming chunk from agent: 奖金，刘舟的基本年薪
+2025-09-10 17:19:07,785 - __main__ - INFO - Streaming chunk from agent: 加上福利津贴总计为5
+2025-09-10 17:19:08,114 - __main__ - INFO - Streaming chunk from agent: 2,400元
+2025-09-10 17:19:08,189 - __main__ - INFO - Streaming chunk from agent: 人民币。请注意，实际总收入
+2025-09-10 17:19:08,297 - __main__ - INFO - Streaming chunk from agent: 可能会因为补充业绩奖金等因素
+2025-09-10 17:19:08,367 - __main__ - INFO - Streaming chunk from agent: 而有所不同。
+[2025-09-10 17:19:08,385] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:413] : =====agent回复: content='根据已知的内容，刘舟作为Java软件工程师的薪资构成如下：\n\n- 岗位基本年收入：44,400元人民币\n- 岗位基本月薪酬：2,800元人民币\n  - 基本月工资（社保基数）：1,680元人民币\n  - 基本月奖金：1,120元人民币\n\n此外，还有全年合计8,000元人民币的福利津贴，包括午餐补贴、通勤/租房补贴、保密津贴等。补充业绩奖金则依据公司年度营收和个人绩效考核情况发放，这部分的具体数额没有给出。\n\n因此，如果不考虑额外的补充业绩奖金，刘舟的基本年薪加上福利津贴总计为52,400元人民币。请注意，实际总收入可能会因为补充业绩奖金等因素而有所不同。' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--9c018f50-518d-4ee8-b1ef-a67e22a9632a'
+2025-09-10 17:19:08,385 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:20:00,995] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:34:45,928 - __main__ - INFO - The user's user_input is: 你好
+[2025-09-10 17:34:56,651] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:34:56,654] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好' additional_kwargs={} response_metadata={} id='1894e397-81a8-4876-8459-ab744f674340'
+[2025-09-10 17:34:57,903] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:34:57,904] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:34:59,733 - __main__ - INFO - Streaming chunk from agent: 你好
+2025-09-10 17:34:59,818 - __main__ - INFO - Streaming chunk from agent: ！
+2025-09-10 17:34:59,917 - __main__ - INFO - Streaming chunk from agent: 有什么
+2025-09-10 17:34:59,993 - __main__ - INFO - Streaming chunk from agent: 可以帮助
+2025-09-10 17:35:00,278 - __main__ - INFO - Streaming chunk from agent: 你的吗？
+2025-09-10 17:35:00,300 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:35:00,301] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--2c00b07b-6a17-41dd-80e1-6394daf747d0'
+2025-09-10 17:35:26,724 - __main__ - INFO - The user's user_input is: 刘舟的薪资多少？
+[2025-09-10 17:35:26,736] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:35:26,739] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的薪资多少？' additional_kwargs={} response_metadata={} id='95926062-01ae-4499-9d6a-04806f48b3c2'
+[2025-09-10 17:35:28,057] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:35:28,059] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:35:30,168 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:35:30,353 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:35:31,209 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:35:31,212 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:35:31,210] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_51429dadc56d40a89dadb8', 'function': {'arguments': '{"question": "刘舟的薪资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--b2c114b8-7c18-4330-bb8b-a17217253238' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的薪资多少？'}, 'id': 'call_51429dadc56d40a89dadb8', 'type': 'tool_call'}]
+[2025-09-10 17:35:54,673] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 17:35:54,675] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:585] : =====调用工具 qwen_agent_query 后路由到 generate 节点
+[2025-09-10 17:35:54,679] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 17:35:54,681] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:35:54,683] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 17:35:56,112 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:35:56,113 - __main__ - INFO - Streaming chunk from generate: 根据
+2025-09-10 17:35:56,192 - __main__ - INFO - Streaming chunk from generate: 2
+2025-09-10 17:35:56,258 - __main__ - INFO - Streaming chunk from generate: 012
+2025-09-10 17:35:56,326 - __main__ - INFO - Streaming chunk from generate: 财务年度的信息
+2025-09-10 17:35:56,493 - __main__ - INFO - Streaming chunk from generate: ，刘舟作为
+[2025-09-10 17:35:56,527] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:35:56,633 - __main__ - INFO - Streaming chunk from generate: 助理工程师级的Java软件
+2025-09-10 17:35:56,813 - __main__ - INFO - Streaming chunk from generate: 工程师，其薪资构成如下
+2025-09-10 17:35:56,943 - __main__ - INFO - Streaming chunk from generate: ：
+
+- **岗位基本年
+2025-09-10 17:35:57,117 - __main__ - INFO - Streaming chunk from generate: 收入**：44,
+2025-09-10 17:35:57,247 - __main__ - INFO - Streaming chunk from generate: 400元人民币
+
+2025-09-10 17:35:57,492 - __main__ - INFO - Streaming chunk from generate:   - 其中包括
+2025-09-10 17:35:57,640 - __main__ - INFO - Streaming chunk from generate: ：
+    - **
+2025-09-10 17:35:57,901 - __main__ - INFO - Streaming chunk from generate: 基本月薪酬**
+2025-09-10 17:35:57,954 - __main__ - INFO - Streaming chunk from generate: ：2,800
+2025-09-10 17:35:58,107 - __main__ - INFO - Streaming chunk from generate: 元人民币
+      -
+2025-09-10 17:35:58,240 - __main__ - INFO - Streaming chunk from generate:  基本月工资（社保
+2025-09-10 17:35:58,409 - __main__ - INFO - Streaming chunk from generate: 基数）：1,6
+2025-09-10 17:35:58,543 - __main__ - INFO - Streaming chunk from generate: 80元人民币
+     
+2025-09-10 17:35:58,732 - __main__ - INFO - Streaming chunk from generate:  - 基本月奖金
+2025-09-10 17:35:58,849 - __main__ - INFO - Streaming chunk from generate: ：1,120
+2025-09-10 17:35:59,010 - __main__ - INFO - Streaming chunk from generate: 元人民币
+-
+2025-09-10 17:35:59,171 - __main__ - INFO - Streaming chunk from generate:  **福利津贴**：全年
+2025-09-10 17:35:59,297 - __main__ - INFO - Streaming chunk from generate: 合计8,000
+2025-09-10 17:35:59,434 - __main__ - INFO - Streaming chunk from generate: 元人民币，具体
+2025-09-10 17:35:59,581 - __main__ - INFO - Streaming chunk from generate: 包括：
+  -
+2025-09-10 17:35:59,707 - __main__ - INFO - Streaming chunk from generate:  每月午餐补贴：1
+2025-09-10 17:35:59,863 - __main__ - INFO - Streaming chunk from generate: 50元
+  -
+2025-09-10 17:35:59,988 - __main__ - INFO - Streaming chunk from generate:  每月通勤
+2025-09-10 17:36:00,137 - __main__ - INFO - Streaming chunk from generate: /租房补贴：20
+2025-09-10 17:36:00,284 - __main__ - INFO - Streaming chunk from generate: 0元
+  - 
+2025-09-10 17:36:00,401 - __main__ - INFO - Streaming chunk from generate: 保密津贴：全年1,
+2025-09-10 17:36:00,562 - __main__ - INFO - Streaming chunk from generate: 200元（平均
+2025-09-10 17:36:00,685 - __main__ - INFO - Streaming chunk from generate: 每月100元）
+
+2025-09-10 17:36:00,821 - __main__ - INFO - Streaming chunk from generate:   - 防暑
+2025-09-10 17:36:01,028 - __main__ - INFO - Streaming chunk from generate: 及取暖费：全年8
+2025-09-10 17:36:01,152 - __main__ - INFO - Streaming chunk from generate: 00元（7、
+2025-09-10 17:36:01,257 - __main__ - INFO - Streaming chunk from generate: 8、9三个月每月2
+2025-09-10 17:36:01,371 - __main__ - INFO - Streaming chunk from generate: 00元防暑费
+2025-09-10 17:36:01,506 - __main__ - INFO - Streaming chunk from generate: ，12月20
+2025-09-10 17:36:01,665 - __main__ - INFO - Streaming chunk from generate: 0元取暖费）
+ 
+2025-09-10 17:36:01,780 - __main__ - INFO - Streaming chunk from generate:  - 过节费：
+2025-09-10 17:36:01,913 - __main__ - INFO - Streaming chunk from generate: 每年1,000
+2025-09-10 17:36:02,076 - __main__ - INFO - Streaming chunk from generate: 元（春节、端午、
+2025-09-10 17:36:02,193 - __main__ - INFO - Streaming chunk from generate: 中秋、五一、十一各
+2025-09-10 17:36:02,344 - __main__ - INFO - Streaming chunk from generate: 200元/节
+2025-09-10 17:36:02,463 - __main__ - INFO - Streaming chunk from generate: ）
+  - 体检费
+2025-09-10 17:36:02,616 - __main__ - INFO - Streaming chunk from generate: ：全年300元
+2025-09-10 17:36:02,737 - __main__ - INFO - Streaming chunk from generate: 
+  - 商业意外
+2025-09-10 17:36:02,890 - __main__ - INFO - Streaming chunk from generate: 保险费：全年20
+2025-09-10 17:36:03,006 - __main__ - INFO - Streaming chunk from generate: 0元
+
+综上所述
+2025-09-10 17:36:03,143 - __main__ - INFO - Streaming chunk from generate: ，刘舟的基本
+2025-09-10 17:36:03,306 - __main__ - INFO - Streaming chunk from generate: 年薪加上福利津贴总计
+2025-09-10 17:36:03,419 - __main__ - INFO - Streaming chunk from generate: 为52,40
+2025-09-10 17:36:03,604 - __main__ - INFO - Streaming chunk from generate: 0元人民币。需要注意
+2025-09-10 17:36:03,692 - __main__ - INFO - Streaming chunk from generate: 的是，这还不
+2025-09-10 17:36:03,909 - __main__ - INFO - Streaming chunk from generate: 包括可能获得的补充业绩
+2025-09-10 17:36:04,098 - __main__ - INFO - Streaming chunk from generate: 奖金，这部分金额
+2025-09-10 17:36:04,256 - __main__ - INFO - Streaming chunk from generate: 取决于公司营收业绩和个人绩效
+2025-09-10 17:36:04,367 - __main__ - INFO - Streaming chunk from generate: 考核情况。
+
+请注意，以上
+2025-09-10 17:36:04,528 - __main__ - INFO - Streaming chunk from generate: 信息是基于201
+2025-09-10 17:36:04,643 - __main__ - INFO - Streaming chunk from generate: 2财务年度的数据，实际情况
+2025-09-10 17:36:04,884 - __main__ - INFO - Streaming chunk from generate: 可能会有所变化。
+2025-09-10 17:36:04,898 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:36:39,426 - __main__ - INFO - The user's user_input is: 张三九的健康状况？
+[2025-09-10 17:36:39,440] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:36:39,442] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='张三九的健康状况？' additional_kwargs={} response_metadata={} id='0739bb9a-c7cb-4ede-b9ba-bbee822e990b'
+[2025-09-10 17:36:40,646] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:36:40,648] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:36:42,723 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:36:42,887 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:36:43,140 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:36:43,232] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_ab36facd092d44328bf7a0', 'function': {'arguments': '{"query": "张三九的健康状况"}', 'name': 'retrieve'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--6fc8dea1-d559-4eb1-ad66-708c886f006b' tool_calls=[{'name': 'retrieve', 'args': {'query': '张三九的健康状况'}, 'id': 'call_ab36facd092d44328bf7a0', 'type': 'tool_call'}]
+2025-09-10 17:36:43,232 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:36:44,235 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:36:48,888] [ThreadPoolExecutor-9_3] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 17:36:48,890] [ThreadPoolExecutor-9_3] [INFO] [ragAgent.py:585] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2025-09-10 17:36:48,896] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:436] : ==========对文档进行相关性评分
+[2025-09-10 17:36:48,899] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:36:48,900] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_grade.txt
+[2025-09-10 17:36:51,006] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:458] : 文档进行相关性评分结果: yes
+[2025-09-10 17:36:51,008] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:632] : Routing based on relevance_score: yes, rewrite_count: 0
+[2025-09-10 17:36:51,012] [ThreadPoolExecutor-9_1] [INFO] [ragAgent.py:647] : 文档相关, 跳转到generate节点
+[2025-09-10 17:36:51,017] [ThreadPoolExecutor-9_0] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 17:36:51,020] [ThreadPoolExecutor-9_0] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:36:51,023] [ThreadPoolExecutor-9_0] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 17:36:53,073 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:36:53,074 - __main__ - INFO - Streaming chunk from generate: 根据
+2025-09-10 17:36:53,236 - __main__ - INFO - Streaming chunk from generate: 已知的信息
+2025-09-10 17:36:53,308 - __main__ - INFO - Streaming chunk from generate: ，张三
+2025-09-10 17:36:53,369 - __main__ - INFO - Streaming chunk from generate: 九的健康
+2025-09-10 17:36:53,517 - __main__ - INFO - Streaming chunk from generate: 状况如下：
+
+1. **
+2025-09-10 17:36:53,627 - __main__ - INFO - Streaming chunk from generate: 家族病史**：
+2025-09-10 17:36:53,780 - __main__ - INFO - Streaming chunk from generate: 父亲患有高血压和二型
+2025-09-10 17:36:53,890 - __main__ - INFO - Streaming chunk from generate: 糖尿病，母亲有甲状腺疾病
+2025-09-10 17:36:54,032 - __main__ - INFO - Streaming chunk from generate: 史。这表明张
+2025-09-10 17:36:54,158 - __main__ - INFO - Streaming chunk from generate: 三九可能具有
+2025-09-10 17:36:54,764 - __main__ - INFO - Streaming chunk from generate: 患这些疾病的遗传倾向
+2025-09-10 17:36:54,883 - __main__ - INFO - Streaming chunk from generate: 。
+
+2. **生活方式与
+2025-09-10 17:36:55,054 - __main__ - INFO - Streaming chunk from generate: 习惯**：
+   -
+2025-09-10 17:36:55,166 - __main__ - INFO - Streaming chunk from generate:  饮食习惯偏向高
+2025-09-10 17:36:55,321 - __main__ - INFO - Streaming chunk from generate: 脂肪和高糖食品，
+2025-09-10 17:36:55,424 - __main__ - INFO - Streaming chunk from generate: 蔬菜和水果摄入较少，
+[2025-09-10 17:36:56,528] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:37:00,390 - __main__ - INFO - Streaming chunk from generate: 盐分摄入偏高。
+
+2025-09-10 17:37:00,573 - __main__ - INFO - Streaming chunk from generate:    - 工作繁忙
+2025-09-10 17:37:00,825 - __main__ - INFO - Streaming chunk from generate: ，运动较少，每周仅
+2025-09-10 17:37:00,965 - __main__ - INFO - Streaming chunk from generate: 进行一次轻度运动（
+2025-09-10 17:37:01,230 - __main__ - INFO - Streaming chunk from generate: 如散步）。
+   -
+2025-09-10 17:37:01,374 - __main__ - INFO - Streaming chunk from generate:  无吸烟史
+2025-09-10 17:37:01,574 - __main__ - INFO - Streaming chunk from generate: ，但每周饮酒2至
+2025-09-10 17:37:01,783 - __main__ - INFO - Streaming chunk from generate: 3次，每次约3
+2025-09-10 17:37:02,102 - __main__ - INFO - Streaming chunk from generate: 00毫升啤酒。
+  
+2025-09-10 17:37:02,314 - __main__ - INFO - Streaming chunk from generate:  - 平均每
+2025-09-10 17:37:02,427 - __main__ - INFO - Streaming chunk from generate: 晚睡眠时间为6小时，
+2025-09-10 17:37:02,885 - __main__ - INFO - Streaming chunk from generate: 常常感到疲惫。
+
+3.
+2025-09-10 17:37:03,010 - __main__ - INFO - Streaming chunk from generate:  **体检与化验结果
+2025-09-10 17:37:03,252 - __main__ - INFO - Streaming chunk from generate: **（2024
+2025-09-10 17:37:03,363 - __main__ - INFO - Streaming chunk from generate: 年8月15日
+2025-09-10 17:37:03,532 - __main__ - INFO - Streaming chunk from generate: ）：
+   - 身
+2025-09-10 17:37:03,639 - __main__ - INFO - Streaming chunk from generate: 高175厘米
+2025-09-10 17:37:03,800 - __main__ - INFO - Streaming chunk from generate: ，体重78公斤，
+2025-09-10 17:37:03,941 - __main__ - INFO - Streaming chunk from generate: BMI为25.5
+2025-09-10 17:37:04,065 - __main__ - INFO - Streaming chunk from generate: ，属于超重范围
+2025-09-10 17:37:04,234 - __main__ - INFO - Streaming chunk from generate: 。
+   - 腰
+2025-09-10 17:37:04,345 - __main__ - INFO - Streaming chunk from generate: 围92厘米，略
+2025-09-10 17:37:04,507 - __main__ - INFO - Streaming chunk from generate: 高于健康范围。
+   -
+2025-09-10 17:37:04,622 - __main__ - INFO - Streaming chunk from generate:  血压135
+2025-09-10 17:37:04,760 - __main__ - INFO - Streaming chunk from generate: /85毫米汞柱
+2025-09-10 17:37:04,993 - __main__ - INFO - Streaming chunk from generate: ，属于轻度高血压范围
+2025-09-10 17:37:05,186 - __main__ - INFO - Streaming chunk from generate: 。
+   - 心率
+2025-09-10 17:37:05,452 - __main__ - INFO - Streaming chunk from generate: 每分钟78次，
+2025-09-10 17:37:05,615 - __main__ - INFO - Streaming chunk from generate: 处于正常范围。
+   -
+2025-09-10 17:37:05,801 - __main__ - INFO - Streaming chunk from generate:  空腹血糖6
+2025-09-10 17:37:05,860 - __main__ - INFO - Streaming chunk from generate: .8毫摩尔/
+2025-09-10 17:37:05,993 - __main__ - INFO - Streaming chunk from generate: 升，餐后2
+2025-09-10 17:37:06,125 - __main__ - INFO - Streaming chunk from generate: 小时血糖8.9毫
+2025-09-10 17:37:06,325 - __main__ - INFO - Streaming chunk from generate: 摩尔/升，均
+2025-09-10 17:37:06,484 - __main__ - INFO - Streaming chunk from generate: 高于正常标准。
+   -
+2025-09-10 17:37:06,586 - __main__ - INFO - Streaming chunk from generate:  总胆固醇5.2
+2025-09-10 17:37:06,714 - __main__ - INFO - Streaming chunk from generate: 毫摩尔/升，
+2025-09-10 17:37:06,889 - __main__ - INFO - Streaming chunk from generate: 处于正常范围；
+2025-09-10 17:37:07,022 - __main__ - INFO - Streaming chunk from generate: 甘油三酯1.
+2025-09-10 17:37:07,111 - __main__ - INFO - Streaming chunk from generate: 8毫摩尔/升
+2025-09-10 17:37:07,293 - __main__ - INFO - Streaming chunk from generate: ，略高于正常；
+2025-09-10 17:37:07,356 - __main__ - INFO - Streaming chunk from generate: 低密度脂蛋白（LD
+2025-09-10 17:37:07,497 - __main__ - INFO - Streaming chunk from generate: L）3.4毫
+2025-09-10 17:37:07,674 - __main__ - INFO - Streaming chunk from generate: 摩尔/升，略
+2025-09-10 17:37:07,867 - __main__ - INFO - Streaming chunk from generate: 高。
+
+4. **医疗
+2025-09-10 17:37:07,959 - __main__ - INFO - Streaming chunk from generate: 历史**：
+   - 
+2025-09-10 17:37:08,126 - __main__ - INFO - Streaming chunk from generate: 2005
+2025-09-10 17:37:08,217 - __main__ - INFO - Streaming chunk from generate: 年被确诊为高血压，
+2025-09-10 17:37:08,354 - __main__ - INFO - Streaming chunk from generate: 开始接受降压药物治疗
+2025-09-10 17:37:08,457 - __main__ - INFO - Streaming chunk from generate: 。
+   - 20
+2025-09-10 17:37:08,597 - __main__ - INFO - Streaming chunk from generate: 10年被确诊为
+2025-09-10 17:37:08,742 - __main__ - INFO - Streaming chunk from generate: 二型糖尿病，使用
+2025-09-10 17:37:09,704 - __main__ - INFO - Streaming chunk from generate: 口服降糖药管理
+2025-09-10 17:37:09,811 - __main__ - INFO - Streaming chunk from generate: 。
+   - 20
+2025-09-10 17:37:09,964 - __main__ - INFO - Streaming chunk from generate: 17年被诊断为
+2025-09-10 17:37:10,070 - __main__ - INFO - Streaming chunk from generate: 脂肪肝，建议
+2025-09-10 17:37:10,316 - __main__ - INFO - Streaming chunk from generate: 通过饮食调整和增加运动
+2025-09-10 17:37:10,324 - __main__ - INFO - Streaming chunk from generate: 来改善。
+   - 
+2025-09-10 17:37:10,472 - __main__ - INFO - Streaming chunk from generate: 2022年因
+2025-09-10 17:37:11,441 - __main__ - INFO - Streaming chunk from generate: 腰椎间盘突出接受了
+2025-09-10 17:37:11,572 - __main__ - INFO - Streaming chunk from generate: 微创手术，术后恢复良好
+2025-09-10 17:37:11,690 - __main__ - INFO - Streaming chunk from generate: 。
+   - 对青霉素
+2025-09-10 17:37:11,844 - __main__ - INFO - Streaming chunk from generate: 过敏，曾出现
+2025-09-10 17:37:11,949 - __main__ - INFO - Streaming chunk from generate: 皮疹和呼吸困难；
+2025-09-10 17:37:12,212 - __main__ - INFO - Streaming chunk from generate: 对海鲜也有轻微
+2025-09-10 17:37:12,329 - __main__ - INFO - Streaming chunk from generate: 过敏反应。
+
+综上所述
+2025-09-10 17:37:12,480 - __main__ - INFO - Streaming chunk from generate: ，张三九存在
+2025-09-10 17:37:12,591 - __main__ - INFO - Streaming chunk from generate: 高血压、二型糖尿病以及
+2025-09-10 17:37:12,796 - __main__ - INFO - Streaming chunk from generate: 脂肪肝等慢性
+2025-09-10 17:37:12,865 - __main__ - INFO - Streaming chunk from generate: 疾病的风险，并且他的
+2025-09-10 17:37:13,065 - __main__ - INFO - Streaming chunk from generate: 生活方式（如饮食习惯和
+2025-09-10 17:37:13,169 - __main__ - INFO - Streaming chunk from generate: 缺乏运动）可能会
+2025-09-10 17:37:13,393 - __main__ - INFO - Streaming chunk from generate: 进一步加剧这些问题。建议他
+2025-09-10 17:37:13,897 - __main__ - INFO - Streaming chunk from generate: 采取更健康的饮食习惯，
+2025-09-10 17:37:14,113 - __main__ - INFO - Streaming chunk from generate: 增加体育锻炼，减少
+2025-09-10 17:37:14,229 - __main__ - INFO - Streaming chunk from generate: 酒精摄入，并保证
+2025-09-10 17:37:14,381 - __main__ - INFO - Streaming chunk from generate: 充足的睡眠以改善整体健康
+2025-09-10 17:37:15,651 - __main__ - INFO - Streaming chunk from generate: 状况。同时，定期
+2025-09-10 17:37:15,808 - __main__ - INFO - Streaming chunk from generate: 监测血压、血糖
+2025-09-10 17:37:16,001 - __main__ - INFO - Streaming chunk from generate: 等相关指标，并遵
+2025-09-10 17:37:16,154 - __main__ - INFO - Streaming chunk from generate: 医嘱进行治疗。
+2025-09-10 17:37:16,173 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 17:37:56,531] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:38:08,249 - __main__ - INFO - The user's user_input is: 刘舟的健康信息
+[2025-09-10 17:38:08,266] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:38:08,270] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的健康信息' additional_kwargs={} response_metadata={} id='7b2c8d9c-bd02-4e96-816d-da69ee00bc27'
+[2025-09-10 17:38:09,355] [ThreadPoolExecutor-11_4] [ERROR] [ragAgent.py:291] : Error in store_memory: Error code: 400 - {'error': {'code': 'Arrearage', 'param': None, 'message': 'Access denied, please make sure your account is in good standing.', 'type': 'Arrearage'}, 'id': '2456504c-bcd7-4198-a941-a9d6ef3c532d', 'request_id': '2456504c-bcd7-4198-a941-a9d6ef3c532d'}
+[2025-09-10 17:38:09,417] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:38:09,421] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 17:38:10,490] [ThreadPoolExecutor-11_4] [ERROR] [ragAgent.py:421] : 调用agent过程中发生异常: Error code: 400 - {'error': {'code': 'Arrearage', 'param': None, 'message': 'Access denied, please make sure your account is in good standing.', 'type': 'Arrearage'}, 'id': 'chatcmpl-26323e4b-6c8d-441a-86bb-9316ba2ca410', 'request_id': '26323e4b-6c8d-441a-86bb-9316ba2ca410'}
+2025-09-10 17:38:31,902 - __main__ - INFO - The user's user_input is: 刘舟的健康信息
+
+
+[2025-09-10 17:38:31,915] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:38:31,919] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='刘舟的健康信息\n\n' additional_kwargs={} response_metadata={} id='150641f3-6e41-4742-9bd1-21e114a76c60'
+[2025-09-10 17:38:33,083] [ThreadPoolExecutor-12_4] [ERROR] [ragAgent.py:291] : Error in store_memory: Error code: 400 - {'error': {'code': 'Arrearage', 'param': None, 'message': 'Access denied, please make sure your account is in good standing.', 'type': 'Arrearage'}, 'id': '3b5dc23a-abc7-4740-aec4-960efc63b940', 'request_id': '3b5dc23a-abc7-4740-aec4-960efc63b940'}
+[2025-09-10 17:38:33,094] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:38:33,096] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 17:38:34,208] [ThreadPoolExecutor-12_4] [ERROR] [ragAgent.py:421] : 调用agent过程中发生异常: Error code: 400 - {'error': {'code': 'Arrearage', 'param': None, 'message': 'Access denied, please make sure your account is in good standing.', 'type': 'Arrearage'}, 'id': 'chatcmpl-056fcb17-1145-4eaf-9065-9cfdf3e10322', 'request_id': '056fcb17-1145-4eaf-9065-9cfdf3e10322'}
+[2025-09-10 17:38:56,534] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:46:25,856 - __main__ - INFO - Database connection pool closed
+2025-09-10 17:46:25,857 - __main__ - INFO - The service has been shut down
+2025-09-10 17:46:44,575 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 17:46:47,275] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 17:46:47,910] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 17:46:47,913] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:46:47,914] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:46:47,917] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 17:46:47,920 - __main__ - INFO - Database connection pool initialized
+2025-09-10 17:46:47,923 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 17:46:47,925] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:46:47,975] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 17:46:50,131 - __main__ - ERROR - Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+2025-09-10 17:47:29,219 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 17:47:34,838] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 17:47:35,133] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 17:47:35,137] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:47:35,140] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 17:47:35,142] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'qwen_agent_query', 'search_web'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 17:47:35,147 - __main__ - INFO - Database connection pool initialized
+2025-09-10 17:47:35,150 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 17:47:35,153] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:47:35,194] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 17:47:35,480] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+2025-09-10 17:48:10,280 - __main__ - INFO - The user's user_input is: 你好啊
+[2025-09-10 17:48:10,369] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:48:10,371] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='0b15f9bc-c0d8-4895-a7d4-f90b656f5288'
+[2025-09-10 17:48:11,745] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:48:11,748] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+2025-09-10 17:48:13,320 - __main__ - INFO - Streaming chunk from agent: 你好
+2025-09-10 17:48:13,432 - __main__ - INFO - Streaming chunk from agent: ！
+2025-09-10 17:48:13,486 - __main__ - INFO - Streaming chunk from agent: 有什么
+2025-09-10 17:48:13,525 - __main__ - INFO - Streaming chunk from agent: 可以帮助
+2025-09-10 17:48:13,695 - __main__ - INFO - Streaming chunk from agent: 你的吗？
+2025-09-10 17:48:13,725 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:48:13,725] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:413] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--39bce5bd-3474-4feb-aba6-8529bb08f57e'
+[2025-09-10 17:48:35,158] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 17:49:35,160] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:50:18,907 - __main__ - INFO - The user's user_input is: 请问女生穿丝袜臭吗？
+[2025-09-10 17:50:18,920] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 17:50:18,924] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='请问女生穿丝袜臭吗？' additional_kwargs={} response_metadata={} id='82bab3ca-bcf7-4046-89ee-8612cc5790ba'
+[2025-09-10 17:50:20,240] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:50:20,242] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 17:50:22,228 - __main__ - INFO - Streaming chunk from agent: 用户
+2025-09-10 17:50:22,272 - __main__ - INFO - Streaming chunk from agent: 的问题
+2025-09-10 17:50:22,315 - __main__ - INFO - Streaming chunk from agent: 是
+2025-09-10 17:50:22,368 - __main__ - INFO - Streaming chunk from agent: 关于
+2025-09-10 17:50:22,578 - __main__ - INFO - Streaming chunk from agent: 穿丝袜是否
+2025-09-10 17:50:22,808 - __main__ - INFO - Streaming chunk from agent: 会导致脚臭，
+2025-09-10 17:50:23,287 - __main__ - INFO - Streaming chunk from agent: 这并不涉及到健康
+2025-09-10 17:50:23,532 - __main__ - INFO - Streaming chunk from agent: 档案查询或个人信息
+2025-09-10 17:50:23,642 - __main__ - INFO - Streaming chunk from agent: 查询。对于这个问题
+2025-09-10 17:50:23,864 - __main__ - INFO - Streaming chunk from agent: ，我们可以使用在线
+2025-09-10 17:50:24,024 - __main__ - INFO - Streaming chunk from agent: 搜索工具来查找
+2025-09-10 17:50:24,474 - __main__ - INFO - Streaming chunk from agent: 相关信息。
+2025-09-10 17:50:25,034 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:50:25,249 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:50:25,400 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:50:26,102 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 17:50:26,177 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:50:26,192] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:413] : =====agent回复: content='用户的问题是关于穿丝袜是否会导致脚臭，这并不涉及到健康档案查询或个人信息查询。对于这个问题，我们可以使用在线搜索工具来查找相关信息。' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_469d451a5fd74b139592b4', 'function': {'arguments': '{"question": "女生穿丝袜会不会导致脚臭"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--bad5d49a-8e99-4bd8-b42a-982a8126e7a8' tool_calls=[{'name': 'search_web', 'args': {'question': '女生穿丝袜会不会导致脚臭'}, 'id': 'call_469d451a5fd74b139592b4', 'type': 'tool_call'}]
+2025-09-10 17:50:26,192 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 17:50:31,419] [ThreadPoolExecutor-2_1] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 17:50:31,424] [ThreadPoolExecutor-2_1] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 17:50:31,429] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 17:50:31,434] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 17:50:31,434] [ThreadPoolExecutor-2_2] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+2025-09-10 17:50:32,936 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 17:50:32,938 - __main__ - INFO - Streaming chunk from generate: 穿
+2025-09-10 17:50:32,990 - __main__ - INFO - Streaming chunk from generate: 丝袜本身
+2025-09-10 17:50:33,727 - __main__ - INFO - Streaming chunk from generate: 并不会
+2025-09-10 17:50:33,803 - __main__ - INFO - Streaming chunk from generate: 直接
+2025-09-10 17:50:34,067 - __main__ - INFO - Streaming chunk from generate: 导致脚臭，但
+2025-09-10 17:50:34,209 - __main__ - INFO - Streaming chunk from generate: 因为丝袜通常
+[2025-09-10 17:50:35,162] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 17:50:36,605 - __main__ - INFO - Streaming chunk from generate: 采用化学纤维材料
+2025-09-10 17:50:36,791 - __main__ - INFO - Streaming chunk from generate: ，这类材料的吸
+2025-09-10 17:50:36,937 - __main__ - INFO - Streaming chunk from generate: 水性和透气性相对较
+2025-09-10 17:50:37,258 - __main__ - INFO - Streaming chunk from generate: 差，这可能会使得
+2025-09-10 17:50:37,492 - __main__ - INFO - Streaming chunk from generate: 脚部的汗
+2025-09-10 17:50:37,722 - __main__ - INFO - Streaming chunk from generate: 液不易被吸收
+2025-09-10 17:50:38,377 - __main__ - INFO - Streaming chunk from generate: 或蒸发。当
+2025-09-10 17:50:38,576 - __main__ - INFO - Streaming chunk from generate: 脚部长时间处于潮湿
+2025-09-10 17:50:38,813 - __main__ - INFO - Streaming chunk from generate: 环境中时，就
+2025-09-10 17:50:39,126 - __main__ - INFO - Streaming chunk from generate: 容易滋生细菌和产生异味
+2025-09-10 17:50:39,388 - __main__ - INFO - Streaming chunk from generate: 。因此，如果
+2025-09-10 17:50:40,071 - __main__ - INFO - Streaming chunk from generate: 穿着丝袜，建议
+2025-09-10 17:50:40,253 - __main__ - INFO - Streaming chunk from generate: 选择透气性较好的
+2025-09-10 17:50:40,480 - __main__ - INFO - Streaming chunk from generate: 鞋子，并保持脚部干
+2025-09-10 17:50:42,562 - __main__ - INFO - Streaming chunk from generate: 爽，以减少脚
+2025-09-10 17:50:42,810 - __main__ - INFO - Streaming chunk from generate: 臭的发生几率。同时
+2025-09-10 17:50:43,410 - __main__ - INFO - Streaming chunk from generate: ，定期更换清洗
+2025-09-10 17:50:44,187 - __main__ - INFO - Streaming chunk from generate: 丝袜也是很重要的
+2025-09-10 17:50:44,277 - __main__ - INFO - Streaming chunk from generate: 。
+2025-09-10 17:50:44,297 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 17:51:35,165] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
