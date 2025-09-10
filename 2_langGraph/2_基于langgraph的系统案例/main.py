@@ -30,7 +30,7 @@ from pydantic import BaseModel, Field
 from ragAgent import (
     ToolConfig,
     create_graph,
-    save_graph_visualization,
+    # save_graph_visualization,
     get_llm,
     get_tools,
     Config,
@@ -200,8 +200,8 @@ async def lifespan(app: FastAPI):
             # 退出程序，返回状态码 1
             sys.exit(1)
 
-        # 保存状态图的可视化表示
-        save_graph_visualization(graph)
+        # 保存状态图的可视化表示(需要开启VPN)
+        # save_graph_visualization(graph)
 
     except ConnectionPoolError as e:
         # 捕获并记录连接池相关异常

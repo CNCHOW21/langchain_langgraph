@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # 定义后端服务接口的 URL 地址
-url = "http://0.0.0.0:8012/v1/chat/completions"
+url = "http://localhost:8012/v1/chat/completions"
 # 定义 HTTP 请求头，指定内容类型为 JSON
 headers = {"Content-Type": "application/json"}
 

@@ -900,8 +900,8 @@ def main():
             print(f"错误: {e}")
             sys.exit(1)
 
-        # 保存状态图可视化
-        save_graph_visualization(graph)
+        # 保存状态图可视化(需要开启VPN)
+        # save_graph_visualization(graph)
 
         # 打印机器人就绪提示
         print("聊天机器人准备就绪！输入 'quit'、'exit' 或 'q' 结束对话。")

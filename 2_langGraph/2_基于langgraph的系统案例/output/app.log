@@ -1520,3 +1520,1204 @@ Chen Jin
 2025-09-10 17:50:44,277 - __main__ - INFO - Streaming chunk from generate: 。
 2025-09-10 17:50:44,297 - __main__ - INFO - Streaming chunk from generate: 
 [2025-09-10 17:51:35,165] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:18:15,648 - __main__ - INFO - The user's user_input is: 原味是什么？
+[2025-09-10 19:24:32,938] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:24:32,943] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味是什么？' additional_kwargs={} response_metadata={} id='597d633a-1690-4d55-ae14-e30ee6eafb32'
+[2025-09-10 19:24:34,338] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:24:34,338] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:24:36,017 - __main__ - INFO - Streaming chunk from agent: 用户
+2025-09-10 19:24:36,193 - __main__ - INFO - Streaming chunk from agent: 的问题“
+2025-09-10 19:24:36,248 - __main__ - INFO - Streaming chunk from agent: 原味是什么
+2025-09-10 19:24:36,315 - __main__ - INFO - Streaming chunk from agent: ？”并不
+2025-09-10 19:24:36,455 - __main__ - INFO - Streaming chunk from agent: 涉及到健康档案查询
+2025-09-10 19:24:36,615 - __main__ - INFO - Streaming chunk from agent: 或个人信息查询。
+2025-09-10 19:24:36,868 - __main__ - INFO - Streaming chunk from agent: 这个问题可能是在询问某个特定
+2025-09-10 19:24:36,950 - __main__ - INFO - Streaming chunk from agent: 上下文中的“
+2025-09-10 19:24:37,095 - __main__ - INFO - Streaming chunk from agent: 原味”含义，例如
+2025-09-10 19:24:37,269 - __main__ - INFO - Streaming chunk from agent: 食品、衣物等的原始
+2025-09-10 19:24:37,417 - __main__ - INFO - Streaming chunk from agent: 味道或状态。由于
+2025-09-10 19:24:37,683 - __main__ - INFO - Streaming chunk from agent: 之前讨论了丝
+2025-09-10 19:24:37,858 - __main__ - INFO - Streaming chunk from agent: 袜相关的话题，这里“
+2025-09-10 19:24:37,965 - __main__ - INFO - Streaming chunk from agent: 原味”也可能
+2025-09-10 19:24:38,078 - __main__ - INFO - Streaming chunk from agent: 与之相关，
+2025-09-10 19:24:38,274 - __main__ - INFO - Streaming chunk from agent: 通常指的是未经洗涤
+2025-09-10 19:24:38,491 - __main__ - INFO - Streaming chunk from agent: 处理过的丝袜。
+2025-09-10 19:24:38,681 - __main__ - INFO - Streaming chunk from agent: 但是，为了准确
+2025-09-10 19:24:38,870 - __main__ - INFO - Streaming chunk from agent: 理解用户的意图，我们可以
+2025-09-10 19:24:38,988 - __main__ - INFO - Streaming chunk from agent: 使用在线搜索工具
+2025-09-10 19:24:39,116 - __main__ - INFO - Streaming chunk from agent: 来查找相关信息。
+2025-09-10 19:24:39,350 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:24:39,472 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:24:39,618 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:24:39,678 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:24:39,683 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:24:39,678] [ThreadPoolExecutor-4_4] [INFO] [ragAgent.py:413] : =====agent回复: content='用户的问题“原味是什么？”并不涉及到健康档案查询或个人信息查询。这个问题可能是在询问某个特定上下文中的“原味”含义，例如食品、衣物等的原始味道或状态。由于之前讨论了丝袜相关的话题，这里“原味”也可能与之相关，通常指的是未经洗涤处理过的丝袜。但是，为了准确理解用户的意图，我们可以使用在线搜索工具来查找相关信息。' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_5ffd250aced24adea5c000', 'function': {'arguments': '{"question": "原味的定义"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--3b312e37-5b0a-4ee2-9675-9edf3867f0cb' tool_calls=[{'name': 'search_web', 'args': {'question': '原味的定义'}, 'id': 'call_5ffd250aced24adea5c000', 'type': 'tool_call'}]
+[2025-09-10 19:24:45,208] [ThreadPoolExecutor-4_1] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:24:45,210] [ThreadPoolExecutor-4_1] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:24:45,211] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:24:45,215] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:24:45,215] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:24:46,700 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:24:46,700 - __main__ - INFO - Streaming chunk from generate: “
+2025-09-10 19:24:47,725 - __main__ - INFO - Streaming chunk from generate: 原味”
+2025-09-10 19:24:47,813 - __main__ - INFO - Streaming chunk from generate: 这个词
+2025-09-10 19:24:47,920 - __main__ - INFO - Streaming chunk from generate: 在不同的
+2025-09-10 19:24:48,132 - __main__ - INFO - Streaming chunk from generate: 语境中有不同的含义。
+2025-09-10 19:24:48,306 - __main__ - INFO - Streaming chunk from generate: 在一般情况下，它
+2025-09-10 19:24:48,508 - __main__ - INFO - Streaming chunk from generate: 指的是食物原本的味道，
+2025-09-10 19:24:48,680 - __main__ - INFO - Streaming chunk from generate: 即没有经过额外
+2025-09-10 19:24:49,038 - __main__ - INFO - Streaming chunk from generate: 调味或加工的食物
+2025-09-10 19:24:49,287 - __main__ - INFO - Streaming chunk from generate: 本身所具有的味道
+2025-09-10 19:24:49,444 - __main__ - INFO - Streaming chunk from generate: 。而在特定的文化
+2025-09-10 19:24:50,002 - __main__ - INFO - Streaming chunk from generate: 圈子里，比如
+2025-09-10 19:24:50,125 - __main__ - INFO - Streaming chunk from generate: 萌宅领域，“
+2025-09-10 19:24:50,279 - __main__ - INFO - Streaming chunk from generate: 原味”则被
+2025-09-10 19:24:50,374 - __main__ - INFO - Streaming chunk from generate: 用来指代某
+2025-09-10 19:24:50,560 - __main__ - INFO - Streaming chunk from generate: 人（通常是女性角色
+2025-09-10 19:24:50,771 - __main__ - INFO - Streaming chunk from generate: ）穿过的、
+2025-09-10 19:24:50,958 - __main__ - INFO - Streaming chunk from generate: 未经清洗的个人
+2025-09-10 19:24:51,071 - __main__ - INFO - Streaming chunk from generate: 物品，如内衣
+2025-09-10 19:24:51,275 - __main__ - INFO - Streaming chunk from generate: 裤或袜子等
+2025-09-10 19:24:51,661 - __main__ - INFO - Streaming chunk from generate: 。这种用法主要
+2025-09-10 19:25:09,028 - __main__ - INFO - Streaming chunk from generate: 出现在二次元文化中
+2025-09-10 19:25:09,046 - __main__ - INFO - Streaming chunk from generate: ，并且与实际
+2025-09-10 19:25:09,055 - __main__ - INFO - Streaming chunk from generate: 生活中的卫生习惯相
+2025-09-10 19:25:09,065 - __main__ - INFO - Streaming chunk from generate: 悖，在现实生活中并不推荐
+2025-09-10 19:25:09,065 - __main__ - INFO - Streaming chunk from generate: 这样做。如果你是在询问其他
+2025-09-10 19:25:09,070 - __main__ - INFO - Streaming chunk from generate: 方面的“原味
+2025-09-10 19:25:09,080 - __main__ - INFO - Streaming chunk from generate: ”，请提供更多信息
+2025-09-10 19:25:09,085 - __main__ - INFO - Streaming chunk from generate: 以便我能更准确地
+2025-09-10 19:25:09,085 - __main__ - INFO - Streaming chunk from generate: 回答你的问题。
+2025-09-10 19:25:09,100 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:25:09,222 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:25:09,330] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:25:09,345] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='f1f11160-fce3-4345-97ce-c6afb6660d9c'
+[2025-09-10 19:25:10,729] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:25:10,731] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-10 19:25:32,914] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:25:43,166 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:25:43,367 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:25:43,504 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:25:43,504 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:25:43,504] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_c1b8ab21c61f4d1e9865cf', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--25919c49-440f-4fc2-b1aa-5add29ec2942' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_c1b8ab21c61f4d1e9865cf', 'type': 'tool_call'}]
+[2025-09-10 19:25:49,422] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:25:49,422] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:25:49,427] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:25:49,427] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:25:49,427] [ThreadPoolExecutor-6_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:25:51,398 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-5c31541e-5888-4dd0-821f-59f0dab96331', 'request_id': '5c31541e-5888-4dd0-821f-59f0dab96331'}
+[2025-09-10 19:26:32,918] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:27:08,729 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:27:08,742] [ThreadPoolExecutor-8_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:27:08,742] [ThreadPoolExecutor-8_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='84e26688-887b-471d-87ea-701cc2dccc50'
+[2025-09-10 19:27:10,053] [ThreadPoolExecutor-8_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:27:10,054] [ThreadPoolExecutor-8_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:27:12,976 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:27:13,080 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:27:13,205] [ThreadPoolExecutor-8_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_f885730b495f4cfdaa36f2', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--0628434e-a0f9-4ebc-866e-3365592dbb39' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_f885730b495f4cfdaa36f2', 'type': 'tool_call'}]
+2025-09-10 19:27:13,205 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:27:14,214 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:27:17,173] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:27:17,173] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:27:17,177] [ThreadPoolExecutor-8_3] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:27:17,177] [ThreadPoolExecutor-8_3] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:27:17,182] [ThreadPoolExecutor-8_3] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:27:18,237 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-fa9e15ad-e56a-4c3f-8994-b67258c3cc6c', 'request_id': 'fa9e15ad-e56a-4c3f-8994-b67258c3cc6c'}
+[2025-09-10 19:27:32,920] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:28:32,922] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:29:22,306 - __main__ - INFO - Database connection pool closed
+2025-09-10 19:29:22,306 - __main__ - INFO - The service has been shut down
+2025-09-10 19:29:33,080 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:29:39,399] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:29:39,671] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:29:39,671] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:29:39,671] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:29:39,676] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'retrieve', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:29:39,676 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:29:39,681 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:29:39,681] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:29:39,723] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 19:29:39,993] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-09-10 19:30:39,687] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:31:39,691] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:31:56,738 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:31:56,770] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:31:56,775] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='6f289994-bb54-4e2b-8cf2-fe04b11546d8'
+[2025-09-10 19:32:00,563] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:32:00,564] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+2025-09-10 19:32:03,846 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:32:04,016 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:32:04,238 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:32:04,240 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:32:04,239] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_a7f0d99971b04b07ad4141', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--cd926c71-95e0-43ca-b486-c53b121e3998' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_a7f0d99971b04b07ad4141', 'type': 'tool_call'}]
+[2025-09-10 19:32:07,958] [ThreadPoolExecutor-1_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:32:07,984] [ThreadPoolExecutor-1_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:32:07,998] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:32:08,009] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:32:08,015] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+2025-09-10 19:32:08,903 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-c484b7aa-b7ee-47de-9d3c-e8d99daf9370', 'request_id': 'c484b7aa-b7ee-47de-9d3c-e8d99daf9370'}
+2025-09-10 19:32:28,548 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:32:28,555] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:32:28,560] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='782ee8ce-e038-4a85-8d83-b4a0bc1f481c'
+[2025-09-10 19:32:29,983] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:32:29,984] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:32:31,923 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:32:32,032 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:32:32,177] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_6d6a98b0926344a39e14e9', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--914f85e8-f5d4-4620-8f98-0dfb0cb288cf' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_6d6a98b0926344a39e14e9', 'type': 'tool_call'}]
+2025-09-10 19:32:32,177 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:32:33,193 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:32:35,495] [ThreadPoolExecutor-3_2] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:32:35,507] [ThreadPoolExecutor-3_2] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:32:35,520] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:32:35,520] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:32:35,520] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:32:36,261 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-e09ba33b-ee69-43bc-9b8c-aebe69213a36', 'request_id': 'e09ba33b-ee69-43bc-9b8c-aebe69213a36'}
+[2025-09-10 19:32:39,694] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:33:39,699] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:34:18,705 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:34:25,178] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:34:25,473] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:34:25,474] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:34:25,475] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:34:25,476] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'qwen_agent_query', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:34:25,479 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:34:25,481 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:34:25,483] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:34:25,523] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 19:34:36,624] [MainThread] [INFO] [ragAgent.py:679] : Graph visualization saved as graph.png
+[2025-09-10 19:35:25,485] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:36:00,332 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:36:00,358] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:36:00,360] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='aca3c041-79c7-4843-803a-5058e2a2dd9d'
+[2025-09-10 19:36:01,719] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:36:01,720] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+2025-09-10 19:36:04,039 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:36:04,527 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:36:04,967 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:36:04,969 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:36:04,967] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_22e46443315b4dc6be523d', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--fa22d114-9ac5-4170-8eff-5ceb08342b66' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_22e46443315b4dc6be523d', 'type': 'tool_call'}]
+[2025-09-10 19:36:08,206] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:36:08,207] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:36:08,211] [ThreadPoolExecutor-1_1] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:36:08,214] [ThreadPoolExecutor-1_1] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:36:08,216] [ThreadPoolExecutor-1_1] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+2025-09-10 19:36:09,184 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-35ccef30-8034-468e-8eb2-d9c2b97789cb', 'request_id': '35ccef30-8034-468e-8eb2-d9c2b97789cb'}
+[2025-09-10 19:36:25,487] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:37:25,491] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:37:38,530 - __main__ - INFO - The user's user_input is: 武汉有什么旅游景点？
+[2025-09-10 19:37:38,545] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:37:38,548] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='武汉有什么旅游景点？' additional_kwargs={} response_metadata={} id='060dbab2-8088-4a5a-a4ac-157bf56439af'
+[2025-09-10 19:37:39,826] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:37:39,827] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:37:42,275 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:37:43,357 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:37:44,165 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:37:44,168 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:37:44,167] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_620790e0ccbd4a84b82ae6', 'function': {'arguments': '{"question": "武汉有什么旅游景点？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--d9d7c4bd-84d2-47bc-8221-89fe71565530' tool_calls=[{'name': 'search_web', 'args': {'question': '武汉有什么旅游景点？'}, 'id': 'call_620790e0ccbd4a84b82ae6', 'type': 'tool_call'}]
+[2025-09-10 19:37:48,510] [ThreadPoolExecutor-3_2] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:37:48,511] [ThreadPoolExecutor-3_2] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:37:48,514] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:37:48,516] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:37:48,517] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:37:49,796 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:37:49,798 - __main__ - INFO - Streaming chunk from generate: 武汉
+2025-09-10 19:37:49,862 - __main__ - INFO - Streaming chunk from generate: 有很多
+2025-09-10 19:37:49,941 - __main__ - INFO - Streaming chunk from generate: 著名的旅游景点
+2025-09-10 19:37:50,003 - __main__ - INFO - Streaming chunk from generate: ，根据
+2025-09-10 19:37:50,213 - __main__ - INFO - Streaming chunk from generate: 已知的内容，这里
+2025-09-10 19:37:50,864 - __main__ - INFO - Streaming chunk from generate: 为您推荐武汉必
+2025-09-10 19:37:51,018 - __main__ - INFO - Streaming chunk from generate: 去的十大景点：
+
+1
+2025-09-10 19:37:51,125 - __main__ - INFO - Streaming chunk from generate: . **黄鹤楼
+2025-09-10 19:37:51,297 - __main__ - INFO - Streaming chunk from generate: **：作为武汉的标志性
+2025-09-10 19:37:51,422 - __main__ - INFO - Streaming chunk from generate: 建筑之一，黄
+2025-09-10 19:37:51,531 - __main__ - INFO - Streaming chunk from generate: 鹤楼不仅拥有
+2025-09-10 19:37:51,695 - __main__ - INFO - Streaming chunk from generate: 悠久的历史和丰富的
+2025-09-10 19:37:51,812 - __main__ - INFO - Streaming chunk from generate: 文化内涵，还是
+2025-09-10 19:37:52,110 - __main__ - INFO - Streaming chunk from generate: 俯瞰武汉市景
+2025-09-10 19:37:52,331 - __main__ - INFO - Streaming chunk from generate: 的好地方。
+2. **
+2025-09-10 19:37:52,441 - __main__ - INFO - Streaming chunk from generate: 东湖风景区**：这是
+2025-09-10 19:37:52,589 - __main__ - INFO - Streaming chunk from generate: 武汉市内最大的城市湖泊
+2025-09-10 19:37:52,715 - __main__ - INFO - Streaming chunk from generate: ，以其美丽的自然风光
+2025-09-10 19:37:52,970 - __main__ - INFO - Streaming chunk from generate: 而闻名。
+3
+2025-09-10 19:37:53,082 - __main__ - INFO - Streaming chunk from generate: . **武汉长江大桥**
+2025-09-10 19:37:53,454 - __main__ - INFO - Streaming chunk from generate: ：中国第一座自主设计
+2025-09-10 19:37:54,221 - __main__ - INFO - Streaming chunk from generate: 并建造完成的公铁
+2025-09-10 19:37:54,387 - __main__ - INFO - Streaming chunk from generate: 两用桥梁，不仅是
+2025-09-10 19:37:54,505 - __main__ - INFO - Streaming chunk from generate: 重要的交通枢纽，也
+2025-09-10 19:37:54,647 - __main__ - INFO - Streaming chunk from generate: 是一处值得参观
+2025-09-10 19:37:54,771 - __main__ - INFO - Streaming chunk from generate: 的历史遗迹。
+4
+2025-09-10 19:37:55,155 - __main__ - INFO - Streaming chunk from generate: . **武汉大学**：
+2025-09-10 19:37:55,280 - __main__ - INFO - Streaming chunk from generate: 被誉为“中国最美的
+2025-09-10 19:37:55,433 - __main__ - INFO - Streaming chunk from generate: 大学”之一，尤其
+2025-09-10 19:37:56,161 - __main__ - INFO - Streaming chunk from generate: 在樱花盛开季节
+2025-09-10 19:37:56,465 - __main__ - INFO - Streaming chunk from generate: 更是吸引了无数游客前来
+2025-09-10 19:37:56,573 - __main__ - INFO - Streaming chunk from generate: 观赏。
+5. **汉
+2025-09-10 19:37:56,733 - __main__ - INFO - Streaming chunk from generate: 口江滩**：作为
+2025-09-10 19:37:56,852 - __main__ - INFO - Streaming chunk from generate: 武汉市较大的公园之一，
+2025-09-10 19:37:57,034 - __main__ - INFO - Streaming chunk from generate: 是市民休闲娱乐的好去
+2025-09-10 19:37:57,137 - __main__ - INFO - Streaming chunk from generate: 处。
+6. **武汉
+2025-09-10 19:37:57,551 - __main__ - INFO - Streaming chunk from generate: 博物馆**：通过
+2025-09-10 19:37:57,660 - __main__ - INFO - Streaming chunk from generate: 丰富的藏品向
+2025-09-10 19:37:58,189 - __main__ - INFO - Streaming chunk from generate: 游客展示了武汉乃至
+2025-09-10 19:37:58,436 - __main__ - INFO - Streaming chunk from generate: 整个湖北地区的历史文化。
+
+2025-09-10 19:37:58,584 - __main__ - INFO - Streaming chunk from generate: 7. **古琴台
+2025-09-10 19:37:58,701 - __main__ - INFO - Streaming chunk from generate: **：位于武汉市中心
+2025-09-10 19:37:58,865 - __main__ - INFO - Streaming chunk from generate: 的一处重要文化遗址
+2025-09-10 19:37:59,112 - __main__ - INFO - Streaming chunk from generate: ，与古代音乐
+2025-09-10 19:37:59,321 - __main__ - INFO - Streaming chunk from generate: 有着不解之缘。
+
+2025-09-10 19:37:59,480 - __main__ - INFO - Streaming chunk from generate: 8. **木兰文化
+2025-09-10 19:37:59,590 - __main__ - INFO - Streaming chunk from generate: 生态旅游区**：结合
+2025-09-10 19:37:59,814 - __main__ - INFO - Streaming chunk from generate: 了自然景观与户外
+2025-09-10 19:37:59,991 - __main__ - INFO - Streaming chunk from generate: 活动体验，适合喜欢探险
+2025-09-10 19:38:00,159 - __main__ - INFO - Streaming chunk from generate: 的朋友。
+9.
+2025-09-10 19:38:00,267 - __main__ - INFO - Streaming chunk from generate:  **东湖海洋世界**
+2025-09-10 19:38:00,482 - __main__ - INFO - Streaming chunk from generate: ：对于喜爱海洋生物的人来说
+2025-09-10 19:38:01,254 - __main__ - INFO - Streaming chunk from generate: ，这里提供了近距离接触
+2025-09-10 19:38:01,466 - __main__ - INFO - Streaming chunk from generate: 各种奇妙海洋生物的机会
+2025-09-10 19:38:01,577 - __main__ - INFO - Streaming chunk from generate: 。
+10. **吉
+2025-09-10 19:38:01,727 - __main__ - INFO - Streaming chunk from generate: 庆街夜市**：
+2025-09-10 19:38:01,907 - __main__ - INFO - Streaming chunk from generate: 如果你想品尝地道的武汉
+2025-09-10 19:38:02,059 - __main__ - INFO - Streaming chunk from generate: 美食，那么这个
+2025-09-10 19:38:02,251 - __main__ - INFO - Streaming chunk from generate: 夜市绝对值得一试
+2025-09-10 19:38:02,398 - __main__ - INFO - Streaming chunk from generate: 。
+
+这些景点各
+2025-09-10 19:38:02,499 - __main__ - INFO - Streaming chunk from generate: 具特色，无论是历史文化爱好者
+2025-09-10 19:38:04,119 - __main__ - INFO - Streaming chunk from generate: 还是自然风景迷
+2025-09-10 19:38:04,231 - __main__ - INFO - Streaming chunk from generate: 都能在这里找到自己
+2025-09-10 19:38:04,403 - __main__ - INFO - Streaming chunk from generate: 感兴趣的地方。希望这
+2025-09-10 19:38:04,517 - __main__ - INFO - Streaming chunk from generate: 些建议对
+2025-09-10 19:38:04,936 - __main__ - INFO - Streaming chunk from generate: 您的旅行有所帮助！
+2025-09-10 19:38:04,958 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 19:38:25,493] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:39:15,513 - __main__ - INFO - Database connection pool closed
+2025-09-10 19:39:15,517 - __main__ - INFO - The service has been shut down
+2025-09-10 19:39:29,320 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:39:32,193] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:39:32,466] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:39:32,468] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:39:32,469] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:39:32,470] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:39:32,473 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:39:32,475 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:39:32,481] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:39:32,516] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 19:39:33,743 - __main__ - ERROR - Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+2025-09-10 19:43:07,285 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:43:09,891] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:43:10,163] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:43:10,165] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:43:10,166] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:43:10,167] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'retrieve', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:43:10,170 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:43:10,173 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:43:10,175] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:43:10,210] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 19:43:32,534 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:43:35,151] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:43:35,487] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:43:35,489] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:43:35,491] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:43:35,492] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'search_web', 'retrieve', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:43:35,496 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:43:35,499 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:43:35,500] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:43:35,539] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 19:43:36,591 - __main__ - ERROR - Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+2025-09-10 19:44:21,961 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:44:24,702] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:44:25,113] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:44:25,115] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:44:25,121] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:44:25,126] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'retrieve', 'search_web', 'qwen_agent_query'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:44:25,137 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:44:25,139 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:44:25,146] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:44:25,192] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 19:44:26,412 - __main__ - ERROR - Unexpected error: Failed to reach https://mermaid.ink/ API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+2025-09-10 19:45:38,189 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:45:40,666] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:45:41,020] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:45:41,021] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:45:41,023] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:45:41,024] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:45:41,027 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:45:41,029 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:45:41,031] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:45:41,066] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+2025-09-10 19:45:41,087 - __main__ - ERROR - Unexpected error: name 'save_graph_visualization' is not defined
+2025-09-10 19:46:16,008 - __main__ - INFO - Start the server on port 8012
+[2025-09-10 19:46:18,518] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-10 19:46:18,815] [MainThread] [DEBUG] [ragAgent.py:93] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-10 19:46:18,816] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:46:18,818] [MainThread] [DEBUG] [ragAgent.py:99] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-10 19:46:18,819] [MainThread] [INFO] [ragAgent.py:78] : ToolConfig初始化完成: {'qwen_agent_query', 'search_web', 'retrieve'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate'}
+2025-09-10 19:46:18,833 - __main__ - INFO - Database connection pool initialized
+2025-09-10 19:46:18,835 - __main__ - DEBUG - Database connection pool initialized
+[2025-09-10 19:46:18,843] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:46:18,879] [MainThread] [INFO] [ragAgent.py:715] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-10 19:47:18,846] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:48:18,848] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:49:18,850] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:50:18,871] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:51:18,875] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:52:18,878] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:53:18,880] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:53:53,654 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:53:53,681] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:53:53,682] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='83d88c61-0da9-4091-95b1-9d6d25dfddc1'
+[2025-09-10 19:53:54,023] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:53:54,024] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+2025-09-10 19:53:55,217 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:53:55,327 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:53:55,472 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:53:55,475 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:53:55,474] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_b3a7d03ec7b14f1bb6d935', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--65263939-f430-4e5d-b1ad-9d69d8b7e9ce' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_b3a7d03ec7b14f1bb6d935', 'type': 'tool_call'}]
+[2025-09-10 19:53:59,452] [ThreadPoolExecutor-1_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:53:59,453] [ThreadPoolExecutor-1_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:53:59,457] [ThreadPoolExecutor-1_3] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:53:59,458] [ThreadPoolExecutor-1_3] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:53:59,460] [ThreadPoolExecutor-1_3] [INFO] [ragAgent.py:328] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+2025-09-10 19:53:59,951 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-e00ec568-bd08-46f3-9336-cd58a382958d', 'request_id': 'e00ec568-bd08-46f3-9336-cd58a382958d'}
+[2025-09-10 19:54:18,882] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:54:51,560 - __main__ - INFO - The user's user_input is: 武汉有什么旅游景点
+[2025-09-10 19:54:52,307] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:54:52,308] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='武汉有什么旅游景点' additional_kwargs={} response_metadata={} id='1395c366-45b1-42d4-acf2-8dd2b40b811c'
+[2025-09-10 19:54:52,706] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:54:52,708] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:54:54,086 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:54:54,173 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:54:54,248] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_737ef6ccd8cf4547b03d57', 'function': {'arguments': '{"question": "武汉有什么旅游景点"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--db5562af-c307-4f7e-9c74-5aa9af3eca44' tool_calls=[{'name': 'search_web', 'args': {'question': '武汉有什么旅游景点'}, 'id': 'call_737ef6ccd8cf4547b03d57', 'type': 'tool_call'}]
+2025-09-10 19:54:54,253 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:54:54,256 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:54:57,384] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:54:57,386] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:54:57,392] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:54:57,394] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:54:57,395] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:54:57,865 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:54:57,866 - __main__ - INFO - Streaming chunk from generate: 武汉
+2025-09-10 19:54:57,929 - __main__ - INFO - Streaming chunk from generate: 有很多
+2025-09-10 19:54:57,985 - __main__ - INFO - Streaming chunk from generate: 值得一游的
+2025-09-10 19:54:58,270 - __main__ - INFO - Streaming chunk from generate: 旅游
+2025-09-10 19:54:58,581 - __main__ - INFO - Streaming chunk from generate: 景点，根据已
+2025-09-10 19:54:59,065 - __main__ - INFO - Streaming chunk from generate: 知的信息，这里
+2025-09-10 19:54:59,188 - __main__ - INFO - Streaming chunk from generate: 为您推荐武汉必
+2025-09-10 19:54:59,339 - __main__ - INFO - Streaming chunk from generate: 去的十大景点：
+
+1
+2025-09-10 19:54:59,433 - __main__ - INFO - Streaming chunk from generate: . **黄鹤楼
+2025-09-10 19:54:59,588 - __main__ - INFO - Streaming chunk from generate: **：作为武汉的标志性
+2025-09-10 19:54:59,673 - __main__ - INFO - Streaming chunk from generate: 建筑，黄鹤楼不仅
+2025-09-10 19:55:00,487 - __main__ - INFO - Streaming chunk from generate: 拥有悠久的历史和丰富的
+2025-09-10 19:55:00,598 - __main__ - INFO - Streaming chunk from generate: 文化内涵，还能
+2025-09-10 19:55:00,721 - __main__ - INFO - Streaming chunk from generate: 让您俯瞰整个
+2025-09-10 19:55:00,863 - __main__ - INFO - Streaming chunk from generate: 武汉市的美景。
+
+2025-09-10 19:55:01,932 - __main__ - INFO - Streaming chunk from generate: 2. **东湖风景区
+2025-09-10 19:55:02,095 - __main__ - INFO - Streaming chunk from generate: **：这里是武汉市最大的城市
+2025-09-10 19:55:02,223 - __main__ - INFO - Streaming chunk from generate: 湖泊之一，以其
+2025-09-10 19:55:02,364 - __main__ - INFO - Streaming chunk from generate: 美丽的自然风光著
+2025-09-10 19:55:02,551 - __main__ - INFO - Streaming chunk from generate: 称，适合散步、骑行
+2025-09-10 19:55:03,104 - __main__ - INFO - Streaming chunk from generate: 或划船等活动
+2025-09-10 19:55:03,239 - __main__ - INFO - Streaming chunk from generate: 。
+3. **武汉长江
+2025-09-10 19:55:03,405 - __main__ - INFO - Streaming chunk from generate: 大桥**：这座
+2025-09-10 19:55:03,521 - __main__ - INFO - Streaming chunk from generate: 桥是中国第一座
+2025-09-10 19:55:03,684 - __main__ - INFO - Streaming chunk from generate: 自主设计并建造的公
+2025-09-10 19:55:03,803 - __main__ - INFO - Streaming chunk from generate: 铁两用桥梁，走在
+2025-09-10 19:55:04,058 - __main__ - INFO - Streaming chunk from generate: 上面可以欣赏到长江
+2025-09-10 19:55:04,165 - __main__ - INFO - Streaming chunk from generate: 的壮丽景色
+2025-09-10 19:55:04,325 - __main__ - INFO - Streaming chunk from generate: 。
+4. **武汉大学
+2025-09-10 19:55:04,438 - __main__ - INFO - Streaming chunk from generate: **：被誉为“
+2025-09-10 19:55:04,592 - __main__ - INFO - Streaming chunk from generate: 中国最美丽的大学
+2025-09-10 19:55:04,707 - __main__ - INFO - Streaming chunk from generate: ”之一，尤其是
+2025-09-10 19:55:04,970 - __main__ - INFO - Streaming chunk from generate: 春天时分校园
+2025-09-10 19:55:05,194 - __main__ - INFO - Streaming chunk from generate: 内的樱花盛开，吸引了
+2025-09-10 19:55:05,297 - __main__ - INFO - Streaming chunk from generate: 大量游客前来观赏。
+5
+2025-09-10 19:55:05,441 - __main__ - INFO - Streaming chunk from generate: . **汉口江滩
+2025-09-10 19:55:06,067 - __main__ - INFO - Streaming chunk from generate: **：作为武汉市内
+2025-09-10 19:55:06,777 - __main__ - INFO - Streaming chunk from generate: 较大的公园之一，
+2025-09-10 19:55:06,903 - __main__ - INFO - Streaming chunk from generate: 这里是市民休闲娱乐
+2025-09-10 19:55:07,057 - __main__ - INFO - Streaming chunk from generate: 的好地方，也是体验
+2025-09-10 19:55:07,179 - __main__ - INFO - Streaming chunk from generate: 江城特色的好去处
+2025-09-10 19:55:07,336 - __main__ - INFO - Streaming chunk from generate: 。
+6. **武汉博物馆
+2025-09-10 19:55:07,451 - __main__ - INFO - Streaming chunk from generate: **：对于想要
+2025-09-10 19:55:07,678 - __main__ - INFO - Streaming chunk from generate: 深入了解武汉历史文化的朋友
+2025-09-10 19:55:07,791 - __main__ - INFO - Streaming chunk from generate: 来说，这里收藏
+2025-09-10 19:55:08,037 - __main__ - INFO - Streaming chunk from generate: 了众多珍贵文物，
+2025-09-10 19:55:08,206 - __main__ - INFO - Streaming chunk from generate: 是一个不错的选择。
+7
+2025-09-10 19:55:08,363 - __main__ - INFO - Streaming chunk from generate: . **古琴台**
+2025-09-10 19:55:08,551 - __main__ - INFO - Streaming chunk from generate: ：一个充满文化气息的地方
+2025-09-10 19:55:08,727 - __main__ - INFO - Streaming chunk from generate: ，在这里可以了解到
+2025-09-10 19:55:08,870 - __main__ - INFO - Streaming chunk from generate: 更多关于古琴的知识
+2025-09-10 19:55:09,621 - __main__ - INFO - Streaming chunk from generate: ，并有机会聆听现场
+2025-09-10 19:55:09,742 - __main__ - INFO - Streaming chunk from generate: 演奏。
+8. **木
+2025-09-10 19:55:09,887 - __main__ - INFO - Streaming chunk from generate: 兰文化生态旅游区**
+2025-09-10 19:55:10,185 - __main__ - INFO - Streaming chunk from generate: ：提供了一个亲近
+2025-09-10 19:55:10,320 - __main__ - INFO - Streaming chunk from generate: 自然的机会，同时
+2025-09-10 19:55:10,620 - __main__ - INFO - Streaming chunk from generate: 也能体验到木兰文化的
+2025-09-10 19:55:10,778 - __main__ - INFO - Streaming chunk from generate: 独特魅力。
+9. **
+2025-09-10 19:55:10,894 - __main__ - INFO - Streaming chunk from generate: 东湖海洋世界**：
+2025-09-10 19:55:11,120 - __main__ - INFO - Streaming chunk from generate: 对海洋生物感兴趣的朋友
+2025-09-10 19:55:11,306 - __main__ - INFO - Streaming chunk from generate: 不要错过这里，它
+2025-09-10 19:55:11,516 - __main__ - INFO - Streaming chunk from generate: 提供了近距离接触各种
+2025-09-10 19:55:11,619 - __main__ - INFO - Streaming chunk from generate: 奇妙海洋生物的机会
+2025-09-10 19:55:12,827 - __main__ - INFO - Streaming chunk from generate: 。
+10. **吉
+2025-09-10 19:55:12,964 - __main__ - INFO - Streaming chunk from generate: 庆街夜市**：
+2025-09-10 19:55:13,163 - __main__ - INFO - Streaming chunk from generate: 最后但同样重要的是
+2025-09-10 19:55:13,277 - __main__ - INFO - Streaming chunk from generate: ，来武汉一定要尝
+2025-09-10 19:55:13,526 - __main__ - INFO - Streaming chunk from generate: 尝当地的美食。
+2025-09-10 19:55:13,624 - __main__ - INFO - Streaming chunk from generate: 吉庆街夜市以其
+2025-09-10 19:55:13,752 - __main__ - INFO - Streaming chunk from generate: 丰富多样的小吃
+2025-09-10 19:55:14,298 - __main__ - INFO - Streaming chunk from generate: 而闻名。
+
+希望这
+2025-09-10 19:55:14,397 - __main__ - INFO - Streaming chunk from generate: 些建议能够帮助您规划
+2025-09-10 19:55:14,990 - __main__ - INFO - Streaming chunk from generate: 一次愉快且难忘的武汉
+2025-09-10 19:55:15,117 - __main__ - INFO - Streaming chunk from generate: 之旅！
+2025-09-10 19:55:15,145 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 19:55:18,885] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:55:37,921 - __main__ - INFO - The user's user_input is: 原味是什么？
+[2025-09-10 19:55:37,932] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:55:37,934] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味是什么？' additional_kwargs={} response_metadata={} id='480b722c-19f9-45af-a2ce-401ef6033812'
+[2025-09-10 19:55:38,269] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:55:38,276] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:55:39,929 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:55:40,022 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:55:40,082] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_fbc207a13a5542609faf11', 'function': {'arguments': '{"question": "原味是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--10d9d953-178a-4145-91aa-ce57f56965be' tool_calls=[{'name': 'search_web', 'args': {'question': '原味是什么？'}, 'id': 'call_fbc207a13a5542609faf11', 'type': 'tool_call'}]
+2025-09-10 19:55:40,080 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:55:41,104 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:55:45,218] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:55:45,219] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:55:45,224] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:55:45,225] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:55:45,227] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:55:45,576 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:55:45,577 - __main__ - INFO - Streaming chunk from generate: 原
+2025-09-10 19:55:45,621 - __main__ - INFO - Streaming chunk from generate: 味
+2025-09-10 19:55:45,654 - __main__ - INFO - Streaming chunk from generate: 指的是
+2025-09-10 19:55:45,697 - __main__ - INFO - Streaming chunk from generate: 食物
+2025-09-10 19:55:45,940 - __main__ - INFO - Streaming chunk from generate: 原本的味道，也就是
+2025-09-10 19:55:46,249 - __main__ - INFO - Streaming chunk from generate: 在没有添加额外
+2025-09-10 19:55:46,457 - __main__ - INFO - Streaming chunk from generate: 调料或进行复杂
+2025-09-10 19:55:46,648 - __main__ - INFO - Streaming chunk from generate: 加工的情况下，食物
+2025-09-10 19:55:46,847 - __main__ - INFO - Streaming chunk from generate: 本身所具有的
+2025-09-10 19:55:47,016 - __main__ - INFO - Streaming chunk from generate: 自然风味。有些
+2025-09-10 19:55:47,299 - __main__ - INFO - Streaming chunk from generate: 食物虽然基于其
+2025-09-10 19:55:47,458 - __main__ - INFO - Streaming chunk from generate: 原味，但
+2025-09-10 19:55:47,644 - __main__ - INFO - Streaming chunk from generate: 也可以通过添加其他
+2025-09-10 19:55:47,848 - __main__ - INFO - Streaming chunk from generate: 味道来创造不同的
+2025-09-10 19:55:48,016 - __main__ - INFO - Streaming chunk from generate: 风味体验。如果你
+2025-09-10 19:55:48,193 - __main__ - INFO - Streaming chunk from generate: 有更多关于“
+2025-09-10 19:55:48,394 - __main__ - INFO - Streaming chunk from generate: 原味”的具体
+2025-09-10 19:55:48,538 - __main__ - INFO - Streaming chunk from generate: 问题或者想了解
+2025-09-10 19:55:48,716 - __main__ - INFO - Streaming chunk from generate: 某些特定食物的
+2025-09-10 19:55:49,030 - __main__ - INFO - Streaming chunk from generate: 原味是什么样的
+2025-09-10 19:55:49,177 - __main__ - INFO - Streaming chunk from generate: ，欢迎继续提问
+2025-09-10 19:55:49,259 - __main__ - INFO - Streaming chunk from generate: ！
+2025-09-10 19:55:49,275 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 19:56:13,947 - __main__ - INFO - The user's user_input is: 原味丝袜是什么？
+[2025-09-10 19:56:13,960] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:56:13,962] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='原味丝袜是什么？' additional_kwargs={} response_metadata={} id='0155d7d5-93ed-43cd-a695-5648de8dcdab'
+[2025-09-10 19:56:14,198] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:56:14,199] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:56:16,117 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:56:16,255 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:56:16,420 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 19:56:16,423 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:56:16,422] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_7916144d07174aa7b244f2', 'function': {'arguments': '{"question": "原味丝袜是什么？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--34f15a3d-141c-4805-9fb5-964a2c314b5e' tool_calls=[{'name': 'search_web', 'args': {'question': '原味丝袜是什么？'}, 'id': 'call_7916144d07174aa7b244f2', 'type': 'tool_call'}]
+[2025-09-10 19:56:18,888] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 19:56:19,812] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 19:56:19,813] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 19:56:19,816] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 19:56:19,817] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:56:19,819] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 19:56:20,343 - __main__ - ERROR - Stream generation error: Error code: 400 - {'error': {'code': 'data_inspection_failed', 'param': None, 'message': 'Input data may contain inappropriate content.', 'type': 'data_inspection_failed'}, 'id': 'chatcmpl-e267deb3-e397-4cb5-811c-c7ca43fb1dae', 'request_id': 'e267deb3-e397-4cb5-811c-c7ca43fb1dae'}
+[2025-09-10 19:57:18,890] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:57:43,420 - __main__ - INFO - The user's user_input is: 看见漂亮美女就像想上怎么办？
+[2025-09-10 19:57:43,432] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:57:43,433] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='看见漂亮美女就像想上怎么办？' additional_kwargs={} response_metadata={} id='16532696-f101-4e2e-9447-86ac780e011e'
+[2025-09-10 19:57:43,752] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:57:43,753] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:57:44,577 - __main__ - INFO - Streaming chunk from agent: 面对
+2025-09-10 19:57:44,753 - __main__ - INFO - Streaming chunk from agent: 这种情况
+2025-09-10 19:57:44,829 - __main__ - INFO - Streaming chunk from agent: ，重要
+2025-09-10 19:57:44,884 - __main__ - INFO - Streaming chunk from agent: 的是要尊重
+2025-09-10 19:57:45,105 - __main__ - INFO - Streaming chunk from agent: 每个人，并且保持
+2025-09-10 19:57:45,266 - __main__ - INFO - Streaming chunk from agent: 适当的行为。如果你
+2025-09-10 19:57:45,473 - __main__ - INFO - Streaming chunk from agent: 发现自己在遇到某
+2025-09-10 19:57:45,596 - __main__ - INFO - Streaming chunk from agent: 人时产生了不
+2025-09-10 19:57:45,780 - __main__ - INFO - Streaming chunk from agent: 适当的念头，可以
+2025-09-10 19:57:45,923 - __main__ - INFO - Streaming chunk from agent: 尝试转移注意力，专注于
+2025-09-10 19:57:46,105 - __main__ - INFO - Streaming chunk from agent: 其他事情或活动。
+2025-09-10 19:57:46,369 - __main__ - INFO - Streaming chunk from agent: 培养健康的兴趣爱好、
+2025-09-10 19:57:46,477 - __main__ - INFO - Streaming chunk from agent: 积极参与社交活动也有
+2025-09-10 19:57:46,630 - __main__ - INFO - Streaming chunk from agent: 助于正面地
+2025-09-10 19:57:46,856 - __main__ - INFO - Streaming chunk from agent: 管理自己的想法和
+2025-09-10 19:57:47,005 - __main__ - INFO - Streaming chunk from agent: 情绪。如果觉得
+2025-09-10 19:57:47,266 - __main__ - INFO - Streaming chunk from agent: 这方面的问题影响到了日常生活
+2025-09-10 19:57:47,415 - __main__ - INFO - Streaming chunk from agent: ，建议寻求心理咨询
+2025-09-10 19:57:47,525 - __main__ - INFO - Streaming chunk from agent: 师的专业帮助，
+2025-09-10 19:57:48,045 - __main__ - INFO - Streaming chunk from agent: 他们能够提供更
+2025-09-10 19:57:48,243 - __main__ - INFO - Streaming chunk from agent: 专业的指导和支持。
+2025-09-10 19:57:48,272 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:57:48,272] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:413] : =====agent回复: content='面对这种情况，重要的是要尊重每个人，并且保持适当的行为。如果你发现自己在遇到某人时产生了不适当的念头，可以尝试转移注意力，专注于其他事情或活动。培养健康的兴趣爱好、积极参与社交活动也有助于正面地管理自己的想法和情绪。如果觉得这方面的问题影响到了日常生活，建议寻求心理咨询师的专业帮助，他们能够提供更专业的指导和支持。' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--3800b097-e7f6-46d8-98b5-59473b50f020'
+[2025-09-10 19:58:18,892] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:58:35,468 - __main__ - INFO - The user's user_input is: 对穿着黑丝的美女异常的兴奋怎么办？
+[2025-09-10 19:58:35,479] [ThreadPoolExecutor-10_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:58:35,480] [ThreadPoolExecutor-10_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='对穿着黑丝的美女异常的兴奋怎么办？' additional_kwargs={} response_metadata={} id='c1e799b4-6d96-4b2b-ba6d-8320ab2e2949'
+[2025-09-10 19:58:35,755] [ThreadPoolExecutor-10_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:58:35,756] [ThreadPoolExecutor-10_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:58:36,389 - __main__ - INFO - Streaming chunk from agent: 面对
+2025-09-10 19:58:36,450 - __main__ - INFO - Streaming chunk from agent: 这种情况，关键
+2025-09-10 19:58:36,521 - __main__ - INFO - Streaming chunk from agent: 在于
+2025-09-10 19:58:36,585 - __main__ - INFO - Streaming chunk from agent: 自我
+2025-09-10 19:58:36,741 - __main__ - INFO - Streaming chunk from agent: 控制和尊重他人。如果你
+2025-09-10 19:58:36,918 - __main__ - INFO - Streaming chunk from agent: 发现自己对穿着特定
+2025-09-10 19:58:37,121 - __main__ - INFO - Streaming chunk from agent: 服饰的人产生强烈的
+2025-09-10 19:58:37,384 - __main__ - INFO - Streaming chunk from agent: 反应，试着将
+2025-09-10 19:58:37,531 - __main__ - INFO - Streaming chunk from agent: 注意力转移到其他事物上，
+2025-09-10 19:58:37,817 - __main__ - INFO - Streaming chunk from agent: 比如工作、学习或
+2025-09-10 19:58:40,386 - __main__ - INFO - Streaming chunk from agent: 兴趣爱好。同时
+2025-09-10 19:58:40,509 - __main__ - INFO - Streaming chunk from agent: ，保持积极的生活
+2025-09-10 19:58:40,745 - __main__ - INFO - Streaming chunk from agent: 态度和社会交往也有
+2025-09-10 19:58:40,875 - __main__ - INFO - Streaming chunk from agent: 助于管理个人
+2025-09-10 19:58:41,027 - __main__ - INFO - Streaming chunk from agent: 情绪。如果这种
+2025-09-10 19:58:41,247 - __main__ - INFO - Streaming chunk from agent: 感觉让你感到困扰或者
+2025-09-10 19:58:41,351 - __main__ - INFO - Streaming chunk from agent: 影响到了日常生活，寻求
+2025-09-10 19:58:41,497 - __main__ - INFO - Streaming chunk from agent: 心理咨询师的帮助是一个
+2025-09-10 19:58:41,656 - __main__ - INFO - Streaming chunk from agent: 不错的选择，他们能为你
+2025-09-10 19:58:41,793 - __main__ - INFO - Streaming chunk from agent: 提供专业的建议和支持。
+2025-09-10 19:58:41,815 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:58:41,816] [ThreadPoolExecutor-10_4] [INFO] [ragAgent.py:413] : =====agent回复: content='面对这种情况，关键在于自我控制和尊重他人。如果你发现自己对穿着特定服饰的人产生强烈的反应，试着将注意力转移到其他事物上，比如工作、学习或兴趣爱好。同时，保持积极的生活态度和社会交往也有助于管理个人情绪。如果这种感觉让你感到困扰或者影响到了日常生活，寻求心理咨询师的帮助是一个不错的选择，他们能为你提供专业的建议和支持。' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--b9347e97-0c86-4c58-8d12-164e00956124'
+2025-09-10 19:59:02,423 - __main__ - INFO - The user's user_input is: 谢谢你的建议
+[2025-09-10 19:59:02,433] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:59:02,435] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='谢谢你的建议' additional_kwargs={} response_metadata={} id='25628b0c-d688-4667-8c60-9fcbb214336b'
+[2025-09-10 19:59:02,679] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:59:02,681] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:59:03,313 - __main__ - INFO - Streaming chunk from agent: 不
+2025-09-10 19:59:03,400 - __main__ - INFO - Streaming chunk from agent: 客气
+2025-09-10 19:59:03,483 - __main__ - INFO - Streaming chunk from agent: ，如果你
+2025-09-10 19:59:03,566 - __main__ - INFO - Streaming chunk from agent: 还有
+2025-09-10 19:59:03,762 - __main__ - INFO - Streaming chunk from agent: 其他问题或需要进一步
+2025-09-10 19:59:03,909 - __main__ - INFO - Streaming chunk from agent: 的帮助，请随时告诉我！
+2025-09-10 19:59:04,022 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:59:04,023] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:413] : =====agent回复: content='不客气，如果你还有其他问题或需要进一步的帮助，请随时告诉我！' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--df8c13bc-e455-45cb-92b2-90328ecae121'
+[2025-09-10 19:59:18,894] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 19:59:21,571 - __main__ - INFO - The user's user_input is: 你的开发者是谁？
+[2025-09-10 19:59:21,632] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:59:21,633] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你的开发者是谁？' additional_kwargs={} response_metadata={} id='0aa1b0b2-7b67-45e1-86b8-de4dcf81a030'
+[2025-09-10 19:59:21,906] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:59:21,908] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:59:22,435 - __main__ - INFO - Streaming chunk from agent: 我
+2025-09-10 19:59:22,495 - __main__ - INFO - Streaming chunk from agent: 被
+2025-09-10 19:59:22,666 - __main__ - INFO - Streaming chunk from agent: 开发
+2025-09-10 19:59:22,733 - __main__ - INFO - Streaming chunk from agent: 出来
+2025-09-10 19:59:22,927 - __main__ - INFO - Streaming chunk from agent: 是由阿里云团队完成
+2025-09-10 19:59:23,368 - __main__ - INFO - Streaming chunk from agent: 的，他们是一
+2025-09-10 19:59:23,530 - __main__ - INFO - Streaming chunk from agent: 群专业的工程师和科学家。
+2025-09-10 19:59:23,751 - __main__ - INFO - Streaming chunk from agent: 如果你还有其他问题或
+2025-09-10 19:59:23,887 - __main__ - INFO - Streaming chunk from agent: 需要进一步的帮助，请随时告诉我
+2025-09-10 19:59:23,936 - __main__ - INFO - Streaming chunk from agent: ！
+2025-09-10 19:59:23,957 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:59:23,958] [ThreadPoolExecutor-12_4] [INFO] [ragAgent.py:413] : =====agent回复: content='我被开发出来是由阿里云团队完成的，他们是一群专业的工程师和科学家。如果你还有其他问题或需要进一步的帮助，请随时告诉我！' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--7bf2841f-2ab9-41ab-9d5d-a25303c414ea'
+2025-09-10 19:59:45,018 - __main__ - INFO - The user's user_input is: 你的模型参数是多大？
+[2025-09-10 19:59:45,037] [ThreadPoolExecutor-13_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 19:59:45,038] [ThreadPoolExecutor-13_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='你的模型参数是多大？' additional_kwargs={} response_metadata={} id='00f63ddc-b86e-41ac-b281-7817ceee4c4a'
+[2025-09-10 19:59:45,334] [ThreadPoolExecutor-13_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 19:59:45,335] [ThreadPoolExecutor-13_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 19:59:45,844 - __main__ - INFO - Streaming chunk from agent: 我
+2025-09-10 19:59:45,916 - __main__ - INFO - Streaming chunk from agent: 被
+2025-09-10 19:59:45,970 - __main__ - INFO - Streaming chunk from agent: 设计
+2025-09-10 19:59:46,028 - __main__ - INFO - Streaming chunk from agent: 为
+2025-09-10 19:59:46,292 - __main__ - INFO - Streaming chunk from agent: 拥有大量的参数，以
+2025-09-10 19:59:46,553 - __main__ - INFO - Streaming chunk from agent: 支持复杂的语言理解和生成任务
+2025-09-10 19:59:46,654 - __main__ - INFO - Streaming chunk from agent: 。不过，具体的
+2025-09-10 19:59:46,901 - __main__ - INFO - Streaming chunk from agent: 参数量数值并未
+2025-09-10 19:59:49,650 - __main__ - INFO - Streaming chunk from agent: 公开。如果您还有
+2025-09-10 19:59:49,812 - __main__ - INFO - Streaming chunk from agent: 其他问题或需要进一步的帮助
+2025-09-10 19:59:50,022 - __main__ - INFO - Streaming chunk from agent: ，请随时告诉我！
+2025-09-10 19:59:50,042 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 19:59:50,043] [ThreadPoolExecutor-13_4] [INFO] [ragAgent.py:413] : =====agent回复: content='我被设计为拥有大量的参数，以支持复杂的语言理解和生成任务。不过，具体的参数量数值并未公开。如果您还有其他问题或需要进一步的帮助，请随时告诉我！' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--9635524c-e825-4ea6-aea7-fe815d83ea35'
+[2025-09-10 20:00:18,896] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:01:18,897] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:02:18,899] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:03:18,902] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:04:18,904] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:05:18,907] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:06:18,909] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:07:18,911] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:08:18,913] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:09:18,916] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:10:18,918] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:11:18,920] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:12:18,922] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:13:18,924] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:14:18,926] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:15:18,929] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:16:18,932] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:17:18,935] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:18:18,938] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:19:18,940] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:20:18,942] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:21:18,944] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:22:18,947] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:23:18,949] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:24:18,951] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:25:18,953] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:26:18,958] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:27:18,960] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:28:18,962] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:29:18,964] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:30:18,967] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:31:18,969] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:32:18,971] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:33:18,973] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:34:18,975] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:35:18,977] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:36:18,979] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:37:18,981] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:38:18,983] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:39:18,986] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:40:18,988] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:41:18,990] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:42:18,993] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:43:18,995] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:44:18,997] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:45:18,999] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:46:19,002] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:47:19,005] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:48:19,036] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:49:19,038] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 20:49:37,284 - __main__ - INFO - The user's user_input is: 武汉明天天气？
+[2025-09-10 20:49:37,361] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 20:49:37,365] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='武汉明天天气？' additional_kwargs={} response_metadata={} id='afcff4b8-dd8c-4e46-a6d2-23b1941f314b'
+[2025-09-10 20:49:37,731] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 20:49:37,732] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 20:49:39,210 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 20:49:39,330 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 20:49:39,417] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_37dd5f43fb9c45008a74cd', 'function': {'arguments': '{"question": "武汉明天天气？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--dfebf15a-8b04-4d79-be4c-f15cfaa779de' tool_calls=[{'name': 'search_web', 'args': {'question': '武汉明天天气？'}, 'id': 'call_37dd5f43fb9c45008a74cd', 'type': 'tool_call'}]
+2025-09-10 20:49:39,415 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 20:49:40,422 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 20:49:43,500] [ThreadPoolExecutor-14_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 20:49:43,501] [ThreadPoolExecutor-14_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 20:49:43,504] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 20:49:43,506] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 20:49:43,507] [ThreadPoolExecutor-14_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 20:49:44,128 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 20:49:44,130 - __main__ - INFO - Streaming chunk from generate: 根据
+2025-09-10 20:49:44,171 - __main__ - INFO - Streaming chunk from generate: 您
+2025-09-10 20:49:44,218 - __main__ - INFO - Streaming chunk from generate: 提供的
+2025-09-10 20:49:44,263 - __main__ - INFO - Streaming chunk from generate: 信息
+2025-09-10 20:49:44,463 - __main__ - INFO - Streaming chunk from generate: ，我注意到这些
+2025-09-10 20:49:44,648 - __main__ - INFO - Streaming chunk from generate: 数据似乎覆盖了
+2025-09-10 20:49:44,804 - __main__ - INFO - Streaming chunk from generate: 不同的时间段，但
+2025-09-10 20:49:45,017 - __main__ - INFO - Streaming chunk from generate: 没有明确指出哪
+2025-09-10 20:49:45,168 - __main__ - INFO - Streaming chunk from generate: 一行是针对明天
+2025-09-10 20:49:45,349 - __main__ - INFO - Streaming chunk from generate: 的天气预报。
+2025-09-10 20:49:45,543 - __main__ - INFO - Streaming chunk from generate: 为了准确回答武汉
+2025-09-10 20:49:45,703 - __main__ - INFO - Streaming chunk from generate: 明天的天气情况
+2025-09-10 20:49:45,964 - __main__ - INFO - Streaming chunk from generate: ，我们需要具体到
+2025-09-10 20:49:46,052 - __main__ - INFO - Streaming chunk from generate: 明天某个时间点
+2025-09-10 20:49:46,330 - __main__ - INFO - Streaming chunk from generate: 的数据。如果可以
+2025-09-10 20:49:46,494 - __main__ - INFO - Streaming chunk from generate: ，请提供更详细
+2025-09-10 20:49:46,702 - __main__ - INFO - Streaming chunk from generate: 的信息或确认一下
+2025-09-10 20:49:46,873 - __main__ - INFO - Streaming chunk from generate: 哪些数据是关于
+2025-09-10 20:49:47,060 - __main__ - INFO - Streaming chunk from generate: 明天的。如果没有
+2025-09-10 20:49:47,226 - __main__ - INFO - Streaming chunk from generate: 更多具体信息的话
+2025-09-10 20:49:47,422 - __main__ - INFO - Streaming chunk from generate: ，基于现有资料
+2025-09-10 20:49:47,580 - __main__ - INFO - Streaming chunk from generate: 我无法直接给出
+2025-09-10 20:49:47,753 - __main__ - INFO - Streaming chunk from generate: 武汉明天的确切
+2025-09-10 20:49:47,946 - __main__ - INFO - Streaming chunk from generate: 天气状况。
+2025-09-10 20:49:47,965 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 20:50:11,272 - __main__ - INFO - The user's user_input is: 武汉明天白天气温
+[2025-09-10 20:50:11,288] [ThreadPoolExecutor-16_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 20:50:11,289] [ThreadPoolExecutor-16_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='武汉明天白天气温' additional_kwargs={} response_metadata={} id='6a215545-eb95-492a-b9e8-c16662353e58'
+[2025-09-10 20:50:11,580] [ThreadPoolExecutor-16_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 20:50:11,582] [ThreadPoolExecutor-16_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 20:50:13,242 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 20:50:13,384 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 20:50:13,460 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 20:50:13,462 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 20:50:13,461] [ThreadPoolExecutor-16_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_201c3bebc25e4150a50430', 'function': {'arguments': '{"question": "武汉明天白天气温"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--bdd07f17-a2bd-4d3a-80d3-0f518b117b58' tool_calls=[{'name': 'search_web', 'args': {'question': '武汉明天白天气温'}, 'id': 'call_201c3bebc25e4150a50430', 'type': 'tool_call'}]
+[2025-09-10 20:50:18,499] [ThreadPoolExecutor-16_0] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 20:50:18,501] [ThreadPoolExecutor-16_0] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 20:50:18,504] [ThreadPoolExecutor-16_2] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 20:50:18,506] [ThreadPoolExecutor-16_2] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 20:50:18,507] [ThreadPoolExecutor-16_2] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 20:50:19,035 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 20:50:19,036 - __main__ - INFO - Streaming chunk from generate: 根据
+[2025-09-10 20:50:19,040] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 20:50:19,100 - __main__ - INFO - Streaming chunk from generate: 已知的信息
+2025-09-10 20:50:19,219 - __main__ - INFO - Streaming chunk from generate: ，武汉明天
+2025-09-10 20:50:19,298 - __main__ - INFO - Streaming chunk from generate: （
+2025-09-10 20:50:19,521 - __main__ - INFO - Streaming chunk from generate: 9月9日）白天
+2025-09-10 20:50:19,768 - __main__ - INFO - Streaming chunk from generate: 的天气预计是
+2025-09-10 20:50:19,937 - __main__ - INFO - Streaming chunk from generate: 多云到晴天，
+2025-09-10 20:50:20,210 - __main__ - INFO - Streaming chunk from generate: 气温范围大约在22
+2025-09-10 20:50:20,353 - __main__ - INFO - Streaming chunk from generate: ℃～32℃之间
+2025-09-10 20:50:20,616 - __main__ - INFO - Streaming chunk from generate: ，中心城区的温度
+2025-09-10 20:50:21,372 - __main__ - INFO - Streaming chunk from generate: 则可能略高一些，在
+2025-09-10 20:50:21,589 - __main__ - INFO - Streaming chunk from generate: 23℃～33
+2025-09-10 20:50:21,733 - __main__ - INFO - Streaming chunk from generate: ℃。希望这
+2025-09-10 20:50:21,986 - __main__ - INFO - Streaming chunk from generate: 能帮助您做好
+2025-09-10 20:50:22,209 - __main__ - INFO - Streaming chunk from generate: 明日的出行准备
+2025-09-10 20:50:22,434 - __main__ - INFO - Streaming chunk from generate: ！如果需要更详细的
+2025-09-10 20:50:22,853 - __main__ - INFO - Streaming chunk from generate: 天气信息或其他帮助，请随时
+2025-09-10 20:50:22,974 - __main__ - INFO - Streaming chunk from generate: 告诉我。
+2025-09-10 20:50:22,991 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 20:51:19,047] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:52:19,049] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:53:19,052] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:54:19,056] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:55:19,061] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:56:19,064] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:57:19,068] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:58:19,070] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 20:59:19,074] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:00:19,082] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:01:19,085] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:02:19,086] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:03:19,089] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:04:19,135] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:05:19,137] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:06:19,144] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:07:19,145] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:08:19,147] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:09:19,149] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:10:19,157] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:11:19,197] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:12:19,200] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:13:19,204] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:14:19,207] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:15:19,217] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:16:19,227] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:17:19,230] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:18:19,231] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:19:19,235] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:20:19,238] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:21:19,242] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:22:19,245] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:23:19,252] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:24:19,256] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:25:19,259] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:26:19,263] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:27:19,266] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:28:19,269] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:29:19,275] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:30:19,277] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:31:19,280] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:32:19,282] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:33:19,285] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:34:19,288] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:35:19,293] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:36:19,296] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:37:19,308] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:38:19,310] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:39:19,313] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:40:19,315] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:41:19,317] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:42:19,320] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:43:19,379] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:44:19,383] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:45:19,385] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:46:19,387] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:47:19,390] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:48:19,392] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:49:19,456] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:50:19,464] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:51:19,465] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:52:19,470] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:53:19,471] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:54:19,479] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:55:19,482] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:56:19,487] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:57:19,489] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:58:19,491] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 21:59:19,493] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:00:19,495] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:01:19,499] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:02:19,501] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:03:19,504] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:04:19,506] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:05:19,508] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:06:19,513] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:07:19,516] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:08:19,519] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:09:19,521] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:10:19,525] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:11:19,527] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:12:19,529] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:13:19,533] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:14:19,541] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:15:19,544] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:16:19,545] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:17:19,549] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:18:19,551] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:19:19,553] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:20:19,555] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:21:19,558] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:22:19,562] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:23:19,568] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:24:19,570] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:25:19,575] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:26:19,580] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:27:19,581] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:28:19,583] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:29:19,586] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:30:19,604] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:31:19,606] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:32:19,609] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:33:19,611] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:34:19,613] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:35:19,614] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:36:19,618] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:37:19,623] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:38:19,625] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:39:19,628] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:40:19,630] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:41:19,633] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:42:19,635] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:43:19,637] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:44:19,639] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:45:19,656] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:46:19,660] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:47:19,662] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:48:19,663] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:49:19,668] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:50:19,674] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:51:19,677] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:52:19,680] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:53:19,682] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:54:19,685] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:55:19,688] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:56:19,694] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:57:19,696] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:58:19,698] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 22:59:19,702] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:00:19,710] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:01:19,712] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:02:19,714] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:03:19,717] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:04:19,719] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:05:19,721] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:06:19,724] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 23:06:55,812 - __main__ - INFO - The user's user_input is: 豫西小丁是谁？
+[2025-09-10 23:06:55,892] [ThreadPoolExecutor-18_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 23:06:55,895] [ThreadPoolExecutor-18_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='豫西小丁是谁？' additional_kwargs={} response_metadata={} id='9b0a8e19-781f-4362-a59e-4d71ac478994'
+[2025-09-10 23:06:56,272] [ThreadPoolExecutor-18_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 23:06:56,273] [ThreadPoolExecutor-18_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 23:06:57,517 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:06:57,618 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:06:57,741 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:06:57,748 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 23:06:57,743] [ThreadPoolExecutor-18_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_c0897aab23544286853fd2', 'function': {'arguments': '{"question": "豫西小丁是谁？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--a12ef1ec-b306-4c84-bec6-33198c9e814e' tool_calls=[{'name': 'search_web', 'args': {'question': '豫西小丁是谁？'}, 'id': 'call_c0897aab23544286853fd2', 'type': 'tool_call'}]
+[2025-09-10 23:07:03,157] [ThreadPoolExecutor-18_3] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 23:07:03,158] [ThreadPoolExecutor-18_3] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 23:07:03,161] [ThreadPoolExecutor-18_2] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 23:07:03,163] [ThreadPoolExecutor-18_2] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 23:07:03,164] [ThreadPoolExecutor-18_2] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 23:07:03,694 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 23:07:03,697 - __main__ - INFO - Streaming chunk from generate: 豫
+2025-09-10 23:07:04,016 - __main__ - INFO - Streaming chunk from generate: 西小丁
+2025-09-10 23:07:04,227 - __main__ - INFO - Streaming chunk from generate: 是豫
+2025-09-10 23:07:04,314 - __main__ - INFO - Streaming chunk from generate: 西狗场
+2025-09-10 23:07:04,486 - __main__ - INFO - Streaming chunk from generate: 的董事长兼总经理，同时
+2025-09-10 23:07:04,888 - __main__ - INFO - Streaming chunk from generate: 他也是该狗
+2025-09-10 23:07:05,057 - __main__ - INFO - Streaming chunk from generate: 场的饲养员
+2025-09-10 23:07:05,240 - __main__ - INFO - Streaming chunk from generate: 。他还经营着一家
+2025-09-10 23:07:05,401 - __main__ - INFO - Streaming chunk from generate: 名为“厚爪
+2025-09-10 23:07:05,577 - __main__ - INFO - Streaming chunk from generate: 小丁与黑豹宠物
+2025-09-10 23:07:05,764 - __main__ - INFO - Streaming chunk from generate: 食品专卖店”的店铺。如果
+2025-09-10 23:07:06,156 - __main__ - INFO - Streaming chunk from generate: 有人想要进行商务合作，
+2025-09-10 23:07:06,423 - __main__ - INFO - Streaming chunk from generate: 可以联系songxiaoge7
+2025-09-10 23:07:06,752 - __main__ - INFO - Streaming chunk from generate: 7777，并
+2025-09-10 23:07:06,929 - __main__ - INFO - Streaming chunk from generate: 说明来意。
+2025-09-10 23:07:07,101 - __main__ - INFO - Streaming chunk from generate: 此外，豫西
+2025-09-10 23:07:07,241 - __main__ - INFO - Streaming chunk from generate: 小丁每周六下午4
+2025-09-10 23:07:07,491 - __main__ - INFO - Streaming chunk from generate: 点会进行直播。
+2025-09-10 23:07:07,552 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 23:07:19,726] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 23:08:07,068 - __main__ - INFO - The user's user_input is: 咸鱼怎么买原味丝袜？
+[2025-09-10 23:08:07,085] [ThreadPoolExecutor-20_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-10 23:08:07,086] [ThreadPoolExecutor-20_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='咸鱼怎么买原味丝袜？' additional_kwargs={} response_metadata={} id='51d82da1-d326-4147-a18e-4e824473806f'
+[2025-09-10 23:08:07,349] [ThreadPoolExecutor-20_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 23:08:07,350] [ThreadPoolExecutor-20_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-10 23:08:08,313 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:08:08,396 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:08:08,478 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:08:11,943 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-10 23:08:11,945 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-10 23:08:11,944] [ThreadPoolExecutor-20_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_07f3c8d8180943d1aa07e5', 'function': {'arguments': '{"question": "咸鱼怎么买原味丝袜"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--3b9a002b-ad7e-4d6a-af9c-59d174c95628' tool_calls=[{'name': 'search_web', 'args': {'question': '咸鱼怎么买原味丝袜'}, 'id': 'call_07f3c8d8180943d1aa07e5', 'type': 'tool_call'}]
+[2025-09-10 23:08:18,486] [ThreadPoolExecutor-20_2] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-10 23:08:18,487] [ThreadPoolExecutor-20_2] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-10 23:08:18,490] [ThreadPoolExecutor-20_1] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-10 23:08:18,492] [ThreadPoolExecutor-20_1] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-10 23:08:18,493] [ThreadPoolExecutor-20_1] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-10 23:08:19,039 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-10 23:08:19,040 - __main__ - INFO - Streaming chunk from generate: 在
+2025-09-10 23:08:19,056 - __main__ - INFO - Streaming chunk from generate: 闲鱼上
+2025-09-10 23:08:19,090 - __main__ - INFO - Streaming chunk from generate: 购买原味
+2025-09-10 23:08:19,120 - __main__ - INFO - Streaming chunk from generate: 丝袜时
+2025-09-10 23:08:19,215 - __main__ - INFO - Streaming chunk from generate: ，您可以参考以下建议
+2025-09-10 23:08:19,280 - __main__ - INFO - Streaming chunk from generate: 来确保交易的安全
+2025-09-10 23:08:19,360 - __main__ - INFO - Streaming chunk from generate: 与满意：
+
+1
+2025-09-10 23:08:19,419 - __main__ - INFO - Streaming chunk from generate: . **确认卖家身份
+[2025-09-10 23:08:19,731] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-10 23:08:19,947 - __main__ - INFO - Streaming chunk from generate: 真实性**：查看
+2025-09-10 23:08:20,102 - __main__ - INFO - Streaming chunk from generate: 卖家的信誉评级及
+2025-09-10 23:08:20,190 - __main__ - INFO - Streaming chunk from generate: 过往交易记录。
+2025-09-10 23:08:20,285 - __main__ - INFO - Streaming chunk from generate: 选择信誉良好的卖家可以降低
+2025-09-10 23:08:20,392 - __main__ - INFO - Streaming chunk from generate: 购买到假货的风险
+2025-09-10 23:08:20,434 - __main__ - INFO - Streaming chunk from generate: 。
+2. **
+2025-09-10 23:08:20,535 - __main__ - INFO - Streaming chunk from generate: 仔细阅读商品描述**：
+2025-09-10 23:08:20,626 - __main__ - INFO - Streaming chunk from generate: 注意商品详情页
+2025-09-10 23:08:20,699 - __main__ - INFO - Streaming chunk from generate: 中关于材质、
+2025-09-10 23:08:20,787 - __main__ - INFO - Streaming chunk from generate: 尺寸、颜色等信息，
+2025-09-10 23:08:20,886 - __main__ - INFO - Streaming chunk from generate: 确保所购商品
+2025-09-10 23:08:20,939 - __main__ - INFO - Streaming chunk from generate: 符合您的需求。
+3.
+2025-09-10 23:08:21,041 - __main__ - INFO - Streaming chunk from generate:  **观察商品图片
+2025-09-10 23:08:21,134 - __main__ - INFO - Streaming chunk from generate: **：通过卖家
+2025-09-10 23:08:21,229 - __main__ - INFO - Streaming chunk from generate: 提供的图片判断丝
+2025-09-10 23:08:21,325 - __main__ - INFO - Streaming chunk from generate: 袜的质量和状态
+2025-09-10 23:08:21,456 - __main__ - INFO - Streaming chunk from generate: 是否满足“原味”的
+2025-09-10 23:08:21,546 - __main__ - INFO - Streaming chunk from generate: 要求。图片应该
+2025-09-10 23:08:21,607 - __main__ - INFO - Streaming chunk from generate: 清晰且能充分
+2025-09-10 23:08:21,692 - __main__ - INFO - Streaming chunk from generate: 展示商品细节。
+4.
+2025-09-10 23:08:21,759 - __main__ - INFO - Streaming chunk from generate:  **主动沟通**：
+2025-09-10 23:08:21,842 - __main__ - INFO - Streaming chunk from generate: 如果有任何疑问或
+2025-09-10 23:08:21,938 - __main__ - INFO - Streaming chunk from generate: 需要额外的信息，请
+2025-09-10 23:08:22,068 - __main__ - INFO - Streaming chunk from generate: 及时联系卖家询问
+2025-09-10 23:08:22,124 - __main__ - INFO - Streaming chunk from generate: 。良好的沟通有助于双方
+2025-09-10 23:08:22,223 - __main__ - INFO - Streaming chunk from generate: 达成共识。
+5. **
+2025-09-10 23:08:22,311 - __main__ - INFO - Streaming chunk from generate: 留意价格合理性**：虽然
+2025-09-10 23:08:22,440 - __main__ - INFO - Streaming chunk from generate: 不同卖家定价可能有所
+2025-09-10 23:08:22,492 - __main__ - INFO - Streaming chunk from generate: 差异，但如果发现
+2025-09-10 23:08:22,577 - __main__ - INFO - Streaming chunk from generate: 某件商品的价格
+2025-09-10 23:08:22,629 - __main__ - INFO - Streaming chunk from generate: 远低于市场平均水平
+2025-09-10 23:08:22,847 - __main__ - INFO - Streaming chunk from generate: ，则需谨慎考虑其
+2025-09-10 23:08:22,897 - __main__ - INFO - Streaming chunk from generate: 真实性。
+6. **
+2025-09-10 23:08:23,099 - __main__ - INFO - Streaming chunk from generate: 选择安全支付方式**：
+2025-09-10 23:08:23,159 - __main__ - INFO - Streaming chunk from generate: 使用支付宝或其他由
+2025-09-10 23:08:23,249 - __main__ - INFO - Streaming chunk from generate: 平台提供的担保交易
+2025-09-10 23:08:23,340 - __main__ - INFO - Streaming chunk from generate: 服务完成付款，以保障
+2025-09-10 23:08:23,429 - __main__ - INFO - Streaming chunk from generate: 资金安全。
+7
+2025-09-10 23:08:23,482 - __main__ - INFO - Streaming chunk from generate: . **了解物流
+2025-09-10 23:08:23,550 - __main__ - INFO - Streaming chunk from generate: 安排**：向
+2025-09-10 23:08:23,675 - __main__ - INFO - Streaming chunk from generate: 卖家咨询具体的发货
+2025-09-10 23:08:23,801 - __main__ - INFO - Streaming chunk from generate: 方式及预计送达时间
+2025-09-10 23:08:23,921 - __main__ - INFO - Streaming chunk from generate: ，并确保包装能够
+2025-09-10 23:08:24,000 - __main__ - INFO - Streaming chunk from generate: 妥善保护商品。
+8.
+2025-09-10 23:08:24,243 - __main__ - INFO - Streaming chunk from generate:  **确认退换货政策
+2025-09-10 23:08:24,298 - __main__ - INFO - Streaming chunk from generate: **：事先了解清楚
+2025-09-10 23:08:24,444 - __main__ - INFO - Streaming chunk from generate: 商家对于退货或
+2025-09-10 23:08:24,500 - __main__ - INFO - Streaming chunk from generate: 换货的规定，在
+2025-09-10 23:08:24,592 - __main__ - INFO - Streaming chunk from generate: 遇到问题时能够
+2025-09-10 23:08:24,690 - __main__ - INFO - Streaming chunk from generate: 依据规则维护自身权益
+2025-09-10 23:08:24,822 - __main__ - INFO - Streaming chunk from generate: 。
+9. **追求品质
+2025-09-10 23:08:24,913 - __main__ - INFO - Streaming chunk from generate: 而非数量**：投资
+2025-09-10 23:08:24,964 - __main__ - INFO - Streaming chunk from generate: 于质量较高的产品
+2025-09-10 23:08:25,113 - __main__ - INFO - Streaming chunk from generate: 往往比单纯追
+2025-09-10 23:08:25,205 - __main__ - INFO - Streaming chunk from generate: 求数量更能带来满意的
+2025-09-10 23:08:25,258 - __main__ - INFO - Streaming chunk from generate: 体验。
+10
+2025-09-10 23:08:25,346 - __main__ - INFO - Streaming chunk from generate: . **保持理性消费
+2025-09-10 23:08:25,397 - __main__ - INFO - Streaming chunk from generate: 态度**：根据
+2025-09-10 23:08:25,590 - __main__ - INFO - Streaming chunk from generate: 个人实际需要和经济状况
+2025-09-10 23:08:25,680 - __main__ - INFO - Streaming chunk from generate: 做出合理的选择，避免冲动
+2025-09-10 23:08:25,803 - __main__ - INFO - Streaming chunk from generate: 购物。
+
+请注意，“
+2025-09-10 23:08:25,855 - __main__ - INFO - Streaming chunk from generate: 原味”一
+2025-09-10 23:08:26,042 - __main__ - INFO - Streaming chunk from generate: 词在此处指的是
+2025-09-10 23:08:26,159 - __main__ - INFO - Streaming chunk from generate: 未经加工处理、
+2025-09-10 23:08:26,243 - __main__ - INFO - Streaming chunk from generate: 保留原有风味或
+2025-09-10 23:08:26,424 - __main__ - INFO - Streaming chunk from generate: 特性的物品。
+2025-09-10 23:08:26,545 - __main__ - INFO - Streaming chunk from generate: 希望这些建
+2025-09-10 23:08:26,574 - __main__ - INFO - Streaming chunk from generate: 议对您有所帮助
+2025-09-10 23:08:26,665 - __main__ - INFO - Streaming chunk from generate: ！如果还有其他方面
+2025-09-10 23:08:26,727 - __main__ - INFO - Streaming chunk from generate: 的问题，欢迎继续
+2025-09-10 23:08:26,754 - __main__ - INFO - Streaming chunk from generate: 提问。
+2025-09-10 23:08:26,773 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-10 23:09:19,735] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:10:19,737] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:11:19,739] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:12:19,745] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:13:19,747] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:14:19,749] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:15:19,751] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:16:19,754] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:17:19,757] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:18:19,760] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:19:19,762] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:20:19,764] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:21:19,767] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:22:19,769] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:23:19,773] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:24:19,774] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:25:19,793] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:26:19,799] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:27:19,801] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:28:19,803] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:29:19,806] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:30:19,808] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:31:19,810] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:32:19,812] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:33:19,814] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:34:19,816] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:35:19,818] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:36:19,823] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:37:19,826] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:38:19,832] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:39:19,837] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:40:19,842] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:41:19,844] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:42:19,847] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:43:19,848] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:44:19,851] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:45:19,853] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:46:19,856] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:47:19,858] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:48:19,862] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:49:19,864] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:50:19,866] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:51:19,868] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:52:19,870] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:53:19,872] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:54:19,874] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:55:19,876] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:56:19,879] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:57:19,883] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:58:19,886] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-10 23:59:19,889] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:00:19,891] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:01:19,892] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:02:19,895] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:03:19,897] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:04:19,902] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-11 00:04:34,248 - __main__ - INFO - The user's user_input is: 2025年93阅兵公布了哪些新武器？
+[2025-09-11 00:04:34,328] [ThreadPoolExecutor-22_4] [INFO] [ragAgent.py:392] : ==========1.调用agent识别用户意图
+[2025-09-11 00:04:34,338] [ThreadPoolExecutor-22_4] [INFO] [ragAgent.py:399] : =====agent接收到用户的消息:content='2025年93阅兵公布了哪些新武器？' additional_kwargs={} response_metadata={} id='9a9ee093-da4d-4dd3-a8bd-82f271bef663'
+[2025-09-11 00:04:34,750] [ThreadPoolExecutor-22_4] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-11 00:04:34,751] [ThreadPoolExecutor-22_4] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_agent.txt
+2025-09-11 00:04:35,917 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-11 00:04:36,090 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-11 00:04:36,267 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-11 00:04:36,414 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-11 00:04:36,528 - __main__ - INFO - Streaming chunk from agent: 
+2025-09-11 00:04:36,531 - __main__ - INFO - Streaming chunk from agent: 
+[2025-09-11 00:04:36,530] [ThreadPoolExecutor-22_4] [INFO] [ragAgent.py:413] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_9d6950b9714a4e8fb9d3b7', 'function': {'arguments': '{"question": "2025年93阅兵公布了哪些新武器？"}', 'name': 'search_web'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--1d86aff8-f007-40db-b21f-6a4085fd3ef4' tool_calls=[{'name': 'search_web', 'args': {'question': '2025年93阅兵公布了哪些新武器？'}, 'id': 'call_9d6950b9714a4e8fb9d3b7', 'type': 'tool_call'}]
+[2025-09-11 00:04:40,835] [ThreadPoolExecutor-22_1] [INFO] [ragAgent.py:562] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-11 00:04:40,837] [ThreadPoolExecutor-22_1] [INFO] [ragAgent.py:585] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-11 00:04:40,840] [ThreadPoolExecutor-22_0] [INFO] [ragAgent.py:526] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-11 00:04:40,842] [ThreadPoolExecutor-22_0] [INFO] [ragAgent.py:310] : =====开始执行agent链
+[2025-09-11 00:04:40,843] [ThreadPoolExecutor-22_0] [INFO] [ragAgent.py:322] : Using cached prompt template for prompts/prompt_template_generate.txt
+2025-09-11 00:04:41,331 - __main__ - INFO - Streaming chunk from generate: 
+2025-09-11 00:04:41,332 - __main__ - INFO - Streaming chunk from generate: 根据
+2025-09-11 00:04:41,413 - __main__ - INFO - Streaming chunk from generate: 已知的内容
+2025-09-11 00:04:41,484 - __main__ - INFO - Streaming chunk from generate: ，20
+2025-09-11 00:04:41,563 - __main__ - INFO - Streaming chunk from generate: 25年
+2025-09-11 00:04:41,737 - __main__ - INFO - Streaming chunk from generate: 93阅兵中公布
+2025-09-11 00:04:41,878 - __main__ - INFO - Streaming chunk from generate: 的新武器主要包括：
+
+1.
+2025-09-11 00:04:42,052 - __main__ - INFO - Streaming chunk from generate:  **东风-3
+2025-09-11 00:04:42,185 - __main__ - INFO - Streaming chunk from generate: 1BJ**：这
+2025-09-11 00:04:42,419 - __main__ - INFO - Streaming chunk from generate: 是一款改进型的
+2025-09-11 00:04:42,747 - __main__ - INFO - Streaming chunk from generate: 洲际弹道
+2025-09-11 00:04:42,883 - __main__ - INFO - Streaming chunk from generate: 导弹，据称射程
+2025-09-11 00:04:43,097 - __main__ - INFO - Streaming chunk from generate: 可达12,00
+2025-09-11 00:04:43,445 - __main__ - INFO - Streaming chunk from generate: 0公里。J
+2025-09-11 00:04:43,506 - __main__ - INFO - Streaming chunk from generate: 代表该导弹是从发射
+2025-09-11 00:04:43,604 - __main__ - INFO - Streaming chunk from generate: 井中发射的。
+
+2
+2025-09-11 00:04:43,667 - __main__ - INFO - Streaming chunk from generate: . **东风-5C
+2025-09-11 00:04:43,964 - __main__ - INFO - Streaming chunk from generate: **：这是中国
+2025-09-11 00:04:44,075 - __main__ - INFO - Streaming chunk from generate: 较老的一款远程液体
+2025-09-11 00:04:44,179 - __main__ - INFO - Streaming chunk from generate: 燃料弹道导弹，在
+2025-09-11 00:04:44,245 - __main__ - INFO - Streaming chunk from generate: 这次阅兵中也进行了
+2025-09-11 00:04:44,443 - __main__ - INFO - Streaming chunk from generate: 展示。尽管技术上
+2025-09-11 00:04:44,455 - __main__ - INFO - Streaming chunk from generate: 已经过时，但其
+2025-09-11 00:04:44,628 - __main__ - INFO - Streaming chunk from generate: 体积仍然引人注目
+2025-09-11 00:04:44,688 - __main__ - INFO - Streaming chunk from generate: 。
+
+3. **JL
+2025-09-11 00:04:44,787 - __main__ - INFO - Streaming chunk from generate: -1“惊雷”
+2025-09-11 00:04:44,851 - __main__ - INFO - Streaming chunk from generate: **：这是一种新型
+2025-09-11 00:04:45,019 - __main__ - INFO - Streaming chunk from generate: 空射弹道导弹，
+2025-09-11 00:04:45,077 - __main__ - INFO - Streaming chunk from generate: 由轰-6
+2025-09-11 00:04:45,155 - __main__ - INFO - Streaming chunk from generate: 轰炸机携带发射
+2025-09-11 00:04:45,628 - __main__ - INFO - Streaming chunk from generate: 。虽然工作原理与
+2025-09-11 00:04:45,821 - __main__ - INFO - Streaming chunk from generate: 现有技术相似，但它
+2025-09-11 00:04:46,119 - __main__ - INFO - Streaming chunk from generate: 标志着中国在构建
+2025-09-11 00:04:46,184 - __main__ - INFO - Streaming chunk from generate: 三位一体核打击能力方面
+2025-09-11 00:04:46,329 - __main__ - INFO - Streaming chunk from generate: 的一个进步。
+
+4.
+2025-09-11 00:04:46,407 - __main__ - INFO - Streaming chunk from generate:  **鹰击系列反
+2025-09-11 00:04:46,496 - __main__ - INFO - Streaming chunk from generate: 舰导弹**：包括鹰
+2025-09-11 00:04:46,573 - __main__ - INFO - Streaming chunk from generate: 击-15、鹰
+2025-09-11 00:04:46,648 - __main__ - INFO - Streaming chunk from generate: 击-17、鹰
+2025-09-11 00:04:46,747 - __main__ - INFO - Streaming chunk from generate: 击-19和鹰
+2025-09-11 00:04:46,857 - __main__ - INFO - Streaming chunk from generate: 击-20四
+2025-09-11 00:04:46,947 - __main__ - INFO - Streaming chunk from generate: 款新导弹。
+2025-09-11 00:04:47,049 - __main__ - INFO - Streaming chunk from generate: 这些导弹可以地面
+2025-09-11 00:04:47,113 - __main__ - INFO - Streaming chunk from generate: 或舰载发射
+2025-09-11 00:04:47,315 - __main__ - INFO - Streaming chunk from generate: ，采用了不同的推进
+2025-09-11 00:04:47,673 - __main__ - INFO - Streaming chunk from generate: 技术和设计以提高
+2025-09-11 00:04:48,225 - __main__ - INFO - Streaming chunk from generate: 性能。
+
+请注意，以上
+2025-09-11 00:04:48,754 - __main__ - INFO - Streaming chunk from generate: 信息基于提供的内容
+2025-09-11 00:04:48,867 - __main__ - INFO - Streaming chunk from generate: 总结而来，实际情况
+2025-09-11 00:04:48,969 - __main__ - INFO - Streaming chunk from generate: 可能有所不同。此外
+2025-09-11 00:04:49,032 - __main__ - INFO - Streaming chunk from generate: ，对于一些具体的技术
+2025-09-11 00:04:49,363 - __main__ - INFO - Streaming chunk from generate: 细节或者更深入
+2025-09-11 00:04:49,447 - __main__ - INFO - Streaming chunk from generate: 的信息，原文并没有
+2025-09-11 00:04:49,628 - __main__ - INFO - Streaming chunk from generate: 提供详细的解释。
+2025-09-11 00:04:49,645 - __main__ - INFO - Streaming chunk from generate: 
+[2025-09-11 00:05:19,906] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:06:19,908] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:07:19,911] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-11 00:08:19,912] [Thread-1 (_monitor)] [INFO] [ragAgent.py:365] : Connection db_connection_pool status: 0/20 connections in use
+2025-09-11 00:08:37,500 - __main__ - INFO - Database connection pool closed
+2025-09-11 00:08:37,502 - __main__ - INFO - The service has been shut down
