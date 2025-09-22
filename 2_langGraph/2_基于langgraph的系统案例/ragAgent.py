@@ -1,4 +1,5 @@
 # 导入日志模块，用于记录程序运行时的信息
+import asyncio
 import traceback
 
 # 导入系统模块，用于处理系统相关的操作，如退出程序
@@ -51,6 +52,8 @@ from utils.tools_config import get_tools
 from utils.config import Config
 
 from utils.logger import logger
+
+# from mcp_server import get_mcp_tools
 
 
 
@@ -143,6 +146,7 @@ class ParallelToolNode(ToolNode):
         """执行单个工具调用"""
         # 使用try-except块捕获工具执行中的异常
         try:
+            print("=====执行单个工具调用 (调试信息)")  # 调试信息
             logger.info("=====执行单个工具调用")
             # 从tool_call字典中提取工具名称
             tool_name = tool_call["name"]
@@ -173,6 +177,7 @@ class ParallelToolNode(ToolNode):
     # 定义可调用方法，使实例可直接调用，实现并行执行所有工具调用
     def __call__(self, state: dict) -> dict:
         """并行执行所有工具调用"""
+        print("========调用ParallelToolNode的tool calls方法 (调试信息)")  # 调试信息
         # 记录日志，表示开始处理工具调用
         logger.info("========调用ParallelToolNode的tool calls方法")
         # 从状态字典中获取最后一条消息
@@ -277,6 +282,7 @@ def store_memory(question: BaseMessage, config: RunnableConfig, store: BaseStore
     namespace = ("memories", config["configurable"]["user_id"])
     try:
         # 在跨线程存储数据库中搜索相关记忆
+        logger.info(f"详细信息: namespace={namespace}, question.content={question.content}")
         memories = store.search(namespace, query=str(question.content))
         user_info = "\n".join([d.value["data"] for d in memories])
 
@@ -288,7 +294,7 @@ def store_memory(question: BaseMessage, config: RunnableConfig, store: BaseStore
 
         return user_info
     except Exception as e:
-        logger.error(f"Error in store_memory: {e}")
+        logger.error(f"持久化【store_memory】错误: {e}")
         return ""
 
 
@@ -402,14 +408,25 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         user_info = store_memory(question, config, store)
         # 自定义线程内存储逻辑 过滤消息
         messages = filter_messages(state["messages"])
-
+        # 获取自定义工具
+        tools = tool_config.get_tools()
         # 将工具绑定到 LLM
-        llm_chat_with_tool = llm_chat.bind_tools(tool_config.get_tools())
+        llm_chat_with_tool = llm_chat.bind_tools(tools)
 
         # 创建代理处理链
         agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
         # 调用代理链处理消息
         response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
+
+        # agent = create_react_agent(
+        #     llm_chat_with_tool,
+        #     tools,
+        #     prompt= Config.PROMPT_TEMPLATE_TXT_AGENT
+        # )
+
+        # response = await agent.invoke(
+        #     {"messages": [{"role": "user", "content": question}]}
+        # )
         logger.info(f"=====agent回复: {response}")
         # 返回更新后的对话状态
         # ai_message = response.model_dump()
@@ -747,6 +764,7 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     workflow.add_node("agent", lambda state, config: agent(state, config, store=store, llm_chat=llm_chat, tool_config=tool_config))
     # 添加工具节点，使用并行工具节点
     workflow.add_node("call_tools", ParallelToolNode(tool_config.get_tools(), max_workers=5))
+    # workflow.add_node("call_tools", ToolNode(tool_config.get_tools()))
     # 添加重写节点
     workflow.add_node("rewrite", lambda state: rewrite(state,llm_chat=llm_chat))
     # 添加生成节点
@@ -869,9 +887,14 @@ def main():
         # 调用get_llm函数初始化Chat模型实例和Embedding模型实例
         llm_chat, llm_embedding = get_llm(Config.LLM_TYPE)
 
-        # 获取工具列表
+        # 获取自定义工具列表
         tools = get_tools(llm_embedding, llm_chat)
+        # 获取MCP工具集
+        # mcp_tools = get_mcp_tools()
 
+        # tool_node = ToolNode(mcp_tools)
+        # 合并tools
+        # tools.extend(mcp_tools)
         # 创建 ToolConfig 实例
         tool_config = ToolConfig(tools)
 
