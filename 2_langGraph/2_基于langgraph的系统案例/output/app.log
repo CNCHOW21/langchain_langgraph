@@ -9676,3 +9676,14 @@ QQ空间;)QQ好友;)新浪微博;)微信;)
 [2025-09-24 17:27:27,494] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-24 17:28:27,500] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-24 17:29:27,503] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:30:27,506] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:31:27,508] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:32:27,511] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:33:27,513] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:34:27,515] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:35:27,517] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:36:27,519] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:37:27,529] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:38:27,544] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:39:27,546] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-24 17:40:27,548] [Thread-1 (_monitor)] [INFO] [ragAgent.py:369] : Connection db_connection_pool status: 0/20 connections in use
