@@ -19,8 +19,7 @@ load_dotenv()
 # 获取高德地图 API Key
 AMAP_MAPS_API_KEY=os.getenv('AMAP_MAPS_API_KEY')
 
-# 定义并运行agent
-async def get_mcp(question: str,llm_chat):
+async def get_mcp_tools():
     # 实例化MCP Server客户端
     client = MultiServerMCPClient({
         # 高德地图MCP Server
@@ -31,6 +30,11 @@ async def get_mcp(question: str,llm_chat):
     })
     # 从MCP Server中获取可提供使用的全部工具
     tools = await client.get_tools()
+    return tools
+
+# 定义并运行agent
+async def get_mcp(question: str,llm_chat):
+    tools = await get_mcp_tools()
     # 基于内存存储的short-term
     checkpointer = InMemorySaver()
     system_message = SystemMessage(content=(

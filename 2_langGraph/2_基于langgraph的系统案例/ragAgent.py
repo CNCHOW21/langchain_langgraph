@@ -1,5 +1,6 @@
 # 导入日志模块，用于记录程序运行时的信息
 # 导入系统模块，用于处理系统相关的操作，如退出程序
+import asyncio
 import sys
 import threading
 import time
@@ -13,12 +14,13 @@ from html import escape
 from typing import Literal, Annotated, Sequence, Optional
 
 # 导入LangChain的消息基类
-from langchain_core.messages import BaseMessage
+from langchain_core.messages import BaseMessage, ToolCall
 from langchain_core.messages import ToolMessage
 # 导入LangChain的提示模板类
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 # 导入可运行配置类
 from langchain_core.runnables import RunnableConfig
+from langchain_core.tools import BaseTool
 # 导入Postgres检查点保存类
 from langgraph.checkpoint.postgres import PostgresSaver
 # 导入状态图和起始/结束节点的定义
@@ -48,6 +50,7 @@ from utils.llms import get_llm
 from utils.logger import logger
 # 导入工具配置模块
 from utils.tools_config import get_tools
+from utils.mcp_server import get_mcp_tools
 
 
 # 定义消息状态类，使用TypedDict进行类型注解
@@ -124,6 +127,11 @@ class ConnectionPoolError(Exception):
     """自定义异常，表示数据库连接池初始化或状态异常"""
     pass
 
+# mcp异步工具调用
+async def call_tool(tool: BaseTool, tool_call: ToolCall):
+    result = await tool.ainvoke(tool_call["args"])
+    return result
+
 # 重定义ToolNode，支持并发处理工具调用
 class ParallelToolNode(ToolNode):
     # 初始化方法，继承自ToolNode，接收工具列表和最大线程数参数
@@ -132,23 +140,23 @@ class ParallelToolNode(ToolNode):
         super().__init__(tools)
         # 设置实例变量max_workers，定义线程池的最大工作线程数，默认为5
         self.max_workers = max_workers  # 线程池最大工作线程数
-
+        self.tools = tools
     # 定义私有方法，用于执行单个工具调用，返回ToolMessage对象
-    def _run_single_tool(self, tool_call: dict, tool_map: dict) -> ToolMessage:
+    def _run_one(self, tool_call: ToolCall, input_type: Literal["list", "dict", "tool_calls"],config: RunnableConfig) -> ToolMessage:
         """执行单个工具调用"""
         # 使用try-except块捕获工具执行中的异常
         try:
-            print("=====执行单个工具调用 (调试信息)")  # 调试信息
             logger.info("=====执行单个工具调用")
             # 从tool_call字典中提取工具名称
             tool_name = tool_call["name"]
+            tool_map = {tool.name: tool for tool in self.tools}
             # 从tool_map中获取对应的工具实例，若不存在则返回None
             tool = tool_map.get(tool_name)
             # 检查工具是否存在，若不存在则抛出ValueError异常
             if not tool:
                 raise ValueError(f"Tool {tool_name} not found")
             # 调用工具的invoke方法，传入工具参数，执行工具逻辑
-            result = tool.invoke(tool_call["args"])
+            result = asyncio.run(call_tool(tool, tool_call))
             # 创建并返回ToolMessage对象，包含工具执行结果、调用ID和工具名称
             return ToolMessage(
                 content=str(result),
@@ -756,7 +764,6 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     workflow.add_node("agent", lambda state, config: agent(state, config, store=store, llm_chat=llm_chat, tool_config=tool_config))
     # 添加工具节点，使用并行工具节点
     workflow.add_node("call_tools", ParallelToolNode(tool_config.get_tools(), max_workers=5))
-    # workflow.add_node("call_tools", ToolNode(tool_config.get_tools()))
     # 添加重写节点
     workflow.add_node("rewrite", lambda state: rewrite(state,llm_chat=llm_chat))
     # 添加生成节点
@@ -882,11 +889,9 @@ def main():
         # 获取自定义工具列表
         tools = get_tools(llm_embedding, llm_chat)
         # 获取MCP工具集
-        # mcp_tools = get_mcp_tools()
-
-        # tool_node = ToolNode(mcp_tools)
+        mcp_tools = asyncio.run(get_mcp_tools())
         # 合并tools
-        # tools.extend(mcp_tools)
+        tools.extend(mcp_tools)
         # 创建 ToolConfig 实例
         tool_config = ToolConfig(tools)
 
@@ -916,7 +921,7 @@ def main():
             sys.exit(1)
 
         # 保存状态图可视化(需要开启VPN)
-        # save_graph_visualization(graph)
+        save_graph_visualization(graph)
 
         # 打印机器人就绪提示
         print("聊天机器人准备就绪！输入 'quit'、'exit' 或 'q' 结束对话。")
