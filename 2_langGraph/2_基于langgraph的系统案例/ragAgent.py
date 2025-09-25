@@ -417,20 +417,7 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
         # 调用代理链处理消息
         response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
-
-        # agent = create_react_agent(
-        #     llm_chat_with_tool,
-        #     tools,
-        #     prompt= Config.PROMPT_TEMPLATE_TXT_AGENT
-        # )
-
-        # response = await agent.invoke(
-        #     {"messages": [{"role": "user", "content": question}]}
-        # )
         logger.info(f"=====agent回复: {response}")
-        # 返回更新后的对话状态
-        # ai_message = response.model_dump()
-        # ai_message["message_type_define"] = "ai"
         return {"messages": [response]}
     # 捕获异常
     except Exception as e:

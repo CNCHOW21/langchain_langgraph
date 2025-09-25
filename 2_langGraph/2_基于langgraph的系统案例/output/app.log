@@ -11188,3 +11188,5 @@ For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/er
 [2025-09-25 02:06:23,472] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-25 02:07:23,474] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-25 02:08:23,475] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 02:09:23,477] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 02:10:18,733] [MainThread] [INFO] [ragAgent.py:970] : Database connection pool closed
