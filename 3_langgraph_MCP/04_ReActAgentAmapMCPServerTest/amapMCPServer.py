@@ -141,7 +141,7 @@ async def run_agent():
 
     # 1、非流式处理查询
     # 高德地图接口测试
-    agent_response = await agent.ainvoke({"messages": [HumanMessage(content="这个114.05571,22.52245经纬度对应的地方是哪里")]}, config)
+    # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="这个114.05571,22.52245经纬度对应的地方是哪里")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳红树林的经纬度坐标是多少")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="112.10.22.229这个IP所在位置")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳的天气如何")]}, config)
@@ -152,7 +152,8 @@ async def run_agent():
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="测量下从深圳市南山区中兴大厦到宝安区宝安体育馆驾车距离是多少")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区中石化的加油站有哪些，需要有POI的ID")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="POI为B020016GPH的详细信息")]}, config)
-    # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区周围10公里的中石化的加油站")]}, config)
+    agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区周围10公里的中石化的加油站")]}, config)
+    print(f"agent回复:{agent_response}\n")
     # 将返回的messages进行格式化输出
     parse_messages(agent_response['messages'])
     agent_response_content = agent_response["messages"][-1].content

@@ -11190,3 +11190,1208 @@ For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/er
 [2025-09-25 02:08:23,475] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-25 02:09:23,477] [Thread-1 (_monitor)] [INFO] [ragAgent.py:374] : Connection db_connection_pool status: 0/20 connections in use
 [2025-09-25 02:10:18,733] [MainThread] [INFO] [ragAgent.py:970] : Database connection pool closed
+[2025-09-25 14:26:39,593] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 14:26:43,023] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 14:26:43,025] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,026] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,027] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,028] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,030] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,031] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,032] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,033] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,034] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,035] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,036] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,037] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,038] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,039] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,041] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,042] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,043] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,044] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 14:26:43,067] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'maps_schema_personal_map', 'maps_search_detail', 'maps_regeocode', 'maps_direction_transit_integrated', 'search_web', 'maps_geo', 'maps_direction_walking', 'maps_ip_location', 'maps_around_search', 'retrieve', 'query_huangli', 'maps_direction_bicycling', 'qwen_agent_query', 'maps_schema_take_taxi', 'maps_weather', 'maps_direction_driving', 'maps_distance', 'maps_text_search', 'maps_schema_navi'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 14:26:43,088] [MainThread] [INFO] [ragAgent.py:893] : Database connection pool initialized
+[2025-09-25 14:26:43,091] [MainThread] [DEBUG] [ragAgent.py:894] : Database connection pool initialized
+[2025-09-25 14:26:43,095] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:26:43,220] [MainThread] [INFO] [ragAgent.py:719] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 14:26:46,040] [MainThread] [INFO] [ragAgent.py:683] : Graph visualization saved as graph.png
+[2025-09-25 14:27:16,654] [MainThread] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 14:27:16,656] [MainThread] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='倒查是什么意思？' additional_kwargs={} response_metadata={} id='d51fc887-6507-4e19-8eea-5132795333d8'
+[2025-09-25 14:27:16,657] [MainThread] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '1'), question.content=倒查是什么意思？
+[2025-09-25 14:27:17,179] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:27:17,181] [MainThread] [INFO] [ragAgent.py:334] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 14:27:24,767] [MainThread] [INFO] [ragAgent.py:420] : =====agent回复: content='倒查通常是指从结果或现状出发，反向追溯原因、过程或源头的一种调查方法。它被广泛应用于多个领域，例如财务审计中对账目的倒查、历史研究中的事件倒查等。如果你是在特定的上下文中提到“倒查”，请提供更多的背景信息以便我能更准确地解释。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 70, 'prompt_tokens': 5246, 'total_tokens': 5316, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-0115d922-c44d-4078-8b75-c337e6eae485', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--0182f8ee-8df5-4219-b747-0ac458ea8c5f-0' usage_metadata={'input_tokens': 5246, 'output_tokens': 70, 'total_tokens': 5316, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 14:27:24,918] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:27:43,097] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:28:22,189] [MainThread] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 14:28:22,191] [MainThread] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉一日游旅游计划' additional_kwargs={} response_metadata={} id='f7222b08-ccb9-42a0-9981-134f15cfc177'
+[2025-09-25 14:28:22,192] [MainThread] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '1'), question.content=武汉一日游旅游计划
+[2025-09-25 14:28:22,493] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:28:22,498] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 14:28:24,491] [MainThread] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_f7176e35d7544a529b1d33', 'function': {'arguments': '{"keywords": "武汉一日游", "city": "武汉"}', 'name': 'maps_text_search'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 29, 'prompt_tokens': 4792, 'total_tokens': 4821, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-a8b46788-482e-4c4b-9c85-5af25392afaf', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--d4b561fb-7a71-4c1b-9e33-cd65fbab8932-0' tool_calls=[{'name': 'maps_text_search', 'args': {'keywords': '武汉一日游', 'city': '武汉'}, 'id': 'call_f7176e35d7544a529b1d33', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4792, 'output_tokens': 29, 'total_tokens': 4821, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 14:28:24,494] [MainThread] [INFO] [ragAgent.py:838] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_text_search
+[2025-09-25 14:28:24,498] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 14:28:27,274] [MainThread] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 14:28:27,275] [MainThread] [INFO] [ragAgent.py:589] : =====调用工具 maps_text_search 后路由到 generate 节点
+[2025-09-25 14:28:27,277] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:28:27,281] [MainThread] [INFO] [ragAgent.py:799] : 调用工具 [maps_text_search]返回结果: {"suggestion":{"keywords":"","ciytes":{"suggestion":[]}},"pois":[{"id":"B001B15T7P","name":"海合安武汉极地海...
+[2025-09-25 14:28:27,282] [MainThread] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 14:28:27,283] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:28:27,284] [MainThread] [INFO] [ragAgent.py:334] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 14:28:43,099] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:28:51,698] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:29:43,101] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:30:36,020] [MainThread] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 14:30:36,022] [MainThread] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='嫖娼被查了，公职人员会被开除吗？' additional_kwargs={} response_metadata={} id='55a1cce1-6dbc-47bb-b5ae-2a4ccf47df0a'
+[2025-09-25 14:30:36,023] [MainThread] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '1'), question.content=嫖娼被查了，公职人员会被开除吗？
+[2025-09-25 14:30:36,286] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:30:36,287] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 14:30:39,854] [MainThread] [INFO] [ragAgent.py:420] : =====agent回复: content='对于公职人员来说，如果被查实有嫖娼行为，通常会受到纪律处分，根据情节严重程度，可能会被开除。具体处理结果取决于所在单位的规章制度以及相关法律法规的规定。这属于直接回答问题的范畴，无需调用工具。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 57, 'prompt_tokens': 4588, 'total_tokens': 4645, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-6c8c609e-aec0-4571-b0dc-cf1662588366', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--a7403966-b83b-41dd-ba89-b21b24041600-0' usage_metadata={'input_tokens': 4588, 'output_tokens': 57, 'total_tokens': 4645, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 14:30:39,970] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:30:43,103] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:31:15,169] [MainThread] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 14:31:15,170] [MainThread] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='中东昨天有什么新闻' additional_kwargs={} response_metadata={} id='2293f3f3-d307-41eb-8c31-307fb94674f2'
+[2025-09-25 14:31:15,172] [MainThread] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '1'), question.content=中东昨天有什么新闻
+[2025-09-25 14:31:15,425] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:31:15,427] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 14:31:17,984] [MainThread] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_1b76fe0726b54c37b1cd80', 'function': {'arguments': '{"question": "中东昨天有什么新闻"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 20, 'prompt_tokens': 4569, 'total_tokens': 4589, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-be9a26e7-e6cf-4b71-89cb-dd9e46300967', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--e908baec-f069-4e0f-a9ef-2e81f741c2da-0' tool_calls=[{'name': 'search_web', 'args': {'question': '中东昨天有什么新闻'}, 'id': 'call_1b76fe0726b54c37b1cd80', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4569, 'output_tokens': 20, 'total_tokens': 4589, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 14:31:17,989] [MainThread] [INFO] [ragAgent.py:838] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-09-25 14:31:17,996] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 14:31:20,584] [MainThread] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 14:31:20,585] [MainThread] [INFO] [ragAgent.py:589] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-25 14:31:20,587] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:31:20,591] [MainThread] [INFO] [ragAgent.py:799] : 调用工具 [search_web]返回结果: 据报导，自以色列对伊朗发动军事行动以来，最高领袖哈梅内伊一直躲在地堡中，并下令对美国在该地区最具战略意义的资产进行打击。
+
+## “可信威胁”
+
+12:00 华盛顿 / 17:00 伦敦 / 19:0...
+[2025-09-25 14:31:20,592] [MainThread] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 14:31:20,593] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:31:20,594] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 14:31:43,105] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:31:44,603] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:32:43,108] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:33:43,111] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:34:43,113] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:35:43,123] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:36:43,126] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:37:43,128] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:38:43,130] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:39:43,132] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:40:40,165] [MainThread] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 14:40:40,168] [MainThread] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='张三九的健康的状态' additional_kwargs={} response_metadata={} id='1c244e13-661d-427a-95c3-73636556302e'
+[2025-09-25 14:40:40,170] [MainThread] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '1'), question.content=张三九的健康的状态
+[2025-09-25 14:40:40,465] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:40:40,466] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 14:40:43,134] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:40:44,801] [MainThread] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b73d5d8434dc41b7ac2c9f', 'function': {'arguments': '{"query": "张三九的健康的状态"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 4584, 'total_tokens': 4608, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-e9f421e8-4ead-4a54-97a1-074abe908dde', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--3c6c3c18-36d7-41f0-99c6-f1086a15d102-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '张三九的健康的状态'}, 'id': 'call_b73d5d8434dc41b7ac2c9f', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4584, 'output_tokens': 24, 'total_tokens': 4608, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 14:40:44,805] [MainThread] [INFO] [ragAgent.py:838] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2025-09-25 14:40:44,809] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 14:40:47,175] [MainThread] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 14:40:47,177] [MainThread] [INFO] [ragAgent.py:589] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2025-09-25 14:40:47,179] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:40:47,181] [MainThread] [INFO] [ragAgent.py:799] : 调用工具 [retrieve]返回结果: 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运...
+[2025-09-25 14:40:47,183] [MainThread] [INFO] [ragAgent.py:440] : ==========对文档进行相关性评分
+[2025-09-25 14:40:47,184] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:40:47,185] [MainThread] [INFO] [ragAgent.py:334] : =====加载并缓存模板内容 prompts/prompt_template_grade.txt
+[2025-09-25 14:40:48,949] [MainThread] [INFO] [ragAgent.py:462] : 文档进行相关性评分结果: yes
+[2025-09-25 14:40:48,952] [MainThread] [INFO] [ragAgent.py:636] : Routing based on relevance_score: yes, rewrite_count: 0
+[2025-09-25 14:40:48,953] [MainThread] [INFO] [ragAgent.py:651] : 文档相关, 跳转到generate节点
+[2025-09-25 14:40:48,956] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:40:48,961] [MainThread] [INFO] [ragAgent.py:799] : 调用工具 [retrieve]返回结果: 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运...
+[2025-09-25 14:40:48,962] [MainThread] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 14:40:48,963] [MainThread] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 14:40:48,964] [MainThread] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 14:41:43,136] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:41:46,372] [MainThread] [INFO] [ragAgent.py:842] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 14:42:43,138] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:43:43,141] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:44:43,145] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:45:43,148] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:46:43,150] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:47:43,152] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:48:43,155] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:49:43,158] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:50:43,159] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:51:43,162] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:52:43,164] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:53:43,166] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:54:43,167] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:55:43,169] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:56:43,171] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:57:43,173] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:58:43,175] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 14:59:43,177] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:00:43,179] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:01:43,180] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:02:43,182] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:03:43,184] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:04:43,186] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:05:43,188] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:06:43,190] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:07:43,193] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:08:43,195] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:09:43,197] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:10:43,199] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:11:43,201] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:12:43,203] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:13:43,205] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:14:43,208] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:15:43,210] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:16:43,212] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:17:43,213] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:18:43,216] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:19:43,221] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:20:43,223] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:21:43,226] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:22:43,227] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:23:43,230] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:24:43,232] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:25:43,235] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:26:43,237] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:27:43,240] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:28:43,243] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:29:43,246] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:30:43,248] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:31:43,250] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:32:43,253] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:33:43,254] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:34:44,038] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:35:14,463] [MainThread] [INFO] [ragAgent.py:954] : Database connection pool closed
+[2025-09-25 15:52:29,763] [MainThread] [INFO] [main.py:435] : Start the server on port 8012
+[2025-09-25 15:52:37,527] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 15:52:37,902] [MainThread] [ERROR] [main.py:195] : Unexpected error: asyncio.run() cannot be called from a running event loop
+[2025-09-25 15:54:44,243] [MainThread] [INFO] [main.py:435] : Start the server on port 8012
+[2025-09-25 15:54:51,794] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 15:54:54,893] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 15:54:54,893] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,893] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,901] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,902] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,902] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,902] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,902] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,914] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,915] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,915] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,920] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,922] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,922] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,922] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,922] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,933] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,933] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,933] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 15:54:54,933] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'maps_schema_take_taxi', 'maps_distance', 'maps_schema_navi', 'query_huangli', 'maps_direction_walking', 'maps_around_search', 'maps_regeocode', 'maps_geo', 'maps_direction_bicycling', 'maps_text_search', 'search_web', 'maps_weather', 'retrieve', 'maps_direction_transit_integrated', 'qwen_agent_query', 'maps_search_detail', 'maps_ip_location', 'maps_schema_personal_map', 'maps_direction_driving'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 15:54:54,953] [MainThread] [INFO] [main.py:163] : Database connection pool initialized
+[2025-09-25 15:54:54,953] [MainThread] [DEBUG] [main.py:165] : Database connection pool initialized
+[2025-09-25 15:54:54,993] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:54:55,152] [MainThread] [INFO] [ragAgent.py:719] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 15:54:56,151] [MainThread] [INFO] [ragAgent.py:683] : Graph visualization saved as graph.png
+[2025-09-25 15:55:55,027] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:56:55,060] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:57:55,072] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:58:15,274] [MainThread] [INFO] [main.py:413] : The user's user_input is: 你好啊
+[2025-09-25 15:58:15,321] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 15:58:15,323] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='50413db0-3b1f-48d8-a799-108dd22f9a2b'
+[2025-09-25 15:58:15,325] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=你好啊
+[2025-09-25 15:58:15,820] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 15:58:15,821] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:334] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 15:58:16,816] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 你好
+[2025-09-25 15:58:16,914] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: ！
+[2025-09-25 15:58:16,999] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 有什么
+[2025-09-25 15:58:17,147] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 可以帮助
+[2025-09-25 15:58:17,526] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 你的吗？
+[2025-09-25 15:58:17,557] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:420] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--55255e40-68d1-45e9-8021-2dab6ff9173c'
+[2025-09-25 15:58:17,559] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 15:58:55,077] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 15:58:57,639] [MainThread] [INFO] [main.py:413] : The user's user_input is: 女生175，脚42码算不算大？
+[2025-09-25 15:58:57,749] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 15:58:57,752] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='女生175，脚42码算不算大？' additional_kwargs={} response_metadata={} id='6ab4d4ba-940e-4ca9-a3eb-fbdda038aa17'
+[2025-09-25 15:58:57,754] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=女生175，脚42码算不算大？
+[2025-09-25 15:58:58,033] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 15:58:58,036] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 15:58:58,958] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 对于
+[2025-09-25 15:58:59,043] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 女生
+[2025-09-25 15:58:59,128] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 来说
+[2025-09-25 15:58:59,214] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: ，身高
+[2025-09-25 15:58:59,397] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 175厘米搭配
+[2025-09-25 15:58:59,686] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 42码的脚
+[2025-09-25 15:58:59,973] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: ，在一般情况下可能
+[2025-09-25 15:59:00,266] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 被认为是较大的。不过，
+[2025-09-25 15:59:00,540] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 脚的大小和身高
+[2025-09-25 15:59:00,862] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 之间并没有绝对的标准
+[2025-09-25 15:59:01,048] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: ，这主要取决于个人的身体
+[2025-09-25 15:59:01,454] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 比例。在很多
+[2025-09-25 15:59:01,570] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 国家和地区，由于
+[2025-09-25 15:59:02,021] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 营养状况和个人遗传
+[2025-09-25 15:59:02,259] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 因素的影响，人的
+[2025-09-25 15:59:02,539] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 平均身高和脚的
+[2025-09-25 15:59:03,093] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 尺寸都在逐渐增加
+[2025-09-25 15:59:03,272] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 。因此，4
+[2025-09-25 15:59:03,466] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 2码的脚对
+[2025-09-25 15:59:03,620] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 一个175
+[2025-09-25 15:59:04,194] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 厘米高的女性而言
+[2025-09-25 15:59:04,490] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 并不罕见，也不
+[2025-09-25 15:59:04,637] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 应该被视为异常。
+[2025-09-25 15:59:04,933] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 重要的是选择合适的
+[2025-09-25 15:59:05,053] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 鞋子，保持足
+[2025-09-25 15:59:05,289] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 部健康与舒适。
+[2025-09-25 15:59:05,825] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 如果您是想了解更具体的
+[2025-09-25 15:59:05,958] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 统计数据或医学建议，可以
+[2025-09-25 15:59:06,123] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 告诉我，我会帮
+[2025-09-25 15:59:06,204] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 您查找相关信息。
+[2025-09-25 15:59:06,225] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 15:59:06,227] [ThreadPoolExecutor-2_4] [INFO] [ragAgent.py:420] : =====agent回复: content='对于女生来说，身高175厘米搭配42码的脚，在一般情况下可能被认为是较大的。不过，脚的大小和身高之间并没有绝对的标准，这主要取决于个人的身体比例。在很多国家和地区，由于营养状况和个人遗传因素的影响，人的平均身高和脚的尺寸都在逐渐增加。因此，42码的脚对一个175厘米高的女性而言并不罕见，也不应该被视为异常。重要的是选择合适的鞋子，保持足部健康与舒适。如果您是想了解更具体的统计数据或医学建议，可以告诉我，我会帮您查找相关信息。' additional_kwargs={} response_metadata={'finish_reason': 'stop', 'model_name': 'qwen-max'} id='run--31c7193e-840e-4d48-8e65-a10ad8ef4167'
+[2025-09-25 15:59:55,082] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:00:59,034] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉今天天气怎么样？
+[2025-09-25 16:01:59,232] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 16:01:59,233] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉今天天气怎么样？' additional_kwargs={} response_metadata={} id='a9eb47b0-53f5-49a9-b5dd-5e0ccadb6ffd'
+[2025-09-25 16:01:59,235] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=武汉今天天气怎么样？
+[2025-09-25 16:01:59,536] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:01:59,537] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:02:01,071] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:02:01,202] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:02:01,204] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_7a49114ed8c3430d98e165', 'function': {'arguments': '{"city": "武汉"}', 'name': 'maps_weather'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--a6b6f591-18f2-4855-ad96-68bcddac8ce0' tool_calls=[{'name': 'maps_weather', 'args': {'city': '武汉'}, 'id': 'call_7a49114ed8c3430d98e165', 'type': 'tool_call'}]
+[2025-09-25 16:02:01,205] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:02:01,215] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:02:04,287] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:02:04,298] [ThreadPoolExecutor-3_3] [INFO] [ragAgent.py:589] : =====调用工具 maps_weather 后路由到 generate 节点
+[2025-09-25 16:02:04,321] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:02:04,327] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:02:04,330] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:334] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 16:02:05,250] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:02:05,251] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:02:05,318] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 我
+[2025-09-25 16:02:05,369] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 所
+[2025-09-25 16:02:05,422] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 掌握
+[2025-09-25 16:02:05,613] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 的信息，武汉市今天的
+[2025-09-25 16:02:05,953] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 天气情况如下：
+[2025-09-25 16:02:06,036] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 白天有小雨
+[2025-09-25 16:02:06,236] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，夜间转为阴
+[2025-09-25 16:02:07,187] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 天。白天气温约为
+[2025-09-25 16:02:07,386] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 23℃，夜晚
+[2025-09-25 16:02:07,657] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 气温下降到约
+[2025-09-25 16:02:07,852] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 20℃。风向
+[2025-09-25 16:02:08,467] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 主要为北风
+[2025-09-25 16:02:08,653] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，风力等级
+[2025-09-25 16:02:08,768] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 在1-3
+[2025-09-25 16:02:08,902] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 级之间。请注意
+[2025-09-25 16:02:08,998] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 携带雨具，并
+[2025-09-25 16:02:09,171] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 适当增添衣物以防
+[2025-09-25 16:02:09,348] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 着凉。
+[2025-09-25 16:02:09,365] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:02:59,216] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:03:59,219] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:04:59,220] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:05:46,058] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭到武汉邮科院公共交通
+[2025-09-25 16:05:46,071] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 16:05:46,074] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉名湖豪庭到武汉邮科院公共交通' additional_kwargs={} response_metadata={} id='624d5926-856a-482c-823e-fedc9df73dcc'
+[2025-09-25 16:05:46,076] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=武汉名湖豪庭到武汉邮科院公共交通
+[2025-09-25 16:05:46,445] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:05:46,447] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:05:48,349] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:48,595] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:48,899] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:49,069] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:49,291] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:49,473] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:49,679] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:49,938] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:50,125] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:50,128] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_3b48cd28e1fb45b692b4bf', 'function': {'arguments': '{"origin": "名湖豪庭, 武汉", "destination": "武汉邮科院, 武汉", "city": "武汉", "cityd": "武汉"}', 'name': 'maps_direction_transit_integrated'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--13280402-5ae0-4c98-a40a-f67a025f7163' tool_calls=[{'name': 'maps_direction_transit_integrated', 'args': {'origin': '名湖豪庭, 武汉', 'destination': '武汉邮科院, 武汉', 'city': '武汉', 'cityd': '武汉'}, 'id': 'call_3b48cd28e1fb45b692b4bf', 'type': 'tool_call'}]
+[2025-09-25 16:05:50,131] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:05:50,139] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:05:53,591] [ThreadPoolExecutor-6_0] [ERROR] [ragAgent.py:169] : Error executing tool maps_direction_transit_integrated: API 调用失败：INVALID_PARAMS
+[2025-09-25 16:05:53,632] [ThreadPoolExecutor-5_2] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:05:53,633] [ThreadPoolExecutor-5_2] [INFO] [ragAgent.py:589] : =====调用工具 maps_direction_transit_integrated 后路由到 generate 节点
+[2025-09-25 16:05:53,637] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:05:53,639] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:05:53,641] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:05:54,038] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:05:54,039] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 看起来
+[2025-09-25 16:05:54,162] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 在
+[2025-09-25 16:05:54,297] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 尝试
+[2025-09-25 16:05:54,381] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 获取从
+[2025-09-25 16:05:54,702] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉名湖豪庭到
+[2025-09-25 16:05:54,984] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉邮科院的公共交通
+[2025-09-25 16:05:55,151] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 信息时遇到了一些
+[2025-09-25 16:05:55,291] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 技术问题，可能是
+[2025-09-25 16:05:55,494] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 由于参数设置不正确导致
+[2025-09-25 16:05:55,633] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: API调用失败
+[2025-09-25 16:05:56,014] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。虽然我目前
+[2025-09-25 16:05:56,353] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 无法直接访问最新的
+[2025-09-25 16:05:56,573] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 交通数据来提供具体的
+[2025-09-25 16:05:56,709] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线建议，但我
+[2025-09-25 16:05:56,868] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 可以给你一些建议
+[2025-09-25 16:05:57,213] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ：
+
+1. **
+[2025-09-25 16:05:58,121] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 使用地图应用**：
+[2025-09-25 16:05:59,198] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 你可以通过百度地图、高
+[2025-09-25 16:05:59,223] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:05:59,313] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 德地图等手机
+[2025-09-25 16:05:59,786] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 应用程序查询从名
+[2025-09-25 16:05:59,944] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 湖豪庭到武汉
+[2025-09-25 16:06:00,059] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 邮科院的最佳
+[2025-09-25 16:06:00,210] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 公交或地铁线路
+[2025-09-25 16:06:00,409] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。
+2. **
+[2025-09-25 16:06:00,637] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 官方网站**：访问
+[2025-09-25 16:06:00,968] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉市公共交通集团或者
+[2025-09-25 16:06:01,205] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 相关机构的官方网站，
+[2025-09-25 16:06:01,352] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 那里通常会有详细的
+[2025-09-25 16:06:01,530] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 公交线路图和时刻
+[2025-09-25 16:06:01,799] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 表。
+3. **社交媒体
+[2025-09-25 16:06:01,981] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 与论坛**：有时候
+[2025-09-25 16:06:02,193] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，在微博、知乎这样的
+[2025-09-25 16:06:02,775] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 平台上询问也能得到
+[2025-09-25 16:06:02,993] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 不错的答案，特别是
+[2025-09-25 16:06:03,119] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 那些经常往返于两地
+[2025-09-25 16:06:04,230] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 之间的人可能会给出
+[2025-09-25 16:06:04,556] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 非常实用的信息。
+
+如果你
+[2025-09-25 16:06:04,728] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 需要更具体的帮助
+[2025-09-25 16:06:05,079] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，比如如何使用这些
+[2025-09-25 16:06:05,678] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 工具进行查询，请
+[2025-09-25 16:06:06,473] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 告诉我！希望这些建
+[2025-09-25 16:06:07,189] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 议对你有所帮助。
+[2025-09-25 16:06:07,220] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:06:59,227] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:08:17,884] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭到武汉邮科院怎么走？
+[2025-09-25 16:08:24,779] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 16:08:24,780] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉名湖豪庭到武汉邮科院怎么走？' additional_kwargs={} response_metadata={} id='5daff6f8-179f-47ce-8044-32dc06809b51'
+[2025-09-25 16:08:24,782] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=武汉名湖豪庭到武汉邮科院怎么走？
+[2025-09-25 16:08:25,077] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:08:25,078] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:08:27,487] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:27,980] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:28,287] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:28,467] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:28,698] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:28,933] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:29,834] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,069] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,321] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,553] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,878] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,933] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,934] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_34818e3e2ddf41858bc889', 'function': {'arguments': '{"origin": "名湖豪庭, 武汉", "destination": "武汉邮科院, 武汉", "city": "武汉", "cityd": "武汉"}', 'name': 'maps_direction_transit_integrated'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--ea90b283-a191-4988-8f43-f6f0ebee0924' tool_calls=[{'name': 'maps_direction_transit_integrated', 'args': {'origin': '名湖豪庭, 武汉', 'destination': '武汉邮科院, 武汉', 'city': '武汉', 'cityd': '武汉'}, 'id': 'call_34818e3e2ddf41858bc889', 'type': 'tool_call'}]
+[2025-09-25 16:08:30,935] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:08:30,942] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:08:33,195] [ThreadPoolExecutor-8_0] [ERROR] [ragAgent.py:169] : Error executing tool maps_direction_transit_integrated: API 调用失败：INVALID_PARAMS
+[2025-09-25 16:08:33,199] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:08:33,201] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:589] : =====调用工具 maps_direction_transit_integrated 后路由到 generate 节点
+[2025-09-25 16:08:33,205] [ThreadPoolExecutor-7_2] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:08:33,207] [ThreadPoolExecutor-7_2] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:08:33,208] [ThreadPoolExecutor-7_2] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:08:33,595] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:08:33,596] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 您好
+[2025-09-25 16:08:33,647] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，看起来
+[2025-09-25 16:08:33,904] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 在
+[2025-09-25 16:08:33,956] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 尝试
+[2025-09-25 16:08:34,044] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 获取从武汉名湖
+[2025-09-25 16:08:34,202] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 豪庭到武汉邮科
+[2025-09-25 16:08:34,310] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 院的具体路线时遇到了
+[2025-09-25 16:08:34,867] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 一些技术问题。虽然
+[2025-09-25 16:08:35,444] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 我现在无法直接提供
+[2025-09-25 16:08:35,591] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 具体的导航信息，
+[2025-09-25 16:08:35,767] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 但我可以建议您使用地图
+[2025-09-25 16:08:35,968] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 软件如高德地图
+[2025-09-25 16:08:36,077] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 、百度地图或谷歌
+[2025-09-25 16:08:36,218] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 地图来规划路线。这些
+[2025-09-25 16:08:36,337] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 应用通常能提供
+[2025-09-25 16:08:36,453] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 详细的交通指引，
+[2025-09-25 16:08:36,567] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 包括公交、地铁以及
+[2025-09-25 16:08:36,644] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 驾车等多种出行方式的选择
+[2025-09-25 16:08:36,757] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。如果您需要进一步
+[2025-09-25 16:08:36,948] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 的帮助，比如如何使用
+[2025-09-25 16:08:37,069] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 这些地图软件，请
+[2025-09-25 16:08:37,685] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 随时告诉我！
+[2025-09-25 16:08:37,703] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:09:20,455] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭周围10公里的中石化的加油站
+[2025-09-25 16:09:24,768] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:09:28,993] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 16:09:28,997] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉名湖豪庭周围10公里的中石化的加油站' additional_kwargs={} response_metadata={} id='c70295d5-ba17-4004-af7c-2a9ac0e8cc5d'
+[2025-09-25 16:09:29,002] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=武汉名湖豪庭周围10公里的中石化的加油站
+[2025-09-25 16:09:29,287] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:09:29,289] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:09:30,985] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:31,197] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:31,467] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:31,661] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:31,843] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:32,077] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:32,254] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:32,437] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:32,438] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_e9a1b51f8efb42ce9bb362', 'function': {'arguments': '{"keywords": "中石化 加油站", "location": "名湖豪庭, 武汉", "radius": "10000"}', 'name': 'maps_around_search'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--ed331391-e085-4be8-8553-5ccc7d5f94ab' tool_calls=[{'name': 'maps_around_search', 'args': {'keywords': '中石化 加油站', 'location': '名湖豪庭, 武汉', 'radius': '10000'}, 'id': 'call_e9a1b51f8efb42ce9bb362', 'type': 'tool_call'}]
+[2025-09-25 16:09:32,440] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:09:32,447] [ThreadPoolExecutor-10_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:09:34,786] [ThreadPoolExecutor-9_3] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:09:34,788] [ThreadPoolExecutor-9_3] [INFO] [ragAgent.py:589] : =====调用工具 maps_around_search 后路由到 generate 节点
+[2025-09-25 16:09:34,792] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:09:34,797] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:09:34,800] [ThreadPoolExecutor-9_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:09:35,167] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:09:35,169] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:09:35,266] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 我
+[2025-09-25 16:09:35,415] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 已有的
+[2025-09-25 16:09:35,449] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 信息，未能
+[2025-09-25 16:09:35,701] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 找到武汉名湖豪
+[2025-09-25 16:09:35,836] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 庭周围10公里
+[2025-09-25 16:09:36,141] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 范围内的中石化加油站的具体
+[2025-09-25 16:09:36,324] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 位置。可能是因为
+[2025-09-25 16:09:36,635] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 数据暂未更新或
+[2025-09-25 16:09:36,882] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 该区域内没有记录
+[2025-09-25 16:09:37,089] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 在案的中
+[2025-09-25 16:09:37,283] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 石化加油站。建议
+[2025-09-25 16:09:37,623] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 您可以使用地图软件
+[2025-09-25 16:09:38,144] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 进行实时查询，
+[2025-09-25 16:09:38,292] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 或者直接联系中石
+[2025-09-25 16:09:38,514] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 化的客服获取最新的
+[2025-09-25 16:09:39,419] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 加油站分布情况。希望
+[2025-09-25 16:09:39,720] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 这个回答对您有所帮助
+[2025-09-25 16:09:39,871] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ！
+[2025-09-25 16:09:39,893] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:10:28,984] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:10:48,198] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉江夏区天气怎么样？
+[2025-09-25 16:10:53,205] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:398] : ==========1.调用agent识别用户意图
+[2025-09-25 16:10:53,206] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:405] : =====agent接收到用户的消息:content='武汉江夏区天气怎么样？' additional_kwargs={} response_metadata={} id='28bc153d-1d8f-4d53-bd0d-29277a44355f'
+[2025-09-25 16:10:53,208] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:285] : 详细信息: namespace=('memories', '666c4263-ce62-4d79-9c7f-548ee1ad6681'), question.content=武汉江夏区天气怎么样？
+[2025-09-25 16:10:53,470] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:10:53,471] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:10:55,449] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:55,672] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:55,972] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:56,227] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:56,347] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:420] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_58f5c6db5d7a4a869c9043', 'function': {'arguments': '{"city": "江夏区, 武汉"}', 'name': 'maps_weather'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--cf69e78e-8b02-40da-9b33-1e76c756d711' tool_calls=[{'name': 'maps_weather', 'args': {'city': '江夏区, 武汉'}, 'id': 'call_58f5c6db5d7a4a869c9043', 'type': 'tool_call'}]
+[2025-09-25 16:10:56,347] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:56,351] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:10:56,354] [ThreadPoolExecutor-12_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:10:59,014] [ThreadPoolExecutor-11_2] [INFO] [ragAgent.py:566] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:10:59,017] [ThreadPoolExecutor-11_2] [INFO] [ragAgent.py:589] : =====调用工具 maps_weather 后路由到 generate 节点
+[2025-09-25 16:10:59,020] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:530] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:10:59,022] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:316] : =====开始执行agent链
+[2025-09-25 16:10:59,023] [ThreadPoolExecutor-11_4] [INFO] [ragAgent.py:328] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:10:59,565] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:10:59,612] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 目前
+[2025-09-25 16:10:59,691] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 我没有
+[2025-09-25 16:10:59,812] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 收到
+[2025-09-25 16:10:59,869] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 关于武汉江
+[2025-09-25 16:10:59,991] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 夏区的具体天气信息
+[2025-09-25 16:11:00,139] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。您可以尝试查看最新的
+[2025-09-25 16:11:00,614] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 天气预报或者访问
+[2025-09-25 16:11:00,764] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 气象网站获取最
+[2025-09-25 16:11:01,402] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 准确的信息。如果
+[2025-09-25 16:11:01,631] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 需要，我可以帮您查找
+[2025-09-25 16:11:01,975] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 如何获取这些信息的方法
+[2025-09-25 16:11:02,047] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。
+[2025-09-25 16:11:02,069] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:11:53,191] [Thread-1 (_monitor)] [INFO] [ragAgent.py:371] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:15:22,151] [MainThread] [INFO] [main.py:206] : Database connection pool closed
+[2025-09-25 16:15:22,155] [MainThread] [INFO] [main.py:208] : The service has been shut down
+[2025-09-25 16:15:34,104] [MainThread] [INFO] [main.py:435] : Start the server on port 8012
+[2025-09-25 16:15:40,053] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 16:15:42,447] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 16:15:42,449] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,451] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,454] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,459] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,461] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,463] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,465] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,467] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,469] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,471] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,473] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,476] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,479] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,480] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,481] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,483] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,487] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,491] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:15:42,494] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'maps_around_search', 'query_huangli', 'maps_direction_bicycling', 'maps_distance', 'maps_schema_take_taxi', 'maps_schema_personal_map', 'retrieve', 'maps_geo', 'maps_search_detail', 'search_web', 'maps_direction_walking', 'maps_regeocode', 'maps_text_search', 'maps_ip_location', 'maps_weather', 'qwen_agent_query', 'maps_direction_transit_integrated', 'maps_schema_navi', 'maps_direction_driving'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 16:15:42,498] [MainThread] [INFO] [main.py:163] : Database connection pool initialized
+[2025-09-25 16:15:42,501] [MainThread] [DEBUG] [main.py:165] : Database connection pool initialized
+[2025-09-25 16:15:42,504] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:15:42,550] [MainThread] [INFO] [ragAgent.py:720] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 16:15:43,031] [MainThread] [INFO] [ragAgent.py:684] : Graph visualization saved as graph.png
+[2025-09-25 16:16:42,509] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:16:44,132] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉今天天气怎么样？
+[2025-09-25 16:16:44,150] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:16:44,152] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉今天天气怎么样？' additional_kwargs={} response_metadata={} id='ce86c441-e2c9-4053-bc39-589b4451fe7e'
+[2025-09-25 16:16:44,154] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', None), question.content=武汉今天天气怎么样？
+[2025-09-25 16:16:44,159] [ThreadPoolExecutor-1_4] [ERROR] [ragAgent.py:298] : 持久化【store_memory】错误: sequence item 1: expected str instance, NoneType found
+[2025-09-25 16:16:44,196] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:16:44,198] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 16:16:46,079] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:16:46,244] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:16:46,246] [ThreadPoolExecutor-1_4] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_466d1c9f128b4fec8dd77a', 'function': {'arguments': '{"city": "武汉"}', 'name': 'maps_weather'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--f553dc24-16a2-4586-9dd4-5f6406cbea67' tool_calls=[{'name': 'maps_weather', 'args': {'city': '武汉'}, 'id': 'call_466d1c9f128b4fec8dd77a', 'type': 'tool_call'}]
+[2025-09-25 16:16:46,247] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:16:46,255] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:16:49,146] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:160] : 调用工具maps_weather返回结果：{"city":"武汉市","forecasts":[{"date":"2025-09-25","week":"4","dayweather":"小雨","nightweather":"阴","daytemp":"23","nighttemp":"20","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"23.0","nighttemp_float":"20.0"},{"date":"2025-09-26","week":"5","dayweather":"阴","nightweather":"阴","daytemp":"27","nighttemp":"22","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"27.0","nighttemp_float":"22.0"},{"date":"2025-09-27","week":"6","dayweather":"多云","nightweather":"晴","daytemp":"30","nighttemp":"23","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"30.0","nighttemp_float":"23.0"},{"date":"2025-09-28","week":"7","dayweather":"小雨","nightweather":"小雨","daytemp":"30","nighttemp":"22","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"30.0","nighttemp_float":"22.0"}]}
+[2025-09-25 16:16:49,149] [ThreadPoolExecutor-1_3] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:16:49,150] [ThreadPoolExecutor-1_3] [INFO] [ragAgent.py:590] : =====调用工具 maps_weather 后路由到 generate 节点
+[2025-09-25 16:16:49,154] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:16:49,155] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:16:49,157] [ThreadPoolExecutor-1_2] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 16:16:49,620] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:16:49,622] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:16:49,707] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 已知的内容
+[2025-09-25 16:16:50,202] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，武汉市
+[2025-09-25 16:16:50,734] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 今天的
+[2025-09-25 16:16:51,212] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 天气预报（假设
+[2025-09-25 16:16:51,322] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 今天是20
+[2025-09-25 16:16:51,445] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 25年9月2
+[2025-09-25 16:16:51,740] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 5日）显示
+[2025-09-25 16:16:51,978] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 白天会有小雨，
+[2025-09-25 16:16:52,492] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 夜晚转为阴天
+[2025-09-25 16:16:53,039] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。白天的最高
+[2025-09-25 16:16:53,144] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 温度约为23°C
+[2025-09-25 16:16:53,496] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，夜晚最低温度
+[2025-09-25 16:16:53,628] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 约为20°C
+[2025-09-25 16:16:53,841] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。风向主要
+[2025-09-25 16:16:54,111] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 为北风，风力
+[2025-09-25 16:16:54,267] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 等级在1到
+[2025-09-25 16:16:54,987] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 3级之间。请
+[2025-09-25 16:16:55,502] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 记得携带雨具
+[2025-09-25 16:16:56,019] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 出门，并注意保暖哦
+[2025-09-25 16:16:56,419] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ！如果今天不是20
+[2025-09-25 16:16:56,519] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 25年9月2
+[2025-09-25 16:16:56,689] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 5日，请告诉我
+[2025-09-25 16:16:56,836] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 具体的日期，以便
+[2025-09-25 16:16:56,977] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 提供更准确的信息。
+[2025-09-25 16:16:57,001] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:17:29,125] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭到武汉邮科院的公共交通
+[2025-09-25 16:17:29,146] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:17:29,148] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉名湖豪庭到武汉邮科院的公共交通' additional_kwargs={} response_metadata={} id='8bc39329-4f36-4ada-9348-55c67c0d64e1'
+[2025-09-25 16:17:29,151] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', None), question.content=武汉名湖豪庭到武汉邮科院的公共交通
+[2025-09-25 16:17:29,157] [ThreadPoolExecutor-3_4] [ERROR] [ragAgent.py:298] : 持久化【store_memory】错误: sequence item 1: expected str instance, NoneType found
+[2025-09-25 16:17:29,175] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:17:29,177] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:17:31,232] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:31,476] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:31,756] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:32,027] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:32,439] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:32,565] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:32,567] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:17:32,569] [ThreadPoolExecutor-3_4] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_04ae614111674beda394d1', 'function': {'arguments': '{"address": "名湖豪庭", "city": "武汉"}', 'name': 'maps_geo'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--3db1de9c-0929-42c6-956d-0ac3a70e0ba8' tool_calls=[{'name': 'maps_geo', 'args': {'address': '名湖豪庭', 'city': '武汉'}, 'id': 'call_04ae614111674beda394d1', 'type': 'tool_call'}]
+[2025-09-25 16:17:32,576] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:17:35,745] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"江夏区","street":[],"number":[],"adcode":"420115","location":"114.380569,30.457499","level":"住宅区"}]}
+[2025-09-25 16:17:35,748] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:17:35,763] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:17:35,795] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:17:35,797] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:17:35,799] [ThreadPoolExecutor-3_1] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:17:36,278] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:17:36,280] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:17:36,340] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 已
+[2025-09-25 16:17:36,407] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 知
+[2025-09-25 16:17:36,468] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 信息
+[2025-09-25 16:17:36,715] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，我了解到名
+[2025-09-25 16:17:36,991] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 湖豪庭位于
+[2025-09-25 16:17:37,703] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉市江夏区
+[2025-09-25 16:17:38,004] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，但具体到
+[2025-09-25 16:17:38,245] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉邮科院
+[2025-09-25 16:17:38,482] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: （烽火科技
+[2025-09-25 16:17:39,052] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 集团）的公共交通
+[2025-09-25 16:17:39,333] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线没有直接给出
+[2025-09-25 16:17:39,573] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。通常情况下，
+[2025-09-25 16:17:39,831] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 从江夏区
+[2025-09-25 16:17:40,105] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 前往武汉邮科
+[2025-09-25 16:17:40,570] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 院可以考虑使用
+[2025-09-25 16:17:40,843] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 公交车或地铁等
+[2025-09-25 16:17:41,118] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 公共交通工具。为了
+[2025-09-25 16:17:41,347] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 提供更准确的
+[2025-09-25 16:17:41,621] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线建议，您可以
+[2025-09-25 16:17:41,893] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 使用地图应用如
+[2025-09-25 16:17:42,127] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 高德地图、
+[2025-09-25 16:17:42,387] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 百度地图等查询
+[2025-09-25 16:17:42,511] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:17:42,672] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 最新的公交线路和
+[2025-09-25 16:17:42,905] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 换乘方案。
+[2025-09-25 16:17:43,178] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 如果您能告诉我武汉
+[2025-09-25 16:17:43,449] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 邮科院的具体
+[2025-09-25 16:17:43,700] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 地址或者最近的
+[2025-09-25 16:17:43,965] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 地铁站名称，
+[2025-09-25 16:17:44,277] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 我可以尝试为您提供更加
+[2025-09-25 16:17:44,512] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 详细的出行建议。
+[2025-09-25 16:17:44,789] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 另外，请注意实际
+[2025-09-25 16:17:45,028] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 出行时检查最新的
+[2025-09-25 16:17:45,292] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 交通信息，因为
+[2025-09-25 16:17:45,534] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 公交线路可能会有所
+[2025-09-25 16:17:45,723] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 调整。
+[2025-09-25 16:17:45,745] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:18:36,169] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭附近的加油站
+[2025-09-25 16:18:42,514] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:18:51,268] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:18:51,270] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉名湖豪庭附近的加油站' additional_kwargs={} response_metadata={} id='a3ee4f02-61ee-4548-aa0b-d78c70925b53'
+[2025-09-25 16:18:51,274] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', None), question.content=武汉名湖豪庭附近的加油站
+[2025-09-25 16:18:51,276] [ThreadPoolExecutor-5_4] [ERROR] [ragAgent.py:298] : 持久化【store_memory】错误: sequence item 1: expected str instance, NoneType found
+[2025-09-25 16:18:51,295] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:18:51,298] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:18:52,734] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:18:53,316] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:18:53,636] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:18:53,791] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:18:53,792] [ThreadPoolExecutor-5_4] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_06a1164e0a524a0d96cb95', 'function': {'arguments': '{"address": "名湖豪庭", "city": "武汉"}', 'name': 'maps_geo'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--24e21bf5-2210-41f5-a1ca-c4df634f1174' tool_calls=[{'name': 'maps_geo', 'args': {'address': '名湖豪庭', 'city': '武汉'}, 'id': 'call_06a1164e0a524a0d96cb95', 'type': 'tool_call'}]
+[2025-09-25 16:18:53,794] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:18:53,800] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:18:56,293] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"江夏区","street":[],"number":[],"adcode":"420115","location":"114.380569,30.457499","level":"住宅区"}]}
+[2025-09-25 16:18:56,297] [ThreadPoolExecutor-5_3] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:18:56,299] [ThreadPoolExecutor-5_3] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:18:56,303] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:18:56,306] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:18:56,308] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:18:56,770] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:18:56,771] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:18:56,858] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 您提供的信息
+[2025-09-25 16:18:56,948] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，名
+[2025-09-25 16:18:57,050] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 湖豪庭
+[2025-09-25 16:18:57,576] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 位于武汉市江夏
+[2025-09-25 16:18:57,952] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 区。不过，我手
+[2025-09-25 16:18:58,268] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 头的信息没有直接
+[2025-09-25 16:18:58,522] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 给出名湖豪庭
+[2025-09-25 16:18:58,966] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 附近具体哪些加油站的信息
+[2025-09-25 16:18:59,275] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。为了获取最
+[2025-09-25 16:18:59,693] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 准确的结果，建议您可以
+[2025-09-25 16:19:00,203] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 使用地图软件搜索
+[2025-09-25 16:19:00,378] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: “名湖豪
+[2025-09-25 16:19:00,623] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 庭附近加油站”，这样可以
+[2025-09-25 16:19:00,949] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 得到最新的、最接近
+[2025-09-25 16:19:01,213] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 您的位置的加油站信息。
+[2025-09-25 16:19:01,464] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 如果您需要进一步的帮助，
+[2025-09-25 16:19:01,805] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 比如如何使用地图软件
+[2025-09-25 16:19:02,232] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 查找，请告诉我！
+[2025-09-25 16:19:02,371] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:19:51,258] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:20:22,572] [MainThread] [INFO] [main.py:413] : The user's user_input is: 武汉名湖豪庭到邮科院的骑行路径
+[2025-09-25 16:20:30,105] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:20:30,107] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉名湖豪庭到邮科院的骑行路径' additional_kwargs={} response_metadata={} id='ee1aaa2c-bb35-4f6a-a8b6-c19c13faee4b'
+[2025-09-25 16:20:30,109] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', None), question.content=武汉名湖豪庭到邮科院的骑行路径
+[2025-09-25 16:20:30,112] [ThreadPoolExecutor-7_4] [ERROR] [ragAgent.py:298] : 持久化【store_memory】错误: sequence item 1: expected str instance, NoneType found
+[2025-09-25 16:20:30,130] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:20:30,132] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:20:32,105] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:20:32,296] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:20:32,654] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:20:33,107] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:20:40,988] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:20:40,989] [ThreadPoolExecutor-7_4] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'index': 0, 'id': 'call_3156b7d2d79f437fb737c5', 'function': {'arguments': '{"address": "名湖豪庭", "city": "武汉"}', 'name': 'maps_geo'}, 'type': 'function'}]} response_metadata={'finish_reason': 'tool_calls', 'model_name': 'qwen-max'} id='run--eb2fdfa9-f61c-44ec-bbaa-3eddb76d9399' tool_calls=[{'name': 'maps_geo', 'args': {'address': '名湖豪庭', 'city': '武汉'}, 'id': 'call_3156b7d2d79f437fb737c5', 'type': 'tool_call'}]
+[2025-09-25 16:21:19,590] [MainThread] [INFO] [main.py:360] : Streaming chunk from agent: 
+[2025-09-25 16:21:19,596] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:21:21,986] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"江夏区","street":[],"number":[],"adcode":"420115","location":"114.380569,30.457499","level":"住宅区"}]}
+[2025-09-25 16:21:21,988] [ThreadPoolExecutor-7_2] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:21:21,990] [ThreadPoolExecutor-7_2] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:21:21,994] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:21:21,996] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:21:21,997] [ThreadPoolExecutor-7_3] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:21:22,584] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:21:22,585] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 根据
+[2025-09-25 16:21:22,839] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 已知的信息
+[2025-09-25 16:21:22,939] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，我
+[2025-09-25 16:21:23,050] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 了解到
+[2025-09-25 16:21:23,297] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 名湖豪庭
+[2025-09-25 16:21:23,593] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 位于武汉市江夏
+[2025-09-25 16:21:23,929] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 区。但是，关于从
+[2025-09-25 16:21:24,133] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 名湖豪庭到
+[2025-09-25 16:21:24,339] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 邮科院的具体
+[2025-09-25 16:21:24,696] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 骑行路径信息，在
+[2025-09-25 16:21:24,909] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 提供的资料中没有详细
+[2025-09-25 16:21:25,341] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 说明。通常来说
+[2025-09-25 16:21:25,572] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，规划骑行路线
+[2025-09-25 16:21:26,402] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 可以使用地图软件
+[2025-09-25 16:21:26,667] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 如高德地图
+[2025-09-25 16:21:26,884] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 、百度地图等来
+[2025-09-25 16:21:27,255] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 获取最准确的
+[2025-09-25 16:21:27,454] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线建议。这些
+[2025-09-25 16:21:27,758] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 应用不仅能够提供具体的
+[2025-09-25 16:21:28,152] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线指导，还能告诉你
+[2025-09-25 16:21:28,578] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 预计的骑行时间
+[2025-09-25 16:21:28,802] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 以及可能遇到的
+[2025-09-25 16:21:29,979] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路况信息。如果你
+[2025-09-25 16:21:30,096] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:21:31,671] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 需要更详细的路线指引
+[2025-09-25 16:21:32,022] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: ，建议使用这类
+[2025-09-25 16:21:32,450] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 地图服务进行查询。如果
+[2025-09-25 16:21:33,070] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 邮科院指的是
+[2025-09-25 16:21:33,806] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 武汉邮电科学研究院（
+[2025-09-25 16:21:34,129] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 也称为烽火科技
+[2025-09-25 16:21:34,445] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 集团），它位于武汉市洪
+[2025-09-25 16:21:35,221] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 山区，那么从江
+[2025-09-25 16:21:35,602] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 夏区出发前往
+[2025-09-25 16:21:36,227] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 可能会经过珞狮
+[2025-09-25 16:21:36,550] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 南路等主要道路。
+[2025-09-25 16:21:36,704] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 不过，具体的最佳
+[2025-09-25 16:21:36,961] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 路线还是推荐通过
+[2025-09-25 16:21:37,814] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 地图软件来确定
+[2025-09-25 16:21:38,253] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 。
+[2025-09-25 16:21:38,271] [MainThread] [INFO] [main.py:360] : Streaming chunk from generate: 
+[2025-09-25 16:22:30,097] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:32:14,523] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:32:38,948] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 16:32:41,836] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 16:32:41,839] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,841] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,842] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,844] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,845] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,846] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,848] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,849] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,851] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,852] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,854] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,856] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,857] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,858] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,860] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,861] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,863] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,864] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:32:41,865] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'maps_geo', 'maps_weather', 'maps_direction_transit_integrated', 'retrieve', 'maps_direction_bicycling', 'maps_direction_walking', 'maps_around_search', 'maps_ip_location', 'qwen_agent_query', 'maps_schema_navi', 'search_web', 'maps_text_search', 'maps_distance', 'maps_search_detail', 'maps_schema_take_taxi', 'query_huangli', 'maps_direction_driving', 'maps_regeocode', 'maps_schema_personal_map'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 16:32:41,869] [MainThread] [INFO] [ragAgent.py:894] : Database connection pool initialized
+[2025-09-25 16:32:41,872] [MainThread] [DEBUG] [ragAgent.py:895] : Database connection pool initialized
+[2025-09-25 16:32:41,874] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:32:41,916] [MainThread] [INFO] [ragAgent.py:720] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 16:32:42,326] [MainThread] [INFO] [ragAgent.py:684] : Graph visualization saved as graph.png
+[2025-09-25 16:33:00,817] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:33:00,819] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉名湖豪庭到邮科院的骑行路径' additional_kwargs={} response_metadata={} id='902ba56c-e3bc-478f-93f1-a2b2b08cbe95'
+[2025-09-25 16:33:00,820] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=武汉名湖豪庭到邮科院的骑行路径
+[2025-09-25 16:33:03,028] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:33:03,030] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 16:33:06,558] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_9c2417353dac4f7e990383', 'function': {'arguments': '{"address": "名湖豪庭", "city": "武汉"}', 'name': 'maps_geo'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 29, 'prompt_tokens': 5111, 'total_tokens': 5140, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-30e1f28c-6ac0-44e7-a34b-c935df9a0b9c', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--72afe58b-b412-45e1-bcd5-b0912de6ff35-0' tool_calls=[{'name': 'maps_geo', 'args': {'address': '名湖豪庭', 'city': '武汉'}, 'id': 'call_9c2417353dac4f7e990383', 'type': 'tool_call'}] usage_metadata={'input_tokens': 5111, 'output_tokens': 29, 'total_tokens': 5140, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 16:33:06,561] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_geo
+[2025-09-25 16:33:06,565] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:33:09,144] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"江夏区","street":[],"number":[],"adcode":"420115","location":"114.380569,30.457499","level":"住宅区"}]}
+[2025-09-25 16:33:09,147] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:33:09,149] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:33:09,151] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:33:09,154] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_geo]返回结果: {"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"江夏区","street"...
+[2025-09-25 16:33:09,156] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:33:09,157] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:33:09,159] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 16:33:15,518] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:33:41,878] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:34:26,142] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:34:26,144] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉光谷软件园到武汉邮科院骑行规划' additional_kwargs={} response_metadata={} id='d4ae9565-c2dd-40c5-a6f8-e40f2f832e37'
+[2025-09-25 16:34:26,145] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=武汉光谷软件园到武汉邮科院骑行规划
+[2025-09-25 16:34:26,420] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:34:26,422] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:34:29,825] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_bb54b341ea734f7a81396b', 'function': {'arguments': '{"address": "光谷软件园", "city": "武汉"}', 'name': 'maps_geo'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 29, 'prompt_tokens': 4843, 'total_tokens': 4872, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-acf1e3c1-a4e1-4aaf-94be-e7fae7db0cdc', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--03933f80-88bc-4601-8193-17785fd8932b-0' tool_calls=[{'name': 'maps_geo', 'args': {'address': '光谷软件园', 'city': '武汉'}, 'id': 'call_bb54b341ea734f7a81396b', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4843, 'output_tokens': 29, 'total_tokens': 4872, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 16:34:29,828] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_geo
+[2025-09-25 16:34:29,832] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:34:32,547] [ThreadPoolExecutor-4_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"洪山区","street":[],"number":[],"adcode":"420111","location":"114.404057,30.475014","level":"住宅区"}]}
+[2025-09-25 16:34:32,551] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:34:32,553] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:34:32,555] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:34:32,558] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_geo]返回结果: {"results":[{"country":"中国","province":"湖北省","city":"武汉市","citycode":"027","district":"洪山区","street"...
+[2025-09-25 16:34:32,559] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:34:32,560] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:34:32,561] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:34:41,676] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:34:41,880] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:34:56,412] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:34:56,413] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉一日游旅行计划' additional_kwargs={} response_metadata={} id='c34c3a2b-8307-40c8-820e-d3625a7657a6'
+[2025-09-25 16:34:56,414] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=武汉一日游旅行计划
+[2025-09-25 16:34:56,674] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:34:56,676] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:34:58,702] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_ef8a5e2235ee4df2a1bd60', 'function': {'arguments': '{"question": "武汉一日游旅行计划"}', 'name': 'search_web'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 4423, 'total_tokens': 4444, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-70905dfa-46f9-4003-84c9-af04416067db', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--4e061b65-0945-4228-bfd9-b79ddef5d0a6-0' tool_calls=[{'name': 'search_web', 'args': {'question': '武汉一日游旅行计划'}, 'id': 'call_ef8a5e2235ee4df2a1bd60', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4423, 'output_tokens': 21, 'total_tokens': 4444, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 16:34:58,705] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: search_web
+[2025-09-25 16:34:58,708] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:35:01,788] [ThreadPoolExecutor-6_0] [INFO] [ragAgent.py:160] : 调用工具search_web返回结果：武汉私人定制一日游（10个景点选择/非团体游）
+
+  4.8
+
+  (5)
+
+  四驱车之旅
+
+  每名成人
+
+  US$280
+
+  起
+ 一天中的武汉： 当地风味、标志性景点和隐藏宝藏
+
+  一日游
+
+  成人价格最低
+
+  US$222
+
+  元（具体价格视团体规模而定）
+ 武汉刘家桥村和银水洞全包日游
+
+  一日游
+
+  成人价格最低
+
+  US$339
+
+  元（具体价格视团体规模而定）
+ 武汉黄鹤楼东湖莫山私人游
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$250
+
+  元（具体价格视团体规模而定）
+ 武汉一日游黄鹤楼，归元寺和湖北省博物馆
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$249
+
+  元（具体价格视团体规模而定）
+
+查看全部
+
+ 特价
+
+  体味武汉(导游/私人游/城市游)
+
+  汽车游览
+
+  成人价格低至
+
+  ~~US$199~~
+
+  US$130
+ 武汉私人定制一日游（10个景点选择/非团体游）
+
+  4.8
+
+  (5)
+
+  四驱车之旅
+
+  每名成人
+
+  US$280
+
+  起
+ 特价
+
+  武汉私人殖民地建筑之旅 [...] US$130
+ 武汉私人定制一日游（10个景点选择/非团体游）
+
+  4.8
+
+  (5)
+
+  四驱车之旅
+
+  每名成人
+
+  US$280
+
+  起
+ 4小时步行游览武汉黄鹤楼和东湖，乘船游览
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$120
+
+  元（具体价格视团体规模而定）
+ 一天中的武汉： 当地风味、标志性景点和隐藏宝藏
+
+  一日游
+
+  成人价格最低
+
+  US$222
+
+  元（具体价格视团体规模而定）
+ 武汉浪漫之旅
+
+  私人观光游览
+
+  每个团体
+
+  US$510
+
+  起（团体规模上限：15）
+ 武汉黄鹤楼东湖莫山私人游
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$250
+
+  元（具体价格视团体规模而定）
+ 私人2天游览十堰武当山，从武汉出发，到武汉结束
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$520
+
+  元（具体价格视团体规模而定）
+ 武汉一日游黄鹤楼，归元寺和湖北省博物馆
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$249 [...] 预订
+ ### 武汉一日游黄鹤楼，归元寺和湖北省博物馆
+
+  (0)
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$249
+
+  元（具体价格视团体规模而定）
+
+  预订
+ ### 武汉黄鹤楼东湖莫山私人游
+
+  (0)
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$250
+
+  元（具体价格视团体规模而定）
+
+  预订
+
+## 一日游
+
+从短途远足到全天出游。
+
+查看全部
+
+ 一天中的武汉： 当地风味、标志性景点和隐藏宝藏
+
+  一日游
+
+  成人价格最低
+
+  US$222
+
+  元（具体价格视团体规模而定）
+ 武汉黄鹤楼东湖莫山私人游
+
+  私人和豪华活动
+
+  成人价格最低
+
+  US$250
+
+  元（具体价格视团体规模而定）
+ 武汉私人定制一日游（10个景点选择/非团体游）
+
+  4.8
+
+  (5)
+
+  四驱车之旅
+
+  每名成人
+
+  US$280
+
+  起
+ 武汉刘家桥村和银水洞全包日游
+
+  一日游
+
+  成人价格最低
+
+  US$339
+
+  元（具体价格视团体规模而定）
+
+## 武汉市的热门景点 了解推荐的选择方式
+
+查看全部
+[2025-09-25 16:35:01,802] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:35:01,803] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 search_web 后路由到 generate 节点
+[2025-09-25 16:35:01,806] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:35:01,809] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [search_web]返回结果: 武汉私人定制一日游（10个景点选择/非团体游）
+
+  4.8
+
+  (5)
+
+  四驱车之旅
+
+  每名成人
+
+  US$280
+
+  起
+ 一天中的武汉： 当地风味、标志性景点和隐藏宝藏
+
+  一日...
+[2025-09-25 16:35:01,811] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:35:01,812] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:35:01,814] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:35:26,604] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:35:41,882] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:35:51,180] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:35:51,182] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='深圳市南山区周围10公里的中石化的加油站' additional_kwargs={} response_metadata={} id='2f09d5e0-bf09-4001-872f-3dd828d08684'
+[2025-09-25 16:35:51,183] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=深圳市南山区周围10公里的中石化的加油站
+[2025-09-25 16:35:51,449] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:35:51,450] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:35:54,325] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_861ba62f27c1486fad6ed8', 'function': {'arguments': '{"keywords": "中石化加油站", "location": "深圳市南山区", "radius": "10000"}', 'name': 'maps_around_search'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 39, 'prompt_tokens': 4701, 'total_tokens': 4740, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-60250912-adc2-4cf3-bbdc-c6973b6e6616', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--352f9a91-88fe-46eb-88b4-d0ca6914df68-0' tool_calls=[{'name': 'maps_around_search', 'args': {'keywords': '中石化加油站', 'location': '深圳市南山区', 'radius': '10000'}, 'id': 'call_861ba62f27c1486fad6ed8', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4701, 'output_tokens': 39, 'total_tokens': 4740, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 16:35:54,328] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_around_search
+[2025-09-25 16:35:54,332] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:35:56,882] [ThreadPoolExecutor-8_0] [ERROR] [ragAgent.py:170] : Error executing tool maps_around_search: API 调用失败：INVALID_PARAMS
+[2025-09-25 16:35:56,887] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:35:56,889] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_around_search 后路由到 generate 节点
+[2025-09-25 16:35:56,892] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:35:56,895] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_around_search]返回结果: Error: API 调用失败：INVALID_PARAMS
+[2025-09-25 16:35:56,899] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:35:56,900] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:35:56,902] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:36:02,643] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:36:41,898] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:37:41,901] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:38:41,903] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:38:51,807] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:38:51,808] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='武汉今天天气怎么样？' additional_kwargs={} response_metadata={} id='f2eaaef7-67be-40f5-87f0-a0d8c3aae5c6'
+[2025-09-25 16:38:51,809] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=武汉今天天气怎么样？
+[2025-09-25 16:38:52,075] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:38:52,077] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2025-09-25 16:38:54,453] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_9482a56658864020b6727a', 'function': {'arguments': '{"city": "武汉"}', 'name': 'maps_weather'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 17, 'prompt_tokens': 4641, 'total_tokens': 4658, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-3941b0e8-dd70-445e-a55e-707fb0443e20', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--975218cf-3444-4c10-a055-e14beccc48e9-0' tool_calls=[{'name': 'maps_weather', 'args': {'city': '武汉'}, 'id': 'call_9482a56658864020b6727a', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4641, 'output_tokens': 17, 'total_tokens': 4658, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2025-09-25 16:38:54,457] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_weather
+[2025-09-25 16:38:54,465] [ThreadPoolExecutor-10_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:38:57,464] [ThreadPoolExecutor-10_0] [INFO] [ragAgent.py:160] : 调用工具maps_weather返回结果：{"city":"武汉市","forecasts":[{"date":"2025-09-25","week":"4","dayweather":"小雨","nightweather":"阴","daytemp":"23","nighttemp":"20","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"23.0","nighttemp_float":"20.0"},{"date":"2025-09-26","week":"5","dayweather":"阴","nightweather":"阴","daytemp":"27","nighttemp":"22","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"27.0","nighttemp_float":"22.0"},{"date":"2025-09-27","week":"6","dayweather":"多云","nightweather":"晴","daytemp":"30","nighttemp":"23","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"30.0","nighttemp_float":"23.0"},{"date":"2025-09-28","week":"7","dayweather":"小雨","nightweather":"小雨","daytemp":"30","nighttemp":"22","daywind":"北","nightwind":"北","daypower":"1-3","nightpower":"1-3","daytemp_float":"30.0","nighttemp_float":"22.0"}]}
+[2025-09-25 16:38:57,466] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:38:57,469] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_weather 后路由到 generate 节点
+[2025-09-25 16:38:57,473] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:38:57,476] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_weather]返回结果: {"city":"武汉市","forecasts":[{"date":"2025-09-25","week":"4","dayweather":"小雨","nightweather":"阴","day...
+[2025-09-25 16:38:57,478] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen-max生成回复
+[2025-09-25 16:38:57,479] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:38:57,480] [MainThread] [INFO] [ragAgent.py:329] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2025-09-25 16:39:02,229] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:39:41,905] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:40:41,939] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:41:41,942] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:42:41,944] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:43:41,947] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:44:41,954] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:45:41,959] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:46:41,965] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:47:41,968] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:47:58,215] [MainThread] [INFO] [ragAgent.py:955] : Database connection pool closed
+[2025-09-25 16:48:35,319] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 16:48:38,115] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 16:48:38,117] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,119] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,120] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,122] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,123] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,125] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,126] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,128] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,129] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,130] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,131] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,132] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,133] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,135] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,137] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,138] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,139] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,141] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 16:48:38,142] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'query_huangli', 'maps_schema_navi', 'maps_direction_driving', 'maps_geo', 'retrieve', 'maps_regeocode', 'maps_distance', 'maps_weather', 'search_web', 'maps_direction_walking', 'maps_schema_take_taxi', 'maps_direction_bicycling', 'maps_schema_personal_map', 'maps_ip_location', 'maps_text_search', 'maps_direction_transit_integrated', 'maps_around_search', 'qwen_agent_query', 'maps_search_detail'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 16:48:38,146] [MainThread] [INFO] [ragAgent.py:894] : Database connection pool initialized
+[2025-09-25 16:48:38,148] [MainThread] [DEBUG] [ragAgent.py:895] : Database connection pool initialized
+[2025-09-25 16:48:38,152] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 16:48:38,195] [MainThread] [INFO] [ragAgent.py:720] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 16:48:38,621] [MainThread] [INFO] [ragAgent.py:684] : Graph visualization saved as graph.png
+[2025-09-25 16:48:53,702] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 16:48:53,704] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='深圳市南山区周围10公里的中石化的加油站' additional_kwargs={} response_metadata={} id='419ce664-5719-483d-8d34-35345afcae7f'
+[2025-09-25 16:48:53,705] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=深圳市南山区周围10公里的中石化的加油站
+[2025-09-25 16:48:54,062] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:48:54,065] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 16:48:55,624] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_703672b59b0946c083b1a2fb', 'function': {'arguments': '{"address": "深圳市南山区"}', 'name': 'maps_geo'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 4727, 'total_tokens': 4751, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'qwen3-coder-480b-a35b-instruct', 'system_fingerprint': None, 'id': 'chatcmpl-972df039-a8a9-40cf-860a-3a540e53d445', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--b48dd15d-a1bd-477b-b465-ff1da7070535-0' tool_calls=[{'name': 'maps_geo', 'args': {'address': '深圳市南山区'}, 'id': 'call_703672b59b0946c083b1a2fb', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4727, 'output_tokens': 24, 'total_tokens': 4751, 'input_token_details': {}, 'output_token_details': {}}
+[2025-09-25 16:48:55,630] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_geo
+[2025-09-25 16:48:55,633] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 16:48:58,310] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"广东省","city":"深圳市","citycode":"0755","district":"南山区","street":[],"number":[],"adcode":"440305","location":"113.930478,22.533191","level":"区县"}]}
+[2025-09-25 16:48:58,312] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 16:48:58,313] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 16:48:58,316] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:48:58,319] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_geo]返回结果: {"results":[{"country":"中国","province":"广东省","city":"深圳市","citycode":"0755","district":"南山区","street...
+[2025-09-25 16:48:58,321] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen3-coder-480b-a35b-instruct生成回复
+[2025-09-25 16:48:58,323] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 16:48:58,324] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 16:49:00,780] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 16:49:22,840] [MainThread] [INFO] [ragAgent.py:955] : Database connection pool closed
+[2025-09-25 17:03:17,602] [MainThread] [INFO] [llms.py:91] : 成功初始化 qwen LLM
+[2025-09-25 17:03:20,283] [MainThread] [DEBUG] [ragAgent.py:91] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2025-09-25 17:03:20,285] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'search_web' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,286] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'qwen_agent_query' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,288] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'query_huangli' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,289] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_bicycling' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,291] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_driving' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,292] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_transit_integrated' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,294] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_direction_walking' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,295] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_distance' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,296] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_geo' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,297] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_regeocode' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,298] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_ip_location' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,300] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_personal_map' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,301] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_around_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,302] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_search_detail' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,303] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_text_search' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,304] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_navi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,305] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_schema_take_taxi' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,307] [MainThread] [DEBUG] [ragAgent.py:97] : Tool 'maps_weather' 路由到 'generate' (non-retrieval tool)节点
+[2025-09-25 17:03:20,308] [MainThread] [INFO] [ragAgent.py:76] : ToolConfig初始化完成: {'maps_distance', 'maps_direction_transit_integrated', 'maps_schema_personal_map', 'maps_regeocode', 'maps_ip_location', 'maps_text_search', 'qwen_agent_query', 'maps_around_search', 'maps_direction_driving', 'maps_direction_walking', 'maps_weather', 'maps_direction_bicycling', 'maps_schema_take_taxi', 'search_web', 'retrieve', 'maps_schema_navi', 'maps_geo', 'query_huangli', 'maps_search_detail'}, routing: {'retrieve': 'grade_documents', 'search_web': 'generate', 'qwen_agent_query': 'generate', 'query_huangli': 'generate', 'maps_direction_bicycling': 'generate', 'maps_direction_driving': 'generate', 'maps_direction_transit_integrated': 'generate', 'maps_direction_walking': 'generate', 'maps_distance': 'generate', 'maps_geo': 'generate', 'maps_regeocode': 'generate', 'maps_ip_location': 'generate', 'maps_schema_personal_map': 'generate', 'maps_around_search': 'generate', 'maps_search_detail': 'generate', 'maps_text_search': 'generate', 'maps_schema_navi': 'generate', 'maps_schema_take_taxi': 'generate', 'maps_weather': 'generate'}
+[2025-09-25 17:03:20,312] [MainThread] [INFO] [ragAgent.py:894] : Database connection pool initialized
+[2025-09-25 17:03:20,317] [MainThread] [DEBUG] [ragAgent.py:895] : Database connection pool initialized
+[2025-09-25 17:03:20,320] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:03:20,362] [MainThread] [INFO] [ragAgent.py:720] : Connection db_connection_pool status: OK, test connection successful
+[2025-09-25 17:03:20,766] [MainThread] [INFO] [ragAgent.py:684] : Graph visualization saved as graph.png
+[2025-09-25 17:04:20,322] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:05:20,325] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:05:49,609] [MainThread] [INFO] [ragAgent.py:399] : ==========1.调用agent识别用户意图
+[2025-09-25 17:05:49,611] [MainThread] [INFO] [ragAgent.py:406] : =====agent接收到用户的消息:content='深圳市南山区周围10公里的中石化的加油站' additional_kwargs={} response_metadata={} id='a11eb2c9-1c58-4372-9ec8-bad69ff1ed88'
+[2025-09-25 17:05:49,612] [MainThread] [INFO] [ragAgent.py:286] : 详细信息: namespace=('memories', '1'), question.content=深圳市南山区周围10公里的中石化的加油站
+[2025-09-25 17:05:49,992] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 17:05:49,993] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2025-09-25 17:05:51,201] [MainThread] [INFO] [ragAgent.py:421] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_c39a8e559cba4e4ab10e78de', 'function': {'arguments': '{"address": "深圳市南山区"}', 'name': 'maps_geo'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 4765, 'total_tokens': 4789, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'qwen3-coder-480b-a35b-instruct', 'system_fingerprint': None, 'id': 'chatcmpl-1816b40c-af8a-4154-959b-5c8581c909e5', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--2d78672c-e414-424d-b04e-0a4504c7486c-0' tool_calls=[{'name': 'maps_geo', 'args': {'address': '深圳市南山区'}, 'id': 'call_c39a8e559cba4e4ab10e78de', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4765, 'output_tokens': 24, 'total_tokens': 4789, 'input_token_details': {}, 'output_token_details': {}}
+[2025-09-25 17:05:51,204] [MainThread] [INFO] [ragAgent.py:839] : ==========2.AIMessage有tool_calls参数，需要调用工具: maps_geo
+[2025-09-25 17:05:51,208] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:149] : =====执行单个工具调用
+[2025-09-25 17:05:53,982] [ThreadPoolExecutor-2_0] [INFO] [ragAgent.py:160] : 调用工具maps_geo返回结果：{"results":[{"country":"中国","province":"广东省","city":"深圳市","citycode":"0755","district":"南山区","street":[],"number":[],"adcode":"440305","location":"113.930478,22.533191","level":"区县"}]}
+[2025-09-25 17:05:53,985] [MainThread] [INFO] [ragAgent.py:567] : =====路由配置route_after_tools判断下一个节点是generate还是grade_documents
+[2025-09-25 17:05:53,986] [MainThread] [INFO] [ragAgent.py:590] : =====调用工具 maps_geo 后路由到 generate 节点
+[2025-09-25 17:05:53,989] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 17:05:53,992] [MainThread] [INFO] [ragAgent.py:800] : 调用工具 [maps_geo]返回结果: {"results":[{"country":"中国","province":"广东省","city":"深圳市","citycode":"0755","district":"南山区","street...
+[2025-09-25 17:05:53,994] [MainThread] [INFO] [ragAgent.py:531] : ==========3.调用生成模型qwen3-coder-480b-a35b-instruct生成回复
+[2025-09-25 17:05:53,995] [MainThread] [INFO] [ragAgent.py:317] : =====开始执行agent链
+[2025-09-25 17:05:53,997] [MainThread] [INFO] [ragAgent.py:335] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2025-09-25 17:05:56,648] [MainThread] [INFO] [ragAgent.py:843] : =====没有tool_calls参数，不需要调用工具直接回复
+[2025-09-25 17:06:20,328] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:07:20,329] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:08:20,333] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:09:20,341] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:10:20,343] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:11:20,346] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:12:20,348] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:13:20,351] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:14:20,354] [Thread-1 (_monitor)] [INFO] [ragAgent.py:372] : Connection db_connection_pool status: 0/20 connections in use
+[2025-09-25 17:15:16,432] [MainThread] [INFO] [ragAgent.py:955] : Database connection pool closed

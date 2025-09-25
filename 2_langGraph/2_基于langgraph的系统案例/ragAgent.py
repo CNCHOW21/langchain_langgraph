@@ -157,6 +157,7 @@ class ParallelToolNode(ToolNode):
                 raise ValueError(f"Tool {tool_name} not found")
             # 调用工具的invoke方法，传入工具参数，执行工具逻辑
             result = asyncio.run(call_tool(tool, tool_call))
+            logger.info(f"调用工具{tool_name}返回结果：{result}")
             # 创建并返回ToolMessage对象，包含工具执行结果、调用ID和工具名称
             return ToolMessage(
                 content=str(result),

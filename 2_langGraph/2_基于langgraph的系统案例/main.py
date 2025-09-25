@@ -1,4 +1,5 @@
 # 导入操作系统接口模块，用于处理文件路径和环境变量
+import asyncio
 import os
 # 用于正则表达式匹配和处理字符串
 import re
@@ -30,7 +31,7 @@ from pydantic import BaseModel, Field
 from ragAgent import (
     ToolConfig,
     create_graph,
-    # save_graph_visualization,
+    save_graph_visualization,
     get_llm,
     get_tools,
     Config,
@@ -38,6 +39,8 @@ from ragAgent import (
     ConnectionPoolError,
     monitor_connection_pool,
 )
+from utils.logger import logger
+from utils.mcp_server import get_mcp_tools
 
 
 # 设置LangSmith环境变量 进行应用跟踪，实时了解应用中的每一步发生了什么
@@ -45,31 +48,7 @@ from ragAgent import (
 # os.environ["LANGCHAIN_API_KEY"] = "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"
 
 
-# 设置日志基本配置，级别为DEBUG或INFO
-logger = logging.getLogger(__name__)
-# 设置日志器级别为DEBUG
-logger.setLevel(logging.DEBUG)
-# logger.setLevel(logging.INFO)
-logger.handlers = []  # 清空默认处理器
-# 使用ConcurrentRotatingFileHandler
-handler = ConcurrentRotatingFileHandler(
-    # 日志文件
-    Config.LOG_FILE,
-    # 日志文件最大允许大小为5MB，达到上限后触发轮转
-    maxBytes = Config.MAX_BYTES,
-    # 在轮转时，最多保留3个历史日志文件
-    backupCount = Config.BACKUP_COUNT
-)
-# 设置处理器级别为DEBUG
-handler.setLevel(logging.DEBUG)
-handler.setFormatter(logging.Formatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-))
-logger.addHandler(handler)
-
-
 # 定义消息类，用于封装API接口返回数据
-# 定义Message类
 class Message(BaseModel):
     role: str
     content: str
@@ -158,7 +137,10 @@ async def lifespan(app: FastAPI):
 
         # 获取工具列表，基于嵌入模型
         tools = get_tools(llm_embedding, llm_chat)
-
+        # 获取MCP工具集
+        mcp_tools = await get_mcp_tools()
+        # 合并tools
+        tools.extend(mcp_tools)
         # 创建工具配置实例
         tool_config = ToolConfig(tools)
 
@@ -201,7 +183,7 @@ async def lifespan(app: FastAPI):
             sys.exit(1)
 
         # 保存状态图的可视化表示(需要开启VPN)
-        # save_graph_visualization(graph)
+        save_graph_visualization(graph)
 
     except ConnectionPoolError as e:
         # 捕获并记录连接池相关异常
