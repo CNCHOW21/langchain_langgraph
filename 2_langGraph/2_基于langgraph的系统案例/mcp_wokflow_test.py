@@ -38,6 +38,7 @@ def should_continue(state: MessagesState):
     messages = state["messages"]
     last_message = messages[-1]
     if last_message.tool_calls:
+        print("======================有tool_calls，调用tools节点")
         return "tools"
     return END
 
@@ -45,8 +46,9 @@ def should_continue(state: MessagesState):
 async def call_model(state: MessagesState):
     messages = state["messages"]
     model_with_tools,tool_node = await get_llm_with_tool()
+    print(f"messages========================={messages}")
     response = await model_with_tools.ainvoke(messages)
-    print(f"========================={response}")
+    print(f"response========================={response}")
     return {"messages": [response]}
 
 # Build the graph
@@ -68,10 +70,9 @@ graph = builder.compile()
 async def graph_invoke():
     # Test the graph
     response = await graph.ainvoke(
-        {"messages": [{"role": "user", "content": "武汉今天天气怎么样？"}]}
+        {"messages": [{"role": "user", "content": "武汉一日游计划"}]}
     )
     print(response)
 
 if __name__ == '__main__':
    asyncio.run(graph_invoke())
-

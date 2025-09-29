@@ -1,5 +1,3 @@
-# 导入日志模块，用于记录程序运行时的信息
-# 导入系统模块，用于处理系统相关的操作，如退出程序
 import asyncio
 import sys
 import threading
@@ -14,7 +12,7 @@ from html import escape
 from typing import Literal, Annotated, Sequence, Optional
 
 # 导入LangChain的消息基类
-from langchain_core.messages import BaseMessage, ToolCall
+from langchain_core.messages import BaseMessage, ToolCall, HumanMessage
 from langchain_core.messages import ToolMessage
 # 导入LangChain的提示模板类
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
@@ -29,7 +27,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.graph.state import CompiledStateGraph
 # 导入预构建的工具条件和工具节点
-from langgraph.prebuilt import tools_condition, ToolNode
+from langgraph.prebuilt import ToolNode
 # 导入基础存储接口
 from langgraph.store.base import BaseStore
 # 导入Postgres存储类
@@ -43,14 +41,15 @@ from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 # 从typing_extensions导入TypedDict，用于定义类型化的字典
 from typing_extensions import TypedDict
+
 # 导入统一的 Config 类
 from utils.config import Config
 # 导入自定义的get_llm函数，用于获取LLM模型
 from utils.llms import get_llm
 from utils.logger import logger
+from utils.mcp_server import get_mcp_tools
 # 导入工具配置模块
 from utils.tools_config import get_tools
-from utils.mcp_server import get_mcp_tools
 
 
 # 定义消息状态类，使用TypedDict进行类型注解
@@ -91,10 +90,10 @@ class ToolConfig:
                 logger.debug(f"Tool '{tool_name}' 路由到 'grade_documents' (retrieval tool)")
             # 如果工具名称不包含 "retrieve"
             else:
-                # 其他的工具则直接将其路由目标设置为 "generate"（直接生成结果）
-                routing_config[tool_name] = "generate"
-                # 记录调试日志，说明该工具被路由到 "generate"，并标注为非检索工具
-                logger.debug(f"Tool '{tool_name}' 路由到 'generate' (non-retrieval tool)节点")
+                # 其他的工具则直接将其路由目标设置为 "agent"
+                routing_config[tool_name] = "agent"
+                # 记录调试日志，说明该工具被路由到 "agent"，并标注为非检索工具
+                logger.debug(f"Tool '{tool_name}' 路由到 'agent' (non-retrieval tool)节点")
         # 检查路由配置字典是否为空（即没有工具被处理）
         if not routing_config:
             # 如果为空，记录警告日志，提示工具列表可能为空或未正确处理
@@ -157,7 +156,7 @@ class ParallelToolNode(ToolNode):
                 raise ValueError(f"Tool {tool_name} not found")
             # 调用工具的invoke方法，传入工具参数，执行工具逻辑
             result = asyncio.run(call_tool(tool, tool_call))
-            logger.info(f"调用工具{tool_name}返回结果：{result}")
+            # logger.info(f"调用工具{tool_name}返回结果：{result}")
             # 创建并返回ToolMessage对象，包含工具执行结果、调用ID和工具名称
             return ToolMessage(
                 content=str(result),
@@ -178,7 +177,6 @@ class ParallelToolNode(ToolNode):
     # 定义可调用方法，使实例可直接调用，实现并行执行所有工具调用
     def __call__(self, state: dict) -> dict:
         """并行执行所有工具调用"""
-        print("========调用ParallelToolNode的tool calls方法 (调试信息)")  # 调试信息
         # 记录日志，表示开始处理工具调用
         logger.info("========调用ParallelToolNode的tool calls方法")
         # 从状态字典中获取最后一条消息
@@ -263,9 +261,9 @@ def get_latest_question(state: MessagesState) -> Optional[str]:
 def filter_messages(messages: list) -> list:
     """过滤消息列表，仅保留 AIMessage 和 HumanMessage 类型消息"""
     # 过滤出 AIMessage 和 HumanMessage 类型的消息
-    filtered = [msg for msg in messages if msg.__class__.__name__ in ['AIMessage', 'HumanMessage']]
+    filtered = [msg for msg in messages if msg.__class__.__name__ in ['AIMessage', 'HumanMessage', 'ToolMessage']]
     # 如果过滤后的消息超过N条，返回最后N条，否则返回过滤后的完整列表
-    return filtered[-5:] if len(filtered) > 5 else filtered
+    return filtered[-20:] if len(filtered) > 20 else filtered
 
 
 # 定义跨线程的持久化存储的存储和过滤函数
@@ -297,6 +295,32 @@ def store_memory(question: BaseMessage, config: RunnableConfig, store: BaseStore
     except Exception as e:
         logger.error(f"持久化【store_memory】错误: {e}")
         return ""
+
+# 获取提示词文件内容
+def parse_template_content(template_file: str):
+    # 定义静态缓存和锁（仅在函数第一次调用时初始化）
+    if not hasattr(parse_template_content, "prompt_cache"):
+        # 缓存字典
+        parse_template_content.prompt_cache = {}
+        # 线程锁 确保缓存的读写是线程安全的
+        parse_template_content.lock = threading.Lock()
+
+    # 先检查缓存，无锁访问
+    if template_file in parse_template_content.prompt_cache:
+        prompt_template = parse_template_content.prompt_cache[template_file]
+        logger.info(f"Using cached prompt template for {template_file}")
+        return prompt_template
+    else:
+        # 使用锁保护缓存访问
+        with parse_template_content.lock:
+            # 检查缓存中是否已有该模板
+            if template_file not in parse_template_content.prompt_cache:
+                logger.info(f"=====加载并缓存模板内容 {template_file}")
+                # 从文件加载提示模板并存入缓存
+                parse_template_content.prompt_cache[template_file] = PromptTemplate.from_file(template_file, encoding="utf-8")
+            # 从缓存中获取提示模板
+            prompt_template = parse_template_content.prompt_cache[template_file]
+            return prompt_template
 
 
 # 定义创建处理链的函数
@@ -401,23 +425,29 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
     namespace = ("memories", config["configurable"]["user_id"])
     # 尝试执行以下代码块
     try:
-        # 获取最后一条消息即用户问题
-        question = state["messages"][-1]
+        # 自定义线程内存储逻辑 过滤消息
+        messages,question = filter_agent_messages(state["messages"])
         logger.info(f"=====agent接收到用户的消息:{question}")
-
         # 自定义跨线程持久化存储记忆并获取相关信息
         user_info = store_memory(question, config, store)
-        # 自定义线程内存储逻辑 过滤消息
-        messages = filter_messages(state["messages"])
         # 获取自定义工具
         tools = tool_config.get_tools()
         # 将工具绑定到 LLM
         llm_chat_with_tool = llm_chat.bind_tools(tools)
 
-        # 创建代理处理链
-        agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
-        # 调用代理链处理消息
-        response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
+        # 方式一：创建agent处理链，调用agent链处理消息，MCP是异步调用不合适
+        # agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
+        # response = agent_chain.invoke({"question": question,"messages": messages, "userInfo": user_info})
+
+        # 方式二：使用create_react_agent直接调用会直接输出答案，但是调用工具无法控制，不适合langgraph
+        # response = call_mcp_tools(question.content,llm_chat_with_tool)
+
+        # 方式三：直接使用llm调用，有效但是没有设置模板，无法控制模型的输出
+        # response = asyncio.run(async_model_call(question.content, llm_chat_with_tool))
+
+        # 方式四：创建异步agent处理链，异步调用agent链处理消息
+        response = asyncio.run(async_chain_call(question, llm_chat_with_tool, messages, user_info))
+
         logger.info(f"=====agent回复: {response}")
         return {"messages": [response]}
     # 捕获异常
@@ -426,6 +456,35 @@ def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm
         logger.error(f"调用agent过程中发生异常: {e}")
         # 返回错误消息
         return {"messages": [{"role": "system", "content": "处理请求时出错"}]}
+
+
+def filter_agent_messages(messages: list):
+    """
+    从后往前遍历messages，获取从最后一个元素到第一个HumanMessage为止的集合，
+    并再向上追加5条记录
+    """
+    # 找到第一个HumanMessage的索引（从后往前）
+    for i in range(len(messages) - 1, -1, -1):
+        message = messages[i]
+        if hasattr(message, '__class__') and message.__class__.__name__ == 'HumanMessage':
+            # 计算起始索引，向上取5条，但不能小于0
+            start_index = max(0, i - 5)
+            return messages[start_index:],messages[i]
+
+    # 如果没有找到HumanMessage，返回空列表
+    return [],HumanMessage()
+
+
+# 异步模型调用，因为调用MCP工具需要使用异步的方式
+async def async_model_call(question: BaseMessage, llm_chat_with_tool):
+    response = await llm_chat_with_tool.ainvoke(question)
+    return response
+
+# 异步模型调用，因为调用MCP工具需要使用异步的方式
+async def async_chain_call(question: BaseMessage, llm_chat_with_tool, messages, user_info):
+    agent_chain = create_chain(llm_chat_with_tool, Config.PROMPT_TEMPLATE_TXT_AGENT)
+    response = await agent_chain.ainvoke({"question": question,"messages": messages, "userInfo": user_info})
+    return response
 
 
 # 定义 Node grade_documents相关性评估函数
@@ -553,7 +612,7 @@ def generate(state: MessagesState, llm_chat) -> dict:
 
 
 # 定义Edge 根据工具调用的结果动态决定下一步路由
-def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal["generate", "grade_documents"]:
+def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal["generate", "grade_documents", "agent"]:
     """
     根据工具调用的结果动态决定下一步路由，使用配置字典支持多工具并包含容错处理。
 
@@ -562,9 +621,9 @@ def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal[
         tool_config: 工具配置参数。
 
     Returns:
-        Literal["generate", "grade_documents"]: 下一步的目标节点。
+        Literal["generate", "grade_documents", "agent"]: 下一步的目标节点。
     """
-    logger.info("=====路由配置route_after_tools判断下一个节点是generate还是grade_documents")
+    logger.info("=====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent")
     # 检查状态是否包含消息列表，若为空则记录错误并默认路由到 generate
     if not state.get("messages") or not isinstance(state["messages"], list):
         logger.error("Messages state is empty or invalid, defaulting to generate")
@@ -585,8 +644,13 @@ def route_after_tools(state: MessagesState, tool_config: ToolConfig) -> Literal[
             logger.info(f"Unknown tool {tool_name}, routing to generate")
             return "generate"
 
-        # 根据配置字典决定路由，若无配置则默认路由到 generate
         target = tool_config.get_tool_routing_config().get(tool_name, "generate")
+
+        # # 判断最后一个message如果为ToolMessage则继续调用agent
+        # if isinstance(last_message, ToolMessage):
+        #     target = "agent"
+
+        # 根据配置字典决定路由，若无配置则默认路由到 generate
         logger.info(f"=====调用工具 {tool_name} 后路由到 {target} 节点")
         return target
 
@@ -677,9 +741,9 @@ def save_graph_visualization(graph: StateGraph, filename: str = "graph.png") -> 
     # 尝试执行以下代码块
     try:
         # 以二进制写模式打开文件
-        with open(filename, "wb") as f:
+        # with open(filename, "wb") as f:
             # 将状态图转换为Mermaid格式的PNG并写入文件
-            f.write(graph.get_graph().draw_mermaid_png())
+            # f.write(graph.get_graph().draw_mermaid_png())
         # 记录保存成功的日志
         logger.info(f"Graph visualization saved as {filename}")
     # 捕获IO错误
@@ -687,6 +751,12 @@ def save_graph_visualization(graph: StateGraph, filename: str = "graph.png") -> 
         # 记录警告日志
         logger.warning(f"Failed to save graph visualization: {e}")
 
+def should_continue(state: MessagesState):
+    messages = state["messages"]
+    last_message = messages[-1]
+    if last_message.tool_calls:
+        return "call_tools"
+    return END
 
 # 创建并配置状态图
 def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, tool_config: ToolConfig) -> CompiledStateGraph:
@@ -762,9 +832,9 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     # 添加从起始到代理的边
     workflow.add_edge(START, end_key="agent")
     # 添加代理的条件边，根据工具调用的工具名称决定下一步路由
-    workflow.add_conditional_edges(source="agent", path=tools_condition, path_map={"tools": "call_tools", END: END})
+    workflow.add_conditional_edges(source="agent", path=should_continue)
     # 添加检索的条件边，根据工具调用的结果动态决定下一步路由
-    workflow.add_conditional_edges(source="call_tools", path=lambda state: route_after_tools(state, tool_config),path_map={"generate": "generate", "grade_documents": "grade_documents"})
+    workflow.add_conditional_edges(source="call_tools", path=lambda state: route_after_tools(state, tool_config),path_map={"generate": "generate","agent": "agent", "grade_documents": "grade_documents"})
     # 添加检索的条件边，根据状态中的评分结果决定下一步路由
     workflow.add_conditional_edges(source="grade_documents", path=route_after_grade, path_map={"generate": "generate", "rewrite": "rewrite"})
     # 添加从生成到结束的边
@@ -809,17 +879,14 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
         config: 运行时配置。
     """
     try:
+        # response = await graph.ainvoke(
+        #     {"messages": [{"role": "user", "content": user_input}], "rewrite_count": 0}, config
+        # )
+        # print(response)
         # 启动状态图流处理用户输入
         events = graph.stream({"messages": [{"role": "user", "content": user_input}], "rewrite_count": 0}, config)
-
-        # first_dict = next(events)
-        # # 现在你可以使用 new_it 来遍历所有除了第一个元素之外的其他项
-        # print(f"======hahhhahaha=========={first_dict.values()}")
         # 遍历事件流
-        # count=0
         for event in events:
-            # print(f"======{count+1}=========={event.values()}")
-            # count += 1
             # 遍历事件中的值
             for value in event.values():
                 # 检查是否有有效消息
@@ -840,7 +907,7 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
                     # 跳过本次循环
                     continue
 
-                logger.info(f"=====没有tool_calls参数，不需要调用工具直接回复")
+                # logger.info(f"=====没有tool_calls参数，不需要调用工具直接回复")
                 # 检查消息是否有内容
                 if hasattr(last_message, "content"):
                     content = last_message.content

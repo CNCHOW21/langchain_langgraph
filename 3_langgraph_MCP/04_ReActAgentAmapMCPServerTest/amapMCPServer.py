@@ -8,6 +8,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain.chat_models import init_chat_model
 from typing import Dict, List, Any
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 # 获取高德地图 API Key
@@ -19,6 +20,15 @@ llm = init_chat_model(
     temperature=0,
     model_provider="deepseek",
 )
+
+# llm = ChatOpenAI(
+#     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+#     api_key=os.getenv("DASHSCOPE_API_KEY"),
+#     model="qwen-max",
+#     temperature=0.5,
+#     timeout=30,  # 添加超时配置（秒）
+#     max_retries=2  # 添加重试次数
+# )
 
 
 # 解析消息列表
@@ -148,11 +158,11 @@ async def run_agent():
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="我要从深圳市南山区中兴大厦骑行到宝安区宝安体育馆，帮我规划下路径")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="我要从深圳市南山区中兴大厦步行到宝安区宝安体育馆，帮我规划下路径")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="我要从深圳市南山区中兴大厦驾车到宝安区宝安体育馆，帮我规划下路径")]}, config)
-    # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="我要从深圳市南山区中兴大厦坐公共交通到宝安区宝安体育馆，帮我规划下路径")]}, config)
+    agent_response = await agent.ainvoke({"messages": [HumanMessage(content="我要从深圳市南山区中兴大厦坐公共交通到宝安区宝安体育馆，帮我规划下路径")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="测量下从深圳市南山区中兴大厦到宝安区宝安体育馆驾车距离是多少")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区中石化的加油站有哪些，需要有POI的ID")]}, config)
     # # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="POI为B020016GPH的详细信息")]}, config)
-    agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区周围10公里的中石化的加油站")]}, config)
+    # agent_response = await agent.ainvoke({"messages": [HumanMessage(content="深圳市南山区周围10公里的中石化的加油站")]}, config)
     print(f"agent回复:{agent_response}\n")
     # 将返回的messages进行格式化输出
     parse_messages(agent_response['messages'])

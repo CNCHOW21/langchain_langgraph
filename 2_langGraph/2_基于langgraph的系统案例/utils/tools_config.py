@@ -79,20 +79,5 @@ def get_tools(llm_embedding, llm_chat):
         result= r.content.decode('utf-8')
         return result
 
-    # 高德MCP工具
-    # @tool
-    # def query_gaode_mcp(question: str) -> str:
-    #     """这是高德MCP工具，高德MCP工具，这个工具可以将详细的结构化地址转换为经纬度坐标，将一个高德经纬度坐标转换为行政区划地址信息，
-    #     IP 定位根据用户输入的 IP 地址，定位 IP 的所在位置，根据城市名称或者标准adcode查询指定城市的天气，
-    #     用于规划骑行通勤方案，规划时会考虑天桥、单行线、封路等情况。最大支持 500km 的骑行路线规划，
-    #     可以根据输入起点终点经纬度坐标，规划100km 以内的步行通勤方案，并且返回通勤方案的数据，
-    #     根据用户起终点经纬度坐标规划以小客车、轿车通勤出行的方案，并且返回通勤方案的数据，
-    #     根据用户起终点经纬度坐标规划综合各类公共（火车、公交、地铁）交通方式的通勤方案，并且返回通勤方案的数据，
-    #     跨城场景下必须传起点城市与终点城市，测量两个经纬度坐标之间的距离，根据用户传入关键词，搜索出相关的POI地点信息，
-    #     根据用户传入关键词以及坐标location，搜索出radius半径范围的POI地点信息，查询关键词搜或者周边搜获取到的POI ID的详细信息。
-    #     """
-    #     response = call_mcp_tools(question,llm_chat)
-    #     return response
-
     # 返回工具列表
     return [retriever_tool, search_web, qwen_agent_query, query_huangli]

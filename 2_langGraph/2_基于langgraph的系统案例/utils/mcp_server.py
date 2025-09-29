@@ -26,6 +26,10 @@ async def get_mcp_tools():
         "amap-amap-sse": {
             "url": "https://mcp.amap.com/sse?key="+AMAP_MAPS_API_KEY,
             "transport": "sse",
+        },
+        "12306-mcp": {
+            "transport": "streamable_http",
+            "url": "https://mcp.api-inference.modelscope.net/d3ea5edefc7e4d/mcp"
         }
     })
     # 从MCP Server中获取可提供使用的全部工具
@@ -51,14 +55,16 @@ async def get_mcp(question: str,llm_chat):
         response = await agent.ainvoke(
             {"messages": [HumanMessage(content=question)]}, config
         )
-        messages = response["messages"]
-        # 找到最后一个 AIMessage
-        content = ""
-        last_aimessage = None
-        for message in messages:
-            if isinstance(message, AIMessage):
-                last_aimessage = message
-        return last_aimessage.content
+        return response
+
+    #     messages = response["messages"]
+    #     # 找到最后一个 AIMessage
+    #     content = ""
+    #     last_aimessage = None
+    #     for message in messages:
+    #         if isinstance(message, AIMessage):
+    #             last_aimessage = message
+    #     return last_aimessage.content
     except Exception as e:
         traceback.print_exc()
 

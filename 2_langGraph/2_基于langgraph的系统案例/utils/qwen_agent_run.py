@@ -24,7 +24,7 @@ def get_file_list(folder_path):
             file_list.append(file_path)
     return file_list
 
-file_list = get_file_list("./data")
+file_list = get_file_list("./input")
 
 config = MODEL_CONFIGS['qwen']
 
