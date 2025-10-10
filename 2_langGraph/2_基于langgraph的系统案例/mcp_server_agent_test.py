@@ -11,7 +11,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
 
 from utils.config import Config
-from .ragAgent import get_llm
+from ragAgent import get_llm
 
 load_dotenv()
 # 获取高德地图 API Key
@@ -23,6 +23,10 @@ client = MultiServerMCPClient(
         "amap-amap-sse": {
             "url": "https://mcp.amap.com/sse?key="+AMAP_MAPS_API_KEY,
             "transport": "sse",
+        },
+        "mysql_mcp_server": {
+            "url": "http://127.0.0.1:8888/mcp",
+            "transport": "streamable_http",
         }
     }
 )
@@ -50,4 +54,5 @@ def call_mcp_tools(question: str):
     return asyncio.run(call_agent(question))
 
 if __name__ == '__main__':
-    print(call_mcp_tools("武汉一日游计划，最好是提供具体的公共交通"))
+    print(call_mcp_tools("查询学生信息表students_info"))
+    # print(call_mcp_tools("武汉名湖豪庭到武汉邮科院的骑行路径规划"))

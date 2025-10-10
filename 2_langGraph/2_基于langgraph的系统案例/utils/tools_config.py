@@ -1,3 +1,5 @@
+import json
+
 import requests
 from langchain.retrievers import MultiQueryRetriever
 from langchain.tools.retriever import create_retriever_tool
@@ -79,5 +81,50 @@ def get_tools(llm_embedding, llm_chat):
         result= r.content.decode('utf-8')
         return result
 
+    # 根据城市天气生成图片
+    @tool
+    def create_city_image(city: str, weather: str) -> str:
+        """这是一个根据城市，天气生成图片的工具，可以用来生成城市的天气图片。
+                """
+        params = {}
+        params['city'] = city
+        params['weather'] = weather
+        url = 'http://localhost/v1/chat-messages'
+        headers = {
+            'Authorization': f'Bearer app-TgLrmlIztqRaM7vGDSExAwFH',  # 替换 {your_api_key} 为你实际的 API 密钥
+            'Content-Type': 'application/json'
+        }
+        data = {
+            "inputs": params,
+            "query": "开始",
+            "response_mode": "streaming",
+            "conversation_id": "",
+            "user": "abc-123",
+            "files": [
+                {
+                    "type": "image",
+                    "transfer_method": "remote_url",
+                    "url": "https://cloud.dify.ai/logo/logo-site.png"
+                }
+            ]
+        }
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+        result = ""
+        if response.status_code == 200:
+            data = response.text
+            for line in data.split('data: '):
+                if not line.strip():
+                    continue
+                if not line.strip().endswith("}"):
+                    continue
+                record = json.loads(line)
+                # 查找 event 等于 workflow_finished 的记录
+                if record['event'] == 'workflow_finished':
+                    outputs = record['data']['outputs']
+                    print("Found the required 'outputs':", outputs)
+                    result = outputs
+                    break
+        return result
+
     # 返回工具列表
-    return [retriever_tool, search_web, qwen_agent_query, query_huangli]
+    return [retriever_tool, search_web, qwen_agent_query, query_huangli, create_city_image]

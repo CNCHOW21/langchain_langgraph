@@ -150,7 +150,7 @@ async def list_tools() -> list[Tool]:
             # 工具的名称
             name="execute_sql",
             # 工具的描述
-            description="Execute an SQL query on the MySQL server",
+            description="这是一个用于执行MSQL的工具，可以用来查询学生信息表students_info和学生分数表students_score。",
             # 定义了工具的输入模式（Schema），用于描述输入数据的格式和要求
             inputSchema={
                 # 定义输入为一个 JSON 对象

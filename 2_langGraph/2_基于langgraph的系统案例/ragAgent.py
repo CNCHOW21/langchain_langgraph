@@ -741,9 +741,9 @@ def save_graph_visualization(graph: StateGraph, filename: str = "graph.png") -> 
     # 尝试执行以下代码块
     try:
         # 以二进制写模式打开文件
-        # with open(filename, "wb") as f:
+        with open(filename, "wb") as f:
             # 将状态图转换为Mermaid格式的PNG并写入文件
-            # f.write(graph.get_graph().draw_mermaid_png())
+            f.write(graph.get_graph().draw_mermaid_png())
         # 记录保存成功的日志
         logger.info(f"Graph visualization saved as {filename}")
     # 捕获IO错误

@@ -18,20 +18,20 @@ from langgraph.checkpoint.memory import InMemorySaver
 load_dotenv()
 # 获取高德地图 API Key
 AMAP_MAPS_API_KEY=os.getenv('AMAP_MAPS_API_KEY')
+client = MultiServerMCPClient({
+    # 高德地图MCP Server
+    "amap-amap-sse": {
+        "url": "https://mcp.amap.com/sse?key="+AMAP_MAPS_API_KEY,
+        "transport": "sse",
+    },
+    # "mysql_mcp_server": {
+    #     "url": "http://127.0.0.1:8888/mcp",
+    #     "transport": "streamable_http",
+    # }
+})
 
 async def get_mcp_tools():
     # 实例化MCP Server客户端
-    client = MultiServerMCPClient({
-        # 高德地图MCP Server
-        "amap-amap-sse": {
-            "url": "https://mcp.amap.com/sse?key="+AMAP_MAPS_API_KEY,
-            "transport": "sse",
-        },
-        "12306-mcp": {
-            "transport": "streamable_http",
-            "url": "https://mcp.api-inference.modelscope.net/d3ea5edefc7e4d/mcp"
-        }
-    })
     # 从MCP Server中获取可提供使用的全部工具
     tools = await client.get_tools()
     return tools

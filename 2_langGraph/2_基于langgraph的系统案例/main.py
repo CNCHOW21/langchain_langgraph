@@ -41,11 +41,12 @@ from ragAgent import (
 )
 from utils.logger import logger
 from utils.mcp_server import get_mcp_tools
+from ragAgent import log_tool_output
 
 
 # 设置LangSmith环境变量 进行应用跟踪，实时了解应用中的每一步发生了什么
-# os.environ["LANGCHAIN_TRACING_V2"] = "true"
-# os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = "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"
 
 
 # 定义消息类，用于封装API接口返回数据
@@ -250,7 +251,7 @@ async def handle_non_stream_response(user_input, graph, tool_config, config):
                         # 验证工具调用是否为字典且包含名称
                         if isinstance(tool_call, dict) and "name" in tool_call:
                             # 记录工具调用日志
-                            logger.info(f"Calling tool: {tool_call['name']}")
+                            logger.info(f"==========2.AIMessage有tool_calls参数，需要调用工具: {tool_call['name']}")
                     # 跳过本次循环，继续处理下一事件
                     continue
 
@@ -258,13 +259,12 @@ async def handle_non_stream_response(user_input, graph, tool_config, config):
                 if hasattr(last_message, "content"):
                     # 将消息内容赋值给 content
                     content = last_message.content
-
                     # 检查是否为工具输出（基于工具名称）
                     if hasattr(last_message, "name") and last_message.name in tool_config.get_tool_names():
                         # 获取工具名称
                         tool_name = last_message.name
                         # 记录工具输出日志
-                        logger.info(f"Tool Output [{tool_name}]: {content}")
+                        log_tool_output(tool_name, content)
                     # 处理大模型输出（非工具消息）
                     else:
                         # 记录最终响应日志
@@ -357,7 +357,7 @@ async def handle_stream_response(user_input, graph, config):
                         # 获取消息内容，默认空字符串
                         chunk = getattr(message_chunk, 'content', '')
                         # 记录流式数据块日志
-                        logger.info(f"Streaming chunk from {node_name}: {chunk}")
+                        # logger.info(f"Streaming chunk from {node_name}: {chunk}")
                         # 产出流式数据块
                         yield f"data: {json.dumps({'id': chunk_id, 'object': 'chat.completion.chunk', 'created': int(time.time()), 'choices': [{'index': 0, 'delta': {'content': chunk}, 'finish_reason': None}]})}\n\n"
                 except Exception as chunk_error:
