@@ -21805,3 +21805,341 @@ For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/er
 [2025-10-10 21:28:12,889] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
 [2025-10-10 21:28:12,930] [MainThread] [INFO] [ragAgent.py:790] : Connection db_connection_pool status: OK, test connection successful
 [2025-10-10 21:28:30,460] [MainThread] [INFO] [ragAgent.py:748] : Graph visualization saved as graph.png
+[2026-01-11 22:39:33,421] [MainThread] [INFO] [vectorSave.py:185] : 检索向量数据库的结果: {'ids': [['2ca3f7c6-d04f-47ec-bcb4-a5daa10ee077', '671c269e-51b4-4a2c-a1fa-d3c35e2128a2', 'ac80febb-5651-4d96-9724-a6eea4a838fa', '7e6ef338-a9a9-4788-ac9a-c129ea465d0a', 'a119931a-78ab-4811-8ec4-0f28df2cf866']], 'embeddings': None, 'documents': [['健康档案 一、基本信息 张三九，男，出生于 1985 年 5 月 20 日，目前 39 岁，已婚，职业为 IT 工程师。 张三九的 血型为 O 型，联系电话为 138-1234-5678，电子邮箱为 zhangsan@example.com，居住在 上海市浦东新区张江路 123 号。 其紧急联系人为妻子李四六，联系电话为 138-8765-4321。 二、医疗历史 张三九在 2005 年被确诊为高血压，自此开始接受降压药物治疗。 2010 年，他被确诊为二 型糖尿病，并开始使用口服降糖药进行管理。 2017 年，张三九被诊断为脂肪肝，医生建议 通过饮食调整和增加运动来改善这一状况。 2022 年，他因腰椎间盘突出接受了微创手术， 术后恢复良好。 此外，张三九对青霉素有过敏反应，曾出现皮疹和呼吸困难。 海鲜会导致轻 度皮肤发痒，表明他对海鲜也有一定的过敏反应。 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运动较少，每周仅进行一次轻度运动，如散步。', '健康档案 一、基本信息 张三九，男，出生于 1985 年 5 月 20 日，目前 39 岁，已婚，职业为 IT 工程师。 张三九的 血型为 O 型，联系电话为 138-1234-5678，电子邮箱为 zhangsan@example.com，居住在 上海市浦东新区张江路 123 号。 其紧急联系人为妻子李四六，联系电话为 138-8765-4321。 二、医疗历史 张三九在 2005 年被确诊为高血压，自此开始接受降压药物治疗。 2010 年，他被确诊为二 型糖尿病，并开始使用口服降糖药进行管理。 2017 年，张三九被诊断为脂肪肝，医生建议 通过饮食调整和增加运动来改善这一状况。 2022 年，他因腰椎间盘突出接受了微创手术， 术后恢复良好。 此外，张三九对青霉素有过敏反应，曾出现皮疹和呼吸困难。 海鲜会导致轻 度皮肤发痒，表明他对海鲜也有一定的过敏反应。 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运动较少，每周仅进行一次轻度运动，如散步。', '健康档案 一、基本信息 张三九，男，出生于 1985 年 5 月 20 日，目前 39 岁，已婚，职业为 IT 工程师。 张三九的 血型为 O 型，联系电话为 138-1234-5678，电子邮箱为 zhangsan@example.com，居住在 上海市浦东新区张江路 123 号。 其紧急联系人为妻子李四六，联系电话为 138-8765-4321。 二、医疗历史 张三九在 2005 年被确诊为高血压，自此开始接受降压药物治疗。 2010 年，他被确诊为二 型糖尿病，并开始使用口服降糖药进行管理。 2017 年，张三九被诊断为脂肪肝，医生建议 通过饮食调整和增加运动来改善这一状况。 2022 年，他因腰椎间盘突出接受了微创手术， 术后恢复良好。 此外，张三九对青霉素有过敏反应，曾出现皮疹和呼吸困难。 海鲜会导致轻 度皮肤发痒，表明他对海鲜也有一定的过敏反应。 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运动较少，每周仅进行一次轻度运动，如散步。', '健康档案 一、基本信息 张三九，男，出生于 1985 年 5 月 20 日，目前 39 岁，已婚，职业为 IT 工程师。 张三九的 血型为 O 型，联系电话为 138-1234-5678，电子邮箱为 zhangsan@example.com，居住在 上海市浦东新区张江路 123 号。 其紧急联系人为妻子李四六，联系电话为 138-8765-4321。 二、医疗历史 张三九在 2005 年被确诊为高血压，自此开始接受降压药物治疗。 2010 年，他被确诊为二 型糖尿病，并开始使用口服降糖药进行管理。 2017 年，张三九被诊断为脂肪肝，医生建议 通过饮食调整和增加运动来改善这一状况。 2022 年，他因腰椎间盘突出接受了微创手术， 术后恢复良好。 此外，张三九对青霉素有过敏反应，曾出现皮疹和呼吸困难。 海鲜会导致轻 度皮肤发痒，表明他对海鲜也有一定的过敏反应。 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运动较少，每周仅进行一次轻度运动，如散步。', '健康档案 一、基本信息 张三九，男，出生于 1985 年 5 月 20 日，目前 39 岁，已婚，职业为 IT 工程师。 张三九的 血型为 O 型，联系电话为 138-1234-5678，电子邮箱为 zhangsan@example.com，居住在 上海市浦东新区张江路 123 号。 其紧急联系人为妻子李四六，联系电话为 138-8765-4321。 二、医疗历史 张三九在 2005 年被确诊为高血压，自此开始接受降压药物治疗。 2010 年，他被确诊为二 型糖尿病，并开始使用口服降糖药进行管理。 2017 年，张三九被诊断为脂肪肝，医生建议 通过饮食调整和增加运动来改善这一状况。 2022 年，他因腰椎间盘突出接受了微创手术， 术后恢复良好。 此外，张三九对青霉素有过敏反应，曾出现皮疹和呼吸困难。 海鲜会导致轻 度皮肤发痒，表明他对海鲜也有一定的过敏反应。 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运动较少，每周仅进行一次轻度运动，如散步。']], 'uris': None, 'data': None, 'metadatas': [[None, None, None, None, None]], 'distances': [[8690.236328125, 8690.236328125, 8690.236328125, 8690.236328125, 8690.236328125]], 'included': [<IncludeEnum.distances: 'distances'>, <IncludeEnum.documents: 'documents'>, <IncludeEnum.metadatas: 'metadatas'>]}
+[2026-01-11 22:44:29,285] [MainThread] [INFO] [llms.py:92] : 成功初始化 qwen LLM
+[2026-01-11 22:44:32,247] [MainThread] [DEBUG] [ragAgent.py:90] : Tool 'retrieve' 路由到 'grade_documents' (retrieval tool)
+[2026-01-11 22:44:32,249] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'search_web' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,250] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'qwen_agent_query' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,251] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'query_huangli' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,252] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'create_city_image' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,253] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_direction_bicycling' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,254] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_direction_driving' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,256] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_direction_transit_integrated' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,257] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_direction_walking' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,258] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_distance' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,259] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_geo' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,260] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_regeocode' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,262] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_ip_location' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,263] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_schema_personal_map' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,264] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_around_search' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,265] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_search_detail' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,266] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_text_search' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,267] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_schema_navi' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,268] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_schema_take_taxi' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,269] [MainThread] [DEBUG] [ragAgent.py:96] : Tool 'maps_weather' 路由到 'agent' (non-retrieval tool)节点
+[2026-01-11 22:44:32,270] [MainThread] [INFO] [ragAgent.py:75] : ToolConfig初始化完成: {'maps_weather', 'create_city_image', 'maps_direction_driving', 'qwen_agent_query', 'maps_direction_walking', 'maps_direction_transit_integrated', 'maps_text_search', 'maps_schema_navi', 'retrieve', 'maps_schema_take_taxi', 'maps_geo', 'maps_direction_bicycling', 'maps_schema_personal_map', 'maps_search_detail', 'maps_around_search', 'query_huangli', 'maps_ip_location', 'maps_regeocode', 'search_web', 'maps_distance'}, routing: {'retrieve': 'grade_documents', 'search_web': 'agent', 'qwen_agent_query': 'agent', 'query_huangli': 'agent', 'create_city_image': 'agent', 'maps_direction_bicycling': 'agent', 'maps_direction_driving': 'agent', 'maps_direction_transit_integrated': 'agent', 'maps_direction_walking': 'agent', 'maps_distance': 'agent', 'maps_geo': 'agent', 'maps_regeocode': 'agent', 'maps_ip_location': 'agent', 'maps_schema_personal_map': 'agent', 'maps_around_search': 'agent', 'maps_search_detail': 'agent', 'maps_text_search': 'agent', 'maps_schema_navi': 'agent', 'maps_schema_take_taxi': 'agent', 'maps_weather': 'agent'}
+[2026-01-11 22:44:32,287] [MainThread] [INFO] [ragAgent.py:961] : Database connection pool initialized
+[2026-01-11 22:44:32,290] [MainThread] [DEBUG] [ragAgent.py:962] : Database connection pool initialized
+[2026-01-11 22:44:32,293] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:44:32,367] [MainThread] [INFO] [ragAgent.py:790] : Connection db_connection_pool status: OK, test connection successful
+[2026-01-11 22:44:40,553] [MainThread] [INFO] [ragAgent.py:748] : Graph visualization saved as graph.png
+[2026-01-11 22:45:32,297] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:46:32,299] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:47:32,302] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:48:08,484] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 22:48:08,485] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='你好啊' additional_kwargs={} response_metadata={} id='4afab149-5fae-451f-bda2-e0cfea8d8090'
+[2026-01-11 22:48:08,487] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=你好啊
+[2026-01-11 22:48:09,194] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 22:48:09,196] [MainThread] [INFO] [ragAgent.py:359] : =====加载并缓存模板内容 prompts/prompt_template_agent.txt
+[2026-01-11 22:48:11,100] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='你好！有什么可以帮助你的吗？' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 7, 'prompt_tokens': 4462, 'total_tokens': 4469, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-a0845e43-19b1-979e-9bdd-880faec0faa7', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--e403df2f-1763-45c4-b9c7-3de39be5e42d-0' usage_metadata={'input_tokens': 4462, 'output_tokens': 7, 'total_tokens': 4469, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 22:48:29,053] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 22:48:29,054] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='bdc91d97-53a3-4808-8301-794f2e9bee88'
+[2026-01-11 22:48:29,056] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的工资多少？
+[2026-01-11 22:48:29,362] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 22:48:29,363] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 22:48:32,305] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:48:33,291] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_dcf4cc99c4d745a996b243', 'function': {'arguments': '{"question": "刘舟的工资多少？"}', 'name': 'qwen_agent_query'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 45, 'prompt_tokens': 4317, 'total_tokens': 4362, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-ce2e4d42-7d75-9209-abd6-c420eab29214', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--96bc2d32-7325-4f7e-9ba2-42154652ebad-0' tool_calls=[{'name': 'qwen_agent_query', 'args': {'question': '刘舟的工资多少？'}, 'id': 'call_dcf4cc99c4d745a996b243', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4317, 'output_tokens': 45, 'total_tokens': 4362, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 22:48:33,302] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: qwen_agent_query
+[2026-01-11 22:48:33,311] [ThreadPoolExecutor-3_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 22:48:54,666] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 22:48:54,667] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 qwen_agent_query 后路由到 agent 节点
+[2026-01-11 22:48:54,673] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [qwen_agent_query]返回结果: 根据提供的信息，刘舟的工资构成如下：
+
+- **岗位基本年收入**：44,400元人民币
+- **岗位基本月薪酬**：2,800元人民币
+  - 基本月工资（社保基数）：1,680元人民币
+  - 基...
+[2026-01-11 22:48:54,677] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 22:48:54,678] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的工资多少？' additional_kwargs={} response_metadata={} id='bdc91d97-53a3-4808-8301-794f2e9bee88'
+[2026-01-11 22:48:54,680] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的工资多少？
+[2026-01-11 22:48:54,983] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 22:48:54,985] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 22:49:01,766] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='根据提供的信息，刘舟的工资构成如下：\n\n- **岗位基本年收入**：44,400元人民币\n- **岗位基本月薪酬**：2,800元人民币\n  - 基本月工资（社保基数）：1,680元人民币\n  - 基本月奖金：1,120元人民币\n\n此外，还有其他福利津贴和补充业绩奖金，但具体金额未详细列出。基本福利补贴全年合计8,000元人民币，包括午餐补贴、通勤/租房补贴、保密津贴、防暑及取暖费、节日费、体检费及商业意外保险等。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 141, 'prompt_tokens': 4899, 'total_tokens': 5040, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-42d6398a-d7ae-933d-9599-35802c5ec0f2', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--4302efc8-5d3e-4f70-84f8-d171972cc225-0' usage_metadata={'input_tokens': 4899, 'output_tokens': 141, 'total_tokens': 5040, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 22:49:32,352] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:50:32,356] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:51:32,358] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:52:32,361] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:53:32,363] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:54:32,366] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:55:32,368] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:56:32,371] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:57:32,374] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:58:32,376] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 22:59:32,380] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:00:32,383] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:01:32,384] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:01:40,399] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 23:01:40,400] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='张三九的健康状况' additional_kwargs={} response_metadata={} id='50b0c8fc-9aed-44e0-b407-e4c158d7e482'
+[2026-01-11 23:01:40,402] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=张三九的健康状况
+[2026-01-11 23:01:40,738] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:01:40,739] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 23:01:43,190] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b178952aa02c4a9cac85cc', 'function': {'arguments': '{"query": "张三九的健康状况"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 24, 'prompt_tokens': 4381, 'total_tokens': 4405, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-24d0fdd2-1c29-9d5a-9234-0b3a57cbc7fa', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--c5a73bfc-1263-4b31-ba46-9a707e721364-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '张三九的健康状况'}, 'id': 'call_b178952aa02c4a9cac85cc', 'type': 'tool_call'}] usage_metadata={'input_tokens': 4381, 'output_tokens': 24, 'total_tokens': 4405, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 23:01:43,198] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2026-01-11 23:01:43,202] [ThreadPoolExecutor-5_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 23:01:45,459] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 23:01:45,460] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2026-01-11 23:01:45,465] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运...
+[2026-01-11 23:01:45,468] [MainThread] [INFO] [ragAgent.py:500] : ==========对文档进行相关性评分
+[2026-01-11 23:01:45,469] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:01:45,470] [MainThread] [INFO] [ragAgent.py:359] : =====加载并缓存模板内容 prompts/prompt_template_grade.txt
+[2026-01-11 23:01:47,825] [MainThread] [INFO] [ragAgent.py:522] : 文档进行相关性评分结果: yes
+[2026-01-11 23:01:47,835] [MainThread] [INFO] [ragAgent.py:701] : Routing based on relevance_score: yes, rewrite_count: 0
+[2026-01-11 23:01:47,836] [MainThread] [INFO] [ragAgent.py:716] : 文档相关, 跳转到generate节点
+[2026-01-11 23:01:47,845] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 张三九的家族病史显示，父亲患有高血压 和二型糖尿病，母亲则有甲状腺疾病史。 三、生活方式和习惯 张三九的饮食习惯偏向高脂肪和高糖食品，日常饮食中蔬菜和水果的摄入较少，盐分摄入偏 高。 他的工作繁忙，运...
+[2026-01-11 23:01:47,859] [MainThread] [INFO] [ragAgent.py:590] : ==========3.调用生成模型qwen-max生成回复
+[2026-01-11 23:01:47,863] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:01:47,865] [MainThread] [INFO] [ragAgent.py:359] : =====加载并缓存模板内容 prompts/prompt_template_generate.txt
+[2026-01-11 23:02:32,386] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:03:32,388] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:04:32,390] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:04:42,059] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 23:04:42,061] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的健康档案信息' additional_kwargs={} response_metadata={} id='d08609d3-7425-4d48-b3f2-0dc57c4acc57'
+[2026-01-11 23:04:42,062] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的健康档案信息
+[2026-01-11 23:04:42,353] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:04:42,354] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 23:04:45,766] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_095cc1b4a0794215b3901c', 'function': {'arguments': '{"query": "刘舟的健康档案信息"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 9212, 'total_tokens': 9233, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-a1e611b9-19e5-9e71-8a1a-bfcb4a675df3', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--60023673-4a65-4534-b486-ec066cb4af70-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '刘舟的健康档案信息'}, 'id': 'call_095cc1b4a0794215b3901c', 'type': 'tool_call'}] usage_metadata={'input_tokens': 9212, 'output_tokens': 21, 'total_tokens': 9233, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 23:04:45,774] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2026-01-11 23:04:45,778] [ThreadPoolExecutor-7_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 23:04:47,772] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 23:04:47,773] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2026-01-11 23:04:47,779] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:04:47,781] [MainThread] [INFO] [ragAgent.py:500] : ==========对文档进行相关性评分
+[2026-01-11 23:04:47,782] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:04:47,783] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_grade.txt
+[2026-01-11 23:04:49,496] [MainThread] [INFO] [ragAgent.py:522] : 文档进行相关性评分结果: no
+[2026-01-11 23:04:49,503] [MainThread] [INFO] [ragAgent.py:701] : Routing based on relevance_score: no, rewrite_count: 0
+[2026-01-11 23:04:49,505] [MainThread] [INFO] [ragAgent.py:720] : 文档不相关或者评分为no, 跳转到rewrite
+[2026-01-11 23:04:49,513] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:04:49,527] [MainThread] [INFO] [ragAgent.py:556] : Rewriting query
+[2026-01-11 23:04:49,531] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:04:49,533] [MainThread] [INFO] [ragAgent.py:359] : =====加载并缓存模板内容 prompts/prompt_template_rewrite.txt
+[2026-01-11 23:04:50,602] [MainThread] [INFO] [ragAgent.py:568] : Rewrite count: 1
+[2026-01-11 23:04:50,607] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 23:04:50,609] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的健康档案信息' additional_kwargs={} response_metadata={} id='d08609d3-7425-4d48-b3f2-0dc57c4acc57'
+[2026-01-11 23:04:50,611] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的健康档案信息
+[2026-01-11 23:04:50,798] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:04:50,800] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 23:04:55,486] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_b10cb200073e4a3e8fda2c', 'function': {'arguments': '{"query": "刘舟的健康档案信息"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 14351, 'total_tokens': 14372, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-89f1182b-79ad-902f-90fc-e4153275f286', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--bd76ba0b-47a8-481c-a919-fb2248e0d1ef-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '刘舟的健康档案信息'}, 'id': 'call_b10cb200073e4a3e8fda2c', 'type': 'tool_call'}] usage_metadata={'input_tokens': 14351, 'output_tokens': 21, 'total_tokens': 14372, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 23:04:55,492] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2026-01-11 23:04:55,496] [ThreadPoolExecutor-8_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 23:04:56,957] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 23:04:56,960] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2026-01-11 23:04:56,964] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:04:56,968] [MainThread] [INFO] [ragAgent.py:500] : ==========对文档进行相关性评分
+[2026-01-11 23:04:56,969] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:04:56,970] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_grade.txt
+[2026-01-11 23:05:01,009] [MainThread] [INFO] [ragAgent.py:522] : 文档进行相关性评分结果: no
+[2026-01-11 23:05:01,017] [MainThread] [INFO] [ragAgent.py:701] : Routing based on relevance_score: no, rewrite_count: 1
+[2026-01-11 23:05:01,018] [MainThread] [INFO] [ragAgent.py:720] : 文档不相关或者评分为no, 跳转到rewrite
+[2026-01-11 23:05:01,028] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:05:01,044] [MainThread] [INFO] [ragAgent.py:556] : Rewriting query
+[2026-01-11 23:05:01,047] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:01,050] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_rewrite.txt
+[2026-01-11 23:05:01,701] [MainThread] [INFO] [ragAgent.py:568] : Rewrite count: 2
+[2026-01-11 23:05:01,705] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 23:05:01,709] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的健康档案信息' additional_kwargs={} response_metadata={} id='d08609d3-7425-4d48-b3f2-0dc57c4acc57'
+[2026-01-11 23:05:01,710] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的健康档案信息
+[2026-01-11 23:05:02,175] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:02,177] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 23:05:05,788] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_1882f4688a8f463a89c7ab', 'function': {'arguments': '{"query": "刘舟的健康档案信息"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 19046, 'total_tokens': 19067, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 8192}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-542dea35-140c-9cf9-9730-8611e5373211', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--8a4ab22c-6c4c-4f36-9ab8-41e4ffb46bf9-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '刘舟的健康档案信息'}, 'id': 'call_1882f4688a8f463a89c7ab', 'type': 'tool_call'}] usage_metadata={'input_tokens': 19046, 'output_tokens': 21, 'total_tokens': 19067, 'input_token_details': {'cache_read': 8192}, 'output_token_details': {}}
+[2026-01-11 23:05:05,798] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2026-01-11 23:05:05,800] [ThreadPoolExecutor-9_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 23:05:07,573] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 23:05:07,575] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2026-01-11 23:05:07,582] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:05:07,586] [MainThread] [INFO] [ragAgent.py:500] : ==========对文档进行相关性评分
+[2026-01-11 23:05:07,587] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:07,589] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_grade.txt
+[2026-01-11 23:05:09,321] [MainThread] [INFO] [ragAgent.py:522] : 文档进行相关性评分结果: no
+[2026-01-11 23:05:09,329] [MainThread] [INFO] [ragAgent.py:701] : Routing based on relevance_score: no, rewrite_count: 2
+[2026-01-11 23:05:09,331] [MainThread] [INFO] [ragAgent.py:720] : 文档不相关或者评分为no, 跳转到rewrite
+[2026-01-11 23:05:09,337] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:05:09,352] [MainThread] [INFO] [ragAgent.py:556] : Rewriting query
+[2026-01-11 23:05:09,354] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:09,355] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_rewrite.txt
+[2026-01-11 23:05:10,236] [MainThread] [INFO] [ragAgent.py:568] : Rewrite count: 3
+[2026-01-11 23:05:10,241] [MainThread] [INFO] [ragAgent.py:423] : ==========1.调用agent识别用户意图
+[2026-01-11 23:05:10,244] [MainThread] [INFO] [ragAgent.py:430] : =====agent接收到用户的消息:content='刘舟的健康档案信息' additional_kwargs={} response_metadata={} id='d08609d3-7425-4d48-b3f2-0dc57c4acc57'
+[2026-01-11 23:05:10,246] [MainThread] [INFO] [ragAgent.py:284] : 详细信息: namespace=('memories', '1'), question.content=刘舟的健康档案信息
+[2026-01-11 23:05:10,405] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:10,406] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_agent.txt
+[2026-01-11 23:05:21,313] [MainThread] [INFO] [ragAgent.py:451] : =====agent回复: content='' additional_kwargs={'tool_calls': [{'id': 'call_955e1316955b4371a478dc', 'function': {'arguments': '{"query": "刘舟的健康档案信息"}', 'name': 'retrieve'}, 'type': 'function', 'index': 0}], 'refusal': None} response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 23744, 'total_tokens': 23765, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'qwen-max', 'system_fingerprint': None, 'id': 'chatcmpl-00bfc7ac-9815-926a-89f7-7f352f409bee', 'service_tier': None, 'finish_reason': 'tool_calls', 'logprobs': None} id='run--f95f8cf8-0ad3-45f4-8371-1215d24ac58d-0' tool_calls=[{'name': 'retrieve', 'args': {'query': '刘舟的健康档案信息'}, 'id': 'call_955e1316955b4371a478dc', 'type': 'tool_call'}] usage_metadata={'input_tokens': 23744, 'output_tokens': 21, 'total_tokens': 23765, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+[2026-01-11 23:05:21,319] [MainThread] [INFO] [ragAgent.py:906] : ==========2.AIMessage有tool_calls参数，需要调用工具: retrieve
+[2026-01-11 23:05:21,323] [ThreadPoolExecutor-10_0] [INFO] [ragAgent.py:148] : =====执行单个工具调用
+[2026-01-11 23:05:22,944] [MainThread] [INFO] [ragAgent.py:626] : =====路由配置route_after_tools判断下一个节点是generate，grade_documents还是继续agent
+[2026-01-11 23:05:22,946] [MainThread] [INFO] [ragAgent.py:654] : =====调用工具 retrieve 后路由到 grade_documents 节点
+[2026-01-11 23:05:22,951] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:05:22,953] [MainThread] [INFO] [ragAgent.py:500] : ==========对文档进行相关性评分
+[2026-01-11 23:05:22,954] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:22,956] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_grade.txt
+[2026-01-11 23:05:24,761] [MainThread] [INFO] [ragAgent.py:522] : 文档进行相关性评分结果: no
+[2026-01-11 23:05:24,768] [MainThread] [INFO] [ragAgent.py:701] : Routing based on relevance_score: no, rewrite_count: 3
+[2026-01-11 23:05:24,769] [MainThread] [INFO] [ragAgent.py:705] : Max rewrite limit reached, proceeding to generate
+[2026-01-11 23:05:24,779] [MainThread] [INFO] [ragAgent.py:870] : 调用工具 [retrieve]返回结果: 紧 急 联 系 人 为 其 妻 子 赵 六 ， 联 系 电 话 为 136-8765-1234。 二、医疗历史 王五的医疗历史包括以下内容： 既往病史: 2008 年: 王五因高血压开始服用降压药，至...
+[2026-01-11 23:05:24,794] [MainThread] [INFO] [ragAgent.py:590] : ==========3.调用生成模型qwen-max生成回复
+[2026-01-11 23:05:24,797] [MainThread] [INFO] [ragAgent.py:341] : =====开始执行agent链
+[2026-01-11 23:05:24,799] [MainThread] [INFO] [ragAgent.py:353] : Using cached prompt template for prompts/prompt_template_generate.txt
+[2026-01-11 23:05:32,393] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:06:32,395] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:07:32,396] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:08:32,399] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:09:32,401] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:10:32,405] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:11:32,407] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:12:32,410] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:13:32,415] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:14:32,419] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:15:32,421] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:16:32,423] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:17:32,425] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:18:32,427] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:19:32,429] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:20:32,431] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:21:32,434] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:22:32,437] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:23:32,439] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:24:32,442] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:25:32,444] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:26:32,446] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:27:32,449] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:28:32,451] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:29:32,454] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:30:32,456] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:31:32,458] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:32:32,460] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:33:32,463] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:34:32,465] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:35:32,467] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:36:32,469] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:37:32,472] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:38:32,475] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:39:32,486] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:40:32,489] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:41:32,491] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:42:32,494] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:43:32,496] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:44:32,498] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:45:32,501] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:46:32,502] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:47:32,505] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:48:32,507] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:49:32,510] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:50:32,511] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:51:32,514] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:52:32,516] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:53:32,518] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:54:32,520] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:55:32,523] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:56:32,524] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:57:32,527] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:58:32,530] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-11 23:59:32,532] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:00:32,535] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:01:32,537] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:02:32,539] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:03:32,542] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:04:32,544] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:05:32,546] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:06:32,548] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:07:32,551] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:08:32,552] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:09:32,555] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:10:32,558] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:11:32,560] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:12:32,563] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:13:32,565] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:14:32,567] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:15:32,569] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:16:32,572] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:17:32,574] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:18:32,577] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:19:32,579] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:20:32,581] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:21:32,583] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:22:32,587] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:23:32,590] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:24:32,591] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:25:32,593] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:26:32,596] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:27:32,598] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:28:32,599] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:29:32,602] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:30:32,604] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:31:32,606] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:32:32,608] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:33:32,610] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:34:32,613] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:35:32,615] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:36:32,622] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:37:32,624] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:38:32,626] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:39:32,628] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:40:32,630] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:41:32,633] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:42:32,635] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:43:32,638] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:44:32,641] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:45:32,644] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:46:32,645] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:47:32,648] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:48:32,650] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:49:32,653] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:50:32,655] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:51:32,658] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:52:32,660] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:53:32,662] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:54:32,664] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:55:32,667] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:56:32,669] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:57:32,671] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:58:32,673] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 00:59:32,675] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:00:32,678] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:01:32,679] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:02:32,681] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:03:32,684] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:04:32,686] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:05:32,688] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:06:32,691] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:07:32,694] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:08:32,696] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:09:32,698] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:10:32,699] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:11:32,702] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:12:32,704] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:13:32,706] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:14:32,707] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:15:32,709] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:16:32,711] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:17:32,714] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:18:32,716] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:19:32,718] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:20:32,719] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:21:32,722] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:22:32,724] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:23:32,727] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:24:32,728] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:25:32,731] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:26:32,733] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:27:32,735] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:28:32,737] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:29:32,740] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:30:32,742] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:31:32,744] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:32:32,746] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:33:32,749] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:34:32,751] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:35:32,753] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:36:32,755] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:37:32,757] [Thread-1 (_monitor)] [INFO] [ragAgent.py:396] : Connection db_connection_pool status: 0/20 connections in use
+[2026-01-12 01:38:26,930] [MainThread] [INFO] [ragAgent.py:1022] : Database connection pool closed

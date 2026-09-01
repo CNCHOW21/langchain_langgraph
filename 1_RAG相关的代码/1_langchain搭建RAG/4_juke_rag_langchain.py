@@ -139,7 +139,7 @@ save_dir = "./vector_db"
 knowledgeBase = process_text_with_splitter(text, page_numbers, save_path=save_dir)
 
 # 处理文本并创建知识库
-knowledgeBase = process_text_with_splitter(text, page_numbers)
+# knowledgeBase = process_text_with_splitter(text, page_numbers)
 
 
 # 设置查询问题

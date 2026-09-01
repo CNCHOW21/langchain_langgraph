@@ -85,7 +85,8 @@ def initialize_llm(llm_type: str = DEFAULT_LLM_TYPE) -> tuple[ChatOpenAI, OpenAI
             base_url=config["base_url"],
             api_key=config["api_key"],
             model=config["embedding_model"],
-            deployment=config["embedding_model"]
+            deployment=config["embedding_model"],
+            check_embedding_ctx_length=False
         )
 
         logger.info(f"成功初始化 {llm_type} LLM")

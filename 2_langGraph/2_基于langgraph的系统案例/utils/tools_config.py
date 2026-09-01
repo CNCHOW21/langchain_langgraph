@@ -81,7 +81,7 @@ def get_tools(llm_embedding, llm_chat):
         result= r.content.decode('utf-8')
         return result
 
-    # 根据城市天气生成图片
+    # 根据城市天气生成图片，调用dify接口
     @tool
     def create_city_image(city: str, weather: str) -> str:
         """这是一个根据城市，天气生成图片的工具，可以用来生成城市的天气图片。

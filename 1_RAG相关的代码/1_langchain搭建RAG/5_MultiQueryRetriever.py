@@ -11,6 +11,10 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.llms import Tongyi
 
+"""
+给定一个查询，使用大语言模型生成一组查询。
+为每个查询检索文档。返回所有检索到文档的唯一并集
+"""
 load_dotenv()
 # 初始化大语言模型
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY")
