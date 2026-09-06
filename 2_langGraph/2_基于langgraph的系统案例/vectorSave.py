@@ -1,4 +1,5 @@
 # 功能说明：将PDF文件进行向量计算并持久化存储到向量数据库（chroma）
+import json
 import os
 import logging
 from openai import OpenAI
@@ -7,6 +8,9 @@ import uuid
 from utils import pdfSplitTest_Ch
 from utils import pdfSplitTest_En
 from utils.logger import logger
+from dotenv import load_dotenv
+load_dotenv()
+
 
 
 # GPT大模型 OpenAI相关配置
@@ -179,11 +183,20 @@ def vectorStoreSave():
         # 向向量数据库中添加文档（文本数据、文本数据对应的向量数据）
         vector_db.add_documents(paragraphs)
         # 3、封装检索接口进行检索测试
-        user_query = "张三的基本信息是什么"
+        user_query = "李四的基本信息是什么"
         # 将检索出的5个近似的结果
         search_results = vector_db.search(user_query, 5)
-        logger.info(f"检索向量数据库的结果: {search_results}")
 
+        # logger.info(f"检索向量数据库的结果: {search_results}")
+        # ensure_ascii=False 正常显示中文；indent=2 换行缩进美化
+        res_json = json.dumps(search_results, ensure_ascii=False, indent=2)
+        # 关键：使用extra={"simple":True} 绕过部分日志格式化，或者直接print看；
+        # logger输出处理器默认会把\n转义成\\n，日志里显示为一行。
+        logger.info("检索向量数据库的结果:\n%s", res_json)
+
+        # 如果日志还是一行，开发调试直接print，肉眼看排版
+        # print("====检索结果====")
+        # print(search_results)
     # 测试英文文本
     elif TEXT_LANGUAGE == 'English':
         # 1、获取处理后的文本数据
@@ -200,11 +213,10 @@ def vectorStoreSave():
         # 向向量数据库中添加文档（文本数据、文本数据对应的向量数据）
         vector_db.add_documents(paragraphs)
         # 3、封装检索接口进行检索测试
-        user_query = "deepseek V3有多少参数"
+        user_query = "deepseek V3有多少参数？"
         # 将检索出的5个近似的结果
         search_results = vector_db.search(user_query, 5)
         logger.info(f"检索向量数据库的结果: {search_results}")
-
 
 if __name__ == "__main__":
     # 测试文本预处理及灌库

@@ -235,6 +235,22 @@ Docker Desktop 安装参考：https://www.cnblogs.com/yinzhengjie/p/17889373.htm
       ```plaintext
       C:\Program Files\PostgreSQL\15\bin\libpq.dll
       ```
+      
+      如果没有就手动将路径添加到系统变量Path：
+   
+      ```plaintext
+      D:\program\postgreSQL\bin
+      ```
+      
+      全部关闭所有 CMD、PowerShell 窗口，重新打开新终端
+   
+      ```plaintext
+      where libpq.dll
+      ```
+
+   
+    
+
 
    2. **检查头文件** 
       确认头文件目录（如 `C:\Program Files\PostgreSQL\15\include`）包含以下文件：

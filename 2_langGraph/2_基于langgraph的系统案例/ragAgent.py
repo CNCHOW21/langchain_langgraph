@@ -82,13 +82,21 @@ class ToolConfig:
         for tool in tools:
             # 将工具名称转换为小写，确保匹配时忽略大小写
             tool_name = tool.name.lower()
+
+            logger.info(f"获取工具清单的工具名称: {tool_name}")
+
             # 检查工具名称中是否包含 "retrieve"，用于判断是否为检索类工具
             if "retrieve" in tool_name:
                 # 如果是检索类工具，将其路由目标设置为 "grade_documents"（需要评分）
                 routing_config[tool_name] = "grade_documents"
                 # 记录调试日志，说明该工具被路由到 "grade_documents"，并标注为检索工具
                 logger.debug(f"Tool '{tool_name}' 路由到 'grade_documents' (retrieval tool)")
-            # 如果工具名称不包含 "retrieve"
+            # elif "llamaindex" in tool_name:
+            #     # 如果是检索类工具，将其路由目标设置为 "grade_documents"（需要评分）
+            #     routing_config[tool_name] = "grade_documents"
+            #     # 记录调试日志，说明该工具被路由到 "grade_documents"，并标注为检索工具
+            #     logger.debug(f"Tool '{tool_name}' 路由到 'grade_documents' (retrieval tool)")
+            # 其他工具
             else:
                 # 其他的工具则直接将其路由目标设置为 "agent"
                 routing_config[tool_name] = "agent"
@@ -575,6 +583,28 @@ def rewrite(state: MessagesState, llm_chat) -> dict:
         # 返回错误消息
         return {"messages": [{"role": "system", "content": "无法重写查询"}]}
 
+# 定义Node 分类模型
+def bert(state: MessagesState) -> dict:
+    """识别用户的问题是否与项目相关，并进行分类。
+    比如业务问题，普通问题，负面问题，无关问题
+    Args:
+        state: 当前对话状态。
+    Returns:
+        dict: 更新后的消息状态。
+    """
+    # 尝试执行以下代码块
+    try:
+        # 获取用户的最新问题
+        question = get_latest_question(state)
+        # 获取最后一条消息作为上下文(因为调用工具输出的内容写入到state的最新消息中)
+        context = state["messages"][-1].content
+        return {"messages": [{"role": "system", "content": "无法生成回复"}]}
+    # 捕获索引或键错误
+    except (IndexError, KeyError) as e:
+        # 记录错误日志
+        logger.error(f"Message access error in generate: {e}")
+        # 返回错误消息
+        return {"messages": [{"role": "system", "content": "无法进行分类！"}]}
 
 # 定义Node 生成回复函数
 def generate(state: MessagesState, llm_chat) -> dict:
@@ -758,6 +788,15 @@ def should_continue(state: MessagesState):
         return "call_tools"
     return END
 
+# 判断用户的问题是否与业务相关
+def is_business(state: MessagesState):
+    messages = state["messages"]
+    last_message = messages[-1]
+    if last_message:
+        return "agent"
+    return END
+
+
 # 创建并配置状态图
 def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, tool_config: ToolConfig) -> CompiledStateGraph:
     """创建并配置状态图。
@@ -818,6 +857,8 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
 
     # 创建状态图实例，使用MessagesState作为状态类型
     workflow = StateGraph(MessagesState)
+    # 添加分类节点
+    workflow.add_node("bert", lambda state: bert(state))
     # 添加代理节点
     workflow.add_node("agent", lambda state, config: agent(state, config, store=store, llm_chat=llm_chat, tool_config=tool_config))
     # 添加工具节点，使用并行工具节点
@@ -829,10 +870,12 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     # 添加文档相关性评分节点
     workflow.add_node("grade_documents", lambda state: grade_documents(state, llm_chat=llm_chat))
 
-    # 添加从起始到代理的边
-    workflow.add_edge(START, end_key="agent")
+    # 添加从起始到分类的边
+    workflow.add_edge(START, end_key="bert")
+    # 添加从分类到代理的边
+    workflow.add_conditional_edges(source="bert", path=is_business, path_map={"agent": "agent", END: END})
     # 添加代理的条件边，根据工具调用的工具名称决定下一步路由
-    workflow.add_conditional_edges(source="agent", path=should_continue)
+    workflow.add_conditional_edges(source="agent", path=should_continue, path_map={"call_tools": "call_tools", END: END})
     # 添加检索的条件边，根据工具调用的结果动态决定下一步路由
     workflow.add_conditional_edges(source="call_tools", path=lambda state: route_after_tools(state, tool_config),path_map={"generate": "generate","agent": "agent", "grade_documents": "grade_documents"})
     # 添加检索的条件边，根据状态中的评分结果决定下一步路由

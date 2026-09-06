@@ -28,8 +28,10 @@ def get_tools(llm_embedding, llm_chat):
         collection_name=Config.CHROMADB_COLLECTION_NAME,
         embedding_function=llm_embedding,
     )
+
     # 将向量存储转换为检索器
     # retriever = vectorstore.as_retriever()
+
     # 创建MultiQueryRetriever查询扩展
     retriever = MultiQueryRetriever.from_llm(
         retriever=vectorstore.as_retriever(),
