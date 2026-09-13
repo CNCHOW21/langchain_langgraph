@@ -51,5 +51,6 @@ def test():
             print(f"out:{out}")
             print("模型判定：",names[out],"\n")
 
+
 if __name__ == '__main__':
     test()

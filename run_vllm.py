@@ -26,7 +26,7 @@ while True:
     # 调用 vLLM 流式接口
     try:
         stream = client.chat.completions.create(
-            model="/storage/models/Qwen/Qwen2___5-7B-Instruct",
+            model="/storage/models/Qwen2.5-7B-Instruct/",
             messages=messages,
             temperature=0.7,
             max_tokens=1024,

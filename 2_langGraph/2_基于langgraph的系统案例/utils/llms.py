@@ -33,6 +33,13 @@ MODEL_CONFIGS = {
         "api_key": "ollama",
         "chat_model": "qwen2.5:32b",
         "embedding_model": "bge-m3:latest"
+    },
+    "vllm": {
+        "base_url": "http://192.168.1.200:8000/v1",
+        "embedding_base_url": "http://192.168.1.200:8001/v1",
+        "api_key": "vllm",
+        "chat_model": "/storage/models/Qwen2.5-7B-Instruct/",
+        "embedding_model": "bge-m3"
     }
 }
 
@@ -81,6 +88,9 @@ def initialize_llm(llm_type: str = DEFAULT_LLM_TYPE) -> tuple[ChatOpenAI, OpenAI
             max_retries=2  # 添加重试次数
         )
 
+        if llm_type == "vllm":
+            config["base_url"] = config["embedding_base_url"]
+
         llm_embedding = OpenAIEmbeddings(
             base_url=config["base_url"],
             api_key=config["api_key"],
@@ -123,10 +133,11 @@ def get_llm(llm_type: str = DEFAULT_LLM_TYPE) -> ChatOpenAI:
 if __name__ == "__main__":
     try:
         # 测试不同类型的LLM初始化
-        llm_openai = get_llm("openai")
-        llm_qwen = get_llm("qwen")
+        # llm_openai = get_llm("openai")
+        # llm_qwen = get_llm("qwen")
+        llm_qwen = get_llm("vllm")
 
         # 测试无效类型
-        llm_invalid = get_llm("invalid_type")
+        # llm_invalid = get_llm("invalid_type")
     except LLMInitializationError as e:
         logger.error(f"程序终止: {str(e)}")
