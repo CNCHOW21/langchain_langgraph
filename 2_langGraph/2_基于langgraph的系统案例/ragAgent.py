@@ -858,7 +858,7 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     # 创建状态图实例，使用MessagesState作为状态类型
     workflow = StateGraph(MessagesState)
     # 添加分类节点
-    workflow.add_node("bert", lambda state: bert(state))
+    # workflow.add_node("bert", lambda state: bert(state))
     # 添加代理节点
     workflow.add_node("agent", lambda state, config: agent(state, config, store=store, llm_chat=llm_chat, tool_config=tool_config))
     # 添加工具节点，使用并行工具节点
@@ -871,9 +871,9 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     workflow.add_node("grade_documents", lambda state: grade_documents(state, llm_chat=llm_chat))
 
     # 添加从起始到分类的边
-    workflow.add_edge(START, end_key="bert")
+    workflow.add_edge(START, end_key="agent")
     # 添加从分类到代理的边
-    workflow.add_conditional_edges(source="bert", path=is_business, path_map={"agent": "agent", END: END})
+    # workflow.add_conditional_edges(source="bert", path=is_business, path_map={"agent": "agent", END: END})
     # 添加代理的条件边，根据工具调用的工具名称决定下一步路由
     workflow.add_conditional_edges(source="agent", path=should_continue, path_map={"call_tools": "call_tools", END: END})
     # 添加检索的条件边，根据工具调用的结果动态决定下一步路由

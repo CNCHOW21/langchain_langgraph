@@ -36,8 +36,16 @@ OLLAMA_EMBEDDING_API_KEY = "ollama"
 OLLAMA_EMBEDDING_MODEL = "bge-m3:latest"
 
 
+# 本地开源大模型 vLLM 方式
+# 本地开源大模型 Ollama 方式,bge-m3为例
+VLLM_API_BASE = "http://192.168.1.200:8001/v1"
+VLLM_EMBEDDING_API_KEY = "vllm"
+VLLM_EMBEDDING_MODEL = "bge-m3"
+
+
 # openai:调用gpt模型, qwen:调用阿里通义千问大模型, oneapi:调用oneapi方案支持的模型, ollama:调用本地开源大模型
-llmType = "qwen"
+# llmType = "qwen"
+llmType = "vllm"
 
 # 设置测试文本类型 Chinese 或 English
 TEXT_LANGUAGE = 'Chinese'
@@ -62,6 +70,7 @@ def get_embeddings(texts):
     global OPENAI_API_BASE, OPENAI_EMBEDDING_API_KEY, OPENAI_EMBEDDING_MODEL
     global QWen_API_BASE, QWen_EMBEDDING_API_KEY, QWen_EMBEDDING_MODEL
     global OLLAMA_API_BASE, OLLAMA_EMBEDDING_API_KEY, OLLAMA_EMBEDDING_MODEL
+    global VLLM_API_BASE, VLLM_EMBEDDING_API_KEY, VLLM_EMBEDDING_MODEL
     if llmType == 'oneapi':
         try:
             client = OpenAI(
@@ -80,6 +89,17 @@ def get_embeddings(texts):
                 api_key=QWen_EMBEDDING_API_KEY
             )
             data = client.embeddings.create(input=texts,model=QWen_EMBEDDING_MODEL).data
+            return [x.embedding for x in data]
+        except Exception as e:
+            logger.info(f"生成向量时出错: {e}")
+            return []
+    elif llmType == 'vllm':
+        try:
+            client = OpenAI(
+                base_url=VLLM_API_BASE,
+                api_key=VLLM_EMBEDDING_API_KEY
+            )
+            data = client.embeddings.create(input=texts,model=VLLM_EMBEDDING_MODEL).data
             return [x.embedding for x in data]
         except Exception as e:
             logger.info(f"生成向量时出错: {e}")
