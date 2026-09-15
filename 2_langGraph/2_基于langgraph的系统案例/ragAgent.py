@@ -12,7 +12,7 @@ from html import escape
 from typing import Literal, Annotated, Sequence, Optional
 
 # 导入LangChain的消息基类
-from langchain_core.messages import BaseMessage, ToolCall, HumanMessage
+from langchain_core.messages import BaseMessage, ToolCall, HumanMessage, SystemMessage
 from langchain_core.messages import ToolMessage
 # 导入LangChain的提示模板类
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
@@ -412,6 +412,38 @@ def monitor_connection_pool(db_connection_pool: ConnectionPool, interval: int = 
     monitor_thread.start()
     return monitor_thread
 
+# 定义Node 分类模型
+def bert(state: MessagesState) -> dict:
+    """识别用户的问题是否与项目相关，并进行分类。
+    比如业务问题，普通问题，负面问题，无关问题
+    Args:
+        state: 当前对话状态。
+    Returns:
+        dict: 更新后的消息状态。
+    """
+    # 尝试执行以下代码块
+    try:
+        # 获取用户的最新问题
+        question = get_latest_question(state)
+        # 获取最后一条消息作为上下文(因为调用工具输出的内容写入到state的最新消息中)
+        # context = state["messages"][-1].content
+        # return {}
+        # 直接返回原messages，不新增任何消息，实现放行
+        # 复制原有消息列表，不要直接原地修改state里的list（LangGraph最佳实践）
+        if question in "哈哈":
+            new_messages = state["messages"].copy()
+            # 追加一条消息到消息列表末尾
+            new_messages.append(SystemMessage(content="小PAi正在成长过程中，这个问题超出了小PAi目前的知识范围。"
+                                                      "或者您可以拨打平安银行客服电话95511咨询。", end_state=True))
+            return {"messages": new_messages}
+        else:
+            return {"messages": state["messages"]}
+    # 捕获索引或键错误
+    except (IndexError, KeyError) as e:
+        # 记录错误日志
+        logger.error(f"Message access error in generate: {e}")
+        # 返回错误消息
+        return {"messages": state.get("messages", [])}
 
 # 定义 Node agent分诊函数
 def agent(state: MessagesState, config: RunnableConfig, *, store: BaseStore, llm_chat, tool_config: ToolConfig) -> dict:
@@ -583,28 +615,6 @@ def rewrite(state: MessagesState, llm_chat) -> dict:
         # 返回错误消息
         return {"messages": [{"role": "system", "content": "无法重写查询"}]}
 
-# 定义Node 分类模型
-def bert(state: MessagesState) -> dict:
-    """识别用户的问题是否与项目相关，并进行分类。
-    比如业务问题，普通问题，负面问题，无关问题
-    Args:
-        state: 当前对话状态。
-    Returns:
-        dict: 更新后的消息状态。
-    """
-    # 尝试执行以下代码块
-    try:
-        # 获取用户的最新问题
-        question = get_latest_question(state)
-        # 获取最后一条消息作为上下文(因为调用工具输出的内容写入到state的最新消息中)
-        context = state["messages"][-1].content
-        return {"messages": [{"role": "system", "content": "无法生成回复"}]}
-    # 捕获索引或键错误
-    except (IndexError, KeyError) as e:
-        # 记录错误日志
-        logger.error(f"Message access error in generate: {e}")
-        # 返回错误消息
-        return {"messages": [{"role": "system", "content": "无法进行分类！"}]}
 
 # 定义Node 生成回复函数
 def generate(state: MessagesState, llm_chat) -> dict:
@@ -792,9 +802,11 @@ def should_continue(state: MessagesState):
 def is_business(state: MessagesState):
     messages = state["messages"]
     last_message = messages[-1]
-    if last_message:
-        return "agent"
-    return END
+    if "小PAi" in last_message.content:
+        logger.info("===============与业务不相关，直接结束")
+        return END
+    logger.info("===============与业务相关，跳转到agent")
+    return "agent"
 
 
 # 创建并配置状态图
@@ -858,7 +870,7 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     # 创建状态图实例，使用MessagesState作为状态类型
     workflow = StateGraph(MessagesState)
     # 添加分类节点
-    # workflow.add_node("bert", lambda state: bert(state))
+    workflow.add_node("bert", lambda state: bert(state))
     # 添加代理节点
     workflow.add_node("agent", lambda state, config: agent(state, config, store=store, llm_chat=llm_chat, tool_config=tool_config))
     # 添加工具节点，使用并行工具节点
@@ -871,9 +883,10 @@ def create_graph(db_connection_pool: ConnectionPool, llm_chat, llm_embedding, to
     workflow.add_node("grade_documents", lambda state: grade_documents(state, llm_chat=llm_chat))
 
     # 添加从起始到分类的边
-    workflow.add_edge(START, end_key="agent")
+    workflow.add_edge(START, end_key="bert")
+    # workflow.add_edge(START, end_key="agent")
     # 添加从分类到代理的边
-    # workflow.add_conditional_edges(source="bert", path=is_business, path_map={"agent": "agent", END: END})
+    workflow.add_conditional_edges(source="bert", path=is_business, path_map={"agent": "agent", END: END})
     # 添加代理的条件边，根据工具调用的工具名称决定下一步路由
     workflow.add_conditional_edges(source="agent", path=should_continue, path_map={"call_tools": "call_tools", END: END})
     # 添加检索的条件边，根据工具调用的结果动态决定下一步路由
@@ -939,6 +952,11 @@ def graph_response(graph: CompiledStateGraph, user_input: str, config: dict, too
 
                 # 获取最后一条消息为AIMessage
                 last_message = value["messages"][-1]
+
+                # 判断 last_message 存在属性 end_state，并且等于 True，bert节点后面不需要打印工具信息进入直接跳到下个节点
+                if hasattr(last_message, "continue_state") and last_message.continue_state is not None and last_message.end_state is True:
+                    continue
+
                 # 检查消息是否包含工具调用
                 if hasattr(last_message, "tool_calls") and last_message.tool_calls:
                     # 遍历工具调用
